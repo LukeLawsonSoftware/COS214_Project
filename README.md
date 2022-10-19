@@ -18,7 +18,7 @@
 
 
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
-
+[Builder Sequence Diagram v1](https://drive.google.com/file/d/1_r54szOC4Y1F8WDaJ-tU04-K--uajqnX/view?usp=sharing)
 
 ## Research Brief
 [Research Brief v1 (Rough)](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
