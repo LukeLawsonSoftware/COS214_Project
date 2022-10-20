@@ -2,12 +2,10 @@
 
 ArmyComponent *AirFactory::createVehicle()
 {
-	// TODO - implement AirFactory::createVehicle
-	throw "Not yet implemented";
+	return new AirVehicle(determineActualLevel());
 }
 
 ArmyComponent *AirFactory::createSoldier()
 {
-	// TODO - implement AirFactory::createSoldier
-	throw "Not yet implemented";
+	return new AirUnit(determineActualLevel());
 }

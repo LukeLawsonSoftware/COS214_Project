@@ -1,36 +1,66 @@
 #include "Battalion.h"
 
-int Battalion::calculateAirOffense() {
-	// TODO - implement Battalion::calculateAirOffense
-	throw "Not yet implemented";
+int Battalion::calculateAirOffense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateAirOffense();
+	}
+	return sum;
 }
 
-int Battalion::calculateAirDefense() {
-	// TODO - implement Battalion::calculateAirDefense
-	throw "Not yet implemented";
+int Battalion::calculateAirDefense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateAirDefense();
+	}
+	return sum;
 }
 
-int Battalion::calculateSeaOffense() {
-	// TODO - implement Battalion::calculateSeaOffense
-	throw "Not yet implemented";
+int Battalion::calculateSeaOffense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateSeaOffense();
+	}
+	return sum;
 }
 
-int Battalion::calculateSeaDefense() {
-	// TODO - implement Battalion::calculateSeaDefense
-	throw "Not yet implemented";
+int Battalion::calculateSeaDefense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateSeaDefense();
+	}
+	return sum;
 }
 
-int Battalion::calculateLandOffense() {
-	// TODO - implement Battalion::calculateLandOffense
-	throw "Not yet implemented";
+int Battalion::calculateLandOffense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateLandOffense();
+	}
+	return sum;
 }
 
-int Battalion::calculateLandDefense() {
-	// TODO - implement Battalion::calculateLandDefense
-	throw "Not yet implemented";
+int Battalion::calculateLandDefense()
+{
+	int sum = 0;
+	for (int i = 0; i < this->members.size(); i++)
+	{
+		sum += members.at(i)->calculateLandDefense();
+	}
+	return sum;
 }
 
-void Battalion::addMember(ArmyComponent* newMember) {
-	// TODO - implement Battalion::addMember
-	throw "Not yet implemented";
+void Battalion::addMember(ArmyComponent *newMember)
+{
+	this->members.push_back(newMember);
 }
