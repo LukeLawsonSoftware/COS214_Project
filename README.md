@@ -21,6 +21,7 @@
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
 [Builder Sequence Diagram v1](https://drive.google.com/file/d/1_r54szOC4Y1F8WDaJ-tU04-K--uajqnX/view?usp=sharing)<br/>
 [Command Communication Diagram v1](https://drive.google.com/file/d/1_r54szOC4Y1F8WDaJ-tU04-K--uajqnX/view?usp=sharing)<br/>
+[Command Communication Diagram v2](https://drive.google.com/file/d/1ohsXV-Hly5W3cuXQPvUyfz8PDnhP1TGt/view?usp=sharing)<br/>
 [Factory Method Activity Diagram v1 - Supply Factory](https://drive.google.com/file/d/1EBdnFrqVyZ-9bZmklmUJZbSlaMK8xiKT/view?usp=sharing)<br/>
 [Mediator Sequence Diagram v1 - Transport process](https://drive.google.com/file/d/1IJfBQ8xTmTdbp_914BIsi56Eodeg9QbA/view?usp=sharing)<br/>
 [FormAlliance Activity Diagram v1](https://drive.google.com/file/d/15kN6rdPEecJFMHB1MZ9MVaApOe9ig64V/view?usp=sharing)<br/>
