@@ -21,6 +21,7 @@
 
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
 [Builder Sequence Diagram v1](https://drive.google.com/file/d/1_r54szOC4Y1F8WDaJ-tU04-K--uajqnX/view?usp=sharing)<br/>
+[Builder Sequence Diagram v2](https://drive.google.com/file/d/17J3VSdXyPXQLQpD5OUltIvrh95HwA5Ym/view?usp=sharing)<br/>
 [Mediator Sequence Diagram v1 - Transport process](https://drive.google.com/file/d/1IJfBQ8xTmTdbp_914BIsi56Eodeg9QbA/view?usp=sharing)<br/>
 ***
 [Command Communication Diagram v1](https://drive.google.com/file/d/1_r54szOC4Y1F8WDaJ-tU04-K--uajqnX/view?usp=sharing)<br/>
