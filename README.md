@@ -29,7 +29,7 @@
 [Factory Method Activity Diagram v1 - Supply Factory](https://drive.google.com/file/d/1EBdnFrqVyZ-9bZmklmUJZbSlaMK8xiKT/view?usp=sharing)<br/>
 [FormAlliance Activity Diagram v1](https://drive.google.com/file/d/15kN6rdPEecJFMHB1MZ9MVaApOe9ig64V/view?usp=sharing)<br/>
 ***
-[Country Object Diagram v1](https://drive.google.com/file/d/19-Syc1vF37fJ7wXcB-aWRT_bHVaWSbQi/view?usp=sharing)
+[Country Object Diagram v1](https://drive.google.com/file/d/19-Syc1vF37fJ7wXcB-aWRT_bHVaWSbQi/view?usp=sharing)<br/>
 [War Object Diagram v1](https://drive.google.com/file/d/1cB5WOkFiJEzU1qdFJSHwMHSEXG4zqZa-/view?usp=sharing)
 ***
 ## Research Brief
