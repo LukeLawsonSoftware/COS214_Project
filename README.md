@@ -26,9 +26,9 @@
 [Command Communication Diagram v2](https://drive.google.com/file/d/1ohsXV-Hly5W3cuXQPvUyfz8PDnhP1TGt/view?usp=sharing)<br/>
 ***
 [Factory Method Activity Diagram v1 - Supply Factory](https://drive.google.com/file/d/1EBdnFrqVyZ-9bZmklmUJZbSlaMK8xiKT/view?usp=sharing)<br/>
+[FormAlliance Activity Diagram v1](https://drive.google.com/file/d/15kN6rdPEecJFMHB1MZ9MVaApOe9ig64V/view?usp=sharing)<br/>
 ***
 [Mediator Sequence Diagram v1 - Transport process](https://drive.google.com/file/d/1IJfBQ8xTmTdbp_914BIsi56Eodeg9QbA/view?usp=sharing)<br/>
 ***
-[FormAlliance Activity Diagram v1](https://drive.google.com/file/d/15kN6rdPEecJFMHB1MZ9MVaApOe9ig64V/view?usp=sharing)<br/>
 ## Research Brief
 [Research Brief v1 (Rough)](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
