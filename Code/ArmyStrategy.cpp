@@ -1,6 +1,7 @@
 #include "ArmyStrategy.h"
-
-void ArmyStrategy::applyStrategyBonus() {
+// wow this is really cool!
+void ArmyStrategy::applyStrategyBonus()
+{
 	// TODO - implement ArmyStrategy::applyStrategyBonus
 	throw "Not yet implemented";
 }
