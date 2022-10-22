@@ -1,31 +1,38 @@
 #include "MilitaryCommander.h"
 
-void MilitaryCommander::changeStrategy() {
-	// TODO - implement MilitaryCommander::changeStrategy
-	throw "Not yet implemented";
+MilitaryCommander::MilitaryCommander()
+{
 }
 
-void MilitaryCommander::setStrategy(std::string newStrategy) {
-	// TODO - implement MilitaryCommander::setStrategy
-	throw "Not yet implemented";
+void MilitaryCommander::changeStrategy()
+{
+	_changeStrategy->execute();
 }
 
-void MilitaryCommander::enterTheatre() {
-	// TODO - implement MilitaryCommander::enterTheatre
-	throw "Not yet implemented";
+void MilitaryCommander::setStrategy(Army *army, std::string newStrategy)
+{
+	_changeStrategy->setStrategy(newStrategy);
+	_changeStrategy->setArmy(army);
 }
 
-void MilitaryCommander::setTheatreTarget(WarTheatre* theatreTarget) {
-	// TODO - implement MilitaryCommander::setTheatreTarget
-	throw "Not yet implemented";
+void MilitaryCommander::enterTheatre()
+{
+	_enterTheatre->execute();
 }
 
-void MilitaryCommander::attackTransport() {
-	// TODO - implement MilitaryCommander::attackTransport
-	throw "Not yet implemented";
+void MilitaryCommander::setTheatreTarget(Army *army, WarTheatre *theatreTarget)
+{
+	_enterTheatre->setArmy(army);
+	_enterTheatre->setTheatre(theatreTarget);
 }
 
-void MilitaryCommander::setTransportTarget(Transporter* transportTarget) {
-	// TODO - implement MilitaryCommander::setTransportTarget
-	throw "Not yet implemented";
+void MilitaryCommander::attackTransport()
+{
+	_attackTransport->execute();
+}
+
+void MilitaryCommander::setTransportTarget(Transporter *transportTarget, Army *army)
+{
+	_attackTransport->setArmy(army);
+	_attackTransport->setTransport(transportTarget);
 }
