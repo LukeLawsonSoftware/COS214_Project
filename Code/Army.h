@@ -5,7 +5,7 @@
 #include "Corresponder.h"
 #include "ArmyStrategy.h"
 #include "MedicalSupply.h"
-// This is my change to this file!
+
 class Army : public Corresponder
 {
 
