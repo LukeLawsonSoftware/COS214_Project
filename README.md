@@ -24,6 +24,7 @@
 [Builder Sequence Diagram v1](https://drive.google.com/file/d/1jBRNcWKESwqAe2WA11ZBeBOWWEIe8Uvx/view?usp=sharing)<br/>
 [Builder Sequence Diagram v2](https://drive.google.com/file/d/17J3VSdXyPXQLQpD5OUltIvrh95HwA5Ym/view?usp=sharing)<br/>
 [Mediator Sequence Diagram v1 - Transport process](https://drive.google.com/file/d/1ds6hGFgzr1XNG5wbES8kfQJ5eEq6DSx7/view?usp=sharing)<br/>
+[Mediator Sequence Diagram v2 - Transport process](https://drive.google.com/file/d/1LMJzE9KyeKDkbZ0dHirZV36i0Fr_P2iL/view?usp=sharing)<br/>
 ***
 [Command Communication Diagram v1](https://drive.google.com/file/d/14X7xYim03jVv5opfTKZOYe-8rHQ1rtZt/view?usp=sharing)<br/>
 [Command Communication Diagram v2](https://drive.google.com/file/d/1jfmGl3jx8oHPEBYJW2wZP-BqSBTnZku4/view?usp=sharing)<br/>
