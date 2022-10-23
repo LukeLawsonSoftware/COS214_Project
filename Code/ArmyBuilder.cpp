@@ -6,7 +6,7 @@ ArmyBuilder :: ArmyBuilder(std::string t, std::vector<UnitFactory*>* u, std::vec
 	supplyFactories = s;
 }
 
-ArmyComponent** ArmyBuilder::createIndividuals() {
+std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 	// TODO - implement ArmyBuilder::createIndividuals
 	std::vector<ArmyComponent*> *smallUnits;
 	bool completedConstruction = false;
@@ -40,6 +40,11 @@ ArmyComponent** ArmyBuilder::createIndividuals() {
 					}
 					else{
 						++it;//go to the next factory
+					}
+
+					if(totalSoldiers == 50 && totalVehicles == 10){
+						completedConstruction = true;
+						break; //jump out of loop
 					}
 				}
 				else{
@@ -75,6 +80,11 @@ ArmyComponent** ArmyBuilder::createIndividuals() {
 					else{
 						++it;//go to the next factory
 					}
+
+					if(totalSoldiers == 50 && totalVehicles == 10){
+						completedConstruction = true;
+						break; //jump out of loop
+					}
 				}
 				else{
 					++it;//go to the next factory
@@ -109,6 +119,11 @@ ArmyComponent** ArmyBuilder::createIndividuals() {
 					else{
 						++it;//go to the next factory
 					}
+
+					if(totalSoldiers == 50 && totalVehicles == 10){
+						completedConstruction = true;
+						break; //jump out of loop
+					}
 				}
 				else{
 					++it;//go to the next factory
@@ -142,13 +157,19 @@ ArmyComponent** ArmyBuilder::createIndividuals() {
 				else{
 					++it;//go to the next factory
 				}
+
+				if(totalSoldiers == 50 && totalVehicles == 10){
+					completedConstruction = true;
+					break; //jump out of loop
+				}
 			} 
 			break;
 		}
 	}
+	return smallUnits;
 }
 
-ArmyComponent** ArmyBuilder::buildBattalions() {
+std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 	// TODO - implement ArmyBuilder::buildBattalions
 	
 }
@@ -161,7 +182,7 @@ Supply** ArmyBuilder::determineSupplies() {
 Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the same size
 	/*Army will consist of: (if we have the budget)
 		50 soldiers
-		20 vehicles
+		10 vehicles
 		2 battalions
 		(these values may be changed)
 	*/

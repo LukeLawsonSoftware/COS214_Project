@@ -24,17 +24,17 @@ class ArmyBuilder{
 		/// @brief Function to create individual army components (soldiers or vehicles)
 		/// @author Reuben Jooste (u21457060)
 		/// @return Pointer to a list used for storing pointers to ArmyComponents
-		ArmyComponent **createIndividuals();
+		std::vector<ArmyComponent*>* createIndividuals();
 
 		/// @brief Function to create battalions which consist out of other battalions, soldiers or vehicles
 		/// @author Reuben Jooste (u21457060)
 		/// @return Pointer to a list of pointers to battalions
-		ArmyComponent **buildBattalions();
+		std::vector<ArmyComponent*>* buildBattalions();
 
 		/// @brief Function tp create supplies for the army
 		/// @author Reuben Jooste (u21457060)
 		/// @return Pointer to a list of pointers of Suppply objects (AmmoSupply or MedicalSupply)
-		Supply **determineSupplies();
+		std::vector<Supply*>* determineSupplies();
 
 		/// @brief This function is used to merge the different parts (objects) of an army into one Army object
 		/// @author Reuben Jooste (u21457060)
