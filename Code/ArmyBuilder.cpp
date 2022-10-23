@@ -329,34 +329,221 @@ std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 						++it;//go to the next factory
 					}
 				} 
+
+				//check if we can create a smaller battalion
+				if (!completedConstruction && (totalSoldiers >= minReqSoldiers && totalVehicles >= minReqVehicles) ){//minimum requirements to create a battalion
+					ArmyComponent* battalion = new Battalion();
+
+					std::vector<ArmyComponent*>::iterator it_2;
+
+					for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+						battalion->addMember( (*it_2) );
+					}
+				}
+				else{
+					//since we couldn't create a battalion we add them as individual units
+					std::vector<ArmyComponent*>* i = getIndividuals();
+
+					std::vector<ArmyComponent*>::iterator it_3 = smallUnits->begin();
+
+					for (; it_3 != smallUnits->end(); ++it_3){
+						i->push_back( (*it_3) );
+					}
+
+					setIndividuals(i);//set new individuals
+
+					delete i;
+				}
+
 				break;
-			}
-		}
+			}//end case 'L'
+			case 'S':{ //construct Sea Units 
+				//start at first factory and start building army. If factory's budget runs out choose next factory
+				std::vector<UnitFactory*>::iterator *it;
+				int soldiersCreated = 0;
 
-		//check if we can create a smaller battalion
-		if (!completedConstruction && (totalSoldiers >= minReqSoldiers && totalVehicles >= minReqVehicles) ){//minimum requirements to create a battalion
-			ArmyComponent* battalion = new Battalion();
+				for (*it = unitFactories->begin(); *it != unitFactories->end(); ){
+					if (it->getType() == "Sea"){
+						bool next = false;
 
-			std::vector<ArmyComponent*>::iterator it_2;
+						if(totalSoldiers < allowedSoldiers){
+							int increase = 0;
+							for(int i = soldiersCreated; i < 5; i++){//create soldiers 
+								ArmyComponent* unit = it->createSoldier();
+								
+								if (unit != nullptr){//if we could actually afford to create the soldier
+									smallUnits->push_back(unit);
+									totalSoldiers += 1;
+									increase += 1;
+								}
+								else{
+									soldiersCreated += increase;
+									++it;//go to the next factory
+									next = true;
+									break; //break out of for loop creating soldiers
+								}
+							}
+							//only way we enter this stage is if we did create 5 soldiers
+							soldiersCreated = 0;//reset
+						}
+						if(next) continue;//why try to create a vehicle if the factory cannot create a soldier?
 
-			for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
-				battalion->addMember( (*it_2) );
-			}
-		}
-		else{
-			//since we couldn't create a battalion we add them as individual units
-			std::vector<ArmyComponent*>* i = getIndividuals();
+						if (totalVehicles < allowedVehicles){
+							//create one vehicle
+							ArmyComponent* unit = it->createVehicle();
+								
+							if (unit != nullptr){//if we could actually afford to create the vehicle
+								smallUnits->push_back(unit);
+								totalVehicles += 1;
+							}
+							else{
+								++it;//go to the next factory
+								continue; 
+							}
+						}
 
-			std::vector<ArmyComponent*>::iterator it_3 = smallUnits->begin();
+						if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles){//minimum requirements to create a battalion
+							ArmyComponent* battalion = new Battalion();
 
-			for (; it_3 != smallUnits->end(); ++it_3){
-				i->push_back( (*it_3) );
-			}
+							std::vector<ArmyComponent*>::iterator it_2;
 
-			setIndividuals(i);//set new individuals
+							for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+								battalion->addMember( (*it_2) );
+							}
 
-			delete i;
-		}
+							battalions->push_back(battalion);
+							completedConstruction = true;
+							break;
+						}
+
+					}
+					else{
+						++it;//go to the next factory
+					}
+				} 
+
+				//check if we can create a smaller battalion
+				if (!completedConstruction && (totalSoldiers >= minReqSoldiers && totalVehicles >= minReqVehicles) ){//minimum requirements to create a battalion
+					ArmyComponent* battalion = new Battalion();
+
+					std::vector<ArmyComponent*>::iterator it_2;
+
+					for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+						battalion->addMember( (*it_2) );
+					}
+				}
+				else{
+					//since we couldn't create a battalion we add them as individual units
+					std::vector<ArmyComponent*>* i = getIndividuals();
+
+					std::vector<ArmyComponent*>::iterator it_3 = smallUnits->begin();
+
+					for (; it_3 != smallUnits->end(); ++it_3){
+						i->push_back( (*it_3) );
+					}
+
+					setIndividuals(i);//set new individuals
+
+					delete i;
+				}
+
+				break;
+			}//end case 'S'
+			case 'A':{ //construct Air Units 
+				//start at first factory and start building army. If factory's budget runs out choose next factory
+				std::vector<UnitFactory*>::iterator *it;
+				int soldiersCreated = 0;
+
+				for (*it = unitFactories->begin(); *it != unitFactories->end(); ){
+					if (it->getType() == "Air"){
+						bool next = false;
+
+						if(totalSoldiers < allowedSoldiers){
+							int increase = 0;
+							for(int i = soldiersCreated; i < 5; i++){//create soldiers 
+								ArmyComponent* unit = it->createSoldier();
+								
+								if (unit != nullptr){//if we could actually afford to create the soldier
+									smallUnits->push_back(unit);
+									totalSoldiers += 1;
+									increase += 1;
+								}
+								else{
+									soldiersCreated += increase;
+									++it;//go to the next factory
+									next = true;
+									break; //break out of for loop creating soldiers
+								}
+							}
+							//only way we enter this stage is if we did create 5 soldiers
+							soldiersCreated = 0;//reset
+						}
+						if(next) continue;//why try to create a vehicle if the factory cannot create a soldier?
+
+						if (totalVehicles < allowedVehicles){
+							//create one vehicle
+							ArmyComponent* unit = it->createVehicle();
+								
+							if (unit != nullptr){//if we could actually afford to create the vehicle
+								smallUnits->push_back(unit);
+								totalVehicles += 1;
+							}
+							else{
+								++it;//go to the next factory
+								continue; 
+							}
+						}
+
+						if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles){//minimum requirements to create a battalion
+							ArmyComponent* battalion = new Battalion();
+
+							std::vector<ArmyComponent*>::iterator it_2;
+
+							for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+								battalion->addMember( (*it_2) );
+							}
+
+							battalions->push_back(battalion);
+							completedConstruction = true;
+							break;
+						}
+
+					}
+					else{
+						++it;//go to the next factory
+					}
+				} 
+
+				//check if we can create a smaller battalion
+				if (!completedConstruction && (totalSoldiers >= minReqSoldiers && totalVehicles >= minReqVehicles) ){//minimum requirements to create a battalion
+					ArmyComponent* battalion = new Battalion();
+
+					std::vector<ArmyComponent*>::iterator it_2;
+
+					for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+						battalion->addMember( (*it_2) );
+					}
+				}
+				else{
+					//since we couldn't create a battalion we add them as individual units
+					std::vector<ArmyComponent*>* i = getIndividuals();
+
+					std::vector<ArmyComponent*>::iterator it_3 = smallUnits->begin();
+
+					for (; it_3 != smallUnits->end(); ++it_3){
+						i->push_back( (*it_3) );
+					}
+
+					setIndividuals(i);//set new individuals
+
+					delete i;
+				}
+
+				break;
+			}//end case 'A'
+
+		}//end switch
+		
 	}//end big for-loop
 
 	//finally return the battalions
