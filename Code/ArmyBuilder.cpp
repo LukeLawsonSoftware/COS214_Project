@@ -553,7 +553,74 @@ std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 
 std::vector<Supply*>* ArmyBuilder::determineSupplies() {
 	// TODO - implement ArmyBuilder::determineSupplies
-	
+	std::vector<Supply*> *supplies;
+	int allowedAmmoSupplies , allowedMedSupplies, minReqSoldiers, minReqVehicles;
+	allowedAmmoSupplies = 10;
+	allowedMedSupplies = 10;
+	int totalAmmoSupplies, totalMedSupplies; //for every 5 soldiers we create 1 vehicle
+	totalAmmoSupplies = totalMedSupplies = 0;
+
+	//start at first factory and start building supplies. If factory's budget runs out choose next factory
+	std::vector<SupplyFactory*>::iterator it;
+
+	//ammo suppplies
+	for (it = supplyFactories->begin(); it != supplyFactories->end(); ){
+		if ((*it)->getType() == "Ammo"){
+			if(totalAmmoSupplies < allowedAmmoSupplies){
+				for(int i = 0; i < allowedAmmoSupplies; i++){//create soldiers 
+					srand((unsigned) time(0));//to generate a different value each time
+					int quantity = (double) (200 + (rand() % 400));//random number between 200 and 400 bullets
+					
+					Supply* unit = (*it)->makeSupply(quantity);
+					
+					if (unit != nullptr){//if we could actually afford to create the soldier
+						supplies->push_back(unit);
+						totalAmmoSupplies += 1;
+					}
+					else{
+						++it;//go to the next factory
+						break; //break out of for loop creating soldiers
+					}
+				}
+			}
+			else{
+				break;
+			}
+		}
+		else{
+			++it;//go to next factory
+		}
+	}
+	//medical supplies
+	for (it = supplyFactories->begin(); it != supplyFactories->end(); ){
+		if ((*it)->getType() == "Medical"){
+			if(totalMedSupplies < allowedMedSupplies){
+				for(int i = 0; i < allowedMedSupplies; i++){//create soldiers 
+					srand((unsigned) time(0));//to generate a different value each time
+					int quantity = (double) (50 + (rand() % 100));//random number between 50 and 100 meds
+					
+					Supply* unit = (*it)->makeSupply(quantity);
+					
+					if (unit != nullptr){//if we could actually afford to create the soldier
+						supplies->push_back(unit);
+						totalMedSupplies += 1;
+					}
+					else{
+						++it;//go to the next factory
+						break; //break out of for loop creating soldiers
+					}
+				}
+			}
+			else{
+				break;
+			}
+		}
+		else{
+			++it;//go to the next factory
+		}
+	}
+
+	return supplies;
 }
 
 Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the same size
@@ -561,12 +628,18 @@ Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the sa
 		50 soldiers
 		10 vehicles
 		2 battalions -> 30 soldiers & 6 vehicles each
+		10 ammo supplies
+		10 medical supplies
 		(these values may be changed)
 	*/
 	// TODO - implement ArmyBuilder::putArmyTogether
-	std::vector<ArmyComponent*>* b = buildBattalions();
 	std::vector<ArmyComponent*>* i = createIndividuals();
 	setIndividuals(i);
+
+	std::vector<ArmyComponent*>* b = buildBattalions();
+	//build battalions could have change our list of individual units therefore get the latest version
+	i = getIndividuals();
+
 	std::vector<Supply*>* s = determineSupplies();
 
 	return new Army(b, i, s); //(battalions, individuals, supplies)
