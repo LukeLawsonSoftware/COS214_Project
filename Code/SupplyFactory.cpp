@@ -1,8 +1,25 @@
 #include "SupplyFactory.h"
 
+SupplyFactory::SupplyFactory(int budget){
+	level = 1;
+	this->budget = budget;
+	totalSpent = 0;
+}
+
+SupplyFactory::~SupplyFactory(){
+	level = 0;
+	totalSpent = 0;
+	budget = 0;
+}
+
 void SupplyFactory::upgrade() {
 	// TODO - implement SupplyFactory::upgrade
-	throw "Not yet implemented";
+
+	setBudget( getBudget()*1.5 );//increase budget by 50%
+
+	level++;
+
+	// throw "Not yet implemented";
 }
 
 void SupplyFactory::setBudget(int newBudget) {
@@ -19,5 +36,8 @@ int SupplyFactory::getLevel() {
 
 int SupplyFactory::getTotalSpent() {
 	// TODO - implement SupplyFactory::getTotalSpent
-	throw "Not yet implemented";
+
+	return totalSpent;
+
+	// throw "Not yet implemented";
 }
