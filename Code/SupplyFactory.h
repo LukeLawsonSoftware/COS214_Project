@@ -12,7 +12,7 @@ class SupplyFactory
 
 		/// @brief Class destructor to reset the member variables.
 		/// @author Arno Jooste (u21457451)
-		~SupplyFactory();
+		virtual ~SupplyFactory();
 
 		/// @brief Factory method to let AmmoFactory and MedicalFactory create the AmmoSupply and MedicalSupply products, respectively.
 		/// @author Arno Jooste (u21457451)
