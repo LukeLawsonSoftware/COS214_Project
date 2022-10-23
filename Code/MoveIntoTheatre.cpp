@@ -2,8 +2,8 @@
 
 void MoveIntoTheatre::execute()
 {
-	// TODO - implement MoveIntoTheatre::execute
-	throw "Not yet implemented";
+	army->setBattleField(theatre);
+	theatre->addArmy(army);
 }
 
 void MoveIntoTheatre::setTheatre(WarTheatre *in)

@@ -17,8 +17,12 @@ private:
 
 public:
 	void applyStrategyBonus();
-
 	void recuperate();
+	void addNewAmmoSupplies(AmmoSupply *);
+	void addNewMedicalSupplies(MedicalSupply *);
+	void changeStrategy(std::string);
+	void setBattleField(WarTheatre *);
+	void attackTransport(Transporter *);
 };
 
 #endif

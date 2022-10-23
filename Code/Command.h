@@ -3,7 +3,7 @@
 #include "Army.h"
 class Command
 {
-private:
+protected:
 	Army *army;
 
 public:

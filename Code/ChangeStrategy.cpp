@@ -4,8 +4,7 @@ ChangeStrategy::ChangeStrategy() {}
 
 void ChangeStrategy::execute()
 {
-	// TODO - implement ChangeStrategy::execute
-	throw "Not yet implemented";
+	army->changeStrategy(newStrategy);
 }
 
 void ChangeStrategy::setStrategy(std::string in)
