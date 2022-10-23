@@ -1,4 +1,5 @@
 #include "ArmyBuilder.h"
+#include "Battalion.h"
 
 ArmyBuilder :: ArmyBuilder(std::string t, std::vector<UnitFactory*>* u, std::vector<SupplyFactory*>* s){
 	type = t;
@@ -29,6 +30,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 						}
 						else{
 							++it;//go to the next factory
+							continue; //why try to create a vehicle if the factory cannot create a soldier?
 						}
 					}
 					//create one vehicle
@@ -40,6 +42,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 					}
 					else{
 						++it;//go to the next factory
+						continue; 
 					}
 
 					if(totalSoldiers == 50 && totalVehicles == 10){
@@ -68,6 +71,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 						}
 						else{
 							++it;//go to the next factory
+							continue; //why try to create a vehicle if the factory cannot create a soldier?
 						}
 					}
 					//create one vehicle
@@ -79,6 +83,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 					}
 					else{
 						++it;//go to the next factory
+						continue;
 					}
 
 					if(totalSoldiers == 50 && totalVehicles == 10){
@@ -107,6 +112,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 						}
 						else{
 							++it;//go to the next factory
+							continue; //why try to create a vehicle if the factory cannot create a soldier?
 						}
 					}
 					//create one vehicle
@@ -118,6 +124,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 					}
 					else{
 						++it;//go to the next factory
+						continue; 
 					}
 
 					if(totalSoldiers == 50 && totalVehicles == 10){
@@ -145,6 +152,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 					}
 					else{
 						++it;//go to the next factory
+						continue; //why try to create a vehicle if the factory cannot create a soldier?
 					}
 				}
 				//create one vehicle
@@ -156,6 +164,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 				}
 				else{
 					++it;//go to the next factory
+					continue; 
 				}
 
 				if(totalSoldiers == 50 && totalVehicles == 10){
@@ -171,7 +180,58 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 
 std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 	// TODO - implement ArmyBuilder::buildBattalions
+	std::vector<ArmyComponent*> *battalions;
+	bool completedConstruction = false;
+	int totalSoldiers, totalVehicles; //for every 5 soldiers we create 1 vehicle
+	int totalBattalions; //for every 30 soldiers and 6 vehicles we create one battalion
+	totalSoldiers = totalVehicles = totalBattalions = 0;
 	
+	switch(type[0]){
+		case 'L':{ //construct Land Units 
+			//start at first factory and start building army. If factory's budget runs out choose next factory
+			std::vector<UnitFactory*>::iterator *it;
+
+			for (*it = unitFactories->begin(); *it != unitFactories->end(); ){
+				if (it->getType() == "Land"){
+					for(int b = 0; b < 6; b++){//we will create 30 (6 * 5) soldiers (if we are able to)
+						for(int i = 0; i < 5; i++){//create soldiers
+							ArmyComponent* unit = it->createSoldier();
+							
+							if (unit != nullptr){//if we could actually afford to create the soldier
+								smallUnits->push_back(unit);
+								totalSoldiers += 1;
+							}
+							else{
+								++it;//go to the next factory
+								continue; //why try to create a vehicle if the factory cannot create a soldier?
+							}
+						}
+						//create one vehicle
+						ArmyComponent* unit = it->createVehicle();
+							
+						if (unit != nullptr){//if we could actually afford to create the vehicle
+							smallUnits->push_back(unit);
+							totalVehicles += 1;
+						}
+						else{
+							++it;//go to the next factory
+							continue; //why try to create a vehicle if the factory cannot create a soldier?
+						}
+
+						if(totalSoldiers == 50 && totalVehicles == 10){
+							completedConstruction = true;
+						}
+					}
+
+					ArmyComponent* battalion = new Battalion("");
+				}
+				else{
+					++it;//go to the next factory
+				}
+			} 
+			break;
+		}
+	}
 }
 
 Supply** ArmyBuilder::determineSupplies() {
@@ -183,7 +243,7 @@ Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the sa
 	/*Army will consist of: (if we have the budget)
 		50 soldiers
 		10 vehicles
-		2 battalions
+		2 battalions -> 30 soldiers & 6 vehicles
 		(these values may be changed)
 	*/
 	// TODO - implement ArmyBuilder::putArmyTogether
