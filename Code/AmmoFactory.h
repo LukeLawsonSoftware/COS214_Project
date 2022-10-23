@@ -3,6 +3,10 @@
 #include "SupplyFactory.h"
 #include "AmmoSupply.h"
 
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
 class AmmoFactory : public SupplyFactory
 {
 	public:
