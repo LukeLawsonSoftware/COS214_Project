@@ -1,6 +1,13 @@
 #include "Command.h"
 
-void Command::execute() {
-	// TODO - implement Command::execute
-	throw "Not yet implemented";
+Command::Command() {}
+
+Army *Command::getArmy()
+{
+	return army;
+}
+
+void Command::setArmy(Army *in)
+{
+	army = in;
 }

@@ -1,6 +1,12 @@
 #include "MoveIntoTheatre.h"
 
-void MoveIntoTheatre::execute() {
-	// TODO - implement MoveIntoTheatre::execute
-	throw "Not yet implemented";
+void MoveIntoTheatre::execute()
+{
+	army->setBattleField(theatre);
+	theatre->addArmy(army);
+}
+
+void MoveIntoTheatre::setTheatre(WarTheatre *in)
+{
+	theatre = in;
 }
