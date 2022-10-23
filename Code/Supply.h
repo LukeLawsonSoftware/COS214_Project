@@ -9,6 +9,7 @@ class Supply {
 		Supply(int quantity);
 
 		/// @brief Virtual Class destructor to reset member variable
+		/// @author Arno Jooste (u21457451)
 		virtual ~Supply(){
 			quantity = 0;
 		};
