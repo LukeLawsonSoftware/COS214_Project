@@ -1,6 +1,9 @@
 #include "MedicalFactory.h"
 
-Supply* MedicalFactory::makeSupply() {
+Supply* MedicalFactory::makeSupply(int quantity) {
 	// TODO - implement MedicalFactory::makeSupply
-	throw "Not yet implemented";
+
+	return new MedicalSupply(getLevel(), quantity);
+
+	// throw "Not yet implemented";
 }
