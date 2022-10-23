@@ -1,12 +1,26 @@
 #ifndef ARMYBUILDER_H
 #define ARMYBUILDER_H
 #include "Army.h"
+#include "UnitFactory.h"
+#include "SupplyFactory.h"
+#include <iostream>
+#include <vector>
 
 class ArmyBuilder{
 	private:
 		Army *army; //pointer to hold the army which we constructed
+		std::string type; //specifies which type of army this builder will construct
+		std::vector<UnitFactory*>* unitFactories;
+		std::vector<SupplyFactory*>* supplyFactories;
 
 	public:
+		/// @brief Class constructor used to instantiate the object and initialize the type member variable
+		/// @author Reuben Jooste (u21457060)
+		/// @param type Specifies which type of army builder this class will construct 
+		/// @param unitFactories UnitFactories to choose from for creating the army
+		/// @param supplyFactories SupplyFactories to choose from for creating the supplies
+		ArmyBuilder(std::string type, std::vector<UnitFactory*>* unitFactories, std::vector<SupplyFactory*>* supplyFactories);
+		
 		/// @brief Function to create individual army components (soldiers or vehicles)
 		/// @author Reuben Jooste (u21457060)
 		/// @return Pointer to a list used for storing pointers to ArmyComponents
