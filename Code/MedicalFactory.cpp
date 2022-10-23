@@ -1,5 +1,7 @@
 #include "MedicalFactory.h"
 
+MedicalFactory::MedicalFactory(int budget):SupplyFactory(budget){};
+
 Supply* MedicalFactory::makeSupply(int quantity) {
 	// TODO - implement MedicalFactory::makeSupply
 

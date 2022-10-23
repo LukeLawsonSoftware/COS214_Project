@@ -7,6 +7,10 @@ class MedicalFactory : public SupplyFactory
 {
 
 	public:
+		/// @brief Class constructor for MedicalFactory 
+		/// @author Arno Jooste (u21457451)
+		MedicalFactory(int budget);
+
 		/// @brief Creates medical supplies by creating a new MedicalSupply product.
 		/// @author Arno Jooste (u21457451)
 		/// @param quantity The quantity of medical supplies to be produced by the medical factory.
