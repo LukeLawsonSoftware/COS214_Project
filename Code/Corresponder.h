@@ -4,8 +4,8 @@
 
 class Corresponder{
 	private:
-		Transporter medicalTransportLine;
-		Transporter ammoTransportLine;
+		Transporter* medicalTransportLine;
+		Transporter* ammoTransportLine;
 };
 
 #endif
