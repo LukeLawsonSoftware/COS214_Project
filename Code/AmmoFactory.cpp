@@ -1,7 +1,10 @@
 #include "AmmoFactory.h"
 
-Supply *AmmoFactory::makeSupply()
+Supply *AmmoFactory::makeSupply(int quantity)
 {
 	// TODO - implement AmmoFactory::makeSupply
-	throw "Not yet implemented";
+
+	return new AmmoSupply(getLevel(), quantity);
+
+	// throw "Not yet implemented";
 }
