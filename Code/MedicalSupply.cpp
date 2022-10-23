@@ -1,6 +1,6 @@
 #include "MedicalSupply.h"
 
-MedicalSupply::MedicalSupply(int factoryLevel, int quantity) {
+MedicalSupply::MedicalSupply(int factoryLevel, int quantity):Supply(quantity) {
 	// TODO - implement MedicalSupply::MedicalSupply
 
 	double bonus=0;

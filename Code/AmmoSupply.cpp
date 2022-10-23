@@ -1,6 +1,6 @@
 #include "AmmoSupply.h"
 
-AmmoSupply::AmmoSupply(int factoryLevel, int quantity) {
+AmmoSupply::AmmoSupply(int factoryLevel, int quantity):Supply(quantity) {
 	// TODO - implement AmmoSupply::AmmoSupply
 
 	double bonus=0;
