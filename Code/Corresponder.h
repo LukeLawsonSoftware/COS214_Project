@@ -6,6 +6,8 @@ class Corresponder{
 	private:
 		Transporter* medicalTransportLine;
 		Transporter* ammoTransportLine;
+	public:
+		regToTransport(Transporter* ammoTransportLine, Transporter* medTransportLine);
 };
 
 #endif
