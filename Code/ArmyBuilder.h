@@ -12,6 +12,7 @@ class ArmyBuilder{
 		std::string type; //specifies which type of army this builder will construct
 		std::vector<UnitFactory*>* unitFactories;
 		std::vector<SupplyFactory*>* supplyFactories;
+		std::vector<ArmyComponent*>* individuals;
 
 	public:
 		/// @brief Class constructor used to instantiate the object and initialize the type member variable
@@ -45,6 +46,16 @@ class ArmyBuilder{
 		/// @author Reuben Jooste (u21457060)
 		/// @return Member variable of constructed Army
 		Army *getArmy();
+
+		/// @brief This function is used to return the vector of individuals which was create by the putArmyTogether() method
+		/// @author Reuben Jooste (u21457060) 
+		/// @return Return vector of individual ArmyComponents
+		std::vector<ArmyComponent*>* getIndividuals();
+
+		/// @brief This function will set the member variable individuals in order to keep track of the individuals created
+		/// @author Reuben Jooste (u21457060)
+		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
+		void setIndividuals(std::vector<SupplyFactory*>* individuals);
 };
 
 #endif

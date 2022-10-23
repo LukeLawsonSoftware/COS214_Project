@@ -181,9 +181,10 @@ std::vector<ArmyComponent*>* ArmyBuilder::createIndividuals() {
 std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 	// TODO - implement ArmyBuilder::buildBattalions
 	std::vector<ArmyComponent*> *battalions;
+	std::vector<ArmyComponent*> *smallUnits;
 	bool completedConstruction = false;
 	int totalSoldiers, totalVehicles; //for every 5 soldiers we create 1 vehicle
-	int totalBattalions; //for every 30 soldiers and 6 vehicles we create one battalion
+	int totalBattalions; //for every 30 soldiers and 6 vehicles we create one battalion - there is a minimum requirement to create a battalion
 	totalSoldiers = totalVehicles = totalBattalions = 0;
 	
 	switch(type[0]){
@@ -217,13 +218,21 @@ std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 							++it;//go to the next factory
 							continue; //why try to create a vehicle if the factory cannot create a soldier?
 						}
-
-						if(totalSoldiers == 50 && totalVehicles == 10){
-							completedConstruction = true;
-						}
 					}
 
-					ArmyComponent* battalion = new Battalion("");
+					if (totalSoldiers >= 20 && totalVehicles >= 4){//minimum requirements to create a battalion
+						ArmyComponent* battalion = new Battalion();
+
+						std::vector<ArmyComponent*>::iterator it_2;
+
+						for (it_2 = smallUnits->begin(); it_2 != smallUnits->end(); ++it_2){
+							battalion->addMember( (*it_2) );
+						}
+					}
+					else{
+						//since we couldn't create a battalion we add them as individual units
+					}
+
 				}
 				else{
 					++it;//go to the next factory
@@ -234,7 +243,7 @@ std::vector<ArmyComponent*>* ArmyBuilder::buildBattalions() {
 	}
 }
 
-Supply** ArmyBuilder::determineSupplies() {
+std::vector<Supply*>* ArmyBuilder::determineSupplies() {
 	// TODO - implement ArmyBuilder::determineSupplies
 	
 }
@@ -247,9 +256,9 @@ Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the sa
 		(these values may be changed)
 	*/
 	// TODO - implement ArmyBuilder::putArmyTogether
-	ArmyComponent** b = buildBattalions();
-	ArmyComponent** i = createIndividuals();
-	Supply** s = determineSupplies();
+	std::vector<ArmyComponent*>* b = buildBattalions();
+	std::vector<ArmyComponent*>* i = createIndividuals();
+	std::vector<Supply*>* s = determineSupplies();
 
 	return new Army(b, i, s); //(battalions, individuals, supplies)
 }
