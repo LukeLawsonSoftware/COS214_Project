@@ -7,7 +7,7 @@ class Corresponder{
 		Transporter* medicalTransportLine;
 		Transporter* ammoTransportLine;
 	public:
-		regToTransport(Transporter* ammoTransportLine, Transporter* medTransportLine);
+		void regToTransport(Transporter* ammoTransportLine, Transporter* medTransportLine);
 };
 
 #endif
