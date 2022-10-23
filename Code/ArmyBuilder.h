@@ -55,7 +55,7 @@ class ArmyBuilder{
 		/// @brief This function will set the member variable individuals in order to keep track of the individuals created
 		/// @author Reuben Jooste (u21457060)
 		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
-		void setIndividuals(std::vector<SupplyFactory*>* individuals);
+		void setIndividuals(std::vector<ArmyComponent*>* individuals);
 };
 
 #endif
