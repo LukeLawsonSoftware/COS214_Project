@@ -17,3 +17,7 @@ int UnitFactory::determineActualLevel()
     }
     return actualLevel;
 }
+
+std::string UnitFactory::getType(){
+    return type;
+}
