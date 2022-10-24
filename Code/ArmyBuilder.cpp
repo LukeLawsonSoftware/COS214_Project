@@ -638,9 +638,33 @@ Army* ArmyBuilder::putArmyTogether() { //We will assume each army will be the sa
 
 	std::vector<Supply*>* s = determineSupplies();
 
-	return new Army(b, i, s); //(battalions, individuals, supplies)
+	army = new Army(b,i,s);
+
+	return army; //(battalions, individuals, supplies)
 }
 
 Army* ArmyBuilder::getArmy() {
 	return this->army;
+}
+
+std::vector<ArmyComponent*>* ArmyBuilder::getIndividuals(){
+	return individuals;
+}
+
+void ArmyBuilder::setIndividuals(std::vector<ArmyComponent*>* newIndv){
+	//make deep copy
+	if (individuals != nullptr){
+		std::vector<ArmyComponent*>::iterator it;
+
+		for (it = individuals->begin(); it != individuals->end(); ++it){
+			delete (*it);
+		}
+		delete individuals;
+	
+	//now make the copy
+	std::vector<ArmyComponent*>::iterator it;
+
+	for (it = newIndv->begin(); it != newIndv->end(); ++it){
+		individuals->push_back( (*it) );
+	}
 }
