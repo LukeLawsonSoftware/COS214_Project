@@ -41,3 +41,7 @@ int SupplyFactory::getTotalSpent() {
 
 	// throw "Not yet implemented";
 }
+
+std::string SupplyFactory :: getType(){
+	return type;
+}

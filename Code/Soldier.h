@@ -7,6 +7,7 @@ class Soldier : public ArmyComponent
 
 protected:
 	int trainingLevel;
+	double soldierCost;
 
 public:
 	/// @brief Construct Solider using powerLevel to determine trainingLevel
@@ -48,6 +49,11 @@ public:
 	/// @author Luke Lawson (u21433811)
 	/// @param newMember pointer to ArmyComponent to add to composite object
 	void addMember(ArmyComponent *newMember);
+
+	/// @brief Function to get the cost of creating a soldier object
+	/// @author Reuben Jooste (u21457060)
+	/// @return The member variable, soldierCost
+	double getSoldierCost();
 };
 
 #endif

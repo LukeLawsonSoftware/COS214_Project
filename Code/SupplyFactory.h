@@ -1,6 +1,7 @@
 #ifndef SUPPLYFACTORY_H
 #define SUPPLYFACTORY_H
 #include "Supply.h"
+#include <iostream>
 
 class SupplyFactory
 {
@@ -17,7 +18,7 @@ class SupplyFactory
 		/// @brief Factory method to let AmmoFactory and MedicalFactory create the AmmoSupply and MedicalSupply products, respectively.
 		/// @author Arno Jooste (u21457451)
 		/// @return pointer to newly created Supply product (it will be either a MedicalSupply or AmmoSupply).
-		virtual Supply *makeSupply() = 0;
+		virtual Supply *makeSupply(int quantity) = 0;
 
 		/// @brief Upgrades the factory, which will increase the budget capacity and level.
 		/// @author Arno Jooste (u21457451)
@@ -43,12 +44,18 @@ class SupplyFactory
 		/// @return current amount spent of type int.
 		int getTotalSpent();
 
+		/// @brief Getter for the type of factory ,either an Ammo or a medical factory
+		/// @author Reuben Jooste (u21457060)
+		/// @return Type of factory
+		std::string getType();
+
 	protected:		
 		double totalSpent;
 
 	private:
 		int budget;
 		int level;
+		std::string type;
 };
 
 #endif

@@ -1,5 +1,12 @@
 #include "UnitFactory.h"
 
+UnitFactory::UnitFactory(double b, int l, std::string t){
+    cost = b;//starting budget
+    level = l; //starting level
+    totalSpent = 0;
+    type = t;
+}
+
 int UnitFactory::determineActualLevel()
 {
     int actualLevel = 0;
@@ -16,4 +23,24 @@ int UnitFactory::determineActualLevel()
         actualLevel = this->level;
     }
     return actualLevel;
+}
+
+std::string UnitFactory::getType(){
+    return type;
+}
+
+double UnitFactory::getTotalSpent(){
+    return totalSpent;
+}
+
+double UnitFactory::getBudget(){
+    return cost;
+}
+
+void UnitFactory::increaseTotalSpent(double addedCost){
+    totalSpent += addedCost;
+}
+
+void UnitFactory::setNewBudget(double newBudget){
+    cost = newBudget;
 }
