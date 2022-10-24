@@ -9,3 +9,7 @@ void Soldier::addMember(ArmyComponent *newMember)
 {
 	throw "Cannot add ArmyComponent to a Soldier object";
 }
+
+double Soldier::getSoldierCost(){
+	return soldierCost;
+}
