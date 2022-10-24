@@ -18,7 +18,8 @@ public:
 	/// @author Reuben Jooste (u21457060)
 	/// @param budget The starting budget of the factory
 	/// @param level The starting level of the factory (all factories start at level one)
-	UnitFactory(double budget, int level);
+	/// @param type The type of factory
+	UnitFactory(double budget, int level, std::string type);
 
 	/// @brief Calls constructor of appropriate Vehicle (Air, Land or Sea), using level to determine powerRating. Implemented in child class
 	/// @author Luke Lawson (u21433811)
