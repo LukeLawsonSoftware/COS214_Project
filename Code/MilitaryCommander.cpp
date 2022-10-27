@@ -31,7 +31,7 @@ void MilitaryCommander::attackTransport()
 	_attackTransport->execute();
 }
 
-void MilitaryCommander::setTransportTarget(Transporter *transportTarget, Army *army)
+void MilitaryCommander::setTransportTarget(Country *transportTarget, Army *army)
 {
 	_attackTransport->setArmy(army);
 	_attackTransport->setTransport(transportTarget);

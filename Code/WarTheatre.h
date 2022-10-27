@@ -13,6 +13,7 @@ private:
 	std::vector<NonCombatEntity *> medics;
 	std::vector<NonCombatEntity *> civilians;
 	std::string type;
+	std::string name;
 
 public:
 	void applyTerrainBonus();
@@ -25,11 +26,13 @@ private:
 public:
 	void conflict();
 
+	// needs to print something out if the army can't be added to the Theatre
 	void addArmy(Army *newArmy);
 
 	void replenishNonCombatEntities();
 
 	std::string getType();
+	std::string getName();
 };
 
 #endif

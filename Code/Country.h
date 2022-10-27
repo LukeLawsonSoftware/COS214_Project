@@ -7,9 +7,13 @@
 #include "LandFactory.h"
 #include "AirFactory.h"
 #include "SeaFactory.h"
-#include "SupplyFactory.h"
+#include "AmmoFactory.h"
+#include "MedicalFactory.h"
 #include "Army.h"
 #include "WarTheatre.h"
+#include "ArmyDirector.h"
+#include "ArmyBuilder.h"
+#include "MilitaryCommander.h"
 #include <vector>
 #include <string>
 
@@ -20,17 +24,18 @@ class Country : public Corresponder
 
 public:
 	// need to make an array of Country vectors
-	static std::vector<Country> alliance1;
-	static std::vector<Country> alliance2;
-	static std::vector<Country> neutral;
+	static std::vector<Country *> alliance1;
+	static std::vector<Country *> alliance2;
+	static std::vector<Country *> neutral;
 
 private:
 	std::string name;
 	double gdp;
 	EconomicState *ecoState;
-	UnitFactory **unitFactories;
-	SupplyFactory **supplyFactories;
+	std::vector<UnitFactory *> *unitFactories;
+	std::vector<SupplyFactory *> *supplyFactories;
 	Army *army;
+	MilitaryCommander *commander;
 
 public:
 	/// @brief Constructor to initialise a Country based on its starting EconomicState
@@ -42,6 +47,11 @@ public:
 	/// @brief Destructor to deallocate any dynamic memory involved
 	///@author Luke Lawson (u21433811)
 	~Country();
+
+	/// @brief Getter for the Country name
+	/// @author Luke Lawson (u21433811)
+	/// @return string name of the Country
+	std::string getName();
 
 	/// @brief Function to increase Country GDP and manage change of economic state.
 	///@author Luke Lawson (u21433811)
@@ -58,10 +68,9 @@ public:
 	/// @param currWar pointer to the War the Country is currently engaged in
 	void takeTurn(War *currWar);
 
-	/// @brief Function to decrease Country GDP and manage change of economic state.
-	///@author Luke Lawson (u21433811)
-	/// @param gdpEarned double which indicates the amount to decrease GDP by
-	void formAlliance(Country *newAlly);
+	/// @brief Function to add random Country from neutral to this Country's alliance
+	/// @author Luke Lawson (u21433811)
+	void formAlliance();
 
 	/// @brief Function to call appropriate creational structures to create an army and add it to Country's armies.
 	///@author Luke Lawson (u21433811)
@@ -76,29 +85,28 @@ public:
 	void upgradeSupplyFactory();
 
 	/// @brief Function to use MilitaryCommander to send an Army into a WarTheatre
-	///@author Luke Lawson (u21433811)
-	/// @param army the Army to be sent into the WarTheatre
-	/// @param theatre the theatre to be entered into by the Army
-	void enterArmyIntoTheatre(Army *army, WarTheatre *theatre);
+	/// @author Luke Lawson (u21433811)
+	/// @param war pointyer to the War the country is currently engaged in
+	void enterArmyIntoTheatre(War *war);
 
 	/// @brief Function to use MilitaryCommander to change the Army's strategy
-	///@author Luke Lawson (u21433811)
-	/// @param army the Army whose strategy is to be changes
-	/// @param newStrategy string inidcating the new strategy to be employed (offensive, defensive or neutral)
-	void changeArmyStrategy(Army *army, std::string newStrategy);
+	/// @author Luke Lawson (u21433811)
+	void changeArmyStrategy();
 
 	/// @brief Function to use MilitaryCommander to instruct an army to attack another Country's transport
-	///@author Luke Lawson (u21433811)
-	/// @param army the Army which is to attack the transport
-	/// @param transport the Transport to be attacked and potentilly destroyed
-	void attackTransport(Army *army, Transporter *transport);
+	/// @author Luke Lawson (u21433811)
+	void attackTransport();
 
 	/// @brief Function to cause Country to surrender and withdraw from the War and alliance
-	///@author Luke Lawson (u21433811)
+	/// @author Luke Lawson (u21433811)
 	void surrender();
 
+	/// @brief Function to set this Country's Transport to NULL
+	/// @author Luke Lawson (u21433811)
+	void destroyTransport();
+
 	/// @brief Function to send/distribute supplies to a Country's armies
-	///@author Luke Lawson (u21433811)
+	/// @author Luke Lawson (u21433811)
 	/// @param ammo AmmoSupplies to be transported
 	/// @param meds MedicalSupplies to be transported
 	void sendSupplies(AmmoSupply *ammo, MedicalSupply *meds);

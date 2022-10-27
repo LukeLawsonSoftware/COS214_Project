@@ -21,9 +21,12 @@ public:
 	void recuperate();
 	void addNewAmmoSupplies(AmmoSupply *);
 	void addNewMedicalSupplies(MedicalSupply *);
+
+	// these each need to have output telling the user whats happening
 	void changeStrategy(std::string);
-	void setBattleField(WarTheatre *);
-	void attackTransport(Transporter *);
+	void setBattleField(WarTheatre *); // theatre->add(this)
+	void attackTransport(Country *);
+
 	std::string getType();
 };
 

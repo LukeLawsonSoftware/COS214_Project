@@ -5,7 +5,7 @@ void AttackTransport::execute()
 	army->attackTransport(transport);
 }
 
-void AttackTransport::setTransport(Transporter *in)
+void AttackTransport::setTransport(Country *in)
 {
 	transport = in;
 }

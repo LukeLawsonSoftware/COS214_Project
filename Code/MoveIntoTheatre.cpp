@@ -3,7 +3,7 @@
 void MoveIntoTheatre::execute()
 {
 	army->setBattleField(theatre);
-	theatre->addArmy(army);
+	// theatre->addArmy(army); this is done by the above method
 }
 
 void MoveIntoTheatre::setTheatre(WarTheatre *in)
