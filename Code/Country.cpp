@@ -366,4 +366,11 @@ void Country::surrender()
 void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 {
 	std::cout << name << " decides to send supplies to its army" << std::endl;
+
+	//set the new supplies
+	setNewAmmoSupplies(ammo);
+	setNewMedicalSupplies(meds);
+
+	//send them to the transport line
+	ammoTransportLine->notify(this);
 }

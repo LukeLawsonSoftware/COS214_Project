@@ -21,13 +21,15 @@ void AmmoTransporter :: notify(Corresponder* c){
     std::list<Corresponder*>::iterator it;
 
     for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
-        int A_size = (*it)->getAmmoSupplyCapacity();
-        int A_capacity = (*it)->getAmmoSupplyCapacity();
+        Army* army = ( (Country*) (*it) )->getArmy();  //casting from Corresponder* to Country*
+
+        int Ammo_size = army->getAmmoSupplySize();     //the current size of the ammo supply array
+        int Ammo_capacity = army->getAmmoSupplyCapacity(); //capacity is the maximum size of the ammo supply array
         
         //check ammo supplies
-        if (A_size < 0.30*A_capacity){
+        if (Ammo_size < 0.30*Ammo_capacity){
             //send suppplies
-            (*it)->addNewAmmoSupplies(ammoSupply);
+            army->addNewAmmoSupplies(ammoSupply);
         }
     }
 }
