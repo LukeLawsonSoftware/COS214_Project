@@ -15,13 +15,13 @@ AmmoTransporter :: ~AmmoTransporter(){
 }
 
 void AmmoTransporter :: notify(Corresponder* c){
-    AmmoSupply* ammoSupply = (Country) c->getNewAmmoSupplies();
+    AmmoSupply* ammoSupply = ( (Country*) c)->getNewAmmoSupply();
 
     //Run through corresponder list and update all supplies if it is necessary
     std::list<Corresponder*>::iterator it;
 
     for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
-        int A_size = (*it)->getAmmoSupplySize();
+        int A_size = (*it)->getAmmoSupplyCapacity();
         int A_capacity = (*it)->getAmmoSupplyCapacity();
         
         //check ammo supplies
