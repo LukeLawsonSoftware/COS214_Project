@@ -374,3 +374,19 @@ void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 	//send them to the transport line
 	ammoTransportLine->notify(this);
 }
+
+AmmoSupply* Country::getNewAmmoSupply(){
+	return newAmmoSupply;
+}
+
+MedicalSupply* Country::getNewMedicalSupply(){
+	return newMedicalSupply;
+}
+
+void Country::setNewAmmoSupplies(AmmoSupply* newSupply){
+	newAmmoSupply = newSupply;
+}
+
+void Country::setNewMedicalSupplies(MedicalSupply* newSupply){
+	newMedicalSupply = newSupply;
+}
