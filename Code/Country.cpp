@@ -10,7 +10,7 @@ Country::Country(std::string ecoState, std::string name)
 	this->ammoTransportLine = new AmmoTransporter();
 	this->medicalTransportLine = new MedicTransporter();
 
-	//we now register this Country to the above transport lines
+	// we now register this Country to the above transport lines
 	regToTransport(ammoTransportLine, medicalTransportLine);
 
 	if (ecoState[0] == 'R' || ecoState[0] == 'r')
@@ -371,30 +371,53 @@ void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 {
 	std::cout << name << " decides to send supplies to its army" << std::endl;
 
-	//set the new supplies
+	// set the new supplies
 	setNewAmmoSupplies(ammo);
 	setNewMedicalSupplies(meds);
 
-	//send them to the transport line
+	// send them to the transport line
 	ammoTransportLine->notify(this);
 }
 
-AmmoSupply* Country::getNewAmmoSupply(){
+AmmoSupply *Country::getNewAmmoSupply()
+{
 	return newAmmoSupply;
 }
 
-MedicalSupply* Country::getNewMedicalSupply(){
+MedicalSupply *Country::getNewMedicalSupply()
+{
 	return newMedicalSupply;
 }
 
-void Country::setNewAmmoSupplies(AmmoSupply* newSupply){
+void Country::setNewAmmoSupplies(AmmoSupply *newSupply)
+{
 	newAmmoSupply = newSupply;
 }
 
-void Country::setNewMedicalSupplies(MedicalSupply* newSupply){
+void Country::setNewMedicalSupplies(MedicalSupply *newSupply)
+{
 	newMedicalSupply = newSupply;
 }
 
-Army* Country::getArmy(){
+Army *Country::getArmy()
+{
 	return army;
+}
+
+void Country::destroyTransport()
+{
+	if (this->medicalTransportLine != NULL)
+	{
+		this->medicalTransportLine = NULL;
+		std::cout << name << "'s Medical Transport Line has been destroyed" << std::endl;
+	}
+	else if (this->ammoTransportLine != NULL)
+	{
+		this->ammoTransportLine = NULL;
+		std::cout << name << "'s Ammo Transport Line has been destroyed" << std::endl;
+	}
+	else
+	{
+		std::cout << name << " has no transport lines to be destroyed" << std::endl;
+	}
 }

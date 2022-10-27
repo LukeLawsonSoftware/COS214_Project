@@ -763,7 +763,7 @@ Army *ArmyBuilder::putArmyTogether()
 	std::vector<Supply *> *s = determineSupplies();
 
 	// also need to pass in type of army
-	army = new Army(b, i, s);
+	army = new Army(b, i, s, type);
 
 	return army; //(battalions, individuals, supplies)
 }
