@@ -3,6 +3,8 @@
 #include "Rich.h"
 #include "Poor.h"
 #include "Average.h"
+#include "AmmoTransporter.h"
+#include "MedicTransporter.h"
 #include "Corresponder.h"
 #include "LandFactory.h"
 #include "AirFactory.h"
@@ -36,6 +38,7 @@ private:
 	std::vector<SupplyFactory *> *supplyFactories;
 	Army *army;
 	MilitaryCommander *commander;
+	bool hasSurrendered; // use tbis field to check in War class and WarTheatre
 
 public:
 	/// @brief Constructor to initialise a Country based on its starting EconomicState
@@ -52,6 +55,11 @@ public:
 	/// @author Luke Lawson (u21433811)
 	/// @return string name of the Country
 	std::string getName();
+
+	/// @brief Gets whether Country has surrender from the war
+	/// @author Luke Lawson (u21433811)
+	/// @return boolean value of hasSurrendered
+	bool isSurrendered();
 
 	/// @brief Function to increase Country GDP and manage change of economic state.
 	///@author Luke Lawson (u21433811)

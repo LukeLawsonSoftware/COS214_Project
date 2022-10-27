@@ -3,8 +3,13 @@
 
 Country::Country(std::string ecoState, std::string name)
 {
+
 	this->name = name;
 	this->commander = new MilitaryCommander();
+	this->hasSurrendered = false;
+	this->ammoTransportLine = new AmmoTransporter();
+	this->medicalTransportLine = new MedicTransporter();
+
 	if (ecoState[0] == 'R' || ecoState[0] == 'r')
 	{
 		this->gdp = (int)(rand() % (1000000 - 800000 + 1) + 800000);
@@ -43,6 +48,16 @@ Country::Country(std::string ecoState, std::string name)
 		this->supplyFactories->push_back(new MedicalFactory(250000));
 		this->army = NULL;
 	}
+}
+
+bool Country::isSurrendered()
+{
+	return hasSurrendered;
+}
+
+std::string Country::getName()
+{
+	return name;
 }
 
 Country::~Country()
@@ -344,12 +359,11 @@ void Country::attackTransport()
 
 void Country::surrender()
 {
-	// TODO - implement Country::surrender
-	throw "Not yet implemented";
+	std::cout << name << " decides to surrender from the war!" << std::endl;
+	hasSurrendered = true;
 }
 
 void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 {
-	// TODO - implement Country::sendSupplies
-	throw "Not yet implemented";
+	std::cout << name << " decides to send supplies to its army" << std::endl;
 }
