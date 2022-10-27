@@ -15,19 +15,21 @@ MedicTransporter :: ~MedicTransporter(){
 }
 
 void MedicTransporter :: notify(Corresponder* c){
-    MedicalSupply* medSupply = (Country) c->getNewMedicalSupplies();
+    MedicalSupply* medSupply = ( (Country*) c)->getNewMedicalSupply();
     
     //Run through corresponder list and update all supplies if it is necessary
     std::list<Corresponder*>::iterator it;
 
     for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
-        int M_size = (*it)->getMedicalSupplySize();
-        int M_capacity = (*it)->getMedSupplyCapacity();
+        Army* army = ( (Country*) (*it) )->getArmy();  //casting from Corresponder* to Country*
+
+        int M_size = army->getMedicalSupplySize();     //the current size of the medical supply array
+        int M_capacity = army->getMedSupplyCapacity(); //capacity is the maximum size of the medical supply array
 
         //check medical supplies
         if (M_size < 0.50*M_capacity){
             //send suppplies
-            (*it)->addNewMedicalSupplies(medSupply);
+            army->addNewMedicalSupplies(medSupply);
         }
     }
 }
