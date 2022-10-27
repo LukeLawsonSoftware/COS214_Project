@@ -19,8 +19,8 @@ void MedicTransporter :: notify(Corresponder* c){
     
     Army* army = ( (Country*) c)->getArmy(); //casting from Corresponder* to Country*
 
-    int M_size = army->getMedicalSupplySize();     //the current size of the medical supply array
-    int M_capacity = army->getMedSupplyCapacity(); //capacity is the maximum size of the medical supply array
+    int M_size = army->getMedicalSupplySize();     //the current size of the medical supplies array
+    int M_capacity = army->getMedSupplyCapacity(); //capacity is the maximum size of the medical supplies array
 
     //check medical supplies
     if (M_size < 0.50*M_capacity){
