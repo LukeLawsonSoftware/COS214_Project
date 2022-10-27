@@ -7,7 +7,7 @@
 #include "Transporter.h"
 
 #include <string>
-
+class Country;
 class MilitaryCommander
 {
 
@@ -41,7 +41,7 @@ public:
 	/// @author Thomas Blendulf(u21446131)
 	/// @param Army* the army to be set in the attackTransport Command.
 	/// @param Transporter* the transport to be attacked.
-	void setTransportTarget(Transporter *transportTarget, Army *army);
+	void setTransportTarget(Country *transportTarget, Army *army);
 };
 
 #endif

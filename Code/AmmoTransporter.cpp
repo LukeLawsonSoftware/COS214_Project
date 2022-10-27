@@ -15,19 +15,35 @@ AmmoTransporter :: ~AmmoTransporter(){
 }
 
 void AmmoTransporter :: notify(Corresponder* c){
-    AmmoSupply* ammoSupply = (Country) c->getNewAmmoSupplies();
+    AmmoSupply* ammoSupply = ( (Country*) c)->getNewAmmoSupply();
 
-    //Run through corresponder list and update all supplies if it is necessary
-    std::list<Corresponder*>::iterator it;
+    Army* army = ( (Country*) c )->getArmy();  //casting from Corresponder* to Country*
 
-    for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
-        int A_size = (*it)->getAmmoSupplySize();
-        int A_capacity = (*it)->getAmmoSupplyCapacity();
-        
-        //check ammo supplies
-        if (A_size < 0.30*A_capacity){
-            //send suppplies
-            (*it)->addNewAmmoSupplies(ammoSupply);
-        }
+    int Ammo_size = army->getAmmoSupplySize();     //the current size of the ammo supply array
+    int Ammo_capacity = army->getAmmoSupplyCapacity(); //capacity is the maximum size of the ammo supply array
+    
+    //check ammo supplies
+    if (Ammo_size < 0.30*Ammo_capacity){
+        //send suppplies
+        army->addNewAmmoSupplies(ammoSupply);
     }
+
+    //=================================================
+    //  might use the code below at a later stage
+    //=================================================
+    // //Run through corresponder list and update all supplies if it is necessary
+    // std::list<Corresponder*>::iterator it;
+
+    // for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
+    //     Army* army = ( (Country*) (*it) )->getArmy();  //casting from Corresponder* to Country*
+
+    //     int Ammo_size = army->getAmmoSupplySize();     //the current size of the ammo supply array
+    //     int Ammo_capacity = army->getAmmoSupplyCapacity(); //capacity is the maximum size of the ammo supply array
+        
+    //     //check ammo supplies
+    //     if (Ammo_size < 0.30*Ammo_capacity){
+    //         //send suppplies
+    //         army->addNewAmmoSupplies(ammoSupply);
+    //     }
+    // }
 }

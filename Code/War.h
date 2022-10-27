@@ -14,6 +14,10 @@ private:
 public:
 	void setupTheatres();
 
+	WarTheatre *getLandTheatre();
+	WarTheatre *getAirTheatre();
+	WarTheatre *getSeaTheatre();
+
 	void changePhase();
 
 	void startWarSim();

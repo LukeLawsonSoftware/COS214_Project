@@ -5,15 +5,14 @@
 
 class UnitFactory
 {
-	private:
-		std::string type; //the type of factory used to create the type of product
-		double totalSpent; //used to determine if we are able to affrod another product
+private:
+	std::string type;  // the type of factory used to create the type of product
+	double totalSpent; // used to determine if we are able to affrod another product
 protected:
 	double cost;
 	int level;
 
 public:
-
 	/// @brief Constructor of the UnitFactory class used to instantiate a UnitFactory object
 	/// @author Reuben Jooste (u21457060)
 	/// @param budget The starting budget of the factory
@@ -55,6 +54,8 @@ public:
 	/// @author Reuben Jooste (u21457060)
 	/// @param newBudget The new budget of the factory
 	void setNewBudget(double newBudget);
+
+	void upgrade();
 
 protected:
 	/// @brief Function to transform Factory's level to a valid value between 1-10. Purpose is to prevent potential bugs from other functions affecting accurate ArmyComponent creation
