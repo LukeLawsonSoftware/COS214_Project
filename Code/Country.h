@@ -133,12 +133,12 @@ public:
 	/// @brief Function to set the member variable to store the newly created ammo supply
 	/// @author Reuben Jooste (u21457060)
 	/// @param newAmmoSupply The new ammo supply
-	void setnewAmmoSupplies(AmmoSupply* newAmmoSupply);
+	void setNewAmmoSupplies(AmmoSupply* newAmmoSupply);
 
 	/// @brief Function to set the member variable to store the newly created medical supply
 	/// @author Reuben Jooste (u21457060)
 	/// @param newAmmoSupply The new medical supply
-	void setnewMedicalSupplies(MedicalSupply* newMedicalSupply);
+	void setNewMedicalSupplies(MedicalSupply* newMedicalSupply);
 };
 
 #endif
