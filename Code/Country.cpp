@@ -1,27 +1,141 @@
 #include "Country.h"
+#include "War.h"
 
-Country::Country(std::string ecoState)
+Country::Country(std::string ecoState, std::string name)
 {
-	// TODO - implement Country::earnGDP
-	throw "Not yet implemented";
+	this->name = name;
+	if (ecoState[0] == 'R' || ecoState[0] == 'r')
+	{
+		this->gdp = (int)(rand() % (1000000 - 800000 + 1) + 800000);
+		this->ecoState = new Rich();
+		this->unitFactories = new UnitFactory *[3];
+		unitFactories[0] = new LandFactory(500000, 3, "Land");
+		unitFactories[1] = new AirFactory(500000, 3, "Air");
+		unitFactories[2] = new SeaFactory(500000, 3, "Sea");
+		this->army = NULL;
+	}
+	else if (ecoState[0] == 'P' || ecoState[0] == 'p')
+	{
+		this->gdp = (int)(rand() % (100000 - 50000 + 1) + 50000);
+		this->ecoState = new Poor();
+		this->unitFactories = new UnitFactory *[3];
+		unitFactories[0] = new LandFactory(100000, 1, "Land");
+		unitFactories[1] = new AirFactory(100000, 1, "Air");
+		unitFactories[2] = new SeaFactory(100000, 1, "Sea");
+		this->army = NULL;
+	}
+	else
+	{
+		this->gdp = (int)(rand() % (500000 - 300000 + 1) + 300000);
+		this->ecoState = new Average();
+		this->unitFactories = new UnitFactory *[3];
+		unitFactories[0] = new LandFactory(250000, 1, "Land");
+		unitFactories[1] = new AirFactory(250000, 1, "Air");
+		unitFactories[2] = new SeaFactory(250000, 1, "Sea");
+		this->army = NULL;
+	}
+}
+
+Country::~Country()
+{
+	delete ecoState;
+	delete army;
+	for (int i = 0; i < 3; i++)
+	{
+		delete unitFactories[i];
+	}
+	delete[] unitFactories;
+	for (int i = 0; i < 2; i++)
+	{
+		delete supplyFactories[i];
+	}
+	delete[] supplyFactories;
 }
 
 void Country::earnGDP(double gdpEarned)
 {
-	// TODO - implement Country::earnGDP
-	throw "Not yet implemented";
+	this->gdp += gdpEarned;
+	if (this->gdp >= 500000)
+	{
+		delete this->ecoState;
+		this->ecoState = new Rich();
+	}
+	else if (this->gdp >= 100000)
+	{
+		delete this->ecoState;
+		this->ecoState = new Average();
+	}
+	else
+	{
+		delete this->ecoState;
+		this->ecoState = new Poor();
+	}
 }
 
 void Country::spendGDP(double gdpSpent)
 {
-	// TODO - implement Country::spendGDP
-	throw "Not yet implemented";
+	this->gdp -= gdpSpent;
+	if (this->gdp >= 500000)
+	{
+		delete this->ecoState;
+		this->ecoState = new Rich();
+	}
+	else if (this->gdp >= 100000)
+	{
+		delete this->ecoState;
+		this->ecoState = new Average();
+	}
+	else
+	{
+		delete this->ecoState;
+		this->ecoState = new Poor();
+	}
 }
 
-void Country::takeTurn()
+void Country::takeTurn(War *currWar)
 {
-	// TODO - implement Country::takeTurn
-	throw "Not yet implemented";
+	int decision = this->ecoState->decideMyTurn();
+	switch (decision)
+	{
+	case 1:
+		// formAlliance
+		break;
+	case 2:
+		// raiseArmy
+		break;
+
+	case 3:
+		// upgradeUnitFactory
+		break;
+
+	case 4:
+		// upgradeSupplyFactory
+		break;
+
+	case 5:
+		//	enterArmyIntoTheatre
+		break;
+
+	case 6:
+		// changeArmyStrategy
+		break;
+
+	case 7:
+		// attackTransport
+		break;
+
+	case 8:
+		// surrender
+		break;
+
+	case 9:
+		// sendSupplies
+		break;
+
+	case 10:
+		// do nothing
+		break;
+	}
 }
 
 void Country::formAlliance(Country *newAlly)
