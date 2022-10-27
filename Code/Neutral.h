@@ -6,7 +6,11 @@ class Neutral : public ArmyStrategy
 {
 
 public:
-	void applyStrategyBonus();
+	/// @brief Applies desired Neutral bonuses to BattleStatistics
+	/// @author Thomas Blendulf (u21446131)
+	/// @param BattleStatistics passes in the BattleStatistics to be edited.
+	/// @param Battalion passes in the Battalion to calculate base statistics to be editted.
+	void applyStrategyBonus(BattleStatistics, Battalion);
 };
 
 #endif
