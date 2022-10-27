@@ -39,7 +39,8 @@ private:
 	Army *army;
 	MilitaryCommander *commander;
 	bool hasSurrendered; // use tbis field to check in War class and WarTheatre
-
+	AmmoSupply* newAmmoSupply;
+	MedicalSupply* newMedicalSupply;
 public:
 	/// @brief Constructor to initialise a Country based on its starting EconomicState
 	///@author Luke Lawson (u21433811)
@@ -118,6 +119,26 @@ public:
 	/// @param ammo AmmoSupplies to be transported
 	/// @param meds MedicalSupplies to be transported
 	void sendSupplies(AmmoSupply *ammo, MedicalSupply *meds);
+
+	/// @brief Function to get the newly created supply such that we know which supply to send to the transport line
+	/// @author Reuben Jooste (u21457060)
+	/// @return The newly created ammo supply
+	AmmoSupply* getNewAmmoSupply();
+
+	/// @brief Function to get the newly created supply such that we know which supply to send to the transport line
+	/// @author Reuben Jooste (u21457060)
+	/// @return The newly created medical supply
+	MedicalSupply* getNewMedicalSupply();
+
+	/// @brief Function to set the member variable to store the newly created ammo supply
+	/// @author Reuben Jooste (u21457060)
+	/// @param newAmmoSupply The new ammo supply
+	void setnewAmmoSupplies(AmmoSupply* newAmmoSupply);
+
+	/// @brief Function to set the member variable to store the newly created medical supply
+	/// @author Reuben Jooste (u21457060)
+	/// @param newAmmoSupply The new medical supply
+	void setnewMedicalSupplies(MedicalSupply* newMedicalSupply);
 };
 
 #endif
