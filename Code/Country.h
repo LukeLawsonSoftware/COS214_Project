@@ -139,6 +139,11 @@ public:
 	/// @author Reuben Jooste (u21457060)
 	/// @param newAmmoSupply The new medical supply
 	void setNewMedicalSupplies(MedicalSupply* newMedicalSupply);
+
+	/// @brief Function to return the army variable of this Country class
+	/// @author Reuben Jooste (u21457060)
+	/// @return Returns the army of the Country as a pointer
+	Army* getArmy();
 };
 
 #endif

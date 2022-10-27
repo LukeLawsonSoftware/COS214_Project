@@ -10,6 +10,9 @@ Country::Country(std::string ecoState, std::string name)
 	this->ammoTransportLine = new AmmoTransporter();
 	this->medicalTransportLine = new MedicTransporter();
 
+	//we now register this Country to the above transport lines
+	regToTransport(ammoTransportLine, medicalTransportLine);
+
 	if (ecoState[0] == 'R' || ecoState[0] == 'r')
 	{
 		this->gdp = (int)(rand() % (1000000 - 800000 + 1) + 800000);
@@ -187,6 +190,7 @@ void Country::formAlliance()
 			if (alliance1.at(i)->getName() == name)
 			{
 				alliance1.push_back(c);
+
 				return;
 			}
 		}
@@ -389,4 +393,8 @@ void Country::setNewAmmoSupplies(AmmoSupply* newSupply){
 
 void Country::setNewMedicalSupplies(MedicalSupply* newSupply){
 	newMedicalSupply = newSupply;
+}
+
+Army* Country::getArmy(){
+	return army;
 }
