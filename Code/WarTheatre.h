@@ -12,6 +12,7 @@ private:
 	Army *armies;
 	std::vector<NonCombatEntity *> medics;
 	std::vector<NonCombatEntity *> civilians;
+	std::string type;
 
 public:
 	void applyTerrainBonus();
@@ -27,6 +28,8 @@ public:
 	void addArmy(Army *newArmy);
 
 	void replenishNonCombatEntities();
+
+	std::string getType();
 };
 
 #endif

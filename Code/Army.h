@@ -14,6 +14,7 @@ private:
 	AmmoSupply *ammoSupply;
 	MedicalSupply *medicalSupply;
 	ArmyStrategy *currentStrategy;
+	std::string type;
 
 public:
 	void applyStrategyBonus();
@@ -23,6 +24,7 @@ public:
 	void changeStrategy(std::string);
 	void setBattleField(WarTheatre *);
 	void attackTransport(Transporter *);
+	std::string getType();
 };
 
 #endif
