@@ -1,7 +1,11 @@
 #ifndef BATTLESTATISTICS_H
 #define BATTLESTATISTICS_H
 
-class BattleStatistics {
+class BattleStatistics
+{
+	friend class Defensive;
+	friend class Neutral;
+	friend class Offensive;
 
 private:
 	int airAttack;

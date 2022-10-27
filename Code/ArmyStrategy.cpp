@@ -1,7 +1,5 @@
 #include "ArmyStrategy.h"
 // wow this is really cool!
-void ArmyStrategy::applyStrategyBonus()
+void ArmyStrategy::applyStrategyBonus(BattleStatistics in, Battalion inBattalion)
 {
-	// TODO - implement ArmyStrategy::applyStrategyBonus
-	throw "Not yet implemented";
 }
