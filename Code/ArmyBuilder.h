@@ -47,7 +47,7 @@ class ArmyBuilder{
 		/// @return Member variable of constructed Army
 		Army *getArmy();
 
-		/// @brief This function is used to return the vector of individuals which was create by the putArmyTogether() method
+		/// @brief This function is used to return the vector of individuals which was create by the createIndividuals() method
 		/// @author Reuben Jooste (u21457060) 
 		/// @return Return vector of individual ArmyComponents
 		std::vector<ArmyComponent*>* getIndividuals();
@@ -56,6 +56,16 @@ class ArmyBuilder{
 		/// @author Reuben Jooste (u21457060)
 		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
 		void setIndividuals(std::vector<ArmyComponent*>* individuals);
+
+		/// @brief This function is used to return the vector of battalions which was create by the buildBattalions() method
+		/// @author Reuben Jooste (u21457060) 
+		/// @return Return vector of battalion ArmyComponents
+		std::vector<ArmyComponent*>* getBattalions();
+
+		/// @brief This function is used to return the vector of supplies which was create by the determineSupplies() method
+		/// @author Reuben Jooste (u21457060) 
+		/// @return Return vector of supplies
+		std::vector<Supply*>* getSupplies();
 };
 
 #endif
