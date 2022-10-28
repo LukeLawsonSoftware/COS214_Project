@@ -4,6 +4,10 @@
 
 class LateUnstablePeace : public LatePhase
 {
+public:
+    /// @brief Sets next to null.
+    /// @author Thomas Blendulf (u21446131)
+    LateUnstablePeace();
 };
 
 #endif

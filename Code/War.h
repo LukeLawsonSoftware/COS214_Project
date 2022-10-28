@@ -3,6 +3,8 @@
 #include "WarPhase.h"
 #include "WarTheatre.h"
 
+class WarPhase; // forward Declaration
+
 class War
 {
 
@@ -13,7 +15,7 @@ private:
 
 public:
 	void setupTheatres();
-
+	void setWarPhase(WarPhase *);
 	WarTheatre *getLandTheatre();
 	WarTheatre *getAirTheatre();
 	WarTheatre *getSeaTheatre();
