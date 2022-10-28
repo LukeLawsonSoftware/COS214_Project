@@ -13,6 +13,8 @@ class ArmyBuilder{
 		std::vector<UnitFactory*>* unitFactories;
 		std::vector<SupplyFactory*>* supplyFactories;
 		std::vector<ArmyComponent*>* individuals;
+		std::vector<ArmyComponent*>* battalions;
+		std::vector<Supply*>* supplies;
 
 	public:
 		/// @brief Class constructor used to instantiate the object and initialize the type member variable
