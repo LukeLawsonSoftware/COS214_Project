@@ -830,3 +830,29 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 		}
 	}
 }
+
+void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
+{
+	// make deep copy
+	if (supplies != nullptr)
+	{
+		//clear supplies
+		std::vector<Supply *>::iterator it;
+
+		for (it = supplies->begin(); it != supplies->end(); ++it)
+		{
+			delete (*it);
+		}
+		delete supplies;
+
+		supplies = new std::vector<Supply*>;
+
+		// now make the copy
+		std::vector<Supply *>::iterator it;
+
+		for (it = newSupplies->begin(); it != newSupplies->end(); ++it)
+		{
+			supplies->push_back((*it));
+		}
+	}
+}
