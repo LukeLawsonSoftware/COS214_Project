@@ -2,6 +2,20 @@
 
 Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *> *individuals, std::vector<Supply *> *supplies, std::string type)
 {
+	this->type = type;
+	this->ammoSupply = new std::vector<AmmoSupply *>();
+	this->medicalSupply = new std::vector<MedicalSupply *>();
+	this->army = new Battalion();
+	for (int i = 0; i < battalions->size(); i++)
+	{
+		this->army->addMember(battalions->at(i));
+	}
+	for (int i = 0; i < individuals->size(); i++)
+	{
+		this->army->addMember(individuals->at(i));
+	}
+
+	// Not finished, still need to do supplies and battlestatistics
 }
 
 void Army::applyStrategyBonus()
@@ -18,10 +32,20 @@ void Army::recuperate()
 
 void Army::addNewAmmoSupplies(AmmoSupply *ammo)
 {
+	if (this->ammoSupply != NULL)
+	{
+		this->ammoSupply->push_back(ammo);
+		std::cout << "Army has received ammunition" << std::endl;
+	}
 }
 
 void Army::addNewMedicalSupplies(MedicalSupply *meds)
 {
+	if (this->medicalSupply != NULL)
+	{
+		this->medicalSupply->push_back(meds);
+		std::cout << "Army has received medical supplies" << std::endl;
+	}
 }
 
 void Army::changeStrategy(std::string newStrat)

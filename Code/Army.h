@@ -15,8 +15,8 @@ class Army : public Corresponder
 
 private:
 	ArmyComponent *army;
-	AmmoSupply *ammoSupply;
-	MedicalSupply *medicalSupply;
+	std::vector<AmmoSupply *> *ammoSupply;
+	std::vector<MedicalSupply *> *medicalSupply;
 	ArmyStrategy *currentStrategy;
 	std::string type;
 	BattleStatistics *stats;
