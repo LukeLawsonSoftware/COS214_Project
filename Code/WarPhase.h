@@ -1,13 +1,14 @@
 #ifndef WARPHASE_H
 #define WARPHASE_H
-
-class WarPhase {
+#include "War.h"
+class WarPhase
+{
 
 protected:
 	double peaceChance;
 
 public:
-	void handleChange();
+	virtual void handleChange(War *) = 0;
 };
 
 #endif

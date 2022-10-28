@@ -4,6 +4,10 @@
 
 class EarlyCrisis : public EarlyPhase
 {
+public:
+    /// @brief Sets next to null and peaceChance.
+    /// @author Thomas Blendulf (u21446131)
+    EarlyCrisis();
 };
 
 #endif
