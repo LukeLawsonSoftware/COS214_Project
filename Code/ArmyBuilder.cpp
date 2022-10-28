@@ -701,7 +701,7 @@ Army *ArmyBuilder::putArmyTogether()
 	*/
 
 	// also need to pass in type of army
-	army = new Army(b, i, s);
+	army = new Army( getBattalions(), getIndividuals(), getSupplies());
 
 	return army; //(battalions, individuals, supplies)
 }
