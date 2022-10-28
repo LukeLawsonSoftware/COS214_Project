@@ -54,11 +54,6 @@ class ArmyBuilder{
 		/// @return Return vector of individual ArmyComponents
 		std::vector<ArmyComponent*>* getIndividuals();
 
-		/// @brief This function will set the member variable individuals in order to keep track of the individuals created
-		/// @author Reuben Jooste (u21457060)
-		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
-		void setIndividuals(std::vector<ArmyComponent*>* individuals);
-
 		/// @brief This function is used to return the vector of battalions which was create by the buildBattalions() method
 		/// @author Reuben Jooste (u21457060) 
 		/// @return Return vector of battalion ArmyComponents
@@ -68,6 +63,21 @@ class ArmyBuilder{
 		/// @author Reuben Jooste (u21457060) 
 		/// @return Return vector of supplies
 		std::vector<Supply*>* getSupplies();
+
+		/// @brief This function will set the member variable individuals in order to keep track of the individuals created
+		/// @author Reuben Jooste (u21457060)
+		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
+		void setIndividuals(std::vector<ArmyComponent*>* individuals);
+
+		/// @brief This function will set the member variable battalions in order to keep track of the battalions created
+		/// @author Reuben Jooste (u21457060)
+		/// @param battalions The parameter is used to set our member variable by making a deep copy of it.
+		void setBattalions(std::vector<ArmyComponent*>* battalions);
+
+		/// @brief This function will set the member variable supplies in order to keep track of the supplies created
+		/// @author Reuben Jooste (u21457060)
+		/// @param supplies The parameter is used to set our member variable by making a deep copy of it.
+		void setSupplies(std::vector<Supply*>* supplies);
 };
 
 #endif

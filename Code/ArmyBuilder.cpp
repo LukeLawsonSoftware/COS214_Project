@@ -656,7 +656,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 std::vector<Supply *> *ArmyBuilder::determineSupplies()
 {
 	// TODO - implement ArmyBuilder::determineSupplies
-	std::vector<Supply *> *supplies;
+	std::vector<Supply *> *armySupplies;
 	int allowedAmmoSupplies, allowedMedSupplies, minReqSoldiers, minReqVehicles;
 	allowedAmmoSupplies = 10;
 	allowedMedSupplies = 10;
@@ -682,7 +682,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 
 					if (unit != nullptr)
 					{ // if we could actually afford to create the soldier
-						supplies->push_back(unit);
+						armySupplies->push_back(unit);
 						totalAmmoSupplies += 1;
 					}
 					else
@@ -718,7 +718,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 
 					if (unit != nullptr)
 					{ // if we could actually afford to create the soldier
-						supplies->push_back(unit);
+						armySupplies->push_back(unit);
 						totalMedSupplies += 1;
 					}
 					else
@@ -739,7 +739,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 		}
 	}
 
-	return supplies;
+	return armySupplies;
 }
 
 Army *ArmyBuilder::putArmyTogether()
@@ -784,6 +784,7 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 	// make deep copy
 	if (individuals != nullptr)
 	{
+		//clear individuals (the buildBattalions() function passes in the old individuals with additional individuals)
 		std::vector<ArmyComponent *>::iterator it;
 
 		for (it = individuals->begin(); it != individuals->end(); ++it)
@@ -792,12 +793,40 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 		}
 		delete individuals;
 
+		individuals = new std::vector<ArmyComponent*>;
+
 		// now make the copy
 		std::vector<ArmyComponent *>::iterator it;
 
 		for (it = newIndv->begin(); it != newIndv->end(); ++it)
 		{
 			individuals->push_back((*it));
+		}
+	}
+}
+
+void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
+{
+	// make deep copy
+	if (battalions != nullptr)
+	{
+		//clear battalions
+		std::vector<ArmyComponent *>::iterator it;
+
+		for (it = battalions->begin(); it != battalions->end(); ++it)
+		{
+			delete (*it);
+		}
+		delete battalions;
+
+		battalions = new std::vector<ArmyComponent*>;
+
+		// now make the copy
+		std::vector<ArmyComponent *>::iterator it;
+
+		for (it = newBattalions->begin(); it != newBattalions->end(); ++it)
+		{
+			battalions->push_back((*it));
 		}
 	}
 }
