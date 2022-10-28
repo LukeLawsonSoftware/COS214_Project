@@ -752,15 +752,6 @@ Army *ArmyBuilder::putArmyTogether()
 		10 medical supplies
 		(these values may be changed)
 	*/
-	// TODO - implement ArmyBuilder::putArmyTogether
-	std::vector<ArmyComponent *> *i = createIndividuals();
-	setIndividuals(i);
-
-	std::vector<ArmyComponent *> *b = buildBattalions();
-	// build battalions could have change our list of individual units therefore get the latest version
-	i = getIndividuals();
-
-	std::vector<Supply *> *s = determineSupplies();
 
 	// also need to pass in type of army
 	army = new Army(b, i, s);
@@ -776,6 +767,16 @@ Army *ArmyBuilder::getArmy()
 std::vector<ArmyComponent *> *ArmyBuilder::getIndividuals()
 {
 	return individuals;
+}
+
+std::vector<ArmyComponent *> *ArmyBuilder::getBattalions()
+{
+	return battalions;
+}
+
+std::vector<Supply *> *ArmyBuilder::getSupplies()
+{
+	return supplies;
 }
 
 void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
@@ -799,3 +800,4 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 			individuals->push_back((*it));
 		}
 	}
+}
