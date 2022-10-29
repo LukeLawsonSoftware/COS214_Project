@@ -21,215 +21,215 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 
 	switch (type[0])
 	{
-		case 'L':
-		{ // construct Land Units
-			// start at first factory and start building army. If factory's budget runs out choose next factory
-			std::vector<UnitFactory *>::iterator it;
-			int soldiersCreated = 0;
+	case 'L':
+	{ // construct Land Units
+		// start at first factory and start building army. If factory's budget runs out choose next factory
+		std::vector<UnitFactory *>::iterator it;
+		int soldiersCreated = 0;
 
-			for (it = unitFactories->begin(); it != unitFactories->end();)
+		for (it = unitFactories->begin(); it != unitFactories->end();)
+		{
+			if ((*it)->getType() == "Land")
 			{
-				if ((*it)->getType() == "Land")
+				bool next = false;
+
+				if (totalSoldiers < allowedSoldiers)
 				{
-					bool next = false;
-
-					if (totalSoldiers < allowedSoldiers)
-					{
-						int increase = 0;
-						for (int i = soldiersCreated; i < 5; i++)
-						{ // create soldiers
-							ArmyComponent *unit = (*it)->createSoldier();
-
-							if (unit != nullptr)
-							{ // if we could actually afford to create the soldier
-								smallUnits->push_back(unit);
-								totalSoldiers += 1;
-								increase += 1;
-							}
-							else
-							{
-								soldiersCreated += increase;
-								++it; // go to the next factory
-								next = true;
-								break; // break out of for loop creating soldiers
-							}
-						}
-						// only way we enter this stage is if we did create 5 soldiers
-						soldiersCreated = 0; // reset
-					}
-					if (next)
-						continue; // why try to create a vehicle if the factory cannot create a soldier?
-
-					if (totalVehicles < allowedVehicles)
-					{
-						// create one vehicle
-						ArmyComponent *unit = (*it)->createVehicle();
+					int increase = 0;
+					for (int i = soldiersCreated; i < 5; i++)
+					{ // create soldiers
+						ArmyComponent *unit = (*it)->createSoldier();
 
 						if (unit != nullptr)
-						{ // if we could actually afford to create the vehicle
+						{ // if we could actually afford to create the soldier
 							smallUnits->push_back(unit);
-							totalVehicles += 1;
+							totalSoldiers += 1;
+							increase += 1;
 						}
 						else
 						{
+							soldiersCreated += increase;
 							++it; // go to the next factory
-							continue;
+							next = true;
+							break; // break out of for loop creating soldiers
 						}
 					}
+					// only way we enter this stage is if we did create 5 soldiers
+					soldiersCreated = 0; // reset
+				}
+				if (next)
+					continue; // why try to create a vehicle if the factory cannot create a soldier?
 
-					if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
+				if (totalVehicles < allowedVehicles)
+				{
+					// create one vehicle
+					ArmyComponent *unit = (*it)->createVehicle();
+
+					if (unit != nullptr)
+					{ // if we could actually afford to create the vehicle
+						smallUnits->push_back(unit);
+						totalVehicles += 1;
+					}
+					else
 					{
-						completedConstruction = true;
-						break; // jump out of loop
+						++it; // go to the next factory
+						continue;
 					}
 				}
-				else
+
+				if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
 				{
-					++it; // go to the next factory
+					completedConstruction = true;
+					break; // jump out of loop
 				}
 			}
-			break;
-		}
-		case 'S':
-		{ // construct Sea Units
-			// start at first factory and start building army. If factory's budget runs out choose next factory
-			std::vector<UnitFactory *>::iterator it;
-			int soldiersCreated = 0;
-
-			for (it = unitFactories->begin(); it != unitFactories->end();)
+			else
 			{
-				if ((*it)->getType() == "Sea")
-				{
-					bool next = false;
-
-					if (totalSoldiers < allowedSoldiers)
-					{
-						int increase = 0;
-						for (int i = soldiersCreated; i < 5; i++)
-						{ // create soldiers
-							ArmyComponent *unit = (*it)->createSoldier();
-
-							if (unit != nullptr)
-							{ // if we could actually afford to create the soldier
-								smallUnits->push_back(unit);
-								totalSoldiers += 1;
-								increase += 1;
-							}
-							else
-							{
-								soldiersCreated += increase;
-								++it; // go to the next factory
-								next = true;
-								break; // break out of for loop creating soldiers
-							}
-						}
-						// only way we enter this stage is if we did create 5 soldiers
-						soldiersCreated = 0; // reset
-					}
-					if (next)
-						continue; // why try to create a vehicle if the factory cannot create a soldier?
-
-					if (totalVehicles < allowedVehicles)
-					{
-						// create one vehicle
-						ArmyComponent *unit = (*it)->createVehicle();
-
-						if (unit != nullptr)
-						{ // if we could actually afford to create the vehicle
-							smallUnits->push_back(unit);
-							totalVehicles += 1;
-						}
-						else
-						{
-							++it; // go to the next factory
-							continue;
-						}
-					}
-
-					if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
-					{
-						completedConstruction = true;
-						break; // jump out of loop
-					}
-				}
-				else
-				{
-					++it; // go to the next factory
-				}
+				++it; // go to the next factory
 			}
-			break;
 		}
-		case 'A':
-		{ // construct Air Units
-			// start at first factory and start building army. If factory's budget runs out choose next factory
-			std::vector<UnitFactory *>::iterator it;
-			int soldiersCreated = 0;
-
-			for (it = unitFactories->begin(); it != unitFactories->end();)
-			{
-				if ((*it)->getType() == "Air")
-				{
-					bool next = false;
-
-					if (totalSoldiers < allowedSoldiers)
-					{
-						int increase = 0;
-						for (int i = soldiersCreated; i < 5; i++)
-						{ // create soldiers
-							ArmyComponent *unit = (*it)->createSoldier();
-
-							if (unit != nullptr)
-							{ // if we could actually afford to create the soldier
-								smallUnits->push_back(unit);
-								totalSoldiers += 1;
-								increase += 1;
-							}
-							else
-							{
-								soldiersCreated += increase;
-								++it; // go to the next factory
-								next = true;
-								break; // break out of for loop creating soldiers
-							}
-						}
-						// only way we enter this stage is if we did create 5 soldiers
-						soldiersCreated = 0; // reset
-					}
-					if (next)
-						continue; // why try to create a vehicle if the factory cannot create a soldier?
-
-					if (totalVehicles < allowedVehicles)
-					{
-						// create one vehicle
-						ArmyComponent *unit = (*it)->createVehicle();
-
-						if (unit != nullptr)
-						{ // if we could actually afford to create the vehicle
-							smallUnits->push_back(unit);
-							totalVehicles += 1;
-						}
-						else
-						{
-							++it; // go to the next factory
-							continue;
-						}
-					}
-
-					if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
-					{
-						completedConstruction = true;
-						break; // jump out of loop
-					}
-				}
-				else
-				{
-					++it; // go to the next factory
-				}
-			}
-			break;
-		}
+		break;
 	}
-	//set the individuals
+	case 'S':
+	{ // construct Sea Units
+		// start at first factory and start building army. If factory's budget runs out choose next factory
+		std::vector<UnitFactory *>::iterator it;
+		int soldiersCreated = 0;
+
+		for (it = unitFactories->begin(); it != unitFactories->end();)
+		{
+			if ((*it)->getType() == "Sea")
+			{
+				bool next = false;
+
+				if (totalSoldiers < allowedSoldiers)
+				{
+					int increase = 0;
+					for (int i = soldiersCreated; i < 5; i++)
+					{ // create soldiers
+						ArmyComponent *unit = (*it)->createSoldier();
+
+						if (unit != nullptr)
+						{ // if we could actually afford to create the soldier
+							smallUnits->push_back(unit);
+							totalSoldiers += 1;
+							increase += 1;
+						}
+						else
+						{
+							soldiersCreated += increase;
+							++it; // go to the next factory
+							next = true;
+							break; // break out of for loop creating soldiers
+						}
+					}
+					// only way we enter this stage is if we did create 5 soldiers
+					soldiersCreated = 0; // reset
+				}
+				if (next)
+					continue; // why try to create a vehicle if the factory cannot create a soldier?
+
+				if (totalVehicles < allowedVehicles)
+				{
+					// create one vehicle
+					ArmyComponent *unit = (*it)->createVehicle();
+
+					if (unit != nullptr)
+					{ // if we could actually afford to create the vehicle
+						smallUnits->push_back(unit);
+						totalVehicles += 1;
+					}
+					else
+					{
+						++it; // go to the next factory
+						continue;
+					}
+				}
+
+				if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
+				{
+					completedConstruction = true;
+					break; // jump out of loop
+				}
+			}
+			else
+			{
+				++it; // go to the next factory
+			}
+		}
+		break;
+	}
+	case 'A':
+	{ // construct Air Units
+		// start at first factory and start building army. If factory's budget runs out choose next factory
+		std::vector<UnitFactory *>::iterator it;
+		int soldiersCreated = 0;
+
+		for (it = unitFactories->begin(); it != unitFactories->end();)
+		{
+			if ((*it)->getType() == "Air")
+			{
+				bool next = false;
+
+				if (totalSoldiers < allowedSoldiers)
+				{
+					int increase = 0;
+					for (int i = soldiersCreated; i < 5; i++)
+					{ // create soldiers
+						ArmyComponent *unit = (*it)->createSoldier();
+
+						if (unit != nullptr)
+						{ // if we could actually afford to create the soldier
+							smallUnits->push_back(unit);
+							totalSoldiers += 1;
+							increase += 1;
+						}
+						else
+						{
+							soldiersCreated += increase;
+							++it; // go to the next factory
+							next = true;
+							break; // break out of for loop creating soldiers
+						}
+					}
+					// only way we enter this stage is if we did create 5 soldiers
+					soldiersCreated = 0; // reset
+				}
+				if (next)
+					continue; // why try to create a vehicle if the factory cannot create a soldier?
+
+				if (totalVehicles < allowedVehicles)
+				{
+					// create one vehicle
+					ArmyComponent *unit = (*it)->createVehicle();
+
+					if (unit != nullptr)
+					{ // if we could actually afford to create the vehicle
+						smallUnits->push_back(unit);
+						totalVehicles += 1;
+					}
+					else
+					{
+						++it; // go to the next factory
+						continue;
+					}
+				}
+
+				if (totalSoldiers == allowedSoldiers && totalVehicles == allowedVehicles)
+				{
+					completedConstruction = true;
+					break; // jump out of loop
+				}
+			}
+			else
+			{
+				++it; // go to the next factory
+			}
+		}
+		break;
+	}
+	}
+	// set the individuals
 	setIndividuals(smallUnits);
 
 	return smallUnits;
@@ -591,7 +591,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 		} // end switch
 
 	} // end big for-loop
-	//set the battalions
+	// set the battalions
 	setBattalions(armyBattalions);
 
 	// finally return the battalions
@@ -647,6 +647,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 			++it; // go to next factory
 		}
 	}
+	armySupplies->push_back(NULL); // to seperate ammo and meds
 	// medical supplies
 	for (it = supplyFactories->begin(); it != supplyFactories->end();)
 	{
@@ -683,7 +684,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 			++it; // go to the next factory
 		}
 	}
-	//set supplies
+	// set supplies
 	setSupplies(armySupplies);
 
 	return armySupplies;
@@ -702,8 +703,7 @@ Army *ArmyBuilder::putArmyTogether()
 
 	// also need to pass in type of army
 
-	army = new Army( getBattalions(), getIndividuals(), getSupplies());
-
+	army = new Army(getBattalions(), getIndividuals(), getSupplies(), this->type);
 
 	return army; //(battalions, individuals, supplies)
 }
@@ -730,12 +730,13 @@ std::vector<Supply *> *ArmyBuilder::getSupplies()
 
 void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 {
-	if (newIndv == nullptr) return;
+	if (newIndv == nullptr)
+		return;
 
 	// make deep copy
 	if (individuals != nullptr)
 	{
-		//clear individuals (the buildBattalions() function passes in the old individuals with additional individuals)
+		// clear individuals (the buildBattalions() function passes in the old individuals with additional individuals)
 		std::vector<ArmyComponent *>::iterator it;
 
 		for (it = individuals->begin(); it != individuals->end(); ++it)
@@ -744,7 +745,7 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 		}
 		delete individuals;
 
-		individuals = new std::vector<ArmyComponent*>;
+		individuals = new std::vector<ArmyComponent *>;
 
 		// now make the copy
 		std::vector<ArmyComponent *>::iterator it;
@@ -758,12 +759,13 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 
 void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 {
-	if (newBattalions == nullptr) return;
+	if (newBattalions == nullptr)
+		return;
 
 	// make deep copy
 	if (battalions != nullptr)
 	{
-		//clear battalions
+		// clear battalions
 		std::vector<ArmyComponent *>::iterator it;
 
 		for (it = battalions->begin(); it != battalions->end(); ++it)
@@ -772,7 +774,7 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 		}
 		delete battalions;
 
-		battalions = new std::vector<ArmyComponent*>;
+		battalions = new std::vector<ArmyComponent *>;
 
 		// now make the copy
 		std::vector<ArmyComponent *>::iterator it;
@@ -786,12 +788,13 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 
 void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
 {
-	if (newSupplies == nullptr) return;
+	if (newSupplies == nullptr)
+		return;
 
 	// make deep copy
 	if (supplies != nullptr)
 	{
-		//clear supplies
+		// clear supplies
 		std::vector<Supply *>::iterator it;
 
 		for (it = supplies->begin(); it != supplies->end(); ++it)
@@ -800,7 +803,7 @@ void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
 		}
 		delete supplies;
 
-		supplies = new std::vector<Supply*>;
+		supplies = new std::vector<Supply *>;
 
 		// now make the copy
 		std::vector<Supply *>::iterator it;

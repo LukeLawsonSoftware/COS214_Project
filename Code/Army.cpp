@@ -15,12 +15,64 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 		this->army->addMember(individuals->at(i));
 	}
 
-	// Not finished, still need to do supplies and battlestatistics
+	bool flag = true;
+	for (int i = 0; i < supplies->size(); i++)
+	{
+		if (supplies->at(i) == NULL)
+		{
+			flag = false;
+		}
+		if (flag)
+		{
+			this->ammoSupply->push_back((AmmoSupply *)supplies->at(i));
+		}
+		else
+		{
+			this->medicalSupply->push_back((MedicalSupply *)supplies->at(i));
+		}
+	}
+
+	this->currentStrategy = new Neutral();
+	this->stats = new BattleStatistics();
+
+	stats->setAirAttack(this->army->calculateAirOffense());
+	stats->setAirDefence(this->army->calculateAirDefense());
+	stats->setLandAttack(this->army->calculateLandOffense());
+	stats->setLandDefence(this->army->calculateLandDefense());
+	stats->setSeaAttack(this->army->calculateSeaOffense());
+	stats->setSeaDefence(this->army->calculateSeaDefense());
+	stats->setMorale(this->army->calculateAirOffense() +
+					 this->army->calculateAirDefense() +
+					 this->army->calculateLandOffense() +
+					 this->army->calculateLandDefense() +
+					 this->army->calculateSeaOffense() +
+					 this->army->calculateSeaDefense());
+
+	int ammoSum = 0;
+	for (int i = 0; i < ammoSupply->size(); i++)
+	{
+		if (ammoSupply->at(i) != NULL)
+		{
+			ammoSum += ammoSupply->at(i)->getAmmoBonus();
+		}
+	}
+	stats->setAvailableAmmo(ammoSum);
+
+	int medSum = 0;
+	for (int i = 0; i < medicalSupply->size(); i++)
+	{
+		if (medicalSupply->at(i) != NULL)
+		{
+			medSum += medicalSupply->at(i)->getMedicalBonus();
+		}
+	}
+
+	stats->setMedical(medSum);
 }
 
 void Army::applyStrategyBonus()
 {
-	this->currentStrategy->applyStrategyBonus(*(this->stats), *(Battalion *)(this->army));
+	this->currentStrategy->applyStrategyBonus(*(this->stats), (Battalion *)(this->army));
 	std::cout << "Army has had its Battle Statistics altered" << std::endl;
 }
 
