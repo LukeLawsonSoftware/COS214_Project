@@ -20,14 +20,19 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 
 void Army::applyStrategyBonus()
 {
-	// TODO - implement Army::applyStrategyBonus
-	throw "Not yet implemented";
+	this->currentStrategy->applyStrategyBonus(*(this->stats), *(Battalion *)(this->army));
+	std::cout << "Army has had its Battle Statistics altered" << std::endl;
 }
 
 void Army::recuperate()
 {
-	// TODO - implement Army::recuperate
-	throw "Not yet implemented";
+	for (int i = 0; i < this->medicalSupply->size(); i++)
+	{
+		if (medicalSupply->at(i) != NULL)
+		{
+			this->stats->setMorale(this->stats->getMorale() + medicalSupply->at(i)->getMedicalBonus());
+		}
+	}
 }
 
 void Army::addNewAmmoSupplies(AmmoSupply *ammo)
