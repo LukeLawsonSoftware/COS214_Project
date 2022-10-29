@@ -17,6 +17,27 @@ private:
 	int morale;
 	int availableAmmo;
 	int medical;
+
+public:
+	int getAirAttack();
+	int getAirDefence();
+	int getLandAttack();
+	int getLandDefence();
+	int getSeaAttack();
+	int getSeaDefence();
+	int getMorale();
+	int getAvailableAmmo();
+	int getMedical();
+
+	void setAirAttack(int in);
+	void setAirDefence(int in);
+	void setLandAttack(int in);
+	void setLandDefence(int in);
+	void setSeaAttack(int in);
+	void setSeaDefence(int in);
+	void setMorale(int in);
+	void setAvailableAmmo(int in);
+	void setMedical(int in);
 };
 
 #endif
