@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+cstdlib
+-
+cmath
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/AirUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp
+ArmyComponent_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+gtest/gtest.h
+-
+
