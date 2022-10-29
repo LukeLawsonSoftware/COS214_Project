@@ -1,9 +1,13 @@
 #ifndef EARLYOPENCONFLICT_H
 #define EARLYOPENCONFLICT_H
-#include "EarlyPhase.h"
+#include "EarlyCrisis.h"
 
 class EarlyOpenConflict : public EarlyPhase
 {
+public:
+    /// @brief Sets next to EarlyCrisis and peaceChance.
+    /// @author Thomas Blendulf (u21446131)
+    EarlyOpenConflict();
 };
 
 #endif

@@ -7,8 +7,10 @@ class LatePhase : public WarPhase
 
 public:
 	LatePhase *next;
-
-	void handleChange();
+	/// @brief Sets Wars phase to next Late phase.
+	/// @author Thomas Blendulf (u21446131)
+	/// @param War* passes in the war which must have its phase changed.
+	void handleChange(War *);
 };
 
 #endif

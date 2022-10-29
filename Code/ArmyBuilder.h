@@ -13,6 +13,8 @@ class ArmyBuilder{
 		std::vector<UnitFactory*>* unitFactories;
 		std::vector<SupplyFactory*>* supplyFactories;
 		std::vector<ArmyComponent*>* individuals;
+		std::vector<ArmyComponent*>* battalions;
+		std::vector<Supply*>* supplies;
 
 	public:
 		/// @brief Class constructor used to instantiate the object and initialize the type member variable
@@ -47,15 +49,35 @@ class ArmyBuilder{
 		/// @return Member variable of constructed Army
 		Army *getArmy();
 
-		/// @brief This function is used to return the vector of individuals which was create by the putArmyTogether() method
+		/// @brief This function is used to return the vector of individuals which was create by the createIndividuals() method
 		/// @author Reuben Jooste (u21457060) 
 		/// @return Return vector of individual ArmyComponents
 		std::vector<ArmyComponent*>* getIndividuals();
+
+		/// @brief This function is used to return the vector of battalions which was create by the buildBattalions() method
+		/// @author Reuben Jooste (u21457060) 
+		/// @return Return vector of battalion ArmyComponents
+		std::vector<ArmyComponent*>* getBattalions();
+
+		/// @brief This function is used to return the vector of supplies which was create by the determineSupplies() method
+		/// @author Reuben Jooste (u21457060) 
+		/// @return Return vector of supplies
+		std::vector<Supply*>* getSupplies();
 
 		/// @brief This function will set the member variable individuals in order to keep track of the individuals created
 		/// @author Reuben Jooste (u21457060)
 		/// @param individuals The parameter is used to set our member variable by making a deep copy of it.
 		void setIndividuals(std::vector<ArmyComponent*>* individuals);
+
+		/// @brief This function will set the member variable battalions in order to keep track of the battalions created
+		/// @author Reuben Jooste (u21457060)
+		/// @param battalions The parameter is used to set our member variable by making a deep copy of it.
+		void setBattalions(std::vector<ArmyComponent*>* battalions);
+
+		/// @brief This function will set the member variable supplies in order to keep track of the supplies created
+		/// @author Reuben Jooste (u21457060)
+		/// @param supplies The parameter is used to set our member variable by making a deep copy of it.
+		void setSupplies(std::vector<Supply*>* supplies);
 };
 
 #endif

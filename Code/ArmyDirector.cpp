@@ -6,5 +6,8 @@ ArmyDirector :: ArmyDirector(ArmyBuilder* b){
 
 void ArmyDirector::constructArmy() {
 	// TODO - implement ArmyDirector::constructArmy
+	builder->createIndividuals();
+	builder->buildBattalions();
+	builder->determineSupplies();
 	builder->putArmyTogether();
 }

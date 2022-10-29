@@ -1,21 +1,25 @@
 #include "WarTheatre.h"
 
-void WarTheatre::applyTerrainBonus() {
+void WarTheatre::applyTerrainBonus()
+{
 	// TODO - implement WarTheatre::applyTerrainBonus
 	throw "Not yet implemented";
 }
 
-void WarTheatre::conflict() {
+void WarTheatre::conflict()
+{
 	// TODO - implement WarTheatre::conflict
 	throw "Not yet implemented";
 }
 
-void WarTheatre::addArmy(Army* newArmy) {
+void WarTheatre::addArmy(Army *newArmy)
+{
 	// TODO - implement WarTheatre::addArmy
 	throw "Not yet implemented";
 }
 
-void WarTheatre::replenishNonCombatEntities() {
+void WarTheatre::replenishNonCombatEntities()
+{
 	// TODO - implement WarTheatre::replenishNonCombatEntities
 	throw "Not yet implemented";
 }

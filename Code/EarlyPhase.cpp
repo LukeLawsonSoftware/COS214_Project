@@ -1,6 +1,13 @@
 #include "EarlyPhase.h"
 
-void EarlyPhase::handleChange() {
-	// TODO - implement EarlyPhase::handleChange
-	throw "Not yet implemented";
+void EarlyPhase::handleChange(War *inWar)
+{
+	if (next != nullptr)
+	{
+		inWar->setWarPhase(next);
+	}
+	else
+	{
+		inWar->setWarPhase(new MidPhase());
+	}
 }
