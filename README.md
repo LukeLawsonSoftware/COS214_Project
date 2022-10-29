@@ -1,6 +1,11 @@
 # COS214_Project
 "War, war never changes"
 
+## Functional Requirements
+#### Specifications of the system's functional requirements at a high level
+[Specification of Functional Requirements](https://docs.google.com/document/d/1FI2bZ3nHOD-c8ti6TUO3enkvk95sN-nQmOg7ApcTxNY/edit?usp=share_link)
+
+
 ## Pre-Initial Designs
 #### Note that versions 1 and 2 were drafted informally in meetings
 [Version 3](https://drive.google.com/file/d/13orxZ_sFOLb1FlrlfD1qOhBYgQFn2nFo/view?usp=sharing)<br />
