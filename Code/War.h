@@ -9,7 +9,7 @@ class War
 {
 
 private:
-	WarTheatre *warTheatre;
+	WarTheatre *warTheatre; // should rather have an airTheatre, a seaTheatre and a landTheatre
 	WarPhase *phase;
 	bool isActive;
 
