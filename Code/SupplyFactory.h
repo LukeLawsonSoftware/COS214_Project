@@ -9,6 +9,7 @@ class SupplyFactory
 		/// @brief Class constructor for the SuplyFactory which will initialize the budget of the factory as well as set the level to 1.
 		/// @author Arno Jooste (u21457451)
 		/// @param budget The amount that can be spent to make supplies.
+		/// @param type The type of supply factory that will be created.
 		SupplyFactory(int budget, std::string type);
 
 		/// @brief Class destructor to reset the member variables.
