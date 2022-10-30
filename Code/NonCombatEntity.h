@@ -5,6 +5,9 @@ class NonCombatEntity
 {
 
 public:
+	/// @brief clone the current NonCombatEntity
+	/// @author Jonelle Coertze (u21446271)
+	/// @return a pointer to the cloned/new NonCombatEntity
 	virtual NonCombatEntity *clone() = 0;
 
 	// a number of non combat entities exist in a war theatre and do different things
