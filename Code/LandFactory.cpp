@@ -1,6 +1,6 @@
 #include "LandFactory.h"
 
-LandFactory::LandFactory(double budget, int level, std::string type = "Land")
+LandFactory::LandFactory(double budget, int level, std::string type)
 	:UnitFactory(budget,level, type){}
 
 ArmyComponent *LandFactory::createVehicle()
