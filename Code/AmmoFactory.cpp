@@ -1,6 +1,6 @@
 #include "AmmoFactory.h"
 
-AmmoFactory :: AmmoFactory(int budget):SupplyFactory(budget){};
+AmmoFactory :: AmmoFactory(int budget, std::string type):SupplyFactory(budget,type){};
 
 Supply *AmmoFactory::makeSupply(int quantity)
 {
