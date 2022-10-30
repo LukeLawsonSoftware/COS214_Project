@@ -7,10 +7,10 @@ class UnitFactory
 {
 private:
 	std::string type;  // the type of factory used to create the type of product
-	double totalSpent; // used to determine if we are able to affrod another product
 protected:
 	double cost;
 	int level;
+	double totalSpent; // used to determine if we are able to affrod another product
 
 public:
 	/// @brief Constructor of the UnitFactory class used to instantiate a UnitFactory object
