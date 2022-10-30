@@ -17,6 +17,15 @@ int Rich::decideMyTurn(Country* country) {
 
 	// Possible decisions
 	// 1. formAlliance (if not already in alliance1 or alliance2 ie: in neutral)
+	Possibilities[0] = false;
+	for (int i = 0; i < country->neutral.size(); i++)
+	{
+		if(country->neutral[i]->getName() == country->getName())
+		{
+			Possibilities[0] = true;
+			break;
+		}
+	}
 
 	// 2. raiseArmy
 	Possibilities[1] = true;

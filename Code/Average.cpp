@@ -17,7 +17,15 @@ int Average::decideMyTurn(Country* country) {
 	
 	// Possible decisions:
 	// 1. formAlliance (if not already in alliance1 or alliance2 ie: in neutral)
-	
+	Possibilities[0] = false;
+	for (int i = 0; i < country->neutral.size(); i++)
+	{
+		if(country->neutral[i]->getName() == country->getName())
+		{
+			Possibilities[0] = true;
+			break;
+		}
+	}
 
 	// 2. raiseArmy (I have implemented s.t. this could fail if not enought gdp)
 	Possibilities[1] = true;
