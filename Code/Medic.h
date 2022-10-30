@@ -8,9 +8,11 @@ class Medic : public NonCombatEntity
 	public:
 
 		/// @brief A default constructor that generates the amount of healing of a Medic
+		/// @author Jonelle Coertze (u21446271)
 		Medic();
 
 		/// @brief a parameterized constructor to be used in the clone function
+		/// @author Jonelle Coertze (u21446271)
 		/// @param Healing an integer to set the healing of the Medic
 		Medic(int Healing);
 
