@@ -1,6 +1,23 @@
 #include "Medic.h"
+#include <ctime>
+#include <cstdlib>
+
+Medic::Medic()
+{
+	srand(time(0)); 
+	healing = (rand()%10 + 1) ;
+}
+
+Medic::Medic(int Healing)
+{
+	healing = Healing;
+}
 
 NonCombatEntity* Medic::clone() {
-	// TODO - implement Medic::clone
-	throw "Not yet implemented";
+	return new Medic(healing);
+}
+
+int Medic::getHealing()
+{
+	return healing;
 }
