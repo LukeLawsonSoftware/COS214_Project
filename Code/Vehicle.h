@@ -1,6 +1,7 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 #include "ArmyComponent.h"
+#include <iostream>
 
 class Vehicle : public ArmyComponent
 {
