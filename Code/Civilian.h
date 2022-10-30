@@ -4,7 +4,7 @@
 
 class Civilian : public NonCombatEntity
 {
-
+	// string designation : is a refugee or a citizen
 public:
 	NonCombatEntity *clone();
 };

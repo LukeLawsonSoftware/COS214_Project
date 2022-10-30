@@ -7,6 +7,8 @@ class Medic : public NonCombatEntity
 
 public:
 	NonCombatEntity *clone();
+
+	// getHealing() : returns an int 1-10
 };
 
 #endif
