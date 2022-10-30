@@ -7,5 +7,6 @@ void MidPhase::handleChange(War *inWar)
 
 MidPhase::MidPhase()
 {
+	std::cout << "All out war has broken out." << std::endl;
 	peaceChance = 0;
 }

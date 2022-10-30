@@ -2,7 +2,7 @@
 #define ARMYSTRATEGY_H
 #include "BattleStatistics.h"
 #include "Battalion.h"
-
+#include <iostream>
 class ArmyStrategy
 {
 

@@ -8,6 +8,7 @@ public:
     /// @brief Sets next to EarlyCrisis and peaceChance.
     /// @author Thomas Blendulf (u21446131)
     EarlyOpenConflict();
+    void outputChange();
 };
 
 #endif

@@ -9,6 +9,7 @@ public:
     /// @author Thomas Blendulf (u21446131)
 
     LateCrisis();
+    void outputChange();
 };
 
 #endif

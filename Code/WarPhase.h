@@ -1,6 +1,7 @@
 #ifndef WARPHASE_H
 #define WARPHASE_H
 #include "War.h"
+#include <iostream>
 class WarPhase
 {
 
