@@ -3,21 +3,68 @@
 
 CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp

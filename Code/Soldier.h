@@ -1,6 +1,7 @@
 #ifndef SOLDIER_H
 #define SOLDIER_H
 #include "ArmyComponent.h"
+#include <iostream>
 
 class Soldier : public ArmyComponent
 {
