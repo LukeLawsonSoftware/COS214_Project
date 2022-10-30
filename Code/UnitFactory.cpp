@@ -40,3 +40,10 @@ double UnitFactory::getBudget(){
 void UnitFactory::setNewBudget(double newBudget){
     cost = newBudget;
 }
+
+void UnitFactory::upgrade()
+{
+    setNewBudget( getBudget()*1.5 );//increase budget by 50%
+
+	level++;
+}

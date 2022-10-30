@@ -50,6 +50,8 @@ public:
 	/// @param newBudget The new budget of the factory
 	void setNewBudget(double newBudget);
 
+	/// @brief Upgrades the factory, which will increase the budget capacity and level.
+	/// @author Arno Jooste (u21457451)
 	void upgrade();
 
 protected:
