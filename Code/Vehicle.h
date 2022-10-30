@@ -9,7 +9,6 @@ class Vehicle : public ArmyComponent
 protected:
 	int armourRating;
 	int weaponClass;
-	double vehicleCost;
 
 public:
 	/// @brief Construct Vehicle using powerRating to determine attribute values
@@ -51,11 +50,6 @@ public:
 	/// @author Luke Lawson (u21433811)
 	/// @param newMember pointer to ArmyComponent to add to composite object
 	void addMember(ArmyComponent *newMember);
-
-	/// @brief Function to get teh cost of creating one Vehicle object
-	/// @author Reuben Jooste (u21457060)
-	/// @return The cost of one Vehicle object
-	double getVehicleCost();
 };
 
 #endif

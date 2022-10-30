@@ -13,7 +13,8 @@ class AmmoFactory : public SupplyFactory
 		/// @brief Class constructor for the AmmoFactory to initialize the budget.
 		/// @author Arno Jooste (u21457451)
 		/// @param budget The amount that can be spent to make ammo supplies.
-		AmmoFactory(int budget);
+		/// @param type The type of the factory.
+		AmmoFactory(int budget, std::string type);
 
 		/// @brief Creates ammo supplies by creating a new AmmoSupply product.
 		/// @author Arno Jooste (u21457451)

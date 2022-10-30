@@ -7,10 +7,10 @@ class UnitFactory
 {
 private:
 	std::string type;  // the type of factory used to create the type of product
-	double totalSpent; // used to determine if we are able to affrod another product
 protected:
 	double cost;
 	int level;
+	double totalSpent; // used to determine if we are able to affrod another product
 
 public:
 	/// @brief Constructor of the UnitFactory class used to instantiate a UnitFactory object
@@ -45,16 +45,13 @@ public:
 	/// @return The maximum amount we can spent on creating products
 	double getBudget();
 
-	/// @brief Function to increase the total spent after we created a product
-	/// @author Reuben Jooste (u21457060)
-	/// @param cost Parameter to increase the current total amount spent by
-	void increaseTotalSpent(double cost);
-
 	/// @brief Function to set the new budgett of the factory after we upgraded the factory
 	/// @author Reuben Jooste (u21457060)
 	/// @param newBudget The new budget of the factory
 	void setNewBudget(double newBudget);
 
+	/// @brief Upgrades the factory, which will increase the budget capacity and level.
+	/// @author Arno Jooste (u21457451)
 	void upgrade();
 
 protected:

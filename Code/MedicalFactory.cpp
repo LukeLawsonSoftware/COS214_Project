@@ -1,6 +1,6 @@
 #include "MedicalFactory.h"
 
-MedicalFactory::MedicalFactory(int budget):SupplyFactory(budget){};
+MedicalFactory::MedicalFactory(int budget, std::string type):SupplyFactory(budget,type){};
 
 Supply* MedicalFactory::makeSupply(int quantity) {
 	// TODO - implement MedicalFactory::makeSupply

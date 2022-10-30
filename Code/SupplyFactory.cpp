@@ -1,9 +1,10 @@
 #include "SupplyFactory.h"
 
-SupplyFactory::SupplyFactory(int budget){
+SupplyFactory::SupplyFactory(int budget, std::string type){
 	level = 1;
 	this->budget = budget;
 	totalSpent = 0;
+	this->type = type;
 }
 
 SupplyFactory::~SupplyFactory(){

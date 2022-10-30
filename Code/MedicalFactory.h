@@ -14,7 +14,8 @@ class MedicalFactory : public SupplyFactory
 		/// @brief Class constructor for MedicalFactory 
 		/// @author Arno Jooste (u21457451)
 		/// @param budget The amount that can be spent to make medical supplies.
-		MedicalFactory(int budget);
+		/// @param type The type of the factory.
+		MedicalFactory(int budget, std::string type);
 
 		/// @brief Creates medical supplies by creating a new MedicalSupply product.
 		/// @author Arno Jooste (u21457451)
