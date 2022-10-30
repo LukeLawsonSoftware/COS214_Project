@@ -8,6 +8,7 @@ public:
     /// @brief Sets next to LateUnstablePeace.
     /// @author Thomas Blendulf (u21446131)
     LateOpenConflict();
+    void outputChange();
 };
 
 #endif

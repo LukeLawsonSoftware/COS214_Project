@@ -2,10 +2,11 @@
 
 void EarlyPhase::handleChange(War *inWar)
 {
-	if (next != nullptr)
+	if (next != NULL)
 	{
+		next->outputChange();
 		inWar->setWarPhase(next);
-	}
+		}
 	else
 	{
 		inWar->setWarPhase(new MidPhase());

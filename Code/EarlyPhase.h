@@ -10,6 +10,7 @@ public:
 	/// @author Thomas Blendulf (u21446131)
 	/// @param War* passes in the war which must have its phase changed.
 	void handleChange(War *);
+	virtual void outputChange(){};
 };
 
 #endif

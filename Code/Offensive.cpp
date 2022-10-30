@@ -2,6 +2,7 @@
 
 void Offensive::applyStrategyBonus(BattleStatistics in, Battalion *inArmy)
 {
+	std::cout << "The army has applied a offensive strategy." << std::endl;
 	in.airAttack = inArmy->calculateAirOffense();
 	in.airDefence = inArmy->calculateAirDefense();
 	in.landAttack = inArmy->calculateLandOffense();
