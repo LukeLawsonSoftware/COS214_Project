@@ -9,6 +9,9 @@ class Civilian : public NonCombatEntity
 	
 	public:
 
+		/// @brief A default constructor that sets the designation to a citizen
+		Civilian();
+
 		/// @brief a parameterized constructor to craete a new Civilian with a specific designation
 		/// @author Jonelle Coertze (u21446271)
 		/// @param Designation string to indicate if a civilian is a refugee or a citizen
