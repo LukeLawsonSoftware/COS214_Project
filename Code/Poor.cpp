@@ -78,4 +78,5 @@ int Poor::decideMyTurn(Country* country) {
 	}
 
 	return Decision;
+
 }

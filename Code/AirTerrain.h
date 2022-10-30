@@ -6,8 +6,10 @@ class AirTerrain : public WarTheatre
 {
 
 private:
+	// apply bonus to airOffense stats of both armies
 	void adjustAttack();
 
+	// apply bonus to airDefence stats of both armies
 	void adjustDefence();
 };
 

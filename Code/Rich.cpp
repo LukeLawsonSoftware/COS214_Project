@@ -3,6 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 
+
 int Rich::decideMyTurn(Country* country) {
 	
 	int Decision = 0;
@@ -78,4 +79,5 @@ int Rich::decideMyTurn(Country* country) {
 	}
 
 	return Decision;
+
 }

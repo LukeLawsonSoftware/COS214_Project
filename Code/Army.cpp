@@ -92,6 +92,7 @@ void Army::addNewAmmoSupplies(AmmoSupply *ammo)
 	if (this->ammoSupply != NULL)
 	{
 		this->ammoSupply->push_back(ammo);
+		this->stats->setAvailableAmmo(stats->getAvailableAmmo() + ammo->getAmmoBonus());
 		std::cout << "Army has received ammunition" << std::endl;
 	}
 }
@@ -101,6 +102,7 @@ void Army::addNewMedicalSupplies(MedicalSupply *meds)
 	if (this->medicalSupply != NULL)
 	{
 		this->medicalSupply->push_back(meds);
+		this->stats->setMedical(stats->getMedical() + meds->getMedicalBonus());
 		std::cout << "Army has received medical supplies" << std::endl;
 	}
 }
