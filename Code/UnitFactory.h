@@ -45,11 +45,6 @@ public:
 	/// @return The maximum amount we can spent on creating products
 	double getBudget();
 
-	/// @brief Function to increase the total spent after we created a product
-	/// @author Reuben Jooste (u21457060)
-	/// @param cost Parameter to increase the current total amount spent by
-	void increaseTotalSpent(double cost);
-
 	/// @brief Function to set the new budgett of the factory after we upgraded the factory
 	/// @author Reuben Jooste (u21457060)
 	/// @param newBudget The new budget of the factory

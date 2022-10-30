@@ -37,10 +37,6 @@ double UnitFactory::getBudget(){
     return cost;
 }
 
-void UnitFactory::increaseTotalSpent(double addedCost){
-    totalSpent += addedCost;
-}
-
 void UnitFactory::setNewBudget(double newBudget){
     cost = newBudget;
 }

@@ -11,8 +11,3 @@ void Vehicle::addMember(ArmyComponent *newMember)
 	throw std::invalid_argument("Cannot add ArmyComponent to a Vehicle object");
 	// throw "Cannot add ArmyComponent to a Vehicle object";
 }
-
-double Vehicle::getVehicleCost()
-{
-	return vehicleCost;
-}

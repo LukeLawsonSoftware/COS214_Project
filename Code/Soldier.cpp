@@ -10,8 +10,3 @@ void Soldier::addMember(ArmyComponent *newMember)
 	throw std::invalid_argument("Cannot add ArmyComponent to a Soldier object");
 	// throw "Cannot add ArmyComponent to a Soldier object";
 }
-
-double Soldier::getSoldierCost()
-{
-	return soldierCost;
-}
