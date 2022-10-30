@@ -20,6 +20,7 @@
 #include <string>
 
 class War;
+class EconomicState;
 
 class Country : public Corresponder
 {

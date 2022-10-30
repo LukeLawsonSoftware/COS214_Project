@@ -1,5 +1,6 @@
 #include "Country.h"
 #include "War.h"
+#include "EconomicState.h"
 
 Country::Country(std::string ecoState, std::string name)
 {
@@ -129,7 +130,7 @@ void Country::spendGDP(double gdpSpent)
 
 void Country::takeTurn(War *currWar)
 {
-	int decision = this->ecoState->decideMyTurn();
+	int decision = this->ecoState->decideMyTurn(this);
 	switch (decision)
 	{
 	case 1:
