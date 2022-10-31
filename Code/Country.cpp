@@ -22,8 +22,8 @@ Country::Country(std::string ecoState, std::string name)
 		this->unitFactories->push_back(new AirFactory(500000, 3, "Air"));
 		this->unitFactories->push_back(new SeaFactory(500000, 3, "Sea"));
 
-		this->supplyFactories->push_back(new AmmoFactory(500000));
-		this->supplyFactories->push_back(new MedicalFactory(500000));
+		this->supplyFactories->push_back(new AmmoFactory(500000, "Ammo"));
+		this->supplyFactories->push_back(new MedicalFactory(500000, "Medical"));
 		this->army = NULL;
 	}
 	else if (ecoState[0] == 'P' || ecoState[0] == 'p')
@@ -35,8 +35,8 @@ Country::Country(std::string ecoState, std::string name)
 		this->unitFactories->push_back(new AirFactory(100000, 1, "Air"));
 		this->unitFactories->push_back(new SeaFactory(100000, 1, "Sea"));
 
-		this->supplyFactories->push_back(new AmmoFactory(100000));
-		this->supplyFactories->push_back(new MedicalFactory(100000));
+		this->supplyFactories->push_back(new AmmoFactory(100000, "Ammo"));
+		this->supplyFactories->push_back(new MedicalFactory(100000, "Medical"));
 		this->army = NULL;
 	}
 	else
@@ -48,8 +48,8 @@ Country::Country(std::string ecoState, std::string name)
 		this->unitFactories->push_back(new AirFactory(250000, 2, "Air"));
 		this->unitFactories->push_back(new SeaFactory(250000, 2, "Sea"));
 
-		this->supplyFactories->push_back(new AmmoFactory(250000));
-		this->supplyFactories->push_back(new MedicalFactory(250000));
+		this->supplyFactories->push_back(new AmmoFactory(250000, "Ammo"));
+		this->supplyFactories->push_back(new MedicalFactory(250000, "Medical"));
 		this->army = NULL;
 	}
 }
