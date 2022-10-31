@@ -1,6 +1,28 @@
 #include "Country.h"
 #include "War.h"
 #include "EconomicState.h"
+#include "Rich.h"
+#include "Poor.h"
+#include "Average.h"
+#include "AmmoTransporter.h"
+#include "MedicTransporter.h"
+#include "Corresponder.h"
+#include "LandFactory.h"
+#include "AirFactory.h"
+#include "SeaFactory.h"
+#include "AmmoFactory.h"
+#include "MedicalFactory.h"
+#include "Army.h"
+#include "WarTheatre.h"
+#include "ArmyDirector.h"
+#include "ArmyBuilder.h"
+#include "MilitaryCommander.h"
+// #include "Corresponder.h"
+#include "SupplyFactory.h"
+
+std::vector<Country *> Country::alliance1;
+std::vector<Country *> Country::alliance2;
+std::vector<Country *> Country::neutral;
 
 Country::Country(std::string ecoState, std::string name)
 {
@@ -177,29 +199,29 @@ void Country::takeTurn(War *currWar)
 void Country::formAlliance()
 {
 	std::cout << name << " decides to form a new alliance" << std::endl;
-	if (neutral.size() == 0)
+	if (Country::neutral.size() == 0)
 	{
 		std::cout << "There are no Countries available to form an alliance with" << std::endl;
 	}
 	else
 	{
-		Country *c = neutral.at(neutral.size() - 1);
-		neutral.pop_back();
+		Country *c = Country::neutral.at(Country::neutral.size() - 1);
+		Country::neutral.pop_back();
 		std::cout << c->getName() << " joins " << name << "'s alliance!" << std::endl;
-		for (int i = 0; i < alliance1.size(); i++)
+		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
-			if (alliance1.at(i)->getName() == name)
+			if (Country::alliance1.at(i)->getName() == name)
 			{
-				alliance1.push_back(c);
+				Country::alliance1.push_back(c);
 
 				return;
 			}
 		}
-		for (int i = 0; i < alliance2.size(); i++)
+		for (int i = 0; i < Country::alliance2.size(); i++)
 		{
-			if (alliance2.at(i)->getName() == name)
+			if (Country::alliance2.at(i)->getName() == name)
 			{
-				alliance2.push_back(c);
+				Country::alliance2.push_back(c);
 				return;
 			}
 		}
@@ -329,17 +351,17 @@ void Country::attackTransport()
 {
 	std::cout << name << " decides to attack a Transport line!" << std::endl;
 	int enemyAlliance = 1;
-	for (int i = 0; i < alliance1.size(); i++)
+	for (int i = 0; i < Country::alliance1.size(); i++)
 	{
-		if (alliance1.at(i)->getName() == name)
+		if (Country::alliance1.at(i)->getName() == name)
 		{
 			enemyAlliance = 2;
 			break;
 		}
 	}
-	for (int i = 0; i < alliance2.size(); i++)
+	for (int i = 0; i < Country::alliance2.size(); i++)
 	{
-		if (alliance2.at(i)->getName() == name)
+		if (Country::alliance2.at(i)->getName() == name)
 		{
 			enemyAlliance = 1;
 		}
@@ -348,14 +370,14 @@ void Country::attackTransport()
 
 	if (enemyAlliance == 1)
 	{
-		Country *target = alliance1.at(0);
+		Country *target = Country::alliance1.at(0);
 		std::cout << name << " wants to attack the Transport line of " << target->getName() << std::endl;
 		commander->setTransportTarget(target, army);
 		commander->attackTransport();
 	}
 	else
 	{
-		Country *target = alliance2.at(0);
+		Country *target = Country::alliance2.at(0);
 		std::cout << name << " wants to attack the Transport line of " << target->getName() << std::endl;
 		commander->setTransportTarget(target, army);
 		commander->attackTransport();

@@ -1,8 +1,9 @@
 #ifndef ATTACKTRANSPORT_H
 #define ATTACKTRANSPORT_H
-#include "Transporter.h"
-#include "Command.h"
+
 class Country;
+class Transporter;
+#include "Command.h"
 class AttackTransport : public Command
 {
 

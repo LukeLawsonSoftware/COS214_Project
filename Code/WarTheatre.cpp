@@ -40,3 +40,10 @@ void WarTheatre::replenishNonCombatEntities()
 	// TODO - implement WarTheatre::replenishNonCombatEntities
 	throw "Not yet implemented";
 }
+
+std::string WarTheatre::getType()
+{
+}
+std::string WarTheatre::getName()
+{
+}

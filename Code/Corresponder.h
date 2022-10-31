@@ -1,6 +1,7 @@
 #ifndef CORRESPONDER_H
 #define CORRESPONDER_H
-#include "Transporter.h"
+
+class Transporter;
 
 class Corresponder
 {

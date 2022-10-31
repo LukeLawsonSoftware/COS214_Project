@@ -1,8 +1,9 @@
 #ifndef AIRFACTORY_H
 #define AIRFACTORY_H
+
 #include "UnitFactory.h"
-#include "AirVehicle.h"
-#include "AirUnit.h"
+class AirVehicle;
+class AirUnit;
 
 class AirFactory : public UnitFactory
 {

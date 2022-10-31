@@ -1,5 +1,8 @@
 #include "ArmyBuilder.h"
 #include "Battalion.h"
+#include "Army.h"
+#include "UnitFactory.h"
+#include "SupplyFactory.h"
 
 ArmyBuilder ::ArmyBuilder(std::string t, std::vector<UnitFactory *> *u, std::vector<SupplyFactory *> *s)
 {
@@ -748,11 +751,11 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 		individuals = new std::vector<ArmyComponent *>;
 
 		// now make the copy
-		std::vector<ArmyComponent *>::iterator it;
+		std::vector<ArmyComponent *>::iterator it1;
 
-		for (it = newIndv->begin(); it != newIndv->end(); ++it)
+		for (it1 = newIndv->begin(); it1 != newIndv->end(); ++it1)
 		{
-			individuals->push_back((*it));
+			individuals->push_back((*it1));
 		}
 	}
 }
@@ -777,11 +780,11 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 		battalions = new std::vector<ArmyComponent *>;
 
 		// now make the copy
-		std::vector<ArmyComponent *>::iterator it;
+		std::vector<ArmyComponent *>::iterator it1;
 
-		for (it = newBattalions->begin(); it != newBattalions->end(); ++it)
+		for (it1 = newBattalions->begin(); it1 != newBattalions->end(); ++it1)
 		{
-			battalions->push_back((*it));
+			battalions->push_back((*it1));
 		}
 	}
 }
@@ -806,11 +809,11 @@ void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
 		supplies = new std::vector<Supply *>;
 
 		// now make the copy
-		std::vector<Supply *>::iterator it;
+		std::vector<Supply *>::iterator it1;
 
-		for (it = newSupplies->begin(); it != newSupplies->end(); ++it)
+		for (it1 = newSupplies->begin(); it1 != newSupplies->end(); ++it1)
 		{
-			supplies->push_back((*it));
+			supplies->push_back((*it1));
 		}
 	}
 }

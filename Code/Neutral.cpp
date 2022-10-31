@@ -1,4 +1,6 @@
 #include "Neutral.h"
+#include "BattleStatistics.h"
+#include "Battalion.h"
 
 void Neutral::applyStrategyBonus(BattleStatistics in, Battalion *inArmy)
 {

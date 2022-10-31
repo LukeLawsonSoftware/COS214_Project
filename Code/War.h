@@ -1,9 +1,10 @@
 #ifndef WAR_H
 #define WAR_H
-#include "WarPhase.h"
-#include "WarTheatre.h"
+// #include "WarPhase.h"
+// #include "WarTheatre.h"
 
 class WarPhase; // forward Declaration
+class WarTheatre;
 
 class War
 {
@@ -17,7 +18,7 @@ public:
 	// Needs a constructor to initialise theatres and phase chain
 
 	void setupTheatres();		  // rather initialise in constructor
-	void setWarPhase(WarPhase *); // rather make this a method to request chain
+	void setWarPhase(WarPhase *); // rather make this a method to request chain maybe? idk how chain works
 
 	// obvious getters
 	WarTheatre *getLandTheatre();
