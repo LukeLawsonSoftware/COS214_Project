@@ -1,10 +1,11 @@
 #ifndef MILITARYCOMMANDER_H
 #define MILITARYCOMMANDER_H
-#include "ChangeStrategy.h"
-#include "AttackTransport.h"
-#include "MoveIntoTheatre.h"
-#include "WarTheatre.h"
-#include "Transporter.h"
+class ChangeStrategy;
+class AttackTransport;
+class MoveIntoTheatre;
+class WarTheatre;
+class Transporter;
+class Army;
 
 #include <string>
 class Country;

@@ -1,4 +1,5 @@
 #include "LatePhase.h"
+#include "War.h"
 
 void LatePhase::handleChange(War *inWar)
 {

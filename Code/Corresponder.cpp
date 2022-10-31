@@ -1,4 +1,5 @@
 #include "Corresponder.h"
+#include "Transporter.h"
 
 void Corresponder ::regToTransport(Transporter *ammoLine, Transporter *medLine)
 {

@@ -1,7 +1,7 @@
 #ifndef MIDPHASE_H
 #define MIDPHASE_H
-#include "LateCrisis.h"
-
+#include "WarPhase.h"
+class War;
 class MidPhase : public WarPhase
 {
 

@@ -1,4 +1,5 @@
 #include "Civilian.h"
+// #include "NonCombatEntity.h"
 
 Civilian::Civilian()
 {
@@ -10,7 +11,8 @@ Civilian::Civilian(std::string Designation)
 	designation = Designation;
 }
 
-NonCombatEntity* Civilian::clone() {
+NonCombatEntity *Civilian::clone()
+{
 	return new Civilian(designation);
 }
 
@@ -23,4 +25,3 @@ std::string Civilian::getDesignation()
 {
 	return designation;
 }
-

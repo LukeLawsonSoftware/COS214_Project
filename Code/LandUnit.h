@@ -1,5 +1,6 @@
 #ifndef LANDUNIT_H
 #define LANDUNIT_H
+
 #include "Soldier.h"
 
 class LandUnit : public Soldier

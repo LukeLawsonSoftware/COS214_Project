@@ -3,6 +3,7 @@
 #include "Army.h"
 #include "NonCombatEntity.h"
 #include <vector>
+#include <string>
 
 class WarTheatre
 {

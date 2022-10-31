@@ -1,4 +1,6 @@
 #include "Offensive.h"
+#include "BattleStatistics.h"
+#include "Battalion.h"
 
 void Offensive::applyStrategyBonus(BattleStatistics in, Battalion *inArmy)
 {

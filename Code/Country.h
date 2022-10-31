@@ -1,26 +1,32 @@
 #ifndef COUNTRY_H
 #define COUNTRY_H
-#include "Rich.h"
-#include "Poor.h"
-#include "Average.h"
-#include "AmmoTransporter.h"
-#include "MedicTransporter.h"
+class Rich;
+class Poor;
+class Average;
+class AmmoTransporter;
+class MedicTransporter;
+class Corresponder;
+class LandFactory;
+class AirFactory;
+class SeaFactory;
+class AmmoFactory;
+class MedicalFactory;
+class Army;
+class WarTheatre;
+class ArmyDirector;
+class ArmyBuilder;
+class MilitaryCommander;
 #include "Corresponder.h"
-#include "LandFactory.h"
-#include "AirFactory.h"
-#include "SeaFactory.h"
-#include "AmmoFactory.h"
-#include "MedicalFactory.h"
-#include "Army.h"
-#include "WarTheatre.h"
-#include "ArmyDirector.h"
-#include "ArmyBuilder.h"
-#include "MilitaryCommander.h"
+class UnitFactory;
+class SupplyFactory;
+class AmmoSupply;
+class MedicalSupply;
 #include <vector>
 #include <string>
 
 class War;
 class EconomicState;
+// class Army;
 
 class Country : public Corresponder
 {
@@ -40,8 +46,9 @@ private:
 	Army *army;
 	MilitaryCommander *commander;
 	bool hasSurrendered; // use tbis field to check in War class and WarTheatre
-	AmmoSupply* newAmmoSupply;
-	MedicalSupply* newMedicalSupply;
+	AmmoSupply *newAmmoSupply;
+	MedicalSupply *newMedicalSupply;
+
 public:
 	/// @brief Constructor to initialise a Country based on its starting EconomicState
 	///@author Luke Lawson (u21433811)
@@ -124,27 +131,27 @@ public:
 	/// @brief Function to get the newly created supply such that we know which supply to send to the transport line
 	/// @author Reuben Jooste (u21457060)
 	/// @return The newly created ammo supply
-	AmmoSupply* getNewAmmoSupply();
+	AmmoSupply *getNewAmmoSupply();
 
 	/// @brief Function to get the newly created supply such that we know which supply to send to the transport line
 	/// @author Reuben Jooste (u21457060)
 	/// @return The newly created medical supply
-	MedicalSupply* getNewMedicalSupply();
+	MedicalSupply *getNewMedicalSupply();
 
 	/// @brief Function to set the member variable to store the newly created ammo supply
 	/// @author Reuben Jooste (u21457060)
 	/// @param newAmmoSupply The new ammo supply
-	void setNewAmmoSupplies(AmmoSupply* newAmmoSupply);
+	void setNewAmmoSupplies(AmmoSupply *newAmmoSupply);
 
 	/// @brief Function to set the member variable to store the newly created medical supply
 	/// @author Reuben Jooste (u21457060)
 	/// @param newAmmoSupply The new medical supply
-	void setNewMedicalSupplies(MedicalSupply* newMedicalSupply);
+	void setNewMedicalSupplies(MedicalSupply *newMedicalSupply);
 
 	/// @brief Function to return the army variable of this Country class
 	/// @author Reuben Jooste (u21457060)
 	/// @return Returns the army of the Country as a pointer
-	Army* getArmy();
+	Army *getArmy();
 };
 
 #endif

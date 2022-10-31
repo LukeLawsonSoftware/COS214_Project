@@ -1,26 +1,28 @@
 #include "Average.h"
 #include "Country.h"
+// #include "EconomicState.h"
 #include <ctime>
 #include <cstdlib>
 
-int Average::decideMyTurn(Country* country) {
+int Average::decideMyTurn(Country *country)
+{
 
 	int Decision = 0;
 	bool Possible = false;
 	bool Possibilities[10];
 
-	//Initialize every index as false
+	// Initialize every index as false
 	for (int i = 0; i < 10; i++)
 	{
 		Possibilities[i] = false;
 	}
-	
+
 	// Possible decisions:
 	// 1. formAlliance (if not already in alliance1 or alliance2 ie: in neutral)
 	Possibilities[0] = false;
-	for (int i = 0; i < country->neutral.size(); i++)
+	for (int i = 0; i < country->Country::neutral.size(); i++)
 	{
-		if(country->neutral[i]->getName() == country->getName())
+		if (Country::neutral.at(i)->getName() == country->getName())
 		{
 			Possibilities[0] = true;
 			break;
@@ -63,14 +65,14 @@ int Average::decideMyTurn(Country* country) {
 	Possibilities[9] = true;
 
 	// Generate random number
-	srand(time(0)); 
+	srand(time(0));
 	int index = 0;
 
 	while (Possible == false)
 	{
-		index = rand()%10;
+		index = rand() % 10;
 
-		if(Possibilities[index] == true)
+		if (Possibilities[index] == true)
 		{
 			Possible = true;
 			Decision = index + 1;

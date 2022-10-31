@@ -1,12 +1,15 @@
 #include "SeaFactory.h"
+// #include "UnitFactory.h"
+#include "SeaVehicle.h"
+#include "SeaUnit.h"
 
 SeaFactory::SeaFactory(double budget, int level, std::string type)
-	:UnitFactory(budget,level, type){}
+	: UnitFactory(budget, level, type) {}
 
 ArmyComponent *SeaFactory::createVehicle()
 {
-	srand((unsigned) time(0));//to generate a different value each time
-	int cost = (double) (18 + (rand() % 25));//random number between 18 and 25 (25 excluded)
+	srand((unsigned)time(0));				 // to generate a different value each time
+	int cost = (double)(18 + (rand() % 25)); // random number between 18 and 25 (25 excluded)
 
 	int costAfterProduction = cost + totalSpent;
 
@@ -25,8 +28,8 @@ ArmyComponent *SeaFactory::createVehicle()
 
 ArmyComponent *SeaFactory::createSoldier()
 {
-	srand((unsigned) time(0));//to generate a different value each time
-	int cost = (double) (10 + (rand() % 15));//random number between 10 and 15 (15 excluded) {SOLDIER COST KEPT THE SAME AS THE OTHER SOLDIERS}
+	srand((unsigned)time(0));				 // to generate a different value each time
+	int cost = (double)(10 + (rand() % 15)); // random number between 10 and 15 (15 excluded) {SOLDIER COST KEPT THE SAME AS THE OTHER SOLDIERS}
 
 	int costAfterProduction = cost + totalSpent;
 

@@ -1,4 +1,5 @@
 #include "Battalion.h"
+// #include "ArmyComponent.h"
 
 int Battalion::calculateAirOffense()
 {

@@ -1,12 +1,15 @@
 #include "LandFactory.h"
+// #include "UnitFactory.h"
+#include "LandVehicle.h"
+#include "LandUnit.h"
 
 LandFactory::LandFactory(double budget, int level, std::string type)
-	:UnitFactory(budget,level, type){}
+	: UnitFactory(budget, level, type) {}
 
 ArmyComponent *LandFactory::createVehicle()
 {
-	srand((unsigned) time(0));//to generate a different value each time
-	int cost = (double) (15 + (rand() % 21));//random number between 15 and 21 (21 excluded)
+	srand((unsigned)time(0));				 // to generate a different value each time
+	int cost = (double)(15 + (rand() % 21)); // random number between 15 and 21 (21 excluded)
 
 	int costAfterProduction = cost + totalSpent;
 
@@ -25,8 +28,8 @@ ArmyComponent *LandFactory::createVehicle()
 
 ArmyComponent *LandFactory::createSoldier()
 {
-	srand((unsigned) time(0));//to generate a different value each time
-	int cost = (double) (10 + (rand() % 15));//random number between 5 and 15 (15 excluded)
+	srand((unsigned)time(0));				 // to generate a different value each time
+	int cost = (double)(10 + (rand() % 15)); // random number between 5 and 15 (15 excluded)
 
 	int costAfterProduction = cost + totalSpent;
 

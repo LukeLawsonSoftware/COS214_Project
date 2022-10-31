@@ -1,5 +1,6 @@
 #ifndef BATTALION_H
 #define BATTALION_H
+
 #include "ArmyComponent.h"
 #include <vector>
 
