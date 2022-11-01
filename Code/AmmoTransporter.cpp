@@ -19,6 +19,8 @@ void AmmoTransporter :: notify(Corresponder* c){
 
     Army* army = ( (Country*) c )->getArmy();  //casting from Corresponder* to Country*
 
+    if(army == NULL) throw std::invalid_argument("Country has no army to which it can send Ammo supplies.");
+
     int Ammo_size = army->getAmmoSupplySize();     //the current size of the ammo supply array
     int Ammo_capacity = army->getAmmoSupplyCapacity(); //capacity is the maximum size of the ammo supply array
     
