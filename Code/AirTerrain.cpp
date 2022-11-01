@@ -3,12 +3,10 @@
 
 void AirTerrain::adjustAttack()
 {
-	// TODO - implement AirTerrain::adjustAttack
-	throw "Not yet implemented";
+	// apply bonus to airOffense stats of both armies
 }
 
 void AirTerrain::adjustDefence()
 {
-	// TODO - implement AirTerrain::adjustDefence
-	throw "Not yet implemented";
+	// apply bonus to airDefence stats of both armie
 }

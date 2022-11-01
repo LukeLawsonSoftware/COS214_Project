@@ -1,11 +1,9 @@
 #include "LandTerrain.h"
 
 void LandTerrain::adjustAttack() {
-	// TODO - implement LandTerrain::adjustAttack
-	throw "Not yet implemented";
+	// apply bonus to landOffense stats of both armies
 }
 
 void LandTerrain::adjustDefence() {
-	// TODO - implement LandTerrain::adjustDefence
-	throw "Not yet implemented";
+	// apply bonus to landDefence stats of both armies
 }

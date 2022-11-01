@@ -1,9 +1,27 @@
 #include "WarTheatre.h"
 
+WarTheatre::WarTheatre(std::string Type, std::string Name)
+{
+	// A constructor is required for type, name and to initialise  array/vectors
+	// Add a number of civilians and medics at instantiation
+
+	type = Type;
+	name = Name;
+
+	// what should I do with the array of armies
+	// can I generate a random number and add that amount of noncombat entities 
+	// what is the max number ??
+}
+
+WarTheatre::~WarTheatre()
+{
+	// A destructor will also be necessary to delete the medics and civilians
+}
+
 void WarTheatre::applyTerrainBonus()
 {
-	// TODO - implement WarTheatre::applyTerrainBonus
-	throw "Not yet implemented";
+	// templateMethod (calls the two primitive operations)
+
 }
 
 void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
@@ -31,19 +49,23 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 void WarTheatre::addArmy(Army *newArmy)
 {
-	// TODO - implement WarTheatre::addArmy
-	throw "Not yet implemented";
+	// needs to print something out if the army can't be added to the Theatre
+	// ie: if an army from alliance1 wants to join but there already is one
+	// alternatively, you can make it so there are two vectors of armies 
+	//  (one for alliance1 and one for alliance2 and add that army to the appropriate vector)
 }
 
 void WarTheatre::replenishNonCombatEntities()
 {
-	// TODO - implement WarTheatre::replenishNonCombatEntities
-	throw "Not yet implemented";
+	// call this at the end of the round to add a fixed number of civilains and medics each time
 }
 
 std::string WarTheatre::getType()
 {
+	return type;
 }
+
 std::string WarTheatre::getName()
 {
+	return name;
 }

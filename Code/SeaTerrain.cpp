@@ -1,11 +1,9 @@
 #include "SeaTerrain.h"
 
 void SeaTerrain::adjustAttack() {
-	// TODO - implement SeaTerrain::adjustAttack
-	throw "Not yet implemented";
+	// apply bonus to seaOffense stats of both armies
 }
 
 void SeaTerrain::adjustDefence() {
-	// TODO - implement SeaTerrain::adjustDefence
-	throw "Not yet implemented";
+	// apply bonus to seaDefence stats of both armies
 }
