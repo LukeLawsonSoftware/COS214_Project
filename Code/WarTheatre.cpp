@@ -41,6 +41,11 @@ void WarTheatre::replenishNonCombatEntities()
 	throw "Not yet implemented";
 }
 
+int WarTheatre::getContentionState()
+{
+	return contentionState;
+}
+
 std::string WarTheatre::getType()
 {
 }

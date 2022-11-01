@@ -42,6 +42,7 @@ public:
 	void replenishNonCombatEntities();
 
 	// basic getters
+	int getContentionState();
 	std::string getType();
 	std::string getName();
 };

@@ -1,7 +1,7 @@
 #include "LateUnstablePeace.h"
 LateUnstablePeace::LateUnstablePeace()
 {
-    next = nullptr;
+    next = new LatePeace();
     peaceChance = 0.6;
 }
 
