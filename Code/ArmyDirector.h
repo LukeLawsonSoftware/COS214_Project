@@ -1,5 +1,6 @@
 #ifndef ARMYDIRECTOR_H
 #define ARMYDIRECTOR_H
+#include <iostream>
 
 class ArmyBuilder;
 
