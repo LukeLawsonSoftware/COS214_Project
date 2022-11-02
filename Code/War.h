@@ -21,7 +21,9 @@ public:
 
 	void setWarPhase(WarPhase *); // rather make this a method to request chain maybe? idk how chain works
 
-	// obvious getters
+	/// @brief When called will prompt the user to enter the countries for Alliance 1, Alliance 2 and Neutral Countries.
+	/// @author Thomas Blendulf (u21446131)
+	void setUpCountries();
 
 	/// @brief Getter for the Land Theatre of the War.
 	/// @return Land WarTheatre*

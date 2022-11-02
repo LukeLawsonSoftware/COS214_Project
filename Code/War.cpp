@@ -36,8 +36,66 @@ void War::changePhase()
 	phase->handleChange(this);
 }
 
+void War::setUpCountries()
+{
+	std::cout << "How Many Countries in Alliance 1 would you like?" << std::endl;
+	std::string str1;
+	std::getline(std::cin, str1);
+	int all1 = std::stoi(str1);
+	for (int i = 0; i < all1; i++)
+	{
+		std::cout << "Please enter the new Country's name:";
+		std::string name;
+		std::getline(std::cin, name);
+		std::cout << std::endl;
+		std::cout << "Is this Country Rich, Average or Poor:";
+		std::string eco;
+		std::getline(std::cin, eco);
+		std::cout << std::endl;
+		Country *c = new Country(eco, name);
+		Country::alliance1.push_back(c);
+	}
+
+	std::cout << "How Many Countries in Alliance 2 would you like?" << std::endl;
+	std::string str2;
+	std::getline(std::cin, str2);
+	int all2 = std::stoi(str2);
+	for (int i = 0; i < all2; i++)
+	{
+		std::cout << "Please enter the new Country's name:";
+		std::string name;
+		std::getline(std::cin, name);
+		std::cout << std::endl;
+		std::cout << "Is this Country Rich, Average or Poor:";
+		std::string eco;
+		std::getline(std::cin, eco);
+		std::cout << std::endl;
+		Country *c = new Country(eco, name);
+		Country::alliance2.push_back(c);
+	}
+
+	std::cout << "How Many Neutral Countries would you like?" << std::endl;
+	std::string str3;
+	std::getline(std::cin, str3);
+	int neut = std::stoi(str3);
+	for (int i = 0; i < neut; i++)
+	{
+		std::cout << "Please enter the new Country's name:";
+		std::string name;
+		std::getline(std::cin, name);
+		std::cout << std::endl;
+		std::cout << "Is this Country Rich, Average or Poor:";
+		std::string eco;
+		std::getline(std::cin, eco);
+		std::cout << std::endl;
+		Country *c = new Country(eco, name);
+		Country::neutral.push_back(c);
+	}
+}
+
 void War::startWarSim()
 {
+	setUpCountries();
 	while (phase->peaceChance != 0)
 	{
 		srand((unsigned)time(NULL));
@@ -122,6 +180,7 @@ void War::startWarSim()
 
 void War::startWarGame()
 {
+	setUpCountries();
 	while (phase->peaceChance != 0)
 	{
 		srand((unsigned)time(NULL));
@@ -141,7 +200,7 @@ void War::startWarGame()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				std::cout << "What action would you like " << Country::alliance1.at(i) << " to perform?" << std::endl;
+				std::cout << "What action would you like " << Country::alliance1.at(i)->getName() << " to perform?" << std::endl;
 				std::cout << "1. Form Alliance." << std::endl;
 				std::cout << "2. Raise an army." << std::endl;
 				std::cout << "3. Upgrade a Unit Factory." << std::endl;
