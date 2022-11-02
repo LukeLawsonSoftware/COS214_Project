@@ -3,12 +3,14 @@
 #include "Medic.h"
 #include <ctime>
 #include <cstdlib>
+#include <iostream>
 
 WarTheatre::WarTheatre(std::string Type, std::string Name)
 {
 
 	type = Type;
 	name = Name;
+	contentionState = 0;
 
 	// Initialise armies array:
 	for(int i =0; i < 2; i++)
@@ -48,19 +50,32 @@ WarTheatre::~WarTheatre()
 
 	if (medics != NULL)
 	{
-		 
+		for (auto m : *medics)
+		{
+			delete m;
+		}	 
+
+		delete medics;
+		medics = NULL;
     }
 
 	if(civilians !=NULL)
 	{
+		for (auto c : *civilians)
+		{
+			delete c;
+		}	 
 
+		delete civilians;
+		civilians = NULL;
 	}
 }
 
 void WarTheatre::applyTerrainBonus()
 {
 	// templateMethod (calls the two primitive operations)
-
+	this->adjustAttack();
+	this->adjustDefence();
 }
 
 void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
@@ -88,11 +103,74 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 void WarTheatre::addArmy(Army *newArmy)
 {
-	// needs to print something out if the army can't be added to the Theatre
-	// ie: if an army from alliance1 wants to join but there already is one
-	// alternatively, you can make it so there are two vectors of armies 
-	//  (one for alliance1 and one for alliance2 and add that army to the appropriate vector)
+	
+	std::string NewArmyName = newArmy->getName();
+	int alliance = 0;
 
+	// Determine alliance
+	/*
+	for (int i = 0; i < Country::alliance1.size(); i++)
+	{
+		if (Country::alliance1.at(i)->getName() == newArmy->getName())
+		{
+			alliance = 1;
+			break;
+		}
+	}
+
+	for (int i = 0; i < Country::alliance2.size(); i++)
+	{
+		if (Country::alliance2.at(i)->getName() == newArmy->getName())
+		{
+			alliance = 2;
+			break;
+		}
+	}*/
+
+	// Add army 
+	if (contentionState == 0) // Contentionstate = 0 -> no armies has been added :
+	{
+		if (alliance == 1)
+		{
+			armies[0] = newArmy;
+			contentionState = 1;
+		}
+		else if(alliance == 2)
+		{
+			armies[1] = newArmy;
+			contentionState = 2;
+		}
+	}
+	else if (contentionState == 1) // Contentionstate = 1 -> army from alliance1 only :
+	{
+		if (alliance == 1)
+		{
+			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 1 already arrived!" << std::endl;
+		}
+		else if(alliance == 2)
+		{
+			armies[1] = newArmy;
+			contentionState = 3;
+		}
+
+	}
+	else if (contentionState == 2) // Contentionstate = 2 -> army from alliance2 only :
+	{
+		if (alliance == 2)
+		{
+			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 2 already arrived!" << std::endl;
+		}
+		else if(alliance == 1)
+		{
+			armies[0] = newArmy;
+			contentionState = 3;
+		}
+
+	}
+	else if (contentionState == 3) // Contentionstate = 3 ->  armies in contention (different alliances) :
+	{
+		std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> 2 armies are already at battle!" << std::endl;
+	}
 	
 }
 

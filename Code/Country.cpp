@@ -255,6 +255,8 @@ void Country::raiseArmy()
 			ArmyDirector dir(builder);
 			dir.constructArmy();
 			this->army = builder->getArmy();
+
+			army->setName(name);
 		}
 		else
 		{

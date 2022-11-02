@@ -157,3 +157,13 @@ BattleStatistics* Army::getBattleStatistics()
 {
 	return stats;
 }
+
+void Army::setName(std::string Name)
+{
+	name = Name;
+}
+
+std::string Army::getName()
+{
+	return name;
+}
