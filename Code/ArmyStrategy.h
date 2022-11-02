@@ -1,7 +1,7 @@
 #ifndef ARMYSTRATEGY_H
 #define ARMYSTRATEGY_H
-#include "BattleStatistics.h"
-#include "Battalion.h"
+class BattleStatistics;
+class Battalion;
 #include <iostream>
 class ArmyStrategy
 {

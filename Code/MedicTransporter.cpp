@@ -2,31 +2,38 @@
 #include "AmmoSupply.h"
 #include "MedicalSupply.h"
 #include "Country.h"
+#include "Corresponder.h"
+#include "Army.h"
 
-MedicTransporter :: MedicTransporter(){}
+MedicTransporter ::MedicTransporter() {}
 
-MedicTransporter :: ~MedicTransporter(){
-    //Deallocate memory used by the member variable
-    std::list<Corresponder*>::iterator it;
+MedicTransporter ::~MedicTransporter()
+{
+    // Deallocate memory used by the member variable
+    std::list<Corresponder *>::iterator it;
 
-    for (it = corresponderList.begin(); it != corresponderList.end(); ++it){
-        delete (*it); //delete object
+    for (it = corresponderList.begin(); it != corresponderList.end(); ++it)
+    {
+        delete (*it); // delete object
     }
 }
 
-void MedicTransporter :: notify(Corresponder* c){
-    MedicalSupply* medSupply = ( (Country*) c)->getNewMedicalSupply();
-    
-    Army* army = ( (Country*) c)->getArmy(); //casting from Corresponder* to Country*
+void MedicTransporter ::notify(Corresponder *c)
+{
+    MedicalSupply *medSupply = ((Country *)c)->getNewMedicalSupply();
 
-    if(army == NULL) throw std::invalid_argument("Country has no army to which it can send Medical supplies.");
+    Army *army = ((Country *)c)->getArmy(); // casting from Corresponder* to Country*
 
-    int M_size = army->getMedicalSupplySize();     //the current size of the medical supplies array
-    int M_capacity = army->getMedSupplyCapacity(); //capacity is the maximum size of the medical supplies array
+    if (army == NULL)
+        throw std::invalid_argument("Country has no army to which it can send Medical supplies.");
 
-    //check medical supplies
-    if (M_size < 0.50*M_capacity){
-        //send suppplies
+    int M_size = 5;     // army->getMedicalSupplySize();     // the current size of the medical supplies array
+    int M_capacity = 5; // army->getMedSupplyCapacity(); // capacity is the maximum size of the medical supplies array
+
+    // check medical supplies
+    if (M_size < 0.50 * M_capacity)
+    {
+        // send suppplies
         army->addNewMedicalSupplies(medSupply);
     }
 

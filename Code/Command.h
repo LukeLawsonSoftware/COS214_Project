@@ -1,6 +1,7 @@
 #ifndef COMMAND_H
 #define COMMAND_H
-#include "Army.h"
+
+class Army;
 class Command
 {
 protected:

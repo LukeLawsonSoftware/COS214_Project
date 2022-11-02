@@ -1,4 +1,15 @@
 #include "Army.h"
+#include "ArmyComponent.h"
+#include "AmmoSupply.h"
+#include "Country.h"
+#include "WarTheatre.h"
+// #include "Corresponder.h"
+#include "Offensive.h"
+#include "Defensive.h"
+#include "Neutral.h"
+#include "MedicalSupply.h"
+#include "Battalion.h"
+#include "BattleStatistics.h"
 
 Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *> *individuals, std::vector<Supply *> *supplies, std::string type)
 {

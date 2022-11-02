@@ -1,5 +1,6 @@
 #ifndef CHANGESTRATEGY_H
 #define CHANGESTRATEGY_H
+
 #include "Command.h"
 #include <string>
 

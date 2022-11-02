@@ -3,6 +3,7 @@
 #include "Army.h"
 #include "NonCombatEntity.h"
 #include <vector>
+#include <string>
 
 class WarTheatre
 {
@@ -41,6 +42,7 @@ public:
 	void replenishNonCombatEntities();
 
 	// basic getters
+	int getContentionState();
 	std::string getType();
 	std::string getName();
 };

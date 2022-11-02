@@ -1,4 +1,9 @@
 #include "MilitaryCommander.h"
+#include "ChangeStrategy.h"
+#include "AttackTransport.h"
+#include "MoveIntoTheatre.h"
+#include "WarTheatre.h"
+#include "Transporter.h"
 
 MilitaryCommander::MilitaryCommander()
 {

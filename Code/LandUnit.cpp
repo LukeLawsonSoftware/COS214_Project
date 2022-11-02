@@ -1,5 +1,5 @@
 #include "LandUnit.h"
-
+// #include "Soldier.h"
 LandUnit::LandUnit(int powerRating) : Soldier(powerRating)
 {
 }

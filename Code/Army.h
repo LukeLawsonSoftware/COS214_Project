@@ -1,15 +1,21 @@
 #ifndef ARMY_H
 #define ARMY_H
-#include "ArmyComponent.h"
-#include "AmmoSupply.h"
-#include "Country.h"
-#include "WarTheatre.h"
-#include "Corresponder.h"
-#include "Offensive.h"
-#include "Defensive.h"
-#include "Neutral.h"
-#include "MedicalSupply.h"
 
+class ArmyComponent;
+class AmmoSupply;
+class Country;
+class WarTheatre;
+#include "Corresponder.h"
+class Offensive;
+class Defensive;
+class Neutral;
+class MedicalSupply;
+class BattleStatistics;
+class ArmyStrategy;
+class Supply;
+
+#include <string>
+#include <vector>
 class Army : public Corresponder
 {
 

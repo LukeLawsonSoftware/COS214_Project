@@ -1,8 +1,8 @@
 #ifndef SEAFACTORY_H
 #define SEAFACTORY_H
 #include "UnitFactory.h"
-#include "SeaVehicle.h"
-#include "SeaUnit.h"
+class SeaVehicle;
+class SeaUnit;
 
 class SeaFactory : public UnitFactory
 {

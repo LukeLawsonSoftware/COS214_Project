@@ -1,4 +1,6 @@
 #include "MidPhase.h"
+#include "War.h"
+#include "LateCrisis.h"
 
 void MidPhase::handleChange(War *inWar)
 {

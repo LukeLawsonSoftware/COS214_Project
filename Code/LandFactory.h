@@ -1,8 +1,8 @@
 #ifndef LANDFACTORY_H
 #define LANDFACTORY_H
 #include "UnitFactory.h"
-#include "LandVehicle.h"
-#include "LandUnit.h"
+class LandVehicle;
+class LandUnit;
 
 class LandFactory : public UnitFactory
 {

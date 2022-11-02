@@ -1,4 +1,6 @@
 #include "ChangeStrategy.h"
+// #include "Command.h"
+#include "Army.h"
 
 ChangeStrategy::ChangeStrategy() {}
 
