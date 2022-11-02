@@ -8,9 +8,10 @@ class Battalion : public ArmyComponent
 {
 
 private:
-	std::vector<ArmyComponent *> members;
+	std::vector<ArmyComponent *> *members;
 
 public:
+	Battalion();
 	/// @brief Traverses members to get the sum of the AirOffence statistics. This is the statistic value for the Battalio
 	/// @author Luke Lawson (u21433811)
 	/// @return int value for AirOffence statistic of Battalion

@@ -21,6 +21,11 @@ AmmoTransporter ::~AmmoTransporter()
 
 void AmmoTransporter ::notify(Corresponder *c)
 {
+
+    if (c == NULL)
+    {
+        throw std::invalid_argument("Country has no army to which it can send Ammo supplies.");
+    }
     AmmoSupply *ammoSupply = ((Country *)c)->getNewAmmoSupply();
 
     Army *army = ((Country *)c)->getArmy(); // casting from Corresponder* to Country*

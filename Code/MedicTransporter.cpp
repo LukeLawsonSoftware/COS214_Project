@@ -20,6 +20,10 @@ MedicTransporter ::~MedicTransporter()
 
 void MedicTransporter ::notify(Corresponder *c)
 {
+    if (c == NULL)
+    {
+        throw std::invalid_argument("Country has no army to which it can send Medical supplies.");
+    }
     MedicalSupply *medSupply = ((Country *)c)->getNewMedicalSupply();
 
     Army *army = ((Country *)c)->getArmy(); // casting from Corresponder* to Country*

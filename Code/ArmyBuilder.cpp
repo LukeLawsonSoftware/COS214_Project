@@ -9,12 +9,15 @@ ArmyBuilder ::ArmyBuilder(std::string t, std::vector<UnitFactory *> *u, std::vec
 	type = t;
 	unitFactories = u;
 	supplyFactories = s;
+	individuals = NULL;
+	battalions = NULL;
+	supplies = NULL;
 }
 
 std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 {
 	// TODO - implement ArmyBuilder::createIndividuals
-	std::vector<ArmyComponent *> *smallUnits;
+	std::vector<ArmyComponent *> *smallUnits = new std::vector<ArmyComponent *>();
 	bool completedConstruction = false;
 	int allowedSoldiers, allowedVehicles, minReqSoldiers, minReqVehicles;
 	allowedSoldiers = 50;
@@ -32,8 +35,11 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 
 		for (it = unitFactories->begin(); it != unitFactories->end();)
 		{
+			// std::cout << "look here" << std::endl;
+			// std::cout << (*it) << std::endl;
 			if ((*it)->getType() == "Land")
 			{
+				//	//std::cout << "here1" << std::endl;
 				bool next = false;
 
 				if (totalSoldiers < allowedSoldiers)
@@ -42,7 +48,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 					for (int i = soldiersCreated; i < 5; i++)
 					{ // create soldiers
 						ArmyComponent *unit = (*it)->createSoldier();
-
+						//	//std::cout << unit << std::endl;
 						if (unit != nullptr)
 						{ // if we could actually afford to create the soldier
 							smallUnits->push_back(unit);
@@ -91,6 +97,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 				++it; // go to the next factory
 			}
 		}
+		// std::cout << "lookee here" << std::endl;
 		break;
 	}
 	case 'S':
@@ -101,8 +108,11 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 
 		for (it = unitFactories->begin(); it != unitFactories->end();)
 		{
+			// std::cout << "look here" << std::endl;
+			// std::cout << (*it) << std::endl;
 			if ((*it)->getType() == "Sea")
 			{
+				//	//std::cout << "here1" << std::endl;
 				bool next = false;
 
 				if (totalSoldiers < allowedSoldiers)
@@ -111,12 +121,14 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 					for (int i = soldiersCreated; i < 5; i++)
 					{ // create soldiers
 						ArmyComponent *unit = (*it)->createSoldier();
-
+						// //std::cout << unit << std::endl;
+						//	//std::cout << unit << std::endl;
 						if (unit != nullptr)
 						{ // if we could actually afford to create the soldier
 							smallUnits->push_back(unit);
 							totalSoldiers += 1;
 							increase += 1;
+							// //std::cout << "here" << std::endl;
 						}
 						else
 						{
@@ -160,6 +172,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 				++it; // go to the next factory
 			}
 		}
+		// std::cout << "lookee here" << std::endl;
 		break;
 	}
 	case 'A':
@@ -170,8 +183,11 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 
 		for (it = unitFactories->begin(); it != unitFactories->end();)
 		{
+			// std::cout << "look here" << std::endl;
+			// std::cout << (*it) << std::endl;
 			if ((*it)->getType() == "Air")
 			{
+				// //std::cout << "here1" << std::endl;
 				bool next = false;
 
 				if (totalSoldiers < allowedSoldiers)
@@ -229,24 +245,34 @@ std::vector<ArmyComponent *> *ArmyBuilder::createIndividuals()
 				++it; // go to the next factory
 			}
 		}
+		// std::cout << "lookee here" << std::endl;
 		break;
 	}
 	}
-	// set the individuals
+	// std::cout << "got to here" << std::endl;
+	//  set the individuals
 	setIndividuals(smallUnits);
-
+	// std::cout << "got to here 2" << std::endl;
 	return smallUnits;
 }
 
 std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 {
 	// TODO - implement ArmyBuilder::buildBattalions
-	std::vector<ArmyComponent *> *armyBattalions;
+	std::vector<ArmyComponent *> *armyBattalions = new std::vector<ArmyComponent *>();
 	int allowedBattalions = 2;
 
+	bool isDone = false;
+
 	for (int b = 0; b < allowedBattalions; b++)
-	{ // create allowed number of battalions
-		std::vector<ArmyComponent *> *smallUnits;
+	{
+		if (isDone)
+		{
+			break;
+		}
+
+		// create allowed number of battalions
+		std::vector<ArmyComponent *> *smallUnits = new std::vector<ArmyComponent *>();
 		int allowedSoldiers, allowedVehicles, minReqSoldiers, minReqVehicles;
 		allowedSoldiers = 30;
 		allowedVehicles = 6;
@@ -362,10 +388,10 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 				{
 					i->push_back((*it_3));
 				}
-
+				// std::cout << i->size() << " before set" << std::endl;
 				setIndividuals(i); // set new individuals
-
-				delete i;
+				isDone = true;
+				//	delete i;
 			}
 
 			break;
@@ -448,6 +474,8 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 				}
 			}
 
+			// std::cout << "maybe here" << std::endl;
+
 			// check if we can create a smaller battalion
 			if (!completedConstruction && (totalSoldiers >= minReqSoldiers && totalVehicles >= minReqVehicles))
 			{ // minimum requirements to create a battalion
@@ -472,10 +500,10 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 				{
 					i->push_back((*it_3));
 				}
-
+				// std::cout << i->size() << " before set" << std::endl;
 				setIndividuals(i); // set new individuals
-
-				delete i;
+				isDone = true;
+				//	delete i;
 			}
 
 			break;
@@ -582,10 +610,10 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 				{
 					i->push_back((*it_3));
 				}
-
+				// std::cout << i->size() << " before set" << std::endl;
 				setIndividuals(i); // set new individuals
-
-				delete i;
+				isDone = true;
+				// delete i;
 			}
 
 			break;
@@ -595,6 +623,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 
 	} // end big for-loop
 	// set the battalions
+	// std::cout << "made it here" << std::endl;
 	setBattalions(armyBattalions);
 
 	// finally return the battalions
@@ -604,7 +633,7 @@ std::vector<ArmyComponent *> *ArmyBuilder::buildBattalions()
 std::vector<Supply *> *ArmyBuilder::determineSupplies()
 {
 	// TODO - implement ArmyBuilder::determineSupplies
-	std::vector<Supply *> *armySupplies;
+	std::vector<Supply *> *armySupplies = new std::vector<Supply *>();
 	int allowedAmmoSupplies, allowedMedSupplies, minReqSoldiers, minReqVehicles;
 	allowedAmmoSupplies = 10;
 	allowedMedSupplies = 10;
@@ -689,7 +718,7 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 	}
 	// set supplies
 	setSupplies(armySupplies);
-
+	// std::cout << "success" << std::endl;
 	return armySupplies;
 }
 
@@ -705,9 +734,9 @@ Army *ArmyBuilder::putArmyTogether()
 	*/
 
 	// also need to pass in type of army
-
+	// std::cout << "vibes" << std::endl;
 	army = new Army(getBattalions(), getIndividuals(), getSupplies(), this->type);
-
+	// std::cout << "vibesx2" << std::endl;
 	return army; //(battalions, individuals, supplies)
 }
 
@@ -733,47 +762,60 @@ std::vector<Supply *> *ArmyBuilder::getSupplies()
 
 void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 {
-	if (newIndv == nullptr)
+	// std::cout << newIndv->size() << std::endl;
+	if (newIndv == NULL)
 		return;
 
 	// make deep copy
-	if (individuals != nullptr)
+	if (individuals != NULL)
 	{
-		// clear individuals (the buildBattalions() function passes in the old individuals with additional individuals)
+		// //std::cout << individuals << std::endl;
+		//   clear individuals (the buildBattalions() function passes in the old individuals with additional individuals)
 		std::vector<ArmyComponent *>::iterator it;
-
+		// individuals->push_back(NULL);
+		// std::cout << "hele" << std::endl;
+		// std::cout << newIndv->size() << std::endl;
 		for (it = individuals->begin(); it != individuals->end(); ++it)
 		{
-			delete (*it);
+			// //std::cout << "testing here 2" << std::endl;
+			//	delete (*it);
 		}
-		delete individuals;
-
+		// //std::cout << "testing here 2" << std::endl;
+		// std::cout << newIndv->size() << "here" << std::endl;
+		// delete individuals;
+		// std::cout << newIndv->size() << "here" << std::endl;
 		individuals = new std::vector<ArmyComponent *>;
 
 		// now make the copy
 		std::vector<ArmyComponent *>::iterator it1;
-
+		// std::cout << newIndv->size() << std::endl;
 		for (it1 = newIndv->begin(); it1 != newIndv->end(); ++it1)
 		{
+			//	//std::cout << "testing here 2" << std::endl;
 			individuals->push_back((*it1));
 		}
+		// std::cout << "testing here 2" << std::endl;
+	}
+	else
+	{
+		individuals = newIndv;
 	}
 }
 
 void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 {
-	if (newBattalions == nullptr)
+	if (newBattalions == NULL)
 		return;
 
 	// make deep copy
-	if (battalions != nullptr)
+	if (battalions != NULL)
 	{
 		// clear battalions
 		std::vector<ArmyComponent *>::iterator it;
 
 		for (it = battalions->begin(); it != battalions->end(); ++it)
 		{
-			delete (*it);
+			//	delete (*it);
 		}
 		delete battalions;
 
@@ -787,33 +829,43 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 			battalions->push_back((*it1));
 		}
 	}
+	else
+	{
+		battalions = newBattalions;
+	}
 }
 
 void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
 {
-	if (newSupplies == nullptr)
+	// std::cout << "here it is" << std::endl;
+	if (newSupplies == NULL)
 		return;
 
 	// make deep copy
-	if (supplies != nullptr)
+	if (supplies != NULL)
 	{
 		// clear supplies
 		std::vector<Supply *>::iterator it;
 
 		for (it = supplies->begin(); it != supplies->end(); ++it)
 		{
-			delete (*it);
+			// delete (*it);
 		}
-		delete supplies;
+		// delete supplies;
 
 		supplies = new std::vector<Supply *>;
-
-		// now make the copy
+		// std::cout << "here it is" << std::endl;
+		//  now make the copy
 		std::vector<Supply *>::iterator it1;
 
 		for (it1 = newSupplies->begin(); it1 != newSupplies->end(); ++it1)
 		{
 			supplies->push_back((*it1));
 		}
+	}
+	else
+	{
+		// std::cout << "here it is" << std::endl;
+		supplies = newSupplies;
 	}
 }
