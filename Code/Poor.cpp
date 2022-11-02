@@ -27,40 +27,77 @@ int Poor::decideMyTurn(Country* country) {
 		}
 	}
 
-	// 2. raiseArmy (this methdo will fail if the country does not have enough gdp)
-	Possibilities[1] = true;
-
-	// 3. upgradeUnitFactory = not possible
-	Possibilities[2] = false;
-
-	// 4. upgradeSupplyFactory = not possible
-	Possibilities[3] = false;
-
-	// 5, 6, 7 require there to be an army alreayd
-	//  5. enterArmyIntoTheatre
-	//  6. changeArmyStrategy
-	//  7. attackTransport
-	if (country->getArmy() == NULL)
+	// Country is neutral - can only :
+	// 		Upgrade factories (but poor : not possible)
+	//		raise army
+	//		form alliance
+	//		do nothing
+	if(Possibilities[0] == true)
 	{
+		// 2. raiseArmy (this methdo will fail if the country does not have enough gdp)
+		Possibilities[1] = true;
+
+		// 3. upgradeUnitFactory = not possible due to Poor state
+		Possibilities[2] = false;
+
+		// 4. upgradeSupplyFactory = not possible due to Poor state
+		Possibilities[3] = false;
+
+		// 5, 6, 7 require there to be an army alreayd
+		//  5. enterArmyIntoTheatre = not possible (neutral)
+		//  6. changeArmyStrategy = not possible (neutral)
+		//  7. attackTransport = not possible (neutral)
 		Possibilities[4] = false;
 		Possibilities[5] = false;
 		Possibilities[6] = false;
+		
+		// 8. surrender = not possible (neutral)
+		Possibilities[7] = false;
+
+		// 9. sendSupplies = not possible (neutral)
+		Possibilities[8] = false;
+
+		// 10. do nothing
+		Possibilities[9] = true;
+
 	}
 	else
 	{
-		Possibilities[4] = true;
-		Possibilities[5] = true;
-		Possibilities[6] = true;
+		// 2. raiseArmy (this methdo will fail if the country does not have enough gdp)
+		Possibilities[1] = true;
+
+		// 3. upgradeUnitFactory = not possible
+		Possibilities[2] = false;
+
+		// 4. upgradeSupplyFactory = not possible
+		Possibilities[3] = false;
+
+		// 5, 6, 7 require there to be an army already
+		//  5. enterArmyIntoTheatre
+		//  6. changeArmyStrategy
+		//  7. attackTransport
+		if (country->getArmy() == NULL)
+		{
+			Possibilities[4] = false;
+			Possibilities[5] = false;
+			Possibilities[6] = false;
+		}
+		else
+		{
+			Possibilities[4] = true;
+			Possibilities[5] = true;
+			Possibilities[6] = true;
+		}
+		
+		// 8. surrender
+		Possibilities[7] = true;
+
+		// 9. sendSupplies
+		Possibilities[8] = true;
+
+		// 10. do nothing
+		Possibilities[9] = true;
 	}
-	
-	// 8. surrender
-	Possibilities[7] = true;
-
-	// 9. sendSupplies
-	Possibilities[8] = true;
-
-	// 10. do nothing
-	Possibilities[9] = true;
 
 	// Generate random number
 	srand(time(0)); 
