@@ -1,21 +1,60 @@
 #include "WarTheatre.h"
+#include "Civilian.h"
+#include "Medic.h"
+#include <ctime>
+#include <cstdlib>
 
 WarTheatre::WarTheatre(std::string Type, std::string Name)
 {
-	// A constructor is required for type, name and to initialise  array/vectors
-	// Add a number of civilians and medics at instantiation
 
 	type = Type;
 	name = Name;
 
-	// what should I do with the array of armies
-	// can I generate a random number and add that amount of noncombat entities 
-	// what is the max number ??
+	// Initialise armies array:
+	for(int i =0; i < 2; i++)
+	{
+		armies[i] = NULL;
+	}
+
+	// Populate Civilian and Medic Vectors
+	srand(time(0));
+
+	int Civilians = rand() % 19 + 2;
+	int refugees = Civilians/2;
+	int citizen = Civilians - refugees;
+
+	for(int i = 0; i < citizen; i++)
+	{
+		civilians->push_back(new Civilian("citizen"));
+	}
+
+	for(int i = 0; i < refugees; i++)
+	{
+		civilians->push_back(new Civilian("refugee"));
+	}
+
+	int Medics = rand() % 19 + 2 ;
+
+	for(int i = 0; i < Medics; i++)
+	{
+		civilians->push_back(new Medic());
+	}
+
 }
 
 WarTheatre::~WarTheatre()
 {
 	// A destructor will also be necessary to delete the medics and civilians
+
+	if (medics != NULL)
+	{
+		 
+    }
+
+	if(civilians !=NULL)
+	{
+
+	}
 }
 
 void WarTheatre::applyTerrainBonus()
@@ -53,11 +92,36 @@ void WarTheatre::addArmy(Army *newArmy)
 	// ie: if an army from alliance1 wants to join but there already is one
 	// alternatively, you can make it so there are two vectors of armies 
 	//  (one for alliance1 and one for alliance2 and add that army to the appropriate vector)
+
+	
 }
 
 void WarTheatre::replenishNonCombatEntities()
 {
 	// call this at the end of the round to add a fixed number of civilains and medics each time
+
+	int Medics = 8;
+	int Refugees = 8;
+	int Citizens = 6;
+
+	for(int i = 0; i < Citizens; i++)
+	{
+		civilians->push_back(new Civilian("citizen"));
+	}
+
+	for(int i = 0; i < Refugees; i++)
+	{
+		civilians->push_back(new Civilian("refugee"));
+	}
+
+	int Medics = rand() % 19 + 2 ;
+
+	for(int i = 0; i < Medics; i++)
+	{
+		civilians->push_back(new Medic());
+	}
+
+
 }
 
 std::string WarTheatre::getType()
@@ -68,4 +132,10 @@ std::string WarTheatre::getType()
 std::string WarTheatre::getName()
 {
 	return name;
+}
+
+
+Army* WarTheatre::getArmies()
+{
+	return *armies;
 }

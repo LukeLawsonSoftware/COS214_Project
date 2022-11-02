@@ -2,6 +2,7 @@
 #define WARTHEATRE_H
 #include "Army.h"
 #include "NonCombatEntity.h"
+#include "BattleStatistics.h"
 #include <vector>
 #include <string>
 
@@ -10,7 +11,7 @@ class WarTheatre
 
 private:
 	int contentionState;					   // 0=no armies, 1=army from alliance1 only, 2=army from alliance2 only, 3=2 armies in contention (different alliances)
-	Army *armies;							   // maybe make this an array. army[0] =from alliance1, army[1] from alliance2
+	Army* armies[2];						   // maybe make this an array. army[0] =from alliance1, army[1] from alliance2
 	std::vector<NonCombatEntity *> *medics;	   // might need to be dynamically cast to getHealing
 	std::vector<NonCombatEntity *> *civilians; // Almost entirely to be killed
 	std::string type;						   // Land/Sea/Air
@@ -27,8 +28,6 @@ private:
 	virtual void adjustAttack() = 0; // primitiveOperation
 
 public:
-
-
 	/// @brief a paramaterized constructor to set the type, name and the medics and civilian vectors
 	/// @author Jonelle Coertze (u21446271)
 	/// @param Type string used to indicate if the war theatre is a land, sea or air terrain
@@ -57,14 +56,19 @@ public:
 	void replenishNonCombatEntities();
 
 	/// @brief a get method to return the type of the war theatre
-	/// @author Jonelle COertze (u21446271)
+	/// @author Jonelle Coertze (u21446271)
 	/// @return string used to indicate the type(air/land/sea) of the war theatre
 	std::string getType();
 
 	/// @brief a get method to return the name of the war theatre
-	/// @author Jonelle COertze (u21446271)
+	/// @author Jonelle Coertze (u21446271)
 	/// @return string used to indicate the name of the war theatre
 	std::string getName();
+
+	/// @brief a get method to return the armies currently present in the war theatre
+	/// @author Jonelle Coertze (u21446271)
+	/// @return pointer to the army array containing the armies currently present in the war theatre
+	Army* getArmies();
 };
 
 #endif

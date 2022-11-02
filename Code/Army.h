@@ -73,6 +73,11 @@ public:
 	/// @author Luke Lawson (u21433811)
 	/// @return string representing the army's type (Air, Land or Sea)
 	std::string getType();
+
+	/// @brief a function to get the BattleStatistics of a army to alter the statistics
+	/// @author Jonelle Coertze (u21446271) 
+	/// @return pointer to a BattleStatistics object
+	BattleStatistics* getBattleStatistics();
 };
 
 #endif

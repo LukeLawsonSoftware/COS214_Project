@@ -152,3 +152,8 @@ std::string Army::getType()
 {
 	return this->type;
 }
+
+BattleStatistics* Army::getBattleStatistics()
+{
+	return stats;
+}
