@@ -24,6 +24,8 @@ void MedicTransporter ::notify(Corresponder *c)
 
     Army *army = ((Country *)c)->getArmy(); // casting from Corresponder* to Country*
 
+    if (army == NULL) throw std::invalid_argument("Country has no army to which it can send Medical supplies.");
+
     int M_size = 5;     // army->getMedicalSupplySize();     // the current size of the medical supplies array
     int M_capacity = 5; // army->getMedSupplyCapacity(); // capacity is the maximum size of the medical supplies array
 
