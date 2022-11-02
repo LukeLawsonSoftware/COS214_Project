@@ -18,13 +18,22 @@ public:
 	/// @brief Constructor to initialise a War object and set initialise its WarPhase and War theatres
 	///@author Thomas Blendulf (u21446131)
 	War();
-	void setupTheatres(); // rather initialise in constructor
 
 	void setWarPhase(WarPhase *); // rather make this a method to request chain maybe? idk how chain works
 
 	// obvious getters
+
+	/// @brief Getter for the Land Theatre of the War.
+	/// @return Land WarTheatre*
+	///@author Thomas Blendulf (u21446131)
 	WarTheatre *getLandTheatre();
+	/// @brief Getter for the Air Theatre of the War.
+	/// @return Air WarTheatre*
+	///@author Thomas Blendulf (u21446131)
 	WarTheatre *getAirTheatre();
+	/// @brief Getter for the Sea Theatre of the War.
+	/// @return Sea WarTheatre*
+	///@author Thomas Blendulf (u21446131)
 	WarTheatre *getSeaTheatre();
 
 	// needs to be made relevant for chain of responsibility
