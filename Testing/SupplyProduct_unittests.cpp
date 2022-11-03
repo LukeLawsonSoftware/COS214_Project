@@ -12,9 +12,9 @@ namespace
     TEST(QuantityInput, Negative_Zero_Positive_Test)
     {
         int quantity = 0;
-        ASSERT_EQ(quantity, -1); /* negative */
-        ASSERT_EQ(quantity, 0);  /* zero */
-        ASSERT_GT(quantity, 0);  /* positive */
+        ASSERT_LT(quantity, -1); /* negative */
+        ASSERT_EQ(quantity, 0);  /*   zero   */
+        ASSERT_GT(quantity+1, 0);  /* positive */
     }
 
     //Check for intput when setting bonus
@@ -30,7 +30,7 @@ namespace
             EXPECT_EQ(err.what(), std::string("Cannot set ammo bonus as a negative value"));
         }
         catch(...){
-            FAIL():
+            FAIL();
         }
     }
 
@@ -47,7 +47,7 @@ namespace
             EXPECT_EQ(err.what(), std::string("Cannot set medical bonus as a negative value"));
         }
         catch(...){
-            FAIL():
+            FAIL();
         }
     }
 
@@ -60,7 +60,7 @@ namespace
             m->setMedicalBonus(newMedicalBonus);
         }
         catch(...){
-            FAIL():
+            FAIL();
         }
     }
 
@@ -73,7 +73,7 @@ namespace
             a->setAmmoBonus(newAmmoBonus);
         }
         catch(...){
-            FAIL():
+            FAIL();
         }
     }
 
@@ -87,7 +87,7 @@ namespace
     }
 
     //Check for valid return on the medical bonus
-    TEST(GettingAmmoBonus, TestCase)
+    TEST(GettingMedicalBonus, TestCase)
     {
         MedicalSupply* m = new MedicalSupply(1,3);
         m->setMedicalBonus(3);
@@ -96,14 +96,43 @@ namespace
     }
 
     //Check if upgrade() method works
-    TEST(UpgradeFactory, TestLevelIncrease)
+    TEST(UpgradeFactory, TestLevelAndBudgetIncrease)
     {
-        AmmoFactory* a = new AmmoFactory(1, "ammoFactory");
+        AmmoFactory* a = new AmmoFactory(1,"ammoFactory");
 
-        int currentLevel = a->getLevel();
+        int prevLevel = 1;
+        int prevBudget = 1;
         a->upgrade();
+        int newLevel = a->getLevel();
+        int newBudget = a->getBudget();
 
-        ASSERT_EQ(currentLevel+1, currentLevel);
+        ASSERT_GT(newLevel, prevLevel);
+        ASSERT_GT(newBudget,prevBudget);
+
+        delete a;
+    }
+
+    //Check if getLevel() works
+    TEST(GetLevel, TestReturnValueLevel)
+    {
+        AmmoFactory* a = new AmmoFactory(1,"ammoFactory");
+
+        int level = a->getLevel();
+
+        ASSERT_GE(level, 1);
+
+        delete a;
+    }
+
+    //Check if getTotalSpent() works
+    TEST(getTotalSpent, TestReturnValueSpent)
+    {
+        AmmoFactory* a = new AmmoFactory(1,"ammoFactory");
+
+        int spent = a->getTotalSpent();
+
+        ASSERT_GE(spent, 0);
+
         delete a;
     }
 }
