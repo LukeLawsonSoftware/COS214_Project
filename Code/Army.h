@@ -26,6 +26,7 @@ private:
 	ArmyStrategy *currentStrategy;
 	std::string type;
 	BattleStatistics *stats;
+	std::string name;
 
 public:
 	/// @brief Constructor to initialise an army object with ArmyComponents, Supplies and a type
@@ -73,6 +74,21 @@ public:
 	/// @author Luke Lawson (u21433811)
 	/// @return string representing the army's type (Air, Land or Sea)
 	std::string getType();
+
+	/// @brief a function to get the BattleStatistics of a army to alter the statistics
+	/// @author Jonelle Coertze (u21446271) 
+	/// @return pointer to a BattleStatistics object
+	BattleStatistics* getBattleStatistics();
+
+	/// @brief a function to set the name of the army
+	/// @author Jonelle Coertze (u21446271)
+	/// @param Name string to set the name of the Army
+	void setName(std::string Name);
+
+	/// @brief a function to get the name of the army
+	/// @author Jonelle Coertze (u21446271)
+	/// @return a string giving the army's name
+	std::string getName();
 };
 
 #endif

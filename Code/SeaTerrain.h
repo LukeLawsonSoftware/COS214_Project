@@ -4,13 +4,14 @@
 
 class SeaTerrain : public WarTheatre
 {
+	private:
+		/// @brief a function to apply bonus to seaOffense stats of both armies
+		/// @author Jonelle Coertze (u21446271)
+		void adjustAttack();
 
-private:
-	// apply bonus to seaOffense stats of both armies
-	void adjustAttack();
-
-	// apply bonus to seaDefence stats of both armies
-	void adjustDefence();
+		/// @brief a function to apply bonus to seaDefence stats of both armies
+		/// @author Jonelle Coertze (u21446271)
+		void adjustDefence();
 };
 
 #endif
