@@ -1,6 +1,7 @@
 #include "WarTheatre.h"
 #include "Civilian.h"
 #include "Medic.h"
+#include "Country.h"
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
@@ -89,8 +90,8 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 	//  apply army->applyStrategyBonus
 	// print a head-to-head summary (you can choose what is relevant)
 	// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much damage to do to morale
-	// if you're feeling up to it, you can make other stats change during the fight too
-	// Army's have ammo. BattleStatistics (probs easier) or the ammoSupply (harder) attributes can be used to control ammo. At the end of each round, each army needs to lose some ammo. If an army runs out of ammo, their morale becomes zero. You will likely need to make some changes to Army to implement this functionality
+	// Army's have ammo. BattleStatistics (probs easier) or the ammoSupply (harder) attributes can be used to control ammo. At the end of each round, 
+	//	each army needs to lose some ammo. If an army runs out of ammo, their morale becomes zero. You will likely need to make some changes to Army to implement this functionality
 	//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 	// make it so that we can't have a case where both armies die at the same time. pick a winner somehow
 	//  surviving armies call recuperate (this uses the armys' medical supplies)
@@ -108,7 +109,7 @@ void WarTheatre::addArmy(Army *newArmy)
 	int alliance = 0;
 
 	// Determine alliance
-	/*
+	
 	for (int i = 0; i < Country::alliance1.size(); i++)
 	{
 		if (Country::alliance1.at(i)->getName() == newArmy->getName())
@@ -125,7 +126,7 @@ void WarTheatre::addArmy(Army *newArmy)
 			alliance = 2;
 			break;
 		}
-	}*/
+	}
 
 	// Add army 
 	if (contentionState == 0) // Contentionstate = 0 -> no armies has been added :
