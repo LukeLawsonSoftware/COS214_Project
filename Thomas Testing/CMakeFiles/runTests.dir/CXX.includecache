@@ -1,0 +1,754 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirFactory.cpp
+AirFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirFactory.h
+AirVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirVehicle.h
+AirUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirFactory.h
+UnitFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirTerrain.cpp
+AirTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirTerrain.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirTerrain.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirUnit.cpp
+AirUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirUnit.h
+Soldier.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirVehicle.cpp
+AirVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirVehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirVehicle.h
+Vehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoFactory.cpp
+AmmoFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoFactory.h
+AmmoSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoFactory.h
+SupplyFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.cpp
+AmmoSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+Supply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoTransporter.cpp
+AmmoTransporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoTransporter.h
+AmmoSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+MedicalSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoTransporter.h
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.cpp
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+AmmoSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+Offensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Offensive.h
+Defensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Defensive.h
+Neutral.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Neutral.h
+MedicalSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+string
+-
+vector
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyBuilder.cpp
+ArmyBuilder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyBuilder.h
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+UnitFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+SupplyFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyBuilder.h
+iostream
+-
+vector
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+cstdlib
+-
+cmath
+-
+ctime
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyDirector.cpp
+ArmyDirector.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyDirector.h
+ArmyBuilder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyBuilder.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyDirector.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.cpp
+ArmyStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.h
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AttackTransport.cpp
+AttackTransport.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AttackTransport.h
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AttackTransport.h
+Command.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Average.cpp
+Average.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Average.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+ctime
+-
+cstdlib
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Average.h
+EconomicState.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EconomicState.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.cpp
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+vector
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.cpp
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ChangeStrategy.cpp
+ChangeStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ChangeStrategy.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ChangeStrategy.h
+Command.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.h
+string
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Civilian.cpp
+Civilian.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Civilian.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Civilian.h
+NonCombatEntity.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/NonCombatEntity.h
+string
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.cpp
+Command.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.cpp
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.cpp
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+EconomicState.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EconomicState.h
+Rich.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Rich.h
+Poor.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Poor.h
+Average.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Average.h
+AmmoTransporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoTransporter.h
+MedicTransporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicTransporter.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+LandFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandFactory.h
+AirFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirFactory.h
+SeaFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaFactory.h
+AmmoFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoFactory.h
+MedicalFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalFactory.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+ArmyDirector.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyDirector.h
+ArmyBuilder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyBuilder.h
+MilitaryCommander.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MilitaryCommander.h
+SupplyFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+vector
+-
+string
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Defensive.cpp
+Defensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Defensive.h
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Defensive.h
+ArmyStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyCrisis.cpp
+EarlyCrisis.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyCrisis.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyCrisis.h
+EarlyPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyOpenConflict.cpp
+EarlyOpenConflict.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyOpenConflict.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyOpenConflict.h
+EarlyCrisis.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyCrisis.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPeace.cpp
+EarlyPeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPeace.h
+EarlyUnstablePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyUnstablePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPhase.cpp
+EarlyPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPhase.h
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+MidPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MidPhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPhase.h
+WarPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyUnstablePeace.cpp
+EarlyUnstablePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyUnstablePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyUnstablePeace.h
+EarlyOpenConflict.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyOpenConflict.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EconomicState.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandFactory.cpp
+LandFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandFactory.h
+LandVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandVehicle.h
+LandUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandFactory.h
+UnitFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandTerrain.cpp
+LandTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandTerrain.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandTerrain.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandUnit.cpp
+LandUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandUnit.h
+Soldier.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandVehicle.cpp
+LandVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandVehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandVehicle.h
+Vehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateCrisis.cpp
+LateCrisis.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateCrisis.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateCrisis.h
+LateOpenConflict.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateOpenConflict.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateOpenConflict.cpp
+LateOpenConflict.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateOpenConflict.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateOpenConflict.h
+LateUnstablePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateUnstablePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePeace.cpp
+LatePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePeace.h
+LatePhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePhase.cpp
+LatePhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePhase.h
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePhase.h
+WarPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateUnstablePeace.cpp
+LateUnstablePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateUnstablePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateUnstablePeace.h
+LatePeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LatePeace.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Medic.cpp
+Medic.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Medic.h
+ctime
+-
+cstdlib
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Medic.h
+NonCombatEntity.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/NonCombatEntity.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicTransporter.cpp
+MedicTransporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicTransporter.h
+AmmoSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AmmoSupply.h
+MedicalSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicTransporter.h
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalFactory.cpp
+MedicalFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalFactory.h
+MedicalSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalFactory.h
+SupplyFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.cpp
+MedicalSupply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MedicalSupply.h
+Supply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MidPhase.cpp
+MidPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MidPhase.h
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+LateCrisis.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LateCrisis.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MidPhase.h
+WarPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MilitaryCommander.cpp
+MilitaryCommander.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MilitaryCommander.h
+ChangeStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ChangeStrategy.h
+AttackTransport.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AttackTransport.h
+MoveIntoTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MoveIntoTheatre.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MilitaryCommander.h
+string
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MoveIntoTheatre.cpp
+MoveIntoTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MoveIntoTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/MoveIntoTheatre.h
+Command.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Command.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Neutral.cpp
+Neutral.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Neutral.h
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Neutral.h
+ArmyStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/NonCombatEntity.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Offensive.cpp
+Offensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Offensive.h
+BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Offensive.h
+ArmyStrategy.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyStrategy.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Poor.cpp
+Poor.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Poor.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+ctime
+-
+cstdlib
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Poor.h
+EconomicState.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EconomicState.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Rich.cpp
+Rich.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Rich.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+ctime
+-
+cstdlib
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Rich.h
+EconomicState.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EconomicState.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaFactory.cpp
+SeaFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaFactory.h
+SeaVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaVehicle.h
+SeaUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaFactory.h
+UnitFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaTerrain.cpp
+SeaTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaTerrain.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaTerrain.h
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaUnit.cpp
+SeaUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaUnit.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaUnit.h
+Soldier.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaVehicle.cpp
+SeaVehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaVehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaVehicle.h
+Vehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.cpp
+Soldier.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Supply.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.cpp
+SupplyFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SupplyFactory.h
+Supply.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Supply.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.cpp
+Transporter.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Transporter.h
+Corresponder.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Corresponder.h
+list
+-
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.cpp
+UnitFactory.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/UnitFactory.h
+ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.cpp
+Vehicle.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Vehicle.h
+ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.cpp
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+EarlyPeace.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/EarlyPeace.h
+AirTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirTerrain.h
+SeaTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaTerrain.h
+LandTerrain.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandTerrain.h
+Country.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Country.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+map
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.cpp
+WarPhase.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.h
+War.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/War.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarPhase.h
+iostream
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.cpp
+WarTheatre.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/WarTheatre.h
+Army.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Army.h
+NonCombatEntity.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/NonCombatEntity.h
+vector
+-
+string
+-
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Thomas Testing/WarPhase_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Thomas Testing/gtest/gtest.h
+../Code/Defensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Defensive.h
+../Code/Neutral.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Neutral.h
+../Code/Offensive.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Offensive.h
+../Code/BattleStatistics.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/BattleStatistics.h
+../Code/Battalion.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Battalion.h
+../Code/ArmyComponent.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/ArmyComponent.h
+../Code/LandUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/LandUnit.h
+../Code/SeaUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/SeaUnit.h
+../Code/AirUnit.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/AirUnit.h
+../Code/Soldier.h
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Code/Soldier.h
+
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Thomas Testing/unittests.cpp
+WarPhase_unittests.cpp
+/mnt/c/Users/blend/Desktop/Work/2022/COS 214/Project Code/Testing Code/COS214_Project/Thomas Testing/WarPhase_unittests.cpp
+gtest/gtest.h
+-
+
