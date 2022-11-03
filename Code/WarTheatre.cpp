@@ -116,9 +116,43 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much 
 		//    damage to do to morale
-	/*------------------TO Impement-------------------------*/
 		int moraleArmy1 = StatsArmy1->getMorale();
 		int moraleArmy2 = StatsArmy2->getMorale();
+
+		int AttackArmy1 = StatsArmy1->getAirAttack() + StatsArmy1->getLandAttack() + StatsArmy1->getSeaAttack();
+		int AttackArmy2 = StatsArmy2->getAirAttack() + StatsArmy2->getLandAttack() + StatsArmy2->getSeaAttack();
+
+		int DefenseArmy1 = StatsArmy1->getAirDefence() + StatsArmy1->getAirDefence() + StatsArmy1->getAirDefence();
+		int DefenseArmy2 = StatsArmy2->getAirDefence() + StatsArmy2->getAirDefence() + StatsArmy2->getAirDefence();
+
+		int differenceArmy1 = AttackArmy1 - DefenseArmy1;
+		int differenceArmy2 = AttackArmy2 - DefenseArmy2;
+
+		// army 1 attack army 2
+		// if differenceArmy1 == 0 : army 1 cannot do anything to army 2
+		if(differenceArmy1 > 0) 
+		{
+			moraleArmy2 = moraleArmy2 - (differenceArmy1*2);
+		}
+		else if(differenceArmy1 < 0)
+		{
+			moraleArmy2 = moraleArmy2 - (differenceArmy1*(-1.4));
+		}
+
+		// army 2 attack army 1
+		// if differenceArmy2 == 0 : army 2 cannot do anything to army 1
+		if(differenceArmy2 > 0) 
+		{
+			moraleArmy1 = moraleArmy1 - (differenceArmy2*2);
+		}
+		else if(differenceArmy1 < 0)
+		{
+			moraleArmy1 = moraleArmy1 - (differenceArmy2*(-1.4));
+		}
+		
+		// Update the Morale statistics
+		StatsArmy1->setMorale(moraleArmy1);
+		StatsArmy2->setMorale(moraleArmy2);
 
 		// Army's have ammo. 
 		// BattleStatistics attributes are used to control ammo. 
@@ -128,13 +162,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		// At the end of each round,each army needs to lose some ammo. 
 		if (moraleArmy1 > 0)
 		{
-			AmoArmy1 = 0.7*AmoArmy1;
+			AmoArmy1 = AmoArmy1 - 20;
 			StatsArmy1->setAvailableAmmo(AmoArmy1);
 		}
 		
 		if (moraleArmy2 > 0)
 		{
-			AmoArmy2 = 0.7*AmoArmy2;
+			AmoArmy2 = AmoArmy2 - 20;
 			StatsArmy2->setAvailableAmmo(AmoArmy2);
 		}
 
