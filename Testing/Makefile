@@ -150,6 +150,87 @@ ArmyComponent_unittests.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.s
 .PHONY : ArmyComponent_unittests.cpp.s
 
+Transport_unittests.o: Transport_unittests.cpp.o
+
+.PHONY : Transport_unittests.o
+
+# target to build an object file
+Transport_unittests.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Transport_unittests.cpp.o
+.PHONY : Transport_unittests.cpp.o
+
+Transport_unittests.i: Transport_unittests.cpp.i
+
+.PHONY : Transport_unittests.i
+
+# target to preprocess a source file
+Transport_unittests.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Transport_unittests.cpp.i
+.PHONY : Transport_unittests.cpp.i
+
+Transport_unittests.s: Transport_unittests.cpp.s
+
+.PHONY : Transport_unittests.s
+
+# target to generate assembly for a file
+Transport_unittests.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Transport_unittests.cpp.s
+.PHONY : Transport_unittests.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s
+
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o
 
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.o
@@ -204,6 +285,249 @@ home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.s
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.s
 
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s
+
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o
 
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.o
@@ -230,6 +554,384 @@ home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.s: home/
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.s
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s
 
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o
 
@@ -284,6 +986,492 @@ home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.s: hom
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.s
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s
 
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o
 
@@ -366,6 +1554,87 @@ home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.s
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.s
 
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s
+
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o
 
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.o
@@ -392,6 +1661,87 @@ home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.s: home/lu
 home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.s:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.s
 .PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.o: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.o
+
+# target to build an object file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.i: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.i
+
+# target to preprocess a source file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i
+
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.s: home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s
+
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.s
+
+# target to generate assembly for a file
+home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s
+.PHONY : home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s
 
 unittests.o: unittests.cpp.o
 
@@ -432,21 +1782,153 @@ help:
 	@echo "... ArmyComponent_unittests.o"
 	@echo "... ArmyComponent_unittests.i"
 	@echo "... ArmyComponent_unittests.s"
+	@echo "... Transport_unittests.o"
+	@echo "... Transport_unittests.i"
+	@echo "... Transport_unittests.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.s"
@@ -456,9 +1938,27 @@ help:
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.s"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.o"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.i"
 	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.s"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.o"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.i"
+	@echo "... home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.s"
 	@echo "... unittests.o"
 	@echo "... unittests.i"
 	@echo "... unittests.s"

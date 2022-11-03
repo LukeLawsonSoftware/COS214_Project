@@ -6,21 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.cpp
-AirUnit.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
-
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
 Soldier.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.cpp
-AirVehicle.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
-
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
 Vehicle.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+iostream
+-
+vector
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
 cstdlib
@@ -30,47 +42,59 @@ cmath
 ctime
 -
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.cpp
+ArmyDirector.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
 ArmyComponent.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
 vector
 -
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.cpp
-LandUnit.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+vector
+-
+string
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
 Soldier.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.cpp
-LandVehicle.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
-
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
 Vehicle.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.cpp
-SeaUnit.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
 Soldier.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.cpp
-SeaVehicle.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
-
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
 Vehicle.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
-
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.cpp
-Soldier.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 ArmyComponent.h
@@ -78,13 +102,49 @@ ArmyComponent.h
 iostream
 -
 
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.cpp
-Vehicle.h
-/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+list
+-
+iostream
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 ArmyComponent.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+../Code/ArmyDirector.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+../Code/Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+../Code/ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+../Code/Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+../Code/Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+../Code/AmmoSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+../Code/MedicalSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+../Code/LandUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+../Code/LandVehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
 iostream
 -
 
@@ -110,9 +170,29 @@ gtest/gtest.h
 ../Code/Battalion.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+../Code/MedicTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+../Code/AmmoTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+../Code/Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp
 ArmyComponent_unittests.cpp
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+Transport_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
+ArmyBuilder_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
 gtest/gtest.h
 -
 

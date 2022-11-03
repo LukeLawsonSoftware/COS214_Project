@@ -2,6 +2,8 @@
 #define AMMOTRANSPORTER_H
 
 #include "Transporter.h"
+#include <iostream>
+
 class Corresponder;
 
 class AmmoTransporter : public Transporter

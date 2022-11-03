@@ -19,13 +19,15 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 	this->army = new Battalion();
 	for (int i = 0; i < battalions->size(); i++)
 	{
+
 		this->army->addMember(battalions->at(i));
 	}
 	for (int i = 0; i < individuals->size(); i++)
 	{
+		// std::cout << "here perhaps" << std::endl;
 		this->army->addMember(individuals->at(i));
 	}
-
+	// std::cout << "maybe?" << std::endl;
 	bool flag = true;
 	for (int i = 0; i < supplies->size(); i++)
 	{
@@ -45,8 +47,9 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 
 	this->currentStrategy = new Neutral();
 	this->stats = new BattleStatistics();
-
+	// std::cout << "maybe?" << std::endl;
 	stats->setAirAttack(this->army->calculateAirOffense());
+	// std::cout << "maybe?" << std::endl;
 	stats->setAirDefence(this->army->calculateAirDefense());
 	stats->setLandAttack(this->army->calculateLandOffense());
 	stats->setLandDefence(this->army->calculateLandDefense());
@@ -60,6 +63,7 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 					 this->army->calculateSeaDefense());
 
 	int ammoSum = 0;
+	// std::cout << "maybe?" << std::endl;
 	for (int i = 0; i < ammoSupply->size(); i++)
 	{
 		if (ammoSupply->at(i) != NULL)
@@ -68,7 +72,7 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 		}
 	}
 	stats->setAvailableAmmo(ammoSum);
-
+	// std::cout << "maybe?" << std::endl;
 	int medSum = 0;
 	for (int i = 0; i < medicalSupply->size(); i++)
 	{
@@ -79,6 +83,7 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 	}
 
 	stats->setMedical(medSum);
+	// std::cout << "maybe?" << std::endl;
 }
 
 void Army::applyStrategyBonus()
