@@ -98,13 +98,58 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		BattleStatistics* StatsArmy2 = armies[1]->getBattleStatistics();
 
 		std::cout << "===================================== Battle Statistics : " + name + " =====================================" << std::endl;
-		
-		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much damage to do to morale
-		int moraleArmy1 = 0;
-		int moraleArmy2 = 0;
+		std::cout << std::endl;
 
-		// Army's have ammo. BattleStatistics (probs easier) or the ammoSupply (harder) attributes can be used to control ammo. At the end of each round,
-		//	each army needs to lose some ammo. If an army runs out of ammo, their morale becomes zero. You will likely need to make some changes to Army to implement this functionality
+		std::cout << "Alliance 1     : " + armies[0]->getName() + "         ==        Alliance 2     : "  + armies[1]->getName() << std::endl;
+		std::cout << "Air-Attack     : " + std::to_string(StatsArmy1->getAirAttack()) + "           ==         Air-Attack     : " + std::to_string(StatsArmy2->getAirAttack()) << std::endl;
+		std::cout << "Air-Defense    : " + std::to_string(StatsArmy1->getAirDefence()) + "           ==         Air-Defense    : " + std::to_string(StatsArmy2->getAirDefence()) << std::endl;
+		std::cout << "Land-Attack    : " + std::to_string(StatsArmy1->getLandAttack()) + "           ==         Land-Attack    : " + std::to_string(StatsArmy2->getLandAttack()) << std::endl;
+		std::cout << "Land-Defense   : " + std::to_string(StatsArmy1->getLandDefence()) + "           ==         Land-Defense   : " + std::to_string(StatsArmy2->getLandDefence()) << std::endl;
+		std::cout << "Sea-Attack     : " + std::to_string(StatsArmy1->getSeaAttack()) + "           ==         Sea-Attack     : " + std::to_string(StatsArmy2->getSeaAttack()) << std::endl;
+		std::cout << "Sea-Defense    : " + std::to_string(StatsArmy1->getSeaDefence()) + "           ==         Sea-Defense    : " + std::to_string(StatsArmy2->getSeaDefence()) << std::endl;
+		std::cout << "Morale         : " + std::to_string(StatsArmy1->getMorale()) + "           ==         Morale         : " + std::to_string(StatsArmy2->getMorale()) << std::endl;
+		std::cout << "Available Ammo : " + std::to_string(StatsArmy1->getAvailableAmmo()) + "           ==         Available Ammo : " + std::to_string(StatsArmy2->getAvailableAmmo()) << std::endl;
+		std::cout << "Medical        : " + std::to_string(StatsArmy1->getMedical()) + "           ==         Medical        : " + std::to_string(StatsArmy2->getMedical()) << std::endl;
+
+		std::cout << std::endl;
+		std::cout << "=============================================== " + name + " ===============================================" << std::endl;
+
+		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much 
+		//    damage to do to morale
+	/*------------------TO Impement-------------------------*/
+		int moraleArmy1 = StatsArmy1->getMorale();
+		int moraleArmy2 = StatsArmy2->getMorale();
+
+		// Army's have ammo. 
+		// BattleStatistics attributes are used to control ammo. 
+		int AmoArmy1 = StatsArmy1->getAvailableAmmo();
+		int AmoArmy2 = StatsArmy2->getAvailableAmmo();
+		
+		// At the end of each round,each army needs to lose some ammo. 
+		if (moraleArmy1 > 0)
+		{
+			AmoArmy1 = 0.7*AmoArmy1;
+			StatsArmy1->setAvailableAmmo(AmoArmy1);
+		}
+		
+		if (moraleArmy2 > 0)
+		{
+			AmoArmy2 = 0.7*AmoArmy2;
+			StatsArmy2->setAvailableAmmo(AmoArmy2);
+		}
+
+		// If an army runs out of ammo, their morale becomes zero. 
+		if (AmoArmy1 == 0)
+		{
+			moraleArmy1 = 0;
+			StatsArmy1->setMorale(0);
+		}
+		else if (AmoArmy2 == 0)
+		{
+			moraleArmy2 = 0;
+			StatsArmy2->setMorale(0);
+		}
+
 		//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 		if (moraleArmy1 <= 0)
 		{
@@ -135,6 +180,33 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		}
 
 		//  medics use getHealing to 'heal' armies (healing an army is adding to morale)
+		// Dynamic casting 
+		std::vector<Medic *> *_medics;
+		for (int i = 0; i < medics->size(); i++)
+		{
+			_medics->push_back(dynamic_cast<Medic*>(medics->at(i)));
+		}
+
+		for (int i = 0; i < medics->size(); i++)
+		{
+			if (contentionState == 3)
+			{
+				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
+				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+			}
+			else if(contentionState == 1)
+			{
+				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
+			}
+			else if(contentionState == 2)
+			{
+				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+			}
+			
+		}
+		
+
+		replenishNonCombatEntities();
 		
 	}
 	
