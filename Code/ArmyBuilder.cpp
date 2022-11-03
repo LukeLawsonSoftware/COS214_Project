@@ -747,16 +747,16 @@ void ArmyBuilder::setIndividuals(std::vector<ArmyComponent *> *newIndv)
 			delete (*it);
 		}
 		delete individuals;
+	}
 
-		individuals = new std::vector<ArmyComponent *>;
+	individuals = new std::vector<ArmyComponent *>;
 
-		// now make the copy
-		std::vector<ArmyComponent *>::iterator it1;
+	// now make the copy
+	std::vector<ArmyComponent *>::iterator it1;
 
-		for (it1 = newIndv->begin(); it1 != newIndv->end(); ++it1)
-		{
-			individuals->push_back((*it1));
-		}
+	for (it1 = newIndv->begin(); it1 != newIndv->end(); ++it1)
+	{
+		individuals->push_back((*it1));
 	}
 }
 
@@ -776,16 +776,16 @@ void ArmyBuilder::setBattalions(std::vector<ArmyComponent *> *newBattalions)
 			delete (*it);
 		}
 		delete battalions;
+	}
 
-		battalions = new std::vector<ArmyComponent *>;
+	battalions = new std::vector<ArmyComponent *>;
 
-		// now make the copy
-		std::vector<ArmyComponent *>::iterator it1;
+	// now make the copy
+	std::vector<ArmyComponent *>::iterator it1;
 
-		for (it1 = newBattalions->begin(); it1 != newBattalions->end(); ++it1)
-		{
-			battalions->push_back((*it1));
-		}
+	for (it1 = newBattalions->begin(); it1 != newBattalions->end(); ++it1)
+	{
+		battalions->push_back((*it1));
 	}
 }
 
@@ -805,15 +805,15 @@ void ArmyBuilder::setSupplies(std::vector<Supply *> *newSupplies)
 			delete (*it);
 		}
 		delete supplies;
+	}
 
-		supplies = new std::vector<Supply *>;
+	supplies = new std::vector<Supply *>;
 
-		// now make the copy
-		std::vector<Supply *>::iterator it1;
+	// now make the copy
+	std::vector<Supply *>::iterator it1;
 
-		for (it1 = newSupplies->begin(); it1 != newSupplies->end(); ++it1)
-		{
-			supplies->push_back((*it1));
-		}
+	for (it1 = newSupplies->begin(); it1 != newSupplies->end(); ++it1)
+	{
+		supplies->push_back((*it1));
 	}
 }
