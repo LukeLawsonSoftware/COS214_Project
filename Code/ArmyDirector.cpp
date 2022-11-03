@@ -8,7 +8,10 @@ ArmyDirector ::ArmyDirector(ArmyBuilder *b)
 
 void ArmyDirector::constructArmy()
 {
-	// TODO - implement ArmyDirector::constructArmy
+	// check if we have a builder
+	if (builder == NULL) throw std::invalid_argument("Cannot build army because there is no ArmyBuilder");
+
+	//else command builder to create the different parts of the army
 	builder->createIndividuals();
 	builder->buildBattalions();
 	builder->determineSupplies();
