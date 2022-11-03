@@ -68,6 +68,8 @@ public:
 	/// @author Jonelle Coertze (u21446271)
 	/// @return pointer to the army array containing the armies currently present in the war theatre
 	Army *getArmies();
+
+	int getContentionState();
 };
 
 #endif
