@@ -2,6 +2,14 @@
 #include <stdexcept>
 #include "gtest/gtest.h"
 #include "../Code/ArmyBuilder.h"
+#include "../Code/ArmyDirector.h"
+#include "../Code/Supply.h"
+#include "../Code/ArmyComponent.h"
+#include "../Code/Soldier.h"
+#include "../Code/Vehicle.h"
+#include "../Code/AmmoSuppply.h"
+#include "../Code/MedicalSupply.h"
+
 #include <iostream>
 
 namespace{
@@ -71,15 +79,12 @@ namespace{
 
         //build vector of Supply objects manually
         std::vector<Supply*> *supplies;
-        supplies->push_back(new Soldier(1));
-        supplies->push_back(new Soldier(2));
-        supplies->push_back(new Vehicle(3));
-        supplies->push_back(new Vehicle(1));
-        supplies->push_back(new Soldier(5));
-        supplies->push_back(new Soldier(4));
-        supplies->push_back(new Soldier(2));
-        supplies->push_back(new Vehicle(3));
-        supplies->push_back(new Soldier(4));
+        supplies->push_back(new AmmoSupply(1,10));
+        supplies->push_back(new MedicalSupply(1,10));
+        supplies->push_back(new AmmoSupply(2,5));
+        supplies->push_back(new MedicalSupply(2,5));
+        supplies->push_back(new AmmoSupply(3,9));
+        supplies->push_back(new MedicalSupply(3,9));
 
         //set the Supplies
         builder->setSupplies(supplies);
@@ -208,15 +213,12 @@ namespace{
 
         //build vector of Supply objects manually
         std::vector<Supply*> *supplies;
-        supplies->push_back(new Soldier(1));
-        supplies->push_back(new Soldier(2));
-        supplies->push_back(new Vehicle(3));
-        supplies->push_back(new Vehicle(1));
-        supplies->push_back(new Soldier(5));
-        supplies->push_back(new Soldier(4));
-        supplies->push_back(new Soldier(2));
-        supplies->push_back(new Vehicle(3));
-        supplies->push_back(new Soldier(4));
+        supplies->push_back(new AmmoSupply(1,10));
+        supplies->push_back(new MedicalSupply(1,10));
+        supplies->push_back(new AmmoSupply(2,5));
+        supplies->push_back(new MedicalSupply(2,5));
+        supplies->push_back(new AmmoSupply(3,9));
+        supplies->push_back(new MedicalSupply(3,9));
 
         //set the Supplies
         builder->setSupplies(supplies);
@@ -231,5 +233,27 @@ namespace{
         delete builder;
         delete supplies;
         delete result;
+    }
+
+    //=======================================================================================
+    //=== ArmyDirector testing ==============================================================
+    //=======================================================================================
+
+    //Check to see if exception is thrown when we call construct without having a builder
+    TEST(ConstructWithNoBuilder, BuilderNull){
+        try
+        {
+            ArmyDirector* d = new ArmyDirector(NULL);
+            d->constructArmy(); //should throw exception since we do not have a builder
+            FAIL();
+        }
+        catch (std::invalid_argument &err)
+        {
+            EXPECT_EQ(err.what(), std::string("Cannot add ArmyComponent to a Soldier object"));
+        }
+        catch (...)
+        {
+            FAIL();
+        }
     }
 }
