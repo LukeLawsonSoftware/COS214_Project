@@ -422,13 +422,18 @@ CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
@@ -438,4 +443,5 @@ CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarPhase_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp

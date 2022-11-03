@@ -421,13 +421,18 @@ CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyBuilder.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyComponent.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyDirector.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Defensive.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandUnit.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandVehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicTransporter.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicalSupply.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Neutral.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Offensive.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaUnit.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaVehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Soldier.h
@@ -437,5 +442,6 @@ CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\
 CMakeFiles/runTests.dir/unittests.cpp.o: ArmyBuilder_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: ArmyComponent_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: Transport_unittests.cpp
+CMakeFiles/runTests.dir/unittests.cpp.o: WarPhase_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: unittests.cpp
 
