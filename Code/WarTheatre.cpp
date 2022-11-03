@@ -80,9 +80,9 @@ void WarTheatre::applyTerrainBonus()
 
 void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 {
-	
+
 	// Make sure there are two armies in this theatre:
-	if(contentionState == 3) // 2 Armies are present - conflict is possible
+	if (contentionState == 3) // 2 Armies are present - conflict is possible
 	{
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
 
@@ -94,13 +94,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		armies[1]->applyStrategyBonus();
 
 		// print a head-to-head summary using the armies battlestatistics
-		BattleStatistics* StatsArmy1 = armies[0]->getBattleStatistics();
-		BattleStatistics* StatsArmy2 = armies[1]->getBattleStatistics();
+		BattleStatistics *StatsArmy1 = armies[0]->getBattleStatistics();
+		BattleStatistics *StatsArmy2 = armies[1]->getBattleStatistics();
 
 		std::cout << "===================================== Battle Statistics : " + name + " =====================================" << std::endl;
 		std::cout << std::endl;
 
-		std::cout << "Alliance 1     : " + armies[0]->getName() + "         ==        Alliance 2     : "  + armies[1]->getName() << std::endl;
+		std::cout << "Alliance 1     : " + armies[0]->getName() + "         ==        Alliance 2     : " + armies[1]->getName() << std::endl;
 		std::cout << "Air-Attack     : " + std::to_string(StatsArmy1->getAirAttack()) + "           ==         Air-Attack     : " + std::to_string(StatsArmy2->getAirAttack()) << std::endl;
 		std::cout << "Air-Defense    : " + std::to_string(StatsArmy1->getAirDefence()) + "           ==         Air-Defense    : " + std::to_string(StatsArmy2->getAirDefence()) << std::endl;
 		std::cout << "Land-Attack    : " + std::to_string(StatsArmy1->getLandAttack()) + "           ==         Land-Attack    : " + std::to_string(StatsArmy2->getLandAttack()) << std::endl;
@@ -114,7 +114,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		std::cout << std::endl;
 		std::cout << "=============================================== " + name + " ===============================================" << std::endl;
 
-		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much 
+		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much
 		//    damage to do to morale
 		int moraleArmy1 = StatsArmy1->getMorale();
 		int moraleArmy2 = StatsArmy2->getMorale();
@@ -130,49 +130,49 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 		// army 1 attack army 2
 		// if differenceArmy1 == 0 : army 1 cannot do anything to army 2
-		if(differenceArmy1 > 0) 
+		if (differenceArmy1 > 0)
 		{
-			moraleArmy2 = moraleArmy2 - (differenceArmy1*2);
+			moraleArmy2 = moraleArmy2 - (differenceArmy1 * 2);
 		}
-		else if(differenceArmy1 < 0)
+		else if (differenceArmy1 < 0)
 		{
-			moraleArmy2 = moraleArmy2 - (differenceArmy1*(-1.4));
+			moraleArmy2 = moraleArmy2 - (differenceArmy1 * (-1.4));
 		}
 
 		// army 2 attack army 1
 		// if differenceArmy2 == 0 : army 2 cannot do anything to army 1
-		if(differenceArmy2 > 0) 
+		if (differenceArmy2 > 0)
 		{
-			moraleArmy1 = moraleArmy1 - (differenceArmy2*2);
+			moraleArmy1 = moraleArmy1 - (differenceArmy2 * 2);
 		}
-		else if(differenceArmy1 < 0)
+		else if (differenceArmy1 < 0)
 		{
-			moraleArmy1 = moraleArmy1 - (differenceArmy2*(-1.4));
+			moraleArmy1 = moraleArmy1 - (differenceArmy2 * (-1.4));
 		}
-		
+
 		// Update the Morale statistics
 		StatsArmy1->setMorale(moraleArmy1);
 		StatsArmy2->setMorale(moraleArmy2);
 
-		// Army's have ammo. 
-		// BattleStatistics attributes are used to control ammo. 
+		// Army's have ammo.
+		// BattleStatistics attributes are used to control ammo.
 		int AmoArmy1 = StatsArmy1->getAvailableAmmo();
 		int AmoArmy2 = StatsArmy2->getAvailableAmmo();
-		
-		// At the end of each round,each army needs to lose some ammo. 
+
+		// At the end of each round,each army needs to lose some ammo.
 		if (moraleArmy1 > 0)
 		{
 			AmoArmy1 = AmoArmy1 - 20;
 			StatsArmy1->setAvailableAmmo(AmoArmy1);
 		}
-		
+
 		if (moraleArmy2 > 0)
 		{
 			AmoArmy2 = AmoArmy2 - 20;
 			StatsArmy2->setAvailableAmmo(AmoArmy2);
 		}
 
-		// If an army runs out of ammo, their morale becomes zero. 
+		// If an army runs out of ammo, their morale becomes zero.
 		if (AmoArmy1 == 0)
 		{
 			moraleArmy1 = 0;
@@ -187,13 +187,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 		if (moraleArmy1 <= 0)
 		{
-			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName() ;
+			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName();
 			armies[0] = NULL;
 			contentionState = 2;
 		}
 		else if (moraleArmy2 <= 0)
 		{
-			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName() ;
+			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName();
 			armies[1] = NULL;
 			contentionState = 1;
 		}
@@ -204,21 +204,21 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 			armies[0]->recuperate();
 			armies[1]->recuperate();
 		}
-		else if(contentionState == 1) // Army from allience 1 is left
+		else if (contentionState == 1) // Army from allience 1 is left
 		{
 			armies[0]->recuperate();
 		}
-		else if(contentionState == 2) // Army from allience 2 is left
+		else if (contentionState == 2) // Army from allience 2 is left
 		{
 			armies[1]->recuperate();
 		}
 
 		//  medics use getHealing to 'heal' armies (healing an army is adding to morale)
-		// Dynamic casting 
+		// Dynamic casting
 		std::vector<Medic *> *_medics;
 		for (int i = 0; i < medics->size(); i++)
 		{
-			_medics->push_back(dynamic_cast<Medic*>(medics->at(i)));
+			_medics->push_back(dynamic_cast<Medic *>(medics->at(i)));
 		}
 
 		for (int i = 0; i < medics->size(); i++)
@@ -228,31 +228,28 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
 				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
 			}
-			else if(contentionState == 1)
+			else if (contentionState == 1)
 			{
 				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
 			}
-			else if(contentionState == 2)
+			else if (contentionState == 2)
 			{
 				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
 			}
-			
 		}
-		
 
 		replenishNonCombatEntities();
-		
 	}
-	
+
 	if (contentionState == 1) // Only an army from alliance 1 is present
 	{
-		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling the "+ name +" war theatre!" << std::endl;
+		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling the " + name + " war theatre!" << std::endl;
 	}
 	else if (contentionState == 2) // Only an army from alliance 2 is present
 	{
-		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling the "+ name +" war theatre!" << std::endl;
+		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling the " + name + " war theatre!" << std::endl;
 	}
-	else if (contentionState == 0)// No armies in the war theatre yet
+	else if (contentionState == 0) // No armies in the war theatre yet
 	{
 		std::cout << "The " + name + " war theatre is peaceful." << std::endl;
 	}
@@ -260,7 +257,6 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 	{
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
 	}
-
 }
 
 void WarTheatre::addArmy(Army *newArmy)
@@ -355,11 +351,6 @@ void WarTheatre::replenishNonCombatEntities()
 	{
 		civilians->push_back(new Medic());
 	}
-}
-
-int WarTheatre::getContentionState()
-{
-	return contentionState;
 }
 
 std::string WarTheatre::getType()
