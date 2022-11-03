@@ -6,6 +6,114 @@
 
 #IncludeRegexTransform: 
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirFactory.h
+UnitFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.cpp
+AirTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
+Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.h
+SupplyFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.cpp
+AmmoTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+AmmoSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+MedicalSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.cpp
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+AmmoSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+Offensive.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
+Defensive.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.h
+Neutral.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.h
+MedicalSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+Battalion.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+BattleStatistics.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+string
+-
+vector
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.cpp
+ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+Battalion.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+UnitFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.h
+SupplyFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+iostream
+-
+vector
+-
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
 cstdlib
 -
@@ -14,7 +122,37 @@ cmath
 ctime
 -
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.cpp
+ArmyDirector.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.cpp
+AttackTransport.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.h
+Command.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.cpp
+Battalion.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
 iostream
 -
 
@@ -25,6 +163,84 @@ vector
 -
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.cpp
+ChangeStrategy.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.h
+Command.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
+string
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.h
+NonCombatEntity.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+string
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.cpp
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.cpp
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+Rich.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.h
+Poor.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.h
+Average.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.h
+AmmoTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+MedicTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+LandFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandFactory.h
+AirFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirFactory.h
+SeaFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaFactory.h
+AmmoFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.h
+MedicalFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+ArmyDirector.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+MilitaryCommander.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.h
+SupplyFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+vector
+-
+string
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.cpp
 Defensive.h
@@ -38,6 +254,196 @@ BattleStatistics.h
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.cpp
+EarlyCrisis.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.h
+EarlyPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.cpp
+EarlyOpenConflict.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.h
+EarlyCrisis.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.cpp
+EarlyPeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.h
+EarlyUnstablePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.cpp
+EarlyPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.h
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+MidPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.h
+WarPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.cpp
+EarlyUnstablePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.h
+EarlyOpenConflict.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandFactory.h
+UnitFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.cpp
+LandTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.cpp
+LateCrisis.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.h
+LateOpenConflict.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.cpp
+LateOpenConflict.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.h
+LateUnstablePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.cpp
+LatePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.h
+LatePhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.cpp
+LatePhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.h
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.h
+WarPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.cpp
+LateUnstablePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.h
+LatePeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.h
+NonCombatEntity.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.cpp
+MedicTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+AmmoSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+MedicalSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.h
+SupplyFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+cstdlib
+-
+ctime
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.cpp
+MidPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.h
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+LateCrisis.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.h
+WarPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.cpp
+MilitaryCommander.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.h
+ChangeStrategy.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.h
+AttackTransport.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.h
+MoveIntoTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.h
+string
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.cpp
+MoveIntoTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.h
+Command.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.cpp
 Neutral.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.h
@@ -50,6 +456,8 @@ Battalion.h
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.cpp
 Offensive.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
@@ -61,4 +469,234 @@ Battalion.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaFactory.h
+UnitFactory.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.cpp
+SeaTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
+Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
+Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.cpp
+Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+list
+-
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.h
+ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.cpp
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+EarlyPeace.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.h
+AirTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
+SeaTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.h
+LandTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+map
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.cpp
+WarPhase.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
+War.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.cpp
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+Civilian.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.h
+Medic.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.h
+Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+ctime
+-
+cstdlib
+-
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+NonCombatEntity.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+BattleStatistics.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+vector
+-
+string
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/ArmyBuilder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
+../Code/ArmyDirector.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
+../Code/Supply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+../Code/ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+../Code/Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+../Code/Vehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
+../Code/AmmoSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
+../Code/MedicalSupply.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
+../Code/LandUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+../Code/LandVehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/AirUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+../Code/AirVehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
+../Code/LandUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+../Code/LandVehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
+../Code/SeaUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+../Code/SeaVehicle.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
+../Code/Battalion.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/Transporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
+../Code/MedicTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+../Code/AmmoTransporter.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
+../Code/Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarPhase_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/Defensive.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.h
+../Code/Neutral.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.h
+../Code/Offensive.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
+../Code/BattleStatistics.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+../Code/Battalion.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+../Code/ArmyComponent.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
+../Code/LandUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
+../Code/SeaUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
+../Code/AirUnit.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
+../Code/Soldier.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp
+ArmyComponent_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+Transport_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
+ArmyBuilder_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
+WarPhase_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarPhase_unittests.cpp
+gtest/gtest.h
+-
 

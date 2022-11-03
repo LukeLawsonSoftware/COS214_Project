@@ -1,5 +1,7 @@
 #include <iostream>
+#include "War.h"
 int main()
 {
-    std::cout << "Hello" << std::endl;
+    War war;
+    war.startWarSim();
 }

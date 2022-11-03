@@ -33,6 +33,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
@@ -147,6 +148,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
@@ -215,6 +217,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
@@ -298,6 +301,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
@@ -309,6 +313,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.cpp
@@ -352,6 +357,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.cpp
@@ -390,6 +396,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.h
@@ -410,7 +417,11 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
