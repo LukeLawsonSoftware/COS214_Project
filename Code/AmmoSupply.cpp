@@ -34,5 +34,7 @@ int AmmoSupply::getAmmoBonus()
 
 void AmmoSupply::setAmmoBonus(int bonus)
 {
+	if (bonus < 0) throw std::invalid_argument("Cannot set ammo bonus as a negative value");
+
 	this->ammoBonus = bonus;
 }
