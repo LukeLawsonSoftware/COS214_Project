@@ -14,7 +14,7 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	contentionState = 0;
 
 	// Initialise armies array:
-	for(int i =0; i < 2; i++)
+	for (int i = 0; i < 2; i++)
 	{
 		armies[i] = NULL;
 	}
@@ -23,26 +23,25 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	srand(time(0));
 
 	int Civilians = rand() % 19 + 2;
-	int refugees = Civilians/2;
+	int refugees = Civilians / 2;
 	int citizen = Civilians - refugees;
 
-	for(int i = 0; i < citizen; i++)
+	for (int i = 0; i < citizen; i++)
 	{
 		civilians->push_back(new Civilian("citizen"));
 	}
 
-	for(int i = 0; i < refugees; i++)
+	for (int i = 0; i < refugees; i++)
 	{
 		civilians->push_back(new Civilian("refugee"));
 	}
 
-	int Medics = rand() % 19 + 2 ;
+	int Medics = rand() % 19 + 2;
 
-	for(int i = 0; i < Medics; i++)
+	for (int i = 0; i < Medics; i++)
 	{
 		civilians->push_back(new Medic());
 	}
-
 }
 
 WarTheatre::~WarTheatre()
@@ -54,18 +53,18 @@ WarTheatre::~WarTheatre()
 		for (auto m : *medics)
 		{
 			delete m;
-		}	 
+		}
 
 		delete medics;
 		medics = NULL;
-    }
+	}
 
-	if(civilians !=NULL)
+	if (civilians != NULL)
 	{
 		for (auto c : *civilians)
 		{
 			delete c;
-		}	 
+		}
 
 		delete civilians;
 		civilians = NULL;
@@ -90,7 +89,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 	//  apply army->applyStrategyBonus
 	// print a head-to-head summary (you can choose what is relevant)
 	// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much damage to do to morale
-	// Army's have ammo. BattleStatistics (probs easier) or the ammoSupply (harder) attributes can be used to control ammo. At the end of each round, 
+	// Army's have ammo. BattleStatistics (probs easier) or the ammoSupply (harder) attributes can be used to control ammo. At the end of each round,
 	//	each army needs to lose some ammo. If an army runs out of ammo, their morale becomes zero. You will likely need to make some changes to Army to implement this functionality
 	//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 	// make it so that we can't have a case where both armies die at the same time. pick a winner somehow
@@ -104,12 +103,12 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 void WarTheatre::addArmy(Army *newArmy)
 {
-	
+
 	std::string NewArmyName = newArmy->getName();
 	int alliance = 0;
 
 	// Determine alliance
-	
+
 	for (int i = 0; i < Country::alliance1.size(); i++)
 	{
 		if (Country::alliance1.at(i)->getName() == newArmy->getName())
@@ -128,7 +127,7 @@ void WarTheatre::addArmy(Army *newArmy)
 		}
 	}
 
-	// Add army 
+	// Add army
 	if (contentionState == 0) // Contentionstate = 0 -> no armies has been added :
 	{
 		if (alliance == 1)
@@ -136,7 +135,7 @@ void WarTheatre::addArmy(Army *newArmy)
 			armies[0] = newArmy;
 			contentionState = 1;
 		}
-		else if(alliance == 2)
+		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
 			contentionState = 2;
@@ -148,12 +147,11 @@ void WarTheatre::addArmy(Army *newArmy)
 		{
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 1 already arrived!" << std::endl;
 		}
-		else if(alliance == 2)
+		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
 			contentionState = 3;
 		}
-
 	}
 	else if (contentionState == 2) // Contentionstate = 2 -> army from alliance2 only :
 	{
@@ -161,18 +159,16 @@ void WarTheatre::addArmy(Army *newArmy)
 		{
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 2 already arrived!" << std::endl;
 		}
-		else if(alliance == 1)
+		else if (alliance == 1)
 		{
 			armies[0] = newArmy;
 			contentionState = 3;
 		}
-
 	}
 	else if (contentionState == 3) // Contentionstate = 3 ->  armies in contention (different alliances) :
 	{
 		std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> 2 armies are already at battle!" << std::endl;
 	}
-	
 }
 
 void WarTheatre::replenishNonCombatEntities()
@@ -183,24 +179,22 @@ void WarTheatre::replenishNonCombatEntities()
 	int Refugees = 8;
 	int Citizens = 6;
 
-	for(int i = 0; i < Citizens; i++)
+	for (int i = 0; i < Citizens; i++)
 	{
 		civilians->push_back(new Civilian("citizen"));
 	}
 
-	for(int i = 0; i < Refugees; i++)
+	for (int i = 0; i < Refugees; i++)
 	{
 		civilians->push_back(new Civilian("refugee"));
 	}
 
-	int Medics = rand() % 19 + 2 ;
+	//	int Medics = rand() % 19 + 2 ;
 
-	for(int i = 0; i < Medics; i++)
+	for (int i = 0; i < Medics; i++)
 	{
 		civilians->push_back(new Medic());
 	}
-
-
 }
 
 std::string WarTheatre::getType()
@@ -213,8 +207,7 @@ std::string WarTheatre::getName()
 	return name;
 }
 
-
-Army* WarTheatre::getArmies()
+Army *WarTheatre::getArmies()
 {
 	return *armies;
 }
