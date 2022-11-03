@@ -6,11 +6,9 @@ class War;
 class WarPhase
 {
 
-protected:
-	double peaceChance;
-
 public:
 	virtual void handleChange(War *war) = 0;
+	double peaceChance;
 };
 
 #endif

@@ -83,9 +83,22 @@ CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp" -o CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.s
 
+CMakeFiles/runTests.dir/Transport_unittests.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/Transport_unittests.cpp.o: Transport_unittests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/Transport_unittests.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/Transport_unittests.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp"
+
+CMakeFiles/runTests.dir/Transport_unittests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/Transport_unittests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp" > CMakeFiles/runTests.dir/Transport_unittests.cpp.i
+
+CMakeFiles/runTests.dir/Transport_unittests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/Transport_unittests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp" -o CMakeFiles/runTests.dir/Transport_unittests.cpp.s
+
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirVehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandUnit.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandVehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandVehicle.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaVehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Soldier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.cpp"
 
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.i: cmake_force
@@ -200,10 +213,648 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.s
 
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Transporter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicTransporter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoTransporter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Army.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MilitaryCommander.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MilitaryCommander.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicalFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SupplyFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyDirector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyDirector.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/War.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/War.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirTerrain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoSupply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AttackTransport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AttackTransport.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Average.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ChangeStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ChangeStrategy.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Civilian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Civilian.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Command.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Defensive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EarlyCrisis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyCrisis.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EarlyOpenConflict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyOpenConflict.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EarlyPeace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPeace.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EarlyPhase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyPhase.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EarlyUnstablePeace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EarlyUnstablePeace.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandTerrain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LateCrisis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateCrisis.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LateOpenConflict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateOpenConflict.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LatePeace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePeace.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LatePhase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LatePhase.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LateUnstablePeace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LateUnstablePeace.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Medic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Medic.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicalSupply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MidPhase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MidPhase.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MoveIntoTheatre.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MoveIntoTheatre.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Neutral.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Offensive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Poor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Rich.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaTerrain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/UnitFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/UnitFactory.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/WarPhase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarPhase.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.s
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/WarTheatre.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o -c "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.cpp"
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.cpp" > CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.i
+
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.cpp" -o CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.s
+
 # Object files for target runTests
 runTests_OBJECTS = \
 "CMakeFiles/runTests.dir/unittests.cpp.o" \
 "CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.o" \
+"CMakeFiles/runTests.dir/Transport_unittests.cpp.o" \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o" \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o" \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o" \
@@ -212,13 +863,63 @@ runTests_OBJECTS = \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaUnit.cpp.o" \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o" \
 "CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o" \
-"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o"
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o" \
+"CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
 runTests: CMakeFiles/runTests.dir/unittests.cpp.o
 runTests: CMakeFiles/runTests.dir/ArmyComponent_unittests.cpp.o
+runTests: CMakeFiles/runTests.dir/Transport_unittests.cpp.o
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Battalion.cpp.o
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirUnit.cpp.o
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirVehicle.cpp.o
@@ -228,10 +929,59 @@ runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS2
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaVehicle.cpp.o
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Soldier.cpp.o
 runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Vehicle.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Transporter.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicTransporter.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoTransporter.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Country.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Army.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MilitaryCommander.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SupplyFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyBuilder.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyDirector.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/War.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AirTerrain.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AmmoSupply.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ArmyStrategy.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/BattleStatistics.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/ChangeStrategy.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Civilian.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Command.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Corresponder.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyCrisis.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyOpenConflict.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPeace.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyPhase.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/EarlyUnstablePeace.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LandTerrain.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateCrisis.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateOpenConflict.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePeace.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LatePhase.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/LateUnstablePeace.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Medic.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MedicalSupply.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MidPhase.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/MoveIntoTheatre.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/SeaTerrain.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/UnitFactory.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarPhase.cpp.o
+runTests: CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: /usr/lib/x86_64-linux-gnu/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -11,7 +11,7 @@ class WarTheatre
 
 private:
 	int contentionState;					   // 0=no armies, 1=army from alliance1 only, 2=army from alliance2 only, 3=2 armies in contention (different alliances)
-	Army* armies[2];						   // maybe make this an array. army[0] =from alliance1, army[1] from alliance2
+	Army *armies[2];						   // maybe make this an array. army[0] =from alliance1, army[1] from alliance2
 	std::vector<NonCombatEntity *> *medics;	   // might need to be dynamically cast to getHealing
 	std::vector<NonCombatEntity *> *civilians; // Almost entirely to be killed
 	std::string type;						   // Land/Sea/Air
@@ -34,14 +34,13 @@ public:
 	/// @param Name string used to give the war theatre a name
 	WarTheatre(std::string Type, std::string Name);
 
-	
 	/// @brief a destructor to delete the medics and civilian vectors
 	/// @author Jonelle Coertze (u21446271)
 	~WarTheatre();
 
 	/// @brief the template method used to call the appropriate terrain's adjustDefence and adjustAttack methods
 	/// @author Jonelle Coertze (u21446271)
-	void applyTerrainBonus(); 
+	void applyTerrainBonus();
 
 	// This is the main complicated method, please see WarTheatre.cpp for a description of the algorithm
 	void conflict();
@@ -68,7 +67,7 @@ public:
 	/// @brief a get method to return the armies currently present in the war theatre
 	/// @author Jonelle Coertze (u21446271)
 	/// @return pointer to the army array containing the armies currently present in the war theatre
-	Army* getArmies();
+	Army *getArmies();
 };
 
 #endif

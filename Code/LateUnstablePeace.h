@@ -1,6 +1,6 @@
 #ifndef LATEUNSTABLEPEACE_H
 #define LATEUNSTABLEPEACE_H
-#include "LatePhase.h"
+#include "LatePeace.h"
 
 class LateUnstablePeace : public LatePhase
 {

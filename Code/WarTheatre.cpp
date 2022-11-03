@@ -357,6 +357,11 @@ void WarTheatre::replenishNonCombatEntities()
 	}
 }
 
+int WarTheatre::getContentionState()
+{
+	return contentionState;
+}
+
 std::string WarTheatre::getType()
 {
 	return type;

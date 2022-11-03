@@ -5,6 +5,10 @@
 
 void Defensive::applyStrategyBonus(BattleStatistics in, Battalion *inArmy)
 {
+	if (inArmy == NULL)
+	{
+		throw std::invalid_argument("Cannot accept an ArmyComponent of Null");
+	}
 	std::cout << "The army has applied a defensive strategy." << std::endl;
 	in.airAttack = inArmy->calculateAirOffense();
 	in.airDefence = inArmy->calculateAirDefense();

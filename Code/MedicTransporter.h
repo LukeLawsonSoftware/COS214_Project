@@ -1,6 +1,7 @@
 #ifndef MEDICTRANSPORTER_H
 #define MEDICTRANSPORTER_H
 #include "Transporter.h"
+#include <iostream>
 
 class Corresponder;
 

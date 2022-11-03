@@ -2,6 +2,7 @@
 #define TRANSPORTER_H
 #include "Corresponder.h"
 #include <list>
+#include <iostream>
 
 class Transporter{
 	public:

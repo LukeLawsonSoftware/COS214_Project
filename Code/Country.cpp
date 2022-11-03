@@ -33,6 +33,8 @@ Country::Country(std::string ecoState, std::string name)
 	this->ammoTransportLine = new AmmoTransporter();
 	this->medicalTransportLine = new MedicTransporter();
 
+	this->unitFactories = new std::vector<UnitFactory *>();
+	this->supplyFactories = new std::vector<SupplyFactory *>();
 	// we now register this Country to the above transport lines
 	regToTransport(ammoTransportLine, medicalTransportLine);
 
@@ -40,9 +42,9 @@ Country::Country(std::string ecoState, std::string name)
 	{
 		this->gdp = (int)(rand() % (1000000 - 800000 + 1) + 800000);
 		this->ecoState = new Rich();
-		this->unitFactories->push_back(new LandFactory(500000, 3, "Land"));
-		this->unitFactories->push_back(new AirFactory(500000, 3, "Air"));
-		this->unitFactories->push_back(new SeaFactory(500000, 3, "Sea"));
+		this->unitFactories->push_back(new LandFactory(5000000, 3, "Land"));
+		this->unitFactories->push_back(new AirFactory(5000000, 3, "Air"));
+		this->unitFactories->push_back(new SeaFactory(5000000, 3, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(500000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(500000, "Medical"));
@@ -394,6 +396,12 @@ void Country::surrender()
 
 void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 {
+	// This function needs to do the following:
+	//- create the new ammo and medical supplies to send using the factories such that this function no longer needs paramters
+	//- set both ammo and medical supplies
+	//-check if the ammoTransportLine and medicalTransportline are null before calling notify
+	//-if they are null, they need to print out a message indicating that the ammo/medical supplies cant be send because the transport line is destroyed
+	// im unsure how the whole transporting of supplies works so idk if maybe the chain of function calls needs to be reviewed to make sure it works as intended
 	std::cout << name << " decides to send supplies to its army" << std::endl;
 
 	// set the new supplies
