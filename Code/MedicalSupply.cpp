@@ -35,5 +35,6 @@ int MedicalSupply::getMedicalBonus()
 
 void MedicalSupply::setMedicalBonus(int bonus)
 {
+	if (bonus < 0) throw std::invalid_argument("Cannot set medical bonus as a negative value");
 	this->medicalBonus = bonus;
 }
