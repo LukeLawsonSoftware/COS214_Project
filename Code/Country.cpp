@@ -394,6 +394,12 @@ void Country::surrender()
 
 void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 {
+	// This function needs to do the following:
+	//- create the new ammo and medical supplies to send using the factories such that this function no longer needs paramters
+	//- set both ammo and medical supplies
+	//-check if the ammoTransportLine and medicalTransportline are null before calling notify
+	//-if they are null, they need to print out a message indicating that the ammo/medical supplies cant be send because the transport line is destroyed
+	// im unsure how the whole transporting of supplies works so idk if maybe the chain of function calls needs to be reviewed to make sure it works as intended
 	std::cout << name << " decides to send supplies to its army" << std::endl;
 
 	// set the new supplies
