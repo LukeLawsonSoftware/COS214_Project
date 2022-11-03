@@ -1,15 +1,13 @@
 #include <limits.h>
 #include <stdexcept>
 #include "gtest/gtest.h"
-#include "ArmyBuilder.h"
+#include "../Code/ArmyBuilder.h"
 #include <iostream>
 
 namespace{
     //Test the setIndividuals() to check if it actually adds objects
     TEST(Set_individuals, AddedItems){
-        std::vector<UnitFactory*> *factories = new std::vector<UnitFactory*>;
-        factories->push_bacK( new LandFactory(1000000000,2,"Land") );
-        ArmyBuilder* builder = new ArmyBuilder("Land",factories,NULL); //not testing the supplies thus it can be NULL
+        ArmyBuilder* builder = new ArmyBuilder("Land",NULL,NULL); //not testing the factories thus it can be NULL
 
         //build vector of armyComponents manually
         std::vector<ArmyComponent*> *indv;
@@ -26,7 +24,7 @@ namespace{
         //set the individuals
         builder->setIndividuals(indv);
 
-        std::vector<ArmyComponent*> *result = builder->getIndividuals();
+        std::vector<ArmyComponent*> *result = builder->getIndividuals();//result should not be NULL since we called setter
 
         //Test: setter did set the vector thus the size is greater than 0
         ASSERT_GT(0, result->size());
@@ -35,14 +33,11 @@ namespace{
         delete builder;
         delete indv;
         delete result;
-        delete factories;
     }
 
     //Test the setBattalions() to check if it actually adds objects
     TEST(Set_Battalions, AddedItems){
-        std::vector<UnitFactory*> *factories = new std::vector<UnitFactory*>;
-        factories->push_bacK( new AirFactory(1000000000,3,"Air") );
-        ArmyBuilder* builder = new ArmyBuilder("Air",factories,NULL); //not testing the supplies thus it is NULL
+        ArmyBuilder* builder = new ArmyBuilder("Air",NULL,NULL); //not testing the factories thus it is NULL
 
         //build vector of armyComponents manually
         std::vector<ArmyComponent*> *battalion;
@@ -59,7 +54,7 @@ namespace{
         //set the Battalions
         builder->setBattalions(battalion);
 
-        std::vector<ArmyComponent*> *result = builder->getBattalions();
+        std::vector<ArmyComponent*> *result = builder->getBattalions();//result should not be NULL since we called setter
 
         //Test: setter did set the vector thus the size is greater than 0
         ASSERT_GT(0, result->size());
@@ -68,14 +63,11 @@ namespace{
         delete builder;
         delete battalion;
         delete result;
-        delete factories;
     }
 
     //Test the setSupplies() to check if it actually adds objects
     TEST(Set_Supplies, AddedItems){
-        std::vector<SupplyFactory*> *factories = new std::vector<SupplyFactory*>;
-        factories->push_bacK( new AmmoFactory(1000000000,"Ammo") );
-        ArmyBuilder* builder = new ArmyBuilder("Sea",NULL,factories); //not testing the unitfactories thus it is NULL
+        ArmyBuilder* builder = new ArmyBuilder("Sea",NULL,NULL); //not testing the factories thus it is NULL
 
         //build vector of Supply objects manually
         std::vector<Supply*> *supplies;
@@ -92,7 +84,7 @@ namespace{
         //set the Supplies
         builder->setSupplies(supplies);
 
-        std::vector<Supply*> *result = builder->getSupplies();
+        std::vector<Supply*> *result = builder->getSupplies();//result should not be NULL since we called setter
 
         //Test: setter did set the vector thus the size is greater than 0
         ASSERT_GT(0, result->size());
@@ -101,14 +93,56 @@ namespace{
         delete builder;
         delete supplies;
         delete result;
-        delete factories;
+    }
+
+    //Test the getIndividuals() to check if it does not return NULL
+    TEST(Get_individuals, DidNotReceiveItems){
+        ArmyBuilder* builder = new ArmyBuilder("Land",NULL,NULL); //passing in NULL for the factories since we won't test them
+
+        //Getter should return NULL since we did not call setter / createIndividuals()
+        std::vector<ArmyComponent*> *result = builder->getIndividuals();
+
+        //Test: Does getter return NULL?
+        ASSERT_EQ(NULL, result);
+
+        //deallocate memory
+        delete builder;
+        delete result;
+    }
+
+    //Test the getBattalions() to check if it does return NULL
+    TEST(Get_Battalions, DidNotReceiveItems){
+        ArmyBuilder* builder = new ArmyBuilder("Air",NULL,NULL); //passing in NULL for the factories since we won't test them
+
+        //Getter should return NULL since we did not call setter / buildBattalions()
+        std::vector<ArmyComponent*> *result = builder->getBattalions();
+
+        //Test: Does getter return NULL?
+        ASSERT_EQ(NULL, result);
+
+        //deallocate memory
+        delete builder;
+        delete result;
+    }
+
+    //Test the getSupplies() to check if it does return NULL
+    TEST(Get_Supplies, DidNotReceiveItems){
+        ArmyBuilder* builder = new ArmyBuilder("Sea",NULL,NULL); //passing in NULL for the factories since we won't test them
+
+        //Getter should return NULL since we did not call setter / determineSupplies()
+        std::vector<Supply*> *result = builder->getSupplies();
+
+        //Test: Does getter return NULL?
+        ASSERT_EQ(NULL, result);
+
+        //deallocate memory
+        delete builder;
+        delete result;
     }
 
     //Test the getIndividuals() to check if it does not return NULL
     TEST(Get_individuals, ReceivedItems){
-        std::vector<UnitFactory*> *factories = new std::vector<UnitFactory*>;
-        factories->push_bacK( new LandFactory(1000000000,2,"Land") );
-        ArmyBuilder* builder = new ArmyBuilder("Land",factories,NULL); //not testing the supplies thus it can be NULL
+        ArmyBuilder* builder = new ArmyBuilder("Land",NULL,NULL); //not testing the factories thus it can be NULL
 
         //build vector of armyComponents manually
         std::vector<ArmyComponent*> *indv;
@@ -125,23 +159,21 @@ namespace{
         //set the individuals
         builder->setIndividuals(indv);
 
+        //Getter should not return NULL since we did call setter
         std::vector<ArmyComponent*> *result = builder->getIndividuals();
 
-        //Test: Does getter return NULL?
+        //Test: Does getter return a value other than NULL?
         ASSERT_EQ(!NULL, result);
 
         //deallocate memory
         delete builder;
         delete indv;
         delete result;
-        delete factories;
     }
 
     //Test the getBattalions() to check if it does not return NULL
     TEST(Get_Battalions, ReceivedItems){
-        std::vector<UnitFactory*> *factories = new std::vector<UnitFactory*>;
-        factories->push_bacK( new AirFactory(1000000000,3,"Air") );
-        ArmyBuilder* builder = new ArmyBuilder("Air",factories,NULL); //not testing the supplies thus it is NULL
+        ArmyBuilder* builder = new ArmyBuilder("Air",NULL,NULL); //not testing the factories thus it is NULL
 
         //build vector of armyComponents manually
         std::vector<ArmyComponent*> *battalion;
@@ -158,23 +190,21 @@ namespace{
         //set the Battalions
         builder->setBattalions(battalion);
 
+        //Getter should return NULL since we did call setter
         std::vector<ArmyComponent*> *result = builder->getBattalions();
 
-        //Test: Does getter return NULL?
+        //Test: Does getter return a value other than NULL?
         ASSERT_EQ(!NULL, result);
 
         //deallocate memory
         delete builder;
         delete battalion;
         delete result;
-        delete factories;
     }
 
     //Test the getSupplies() to check if it does not return NULL
     TEST(Get_Supplies, ReceivedItems){
-        std::vector<SupplyFactory*> *factories = new std::vector<SupplyFactory*>;
-        factories->push_bacK( new AmmoFactory(1000000000,"Ammo") );
-        ArmyBuilder* builder = new ArmyBuilder("Sea",NULL,factories); //not testing the unitfactories thus it is NULL
+        ArmyBuilder* builder = new ArmyBuilder("Sea",NULL,NULL); //not testing the factories thus it is NULL
 
         //build vector of Supply objects manually
         std::vector<Supply*> *supplies;
@@ -191,15 +221,15 @@ namespace{
         //set the Supplies
         builder->setSupplies(supplies);
 
+        //Getter should return NULL since we did call setter
         std::vector<Supply*> *result = builder->getSupplies();
 
-        //Test: Does getter return NULL?
+        //Test: Does getter return a value other than NULL?
         ASSERT_EQ(!NULL, result);
 
         //deallocate memory
         delete builder;
         delete supplies;
         delete result;
-        delete factories;
     }
 }
