@@ -428,6 +428,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirVehicle.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoFactory.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoSupply.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AmmoTransporter.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
@@ -442,6 +443,7 @@ CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicTransporter.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalFactory.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/MedicalSupply.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Neutral.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
@@ -449,10 +451,12 @@ CMakeFiles/runTests.dir/unittests.cpp.o
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Supply.h
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SupplyFactory.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Transporter.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Vehicle.h
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
+ /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/SupplyProduct_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/Transport_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarPhase_unittests.cpp
  /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp
