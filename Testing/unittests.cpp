@@ -2,6 +2,7 @@
 #include "Transport_unittests.cpp"
 #include "ArmyBuilder_unittests.cpp"
 #include "WarPhase_unittests.cpp"
+#include "SupplyProduct_unittests.cpp"
 #include <gtest/gtest.h>
 
 int main(int argc, char **argv)
