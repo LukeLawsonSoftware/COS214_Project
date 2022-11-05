@@ -4,7 +4,7 @@
 #include "Country.h"
 int main()
 {
-    //  War war;
+    // War war;
     //  war.startWarSim();
 
     WarTheatre *test = new LandTerrain();
@@ -17,6 +17,8 @@ int main()
     c2->raiseArmy();
     test->addArmy(c1->getArmy());
     test->addArmy(c2->getArmy());
+
+    c1->getArmy()->changeStrategy("Offensive");
 
     test->conflict();
     test->conflict();

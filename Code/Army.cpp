@@ -95,12 +95,41 @@ void Army::applyStrategyBonus()
 
 void Army::recuperate()
 {
+
+	bool flag = false;
 	for (int i = 0; i < this->medicalSupply->size(); i++)
 	{
 		if (medicalSupply->at(i) != NULL)
 		{
 			this->stats->setMorale(this->stats->getMorale() + medicalSupply->at(i)->getMedicalBonus());
+			flag = true;
 		}
+	}
+
+	for (int i = 0; i < Country::alliance1.size(); i++)
+	{
+		if (name == Country::alliance1.at(i)->getName())
+		{
+			std::cout << "\033[;32m";
+		}
+	}
+	for (int i = 0; i < Country::alliance2.size(); i++)
+	{
+		if (name == Country::alliance2.at(i)->getName())
+		{
+			std::cout << "\033[;31m";
+		}
+	}
+
+	if (flag)
+	{
+		std::cout << "The " << name << " army uses its medical supplies to heal some of the wounded and boost morale." << std::endl;
+		std::cout << "\033[;0m";
+	}
+	else
+	{
+		std::cout << "The " << name << " army does not have medical supplies with which it can recuperate." << std::endl;
+		std::cout << "\033[;0m";
 	}
 }
 
@@ -110,7 +139,25 @@ void Army::addNewAmmoSupplies(AmmoSupply *ammo)
 	{
 		this->ammoSupply->push_back(ammo);
 		this->stats->setAvailableAmmo(stats->getAvailableAmmo() + ammo->getAmmoBonus());
+
+		for (int i = 0; i < Country::alliance1.size(); i++)
+		{
+			if (name == Country::alliance1.at(i)->getName())
+			{
+				std::cout << "\033[;32m";
+			}
+		}
+		for (int i = 0; i < Country::alliance2.size(); i++)
+		{
+			if (name == Country::alliance2.at(i)->getName())
+			{
+				std::cout << "\033[;31m";
+			}
+		}
+
 		std::cout << "Army has received ammunition" << std::endl;
+
+		std::cout << "\033[;0m";
 	}
 }
 
@@ -120,16 +167,50 @@ void Army::addNewMedicalSupplies(MedicalSupply *meds)
 	{
 		this->medicalSupply->push_back(meds);
 		this->stats->setMedical(stats->getMedical() + meds->getMedicalBonus());
+
+		for (int i = 0; i < Country::alliance1.size(); i++)
+		{
+			if (name == Country::alliance1.at(i)->getName())
+			{
+				std::cout << "\033[;32m";
+			}
+		}
+		for (int i = 0; i < Country::alliance2.size(); i++)
+		{
+			if (name == Country::alliance2.at(i)->getName())
+			{
+				std::cout << "\033[;31m";
+			}
+		}
+
 		std::cout << "Army has received medical supplies" << std::endl;
+
+		std::cout << "\033[;0m";
 	}
 }
 
 void Army::changeStrategy(std::string newStrat)
 {
+	for (int i = 0; i < Country::alliance1.size(); i++)
+	{
+		if (name == Country::alliance1.at(i)->getName())
+		{
+			std::cout << "\033[;32m";
+		}
+	}
+	for (int i = 0; i < Country::alliance2.size(); i++)
+	{
+		if (name == Country::alliance2.at(i)->getName())
+		{
+			std::cout << "\033[;31m";
+		}
+	}
+
 	if (newStrat[0] == 'O' || newStrat[0] == 'o')
 	{
 		delete this->currentStrategy;
 		this->currentStrategy = new Offensive();
+
 		std::cout << "The army adopts an Offensive strategy" << std::endl;
 	}
 	else if (newStrat[0] == 'D' || newStrat[0] == 'd')
@@ -144,6 +225,7 @@ void Army::changeStrategy(std::string newStrat)
 		this->currentStrategy = new Neutral();
 		std::cout << "The army adopts an Neutral strategy" << std::endl;
 	}
+	std::cout << "\033[;0m";
 }
 void Army::setBattleField(WarTheatre *theatre)
 {

@@ -45,7 +45,7 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 
 	for (int i = 0; i < Medics; i++)
 	{
-		civilians->push_back(new Medic());
+		medics->push_back(new Medic());
 	}
 }
 
@@ -86,6 +86,7 @@ void WarTheatre::applyTerrainBonus()
 
 void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 {
+	std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ " + name + " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
 
 	// Make sure there are two armies in this theatre:
 	if (contentionState == 3) // 2 Armies are present - conflict is possible
@@ -171,13 +172,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		// At the end of each round,each army needs to lose some ammo.
 		if (moraleArmy1 > 0)
 		{
-			AmoArmy1 = AmoArmy1 - 20;
+			AmoArmy1 = AmoArmy1 - 200;
 			StatsArmy1->setAvailableAmmo(AmoArmy1);
 		}
 
 		if (moraleArmy2 > 0)
 		{
-			AmoArmy2 = AmoArmy2 - 20;
+			AmoArmy2 = AmoArmy2 - 200;
 			StatsArmy2->setAvailableAmmo(AmoArmy2);
 		}
 
@@ -228,27 +229,72 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 		//  medics use getHealing to 'heal' armies (healing an army is adding to morale)
 		// Dynamic casting
-		std::vector<Medic *> *_medics;
-		for (int i = 0; i < medics->size(); i++)
-		{
-			_medics->push_back(dynamic_cast<Medic *>(medics->at(i)));
-		}
+		//	std::vector<Medic *> *_medics;
+		//	for (int i = 0; i < medics->size(); i++)
+		//	{
+		//		_medics->push_back(dynamic_cast<Medic *>(medics->at(i)));
+		//	}
+
+		std::cout << "\033[;35m";
+		std::cout << "Third-party medics heal the wounded of both sides, increasing their morale" << std::endl;
+		std::cout << "\033[;0m";
 
 		for (int i = 0; i < medics->size(); i++)
 		{
 			if (contentionState == 3)
 			{
-				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
-				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+				moraleArmy1 = moraleArmy1 + ((Medic *)medics->at(i))->getHealing();
+				moraleArmy2 = moraleArmy2 + ((Medic *)medics->at(i))->getHealing();
 			}
 			else if (contentionState == 1)
 			{
-				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
+				moraleArmy1 = moraleArmy1 + ((Medic *)medics->at(i))->getHealing();
 			}
 			else if (contentionState == 2)
 			{
-				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+				moraleArmy2 = moraleArmy2 + ((Medic *)medics->at(i))->getHealing();
 			}
+		}
+
+				// std::cout << "here" << std::endl;
+		int numCivilians = this->civilians->size();
+		// std::cout << "here" << std::endl;
+		int numCiviliansToDie = 28457 % numCivilians;
+
+		std::cout << "\033[;35m";
+
+		int civCount = 0;
+		int refCount = 0;
+
+		for (int i = 0; i < numCiviliansToDie; i++)
+		{
+			NonCombatEntity *temp = civilians->at(this->civilians->size() - 1);
+			civilians->pop_back();
+			if (((Civilian *)temp)->getDesignation()[0] == 'c')
+			{
+				civCount++;
+			}
+			else
+			{
+				refCount++;
+			}
+			// delete temp;
+		}
+
+		std::cout << civCount << " civilians and " << refCount << " refugees have been killed in the crossfire..." << std::endl;
+		//	std::cout << "here" << std::endl;
+		int numMedics = this->medics->size();
+		//	std::cout << numMedics << std::endl;
+		int numMedicsToDie = 28457 % numMedics;
+		//	std::cout << "here" << std::endl;
+
+		std::cout << numMedicsToDie << " third-party medics have left the battle field..." << std::endl;
+		std::cout << "\033[;0m";
+		for (int i = 0; i < numMedicsToDie; i++)
+		{
+			// Medic *temp;
+			medics->pop_back();
+			//	delete temp;
 		}
 
 		replenishNonCombatEntities();
@@ -278,6 +324,8 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
 		std::cout << "\033[0m";
 	}
+
+	std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ " + name + " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
 }
 
 void WarTheatre::addArmy(Army *newArmy)
@@ -367,6 +415,10 @@ void WarTheatre::replenishNonCombatEntities()
 	int Medics = 8;
 	int Refugees = 8;
 	int Citizens = 6;
+
+	std::cout << "\033[;35m";
+	std::cout << "A number of refugees, civilians and third-party medics have entered the war theatre" << std::endl;
+	std::cout << "\033[;0m";
 
 	for (int i = 0; i < Citizens; i++)
 	{

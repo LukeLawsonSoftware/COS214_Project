@@ -504,6 +504,7 @@ void Country::destroyArmy()
 
 void Country::destroyTransport()
 {
+	std::cout << "\033[;34m";
 	if (this->medicalTransportLine != NULL)
 	{
 		this->medicalTransportLine = NULL;
@@ -518,13 +519,14 @@ void Country::destroyTransport()
 	{
 		std::cout << name << " has no transport lines to be destroyed" << std::endl;
 	}
+	std::cout << "\033[;0m";
 }
 
 void Country::setColour()
 {
 	for (int i = 0; i < Country::alliance1.size(); i++)
 	{
-		if (this->getName() == alliance1.at(i)->getName())
+		if (this->getName() == Country::alliance1.at(i)->getName())
 		{
 			std::cout << "\033[;32m";
 			return;
@@ -532,7 +534,7 @@ void Country::setColour()
 	}
 	for (int i = 0; i < Country::alliance2.size(); i++)
 	{
-		if (this->getName() == alliance2.at(i)->getName())
+		if (this->getName() == Country::alliance2.at(i)->getName())
 		{
 			std::cout << "\033[;31m";
 			return;
