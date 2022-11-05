@@ -40,11 +40,11 @@ Country::Country(std::string ecoState, std::string name)
 
 	if (ecoState[0] == 'R' || ecoState[0] == 'r')
 	{
-		this->gdp = (int)(rand() % (1000000 - 800000 + 1) + 800000);
+		this->gdp = (int)(rand() % (10000000 - 8000000 + 1) + 8000000);
 		this->ecoState = new Rich();
-		this->unitFactories->push_back(new LandFactory(5000000, 3, "Land"));
-		this->unitFactories->push_back(new AirFactory(5000000, 3, "Air"));
-		this->unitFactories->push_back(new SeaFactory(5000000, 3, "Sea"));
+		this->unitFactories->push_back(new LandFactory(1000000000, 3, "Land"));
+		this->unitFactories->push_back(new AirFactory(1000000000, 3, "Air"));
+		this->unitFactories->push_back(new SeaFactory(1000000000, 3, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(500000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(500000, "Medical"));
@@ -52,12 +52,12 @@ Country::Country(std::string ecoState, std::string name)
 	}
 	else if (ecoState[0] == 'P' || ecoState[0] == 'p')
 	{
-		this->gdp = (int)(rand() % (100000 - 50000 + 1) + 50000);
+		this->gdp = (int)(rand() % (1000000 - 500000 + 1) + 500000);
 		this->ecoState = new Poor();
 
-		this->unitFactories->push_back(new LandFactory(100000, 1, "Land"));
-		this->unitFactories->push_back(new AirFactory(100000, 1, "Air"));
-		this->unitFactories->push_back(new SeaFactory(100000, 1, "Sea"));
+		this->unitFactories->push_back(new LandFactory(30000000, 1, "Land"));
+		this->unitFactories->push_back(new AirFactory(30000000, 1, "Air"));
+		this->unitFactories->push_back(new SeaFactory(30000000, 1, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(100000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(100000, "Medical"));
@@ -65,12 +65,12 @@ Country::Country(std::string ecoState, std::string name)
 	}
 	else
 	{
-		this->gdp = (int)(rand() % (500000 - 300000 + 1) + 300000);
+		this->gdp = (int)(rand() % (5000000 - 3000000 + 1) + 3000000);
 		this->ecoState = new Average();
 
-		this->unitFactories->push_back(new LandFactory(250000, 2, "Land"));
-		this->unitFactories->push_back(new AirFactory(250000, 2, "Air"));
-		this->unitFactories->push_back(new SeaFactory(250000, 2, "Sea"));
+		this->unitFactories->push_back(new LandFactory(800000000, 2, "Land"));
+		this->unitFactories->push_back(new AirFactory(800000000, 2, "Air"));
+		this->unitFactories->push_back(new SeaFactory(800000000, 2, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(250000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(250000, "Medical"));
@@ -242,26 +242,32 @@ void Country::raiseArmy()
 {
 	setColour();
 	std::cout << name << " decides to raise an army" << std::endl;
-	if (gdp > 300000)
+	if (gdp >= 500000)
 	{
 		if (this->army == NULL)
 		{
-			spendGDP(300000);
-			int choice = rand() % 3;
-			std::string type = "";
-			if (choice == 0)
+			spendGDP(500000);
+			std::string type = decideArmyType();
+			if (type[0] == 'R')
 			{
-				type = "Land";
+				int choice = rand() % 3;
+				type = "";
+				if (choice == 0)
+				{
+					type = "Land";
+				}
+				else if (choice == 1)
+				{
+					type = "Sea";
+				}
+				else
+				{
+					type = "Air";
+				}
 			}
-			else if (choice == 1)
-			{
-				type = "Sea";
-			}
-			else
-			{
-				type = "Air";
-			}
+			setColour();
 			std::cout << name << " raises a " << type << " army!" << std::endl;
+			std::cout << "\033[0m";
 			ArmyBuilder *builder = new ArmyBuilder(type, unitFactories, supplyFactories);
 			ArmyDirector dir(builder);
 			dir.constructArmy();
@@ -279,6 +285,108 @@ void Country::raiseArmy()
 		std::cout << name << " does not have enough GDP to raise an army!" << std::endl;
 	}
 	std::cout << "\033[0m";
+}
+
+std::string Country::decideArmyType()
+{
+	for (int i = 0; i < Country::alliance1.size(); i++)
+	{
+		if (this->getName() == Country::alliance1.at(i)->getName())
+		{
+			bool types[3];
+			types[0] = true; // land
+			types[1] = true; // sea
+			types[2] = true; // air
+			for (int j = 0; j < Country::alliance1.size(); j++)
+			{
+				if (this->getName() != Country::alliance1.at(j)->getName())
+				{
+					if (Country::alliance1.at(j)->getArmy() != NULL && Country::alliance1.at(j)->getArmy()->getType()[0] == 'L')
+					{
+						types[0] = false;
+					}
+					if (Country::alliance1.at(j)->getArmy() != NULL && Country::alliance1.at(j)->getArmy()->getType()[0] == 'S')
+					{
+						types[1] = false;
+					}
+					if (Country::alliance1.at(j)->getArmy() != NULL && Country::alliance1.at(j)->getArmy()->getType()[0] == 'A')
+					{
+						types[2] = false;
+					}
+				}
+			}
+			for (int k = 0; k < 3; k++)
+			{
+				if (types[0])
+				{
+					return "Land";
+				}
+				else if (types[1])
+				{
+					return "Sea";
+				}
+				else if (types[2])
+				{
+					return "Air";
+				}
+				else
+				{
+					return "Random";
+				}
+			}
+		}
+	}
+	for (int i = 0; i < Country::alliance2.size(); i++)
+	{
+		if (this->getName() == Country::alliance2.at(i)->getName())
+		{
+			if (this->getName() == Country::alliance2.at(i)->getName())
+			{
+				bool types[3];
+				types[0] = true; // land
+				types[1] = true; // sea
+				types[2] = true; // air
+				for (int j = 0; j < Country::alliance2.size(); j++)
+				{
+					if (this->getName() != Country::alliance2.at(j)->getName())
+					{
+						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'L')
+						{
+							types[0] = false;
+						}
+						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'S')
+						{
+							types[1] = false;
+						}
+						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'A')
+						{
+							types[2] = false;
+						}
+					}
+				}
+				for (int k = 0; k < 3; k++)
+				{
+					if (types[0])
+					{
+						return "Land";
+					}
+					else if (types[1])
+					{
+						return "Sea";
+					}
+					else if (types[2])
+					{
+						return "Air";
+					}
+					else
+					{
+						return "Random";
+					}
+				}
+			}
+		}
+	}
+	return "Random";
 }
 
 void Country::upgradeUnitFactory()
@@ -391,16 +499,24 @@ void Country::attackTransport()
 		break;
 	}
 
+	static int seeder = 1;
+	seeder += 2;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
+	int preIndex = rand();
+	if (preIndex < 0)
+	{
+		preIndex = -1 * preIndex;
+	}
 	if (enemyAlliance == 1)
 	{
-		Country *target = Country::alliance1.at(0);
+		Country *target = Country::alliance1.at(preIndex % Country::alliance1.size());
 		std::cout << name << " wants to attack the Transport line of " << target->getName() << std::endl;
 		commander->setTransportTarget(target, army);
 		commander->attackTransport();
 	}
 	else
 	{
-		Country *target = Country::alliance2.at(0);
+		Country *target = Country::alliance2.at(preIndex % Country::alliance2.size());
 		std::cout << name << " wants to attack the Transport line of " << target->getName() << std::endl;
 		commander->setTransportTarget(target, army);
 		commander->attackTransport();

@@ -199,6 +199,24 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		{
 			std::cout << "\033[;31m";
 			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName() << std::endl;
+
+			for (int i = 0; i < Country::alliance1.size(); i++)
+			{
+				if (armies[0]->getName() == Country::alliance1.at(i)->getName())
+				{
+					Country::alliance1.at(i)->destroyArmy();
+					break;
+				}
+			}
+			for (int i = 0; i < Country::alliance2.size(); i++)
+			{
+				if (armies[0]->getName() == Country::alliance2.at(i)->getName())
+				{
+					Country::alliance2.at(i)->destroyArmy();
+					break;
+				}
+			}
+
 			armies[0] = NULL;
 			contentionState = 2;
 			std::cout << "\033[0m";
@@ -207,6 +225,22 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		{
 			std::cout << "\033[;32m";
 			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName() << std::endl;
+			for (int i = 0; i < Country::alliance1.size(); i++)
+			{
+				if (armies[1]->getName() == Country::alliance1.at(i)->getName())
+				{
+					Country::alliance1.at(i)->destroyArmy();
+					break;
+				}
+			}
+			for (int i = 0; i < Country::alliance2.size(); i++)
+			{
+				if (armies[1]->getName() == Country::alliance2.at(i)->getName())
+				{
+					Country::alliance2.at(i)->destroyArmy();
+					break;
+				}
+			}
 			armies[1] = NULL;
 			contentionState = 1;
 			std::cout << "\033[0m";
@@ -256,7 +290,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 			}
 		}
 
-				// std::cout << "here" << std::endl;
+		// std::cout << "here" << std::endl;
 		int numCivilians = this->civilians->size();
 		// std::cout << "here" << std::endl;
 		int numCiviliansToDie = 28457 % numCivilians;

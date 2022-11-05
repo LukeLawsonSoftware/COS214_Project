@@ -156,6 +156,7 @@ public:
 
 private:
 	void setColour();
+	std::string decideArmyType();
 };
 
 #endif

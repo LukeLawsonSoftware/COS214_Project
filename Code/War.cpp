@@ -262,7 +262,7 @@ void War::startWarSim()
 				seeder += 67848;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
-				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
+				int gdp = 5000000 - (std::rand() % (10000000 - 0 + 1));
 				Country::alliance1.at(i)->earnGDP(gdp);
 			}
 		}
@@ -274,7 +274,7 @@ void War::startWarSim()
 				seeder += 3000;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
-				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
+				int gdp = 5000000 - (std::rand() % (10000000 - 0 + 1));
 				Country::alliance2.at(i)->earnGDP(gdp);
 			}
 		}
@@ -287,6 +287,10 @@ void War::startWarSim()
 		// to pause during debugging
 		std::string test;
 		std::cin >> test;
+		if (test == "stop")
+		{
+			break;
+		}
 	}
 	stopWar();
 }
