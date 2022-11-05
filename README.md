@@ -31,7 +31,7 @@
 [Version 20](https://drive.google.com/file/d/1Cntk9UWMqsokEPgERsGhNSmOT3Haz2kD/view?usp=share_link)<br/>
 [Version 21](https://drive.google.com/file/d/1eo7a1TbM5AuuEQWYTSB-A8r1dZFi1Jqj/view?usp=share_link)<br/>
 [Version 22](https://drive.google.com/file/d/1dPU_FSqrLXdXxKMcFYefqSWC1LiVs_Ln/view?usp=share_link)<br/>
-
+[Minimal Version](https://drive.google.com/file/d/18_vqHmtiob0GRgqv6hh_Nnex_VtgvPV2/view?usp=share_link)<br/>
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
 > ### Sequence Diagrams
 #### <ins> **_Build Army Process_** </ins> <br/>
