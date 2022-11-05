@@ -16,19 +16,19 @@
 
 ## Class Diagrams
 #### Note that the versions begin at 8 since they follow on directly from the pre-initial design
-[Version 8](https://drive.google.com/file/d/1-UuFH9hNWGyRtWLma7IMovKqsj9KFzaa/view?usp=sharing)<br /> 
-[Version 9](https://drive.google.com/file/d/1WlcorMKZZw7HnF6N1U6_IDY-ZGXQgRKg/view?usp=sharing)<br /> 
-[Version 10](https://drive.google.com/file/d/13UTp4r2TTfs8xYlSWSsCTgeSvKybmxlQ/view?usp=sharing)<br/>
-[Version 11](https://drive.google.com/file/d/1dcpT7KCBI24l8T0TtCAg0JR0GlkfNtLH/view?usp=sharing)<br/>
-[Version 12](https://drive.google.com/file/d/195SCv9a-4um3PzDt2Es2YW4-RtcNsZN8/view?usp=sharing)<br/>
-[Version 13](https://drive.google.com/file/d/15Hgq28NES-8Lm8_BZl256ECs7sLvr125/view?usp=sharing)<br/>
-[Version 14](https://drive.google.com/file/d/10z9p8sJmmvWWZMwq8hUkDvQNvYuSMlfo/view?usp=sharing)<br/>
-[Version 15](https://drive.google.com/file/d/1qhTZaUt_sTjt1RcozQxJVNCbMYOcWiqY/view?usp=sharing)<br/>
-[Version 16](https://drive.google.com/file/d/1MLDsWm24OUxs8nfgTeLtG7Nj5vW_G9tJ/view?usp=sharing)<br/>
-[Version 17](https://drive.google.com/file/d/11yjUCI5fjK22P2e0PczbaptEYYIerCXh/view?usp=sharing)<br/>
-[Version 18](https://drive.google.com/file/d/1SiB_I9n5xxv6mGKDU_JbumZvh84v9MQU/view?usp=sharing)<br/>
-[Version 19](https://drive.google.com/file/d/1hHDvbXCZC-V1NYGY2AByCXfapqR_GwRj/view?usp=sharing)<br/>
-[Version 20](https://drive.google.com/file/d/1OyWjZIs4jaOK-BC2ShUZDWJdl0PKkDeI/view?usp=sharing)<br/>
+[Version 8](https://drive.google.com/file/d/1QBlu3Lcu4uLqFLPnCgZqIgHeAzfAeLl0/view?usp=share_link)<br /> 
+[Version 9](https://drive.google.com/file/d/18lmRUsJ7-7jgDfF5QEl6ZYlV0eulraNW/view?usp=share_link)<br /> 
+[Version 10](https://drive.google.com/file/d/1TEyda76LrDPMStUUbU1PUvbVXtOhRzhD/view?usp=share_link)<br/>
+[Version 11](https://drive.google.com/file/d/1xx2UJRsiQI1GcfNS6z4ud9BFkOQ6gnL7/view?usp=share_link)<br/>
+[Version 12](https://drive.google.com/file/d/16yxtmjypy_2DJ2wIv7ESDuz0SwkHsWbc/view?usp=share_link)<br/>
+[Version 13](https://drive.google.com/file/d/1uZKSrjJk0aklADIXfMVJMNmlgqecGcLV/view?usp=share_link)<br/>
+[Version 14](https://drive.google.com/file/d/1pexLf8ZArFLZzy97BKDFMjhHTxmk7cfN/view?usp=share_link)<br/>
+[Version 15](https://drive.google.com/file/d/1f-3qLPwNT4nvVT9F4z7sC-EfSFMvPt8a/view?usp=share_link)<br/>
+[Version 16](https://drive.google.com/file/d/1W4nBQVcYQNlz3u9e62d3_P6i6nh2TMxH/view?usp=share_link)<br/>
+[Version 17](https://drive.google.com/file/d/1RcrsNmmRc4tQxT4ICaly_OVO2NXFK8ct/view?usp=share_link)<br/>
+[Version 18](https://drive.google.com/file/d/11rYNL8X8Ebfd3tP_xicMzU0ZFDw07I9H/view?usp=share_link)<br/>
+[Version 19](https://drive.google.com/file/d/1p8OavUl0jYry62lhYCFIzHVy0-sv_6EW/view?usp=share_link)<br/>
+[Version 20](https://drive.google.com/file/d/1Cntk9UWMqsokEPgERsGhNSmOT3Haz2kD/view?usp=share_link)<br/>
 [Version 21](https://drive.google.com/file/d/1eo7a1TbM5AuuEQWYTSB-A8r1dZFi1Jqj/view?usp=share_link)<br/>
 
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
