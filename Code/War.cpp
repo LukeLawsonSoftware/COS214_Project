@@ -6,9 +6,11 @@
 #include "Country.h"
 War::War()
 {
+	// std::cout << "here" << std::endl;
 	warTheatres.insert(std::pair<std::string, WarTheatre *>("Land", new LandTerrain()));
 	warTheatres.insert(std::pair<std::string, WarTheatre *>("Air", new AirTerrain()));
 	warTheatres.insert(std::pair<std::string, WarTheatre *>("Sea", new SeaTerrain()));
+	// std::cout << "here" << std::endl;
 	phase = new EarlyPeace();
 	isActive = true;
 }
@@ -95,12 +97,39 @@ void War::setUpCountries()
 
 void War::startWarSim()
 {
-	setUpCountries();
+	// setUpCountries();
+	int seed = 146863583;
+
+	// Hardcoded setup for debugging
+	Country *russia = new Country("Rich", "Russia");
+	Country *china = new Country("Rich", "China");
+	Country *india = new Country("Average", "India");
+	Country *rsa = new Country("Poor", "South Africa");
+	Country::alliance1.push_back(russia);
+	Country::alliance1.push_back(china);
+	Country::alliance1.push_back(india);
+	Country::alliance1.push_back(rsa);
+
+	Country *uk = new Country("Rich", "The UK");
+	Country *ukraine = new Country("Average", "Ukraine");
+	Country *germany = new Country("Average", "Germany");
+	Country *spain = new Country("Average", "Spain");
+	Country::alliance2.push_back(uk);
+	Country::alliance2.push_back(ukraine);
+	Country::alliance2.push_back(germany);
+	Country::alliance2.push_back(spain);
+
+	Country *france = new Country("Poor", "France");
+	Country *america = new Country("Rich", "USA");
+	Country::neutral.push_back(france);
+	Country::neutral.push_back(america);
+
 	while (phase->peaceChance != 0)
 	{
 		srand((unsigned)time(NULL));
 		changePhase();
 		bool peace = ((double)rand() / (double)RAND_MAX) < (phase->peaceChance);
+		// std::cout << "here" << std::endl;
 		if (peace == true)
 		{
 			std::cout << "Peace was reached before an escalation to a War" << std::endl;
@@ -108,11 +137,15 @@ void War::startWarSim()
 			return;
 		}
 	}
+	// std::cout << "got here" << std::endl;
 
 	while (isActive)
 	{
+		// std::cout << Country::alliance1.size() << std::endl;
+		// std::cout << Country::alliance1.size() << std::endl;
 		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
+			// std::cout << "in here" << std::endl;
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 				Country::alliance1.at(i)->takeTurn(this);
 		}
@@ -134,7 +167,7 @@ void War::startWarSim()
 				alliance1AllSurrendered = false;
 			}
 		}
-		bool alliance2AllSurrendered = false;
+		bool alliance2AllSurrendered = true;
 		for (int i = 0; i < Country::alliance2.size(); i++)
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
@@ -142,9 +175,21 @@ void War::startWarSim()
 				alliance2AllSurrendered = false;
 			}
 		}
-		if ((!alliance1AllSurrendered) != (!alliance2AllSurrendered))
+		//	if ((!alliance1AllSurrendered) != (!alliance2AllSurrendered))
+		//	{
+		//		isActive = false;
+		//	}
+
+		if (alliance1AllSurrendered)
 		{
-			isActive = false;
+			std::cout << "Alliance 1 has totally withdraw from the war, alliance 2 wins!" << std::endl;
+			break;
+		}
+
+		if (alliance2AllSurrendered)
+		{
+			std::cout << "Alliance 2 has totally withdraw from the war, alliance 1 wins!" << std::endl;
+			break;
 		}
 		if (warTheatres.at("Land")->getContentionState() != 0 || warTheatres.at("Sea")->getContentionState() != 0 || warTheatres.at("Air")->getContentionState() != 0)
 		{
@@ -161,7 +206,8 @@ void War::startWarSim()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL));
+				srand((unsigned)time(NULL) + seed);
+				// seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance1.at(i)->earnGDP(gdp);
 			}
@@ -170,20 +216,52 @@ void War::startWarSim()
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL));
+				srand((unsigned)time(NULL) + seed);
+				// seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance2.at(i)->earnGDP(gdp);
 			}
 		}
+
+		// to pause during debugging
+		std::string test;
+		std::cin >> test;
 	}
 }
 
 void War::startWarGame()
 {
-	setUpCountries();
+	int seed = 62857819;
+	// setUpCountries();
+
+	// Hardcoded setup for debugging
+	Country *russia = new Country("Rich", "Russia");
+	Country *china = new Country("Rich", "China");
+	Country *india = new Country("Average", "India");
+	Country *rsa = new Country("Poor", "South Africa");
+	Country::alliance1.push_back(russia);
+	Country::alliance1.push_back(china);
+	Country::alliance1.push_back(india);
+	Country::alliance1.push_back(rsa);
+
+	Country *uk = new Country("Rich", "The UK");
+	Country *ukraine = new Country("Average", "Ukraine");
+	Country *germany = new Country("Average", "Germany");
+	Country *spain = new Country("Average", "Spain");
+	Country::alliance2.push_back(uk);
+	Country::alliance2.push_back(ukraine);
+	Country::alliance2.push_back(germany);
+	Country::alliance2.push_back(spain);
+
+	Country *france = new Country("Poor", "France");
+	Country *america = new Country("Rich", "USA");
+	Country::neutral.push_back(france);
+	Country::neutral.push_back(america);
+
 	while (phase->peaceChance != 0)
 	{
-		srand((unsigned)time(NULL));
+		srand((unsigned)time(NULL) + seed);
+		// seed *= 1.378;
 		changePhase();
 		bool peace = ((double)rand() / (double)RAND_MAX) < (phase->peaceChance);
 		if (peace == true)
@@ -250,7 +328,7 @@ void War::startWarGame()
 					break;
 
 				case 9:
-					Country::alliance1.at(i)->sendSupplies(Country::alliance1.at(i)->getNewAmmoSupply(), Country::alliance1.at(i)->getNewMedicalSupply());
+					Country::alliance1.at(i)->sendSupplies();
 					break;
 
 				case 10:
@@ -277,7 +355,7 @@ void War::startWarGame()
 				alliance1AllSurrendered = false;
 			}
 		}
-		bool alliance2AllSurrendered = false;
+		bool alliance2AllSurrendered = true;
 		for (int i = 0; i < Country::alliance2.size(); i++)
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
@@ -285,10 +363,24 @@ void War::startWarGame()
 				alliance2AllSurrendered = false;
 			}
 		}
-		if ((!alliance1AllSurrendered) != (!alliance2AllSurrendered))
+
+		//	if ((!alliance1AllSurrendered) != (!alliance2AllSurrendered))
+		//{
+		//	isActive = false;
+		//}
+
+		if (alliance1AllSurrendered)
 		{
-			isActive = false;
+			std::cout << "Alliance 1 has totally withdraw from the war, alliance 2 wins!" << std::endl;
+			break;
 		}
+
+		if (alliance2AllSurrendered)
+		{
+			std::cout << "Alliance 2 has totally withdraw from the war, alliance 1 wins!" << std::endl;
+			break;
+		}
+
 		if (warTheatres.at("Land")->getContentionState() != 0 || warTheatres.at("Sea")->getContentionState() != 0 || warTheatres.at("Air")->getContentionState() != 0)
 		{
 			if (warTheatres.at("Land")->getContentionState() != 3 || warTheatres.at("Sea")->getContentionState() != 3 || warTheatres.at("Air")->getContentionState() != 3)
@@ -304,7 +396,8 @@ void War::startWarGame()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL));
+				srand((unsigned)time(NULL) + seed);
+				//	seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance1.at(i)->earnGDP(gdp);
 			}
@@ -313,7 +406,8 @@ void War::startWarGame()
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL));
+				srand((unsigned)time(NULL) + seed);
+				//	seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance2.at(i)->earnGDP(gdp);
 			}

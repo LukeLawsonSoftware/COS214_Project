@@ -26,13 +26,13 @@ Supply *AmmoFactory::makeSupply(int quantity)
 			if (possibleAmount > getBudget())
 			{
 				quantity = counter - 1;
-				std::cout << "NOTE: BUDGET FOR AMMO FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
 				break;
 			}
 			else if (possibleAmount == getBudget())
 			{
 				quantity = counter;
-				std::cout << "NOTE: BUDGET FOR AMMO FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
 				break;
 			}
 
@@ -43,7 +43,7 @@ Supply *AmmoFactory::makeSupply(int quantity)
 	}
 	else
 	{
-		std::cout << "NOTE: AMMO FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
+		// std::cout << "NOTE: AMMO FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
 		totalSpent += costAfterProduction;
 	}
 

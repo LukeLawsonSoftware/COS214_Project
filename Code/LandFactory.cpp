@@ -15,12 +15,12 @@ ArmyComponent *LandFactory::createVehicle()
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: CANNOT CREATE A VEHICLE DUE TO THE LAND FACTORY'S BUDGET THAT HAS BEEN REACHED." << std::endl;
+		std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
 		return nullptr;
 	}
 	else
 	{
-		std::cout << "NOTE: LAND FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
+		//	std::cout << "NOTE: LAND FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
 		totalSpent += costAfterProduction;
 	}
 	return new LandVehicle(determineActualLevel());
@@ -35,12 +35,12 @@ ArmyComponent *LandFactory::createSoldier()
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: CANNOT CREATE A SOLDIER DUE TO THE LAND FACTORY'S BUDGET THAT HAS BEEN REACHED." << std::endl;
+		std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
 		return nullptr;
 	}
 	else
 	{
-		std::cout << "NOTE: LAND FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
+		// std::cout << "NOTE: LAND FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
 		totalSpent += costAfterProduction;
 	}
 	return new LandUnit(determineActualLevel());

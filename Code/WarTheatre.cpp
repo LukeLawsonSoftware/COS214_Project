@@ -13,6 +13,9 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	name = Name;
 	contentionState = 0;
 
+	this->civilians = new std::vector<NonCombatEntity *>();
+	this->medics = new std::vector<NonCombatEntity *>();
+
 	// Initialise armies array:
 	for (int i = 0; i < 2; i++)
 	{
@@ -243,15 +246,15 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 	if (contentionState == 1) // Only an army from alliance 1 is present
 	{
-		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling the " + name + " war theatre!" << std::endl;
+		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling " + name + " war theatre!" << std::endl;
 	}
 	else if (contentionState == 2) // Only an army from alliance 2 is present
 	{
-		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling the " + name + " war theatre!" << std::endl;
+		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling " + name + " war theatre!" << std::endl;
 	}
 	else if (contentionState == 0) // No armies in the war theatre yet
 	{
-		std::cout << "The " + name + " war theatre is peaceful." << std::endl;
+		std::cout << name + " war theatre is peaceful." << std::endl;
 	}
 	else // 2 armies are present in the war theatre
 	{

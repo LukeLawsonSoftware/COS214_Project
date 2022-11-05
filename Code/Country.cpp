@@ -158,42 +158,43 @@ void Country::takeTurn(War *currWar)
 	switch (decision)
 	{
 	case 1:
-		// formAlliance
+		formAlliance();
 		break;
 	case 2:
-		// raiseArmy
+		raiseArmy();
 		break;
 
 	case 3:
-		// upgradeUnitFactory
+		upgradeUnitFactory();
 		break;
 
 	case 4:
-		// upgradeSupplyFactory
+		upgradeSupplyFactory();
 		break;
 
 	case 5:
-		//	enterArmyIntoTheatre
+		enterArmyIntoTheatre(currWar);
 		break;
 
 	case 6:
-		// changeArmyStrategy
+		changeArmyStrategy();
 		break;
 
 	case 7:
-		// attackTransport
+		attackTransport();
 		break;
 
 	case 8:
-		// surrender
+		surrender();
 		break;
 
 	case 9:
-		// sendSupplies
+		sendSupplies();
 		break;
 
 	case 10:
 		// do nothing
+		std::cout << name << " decides to do nothing this turn" << std::endl;
 		break;
 	}
 }
@@ -394,7 +395,7 @@ void Country::surrender()
 	hasSurrendered = true;
 }
 
-void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
+void Country::sendSupplies()
 {
 	// This function needs to do the following:
 	//- create the new ammo and medical supplies to send using the factories such that this function no longer needs paramters
@@ -404,12 +405,48 @@ void Country::sendSupplies(AmmoSupply *ammo, MedicalSupply *meds)
 	// im unsure how the whole transporting of supplies works so idk if maybe the chain of function calls needs to be reviewed to make sure it works as intended
 	std::cout << name << " decides to send supplies to its army" << std::endl;
 
+	Supply *newAmmo = NULL;
+	Supply *newMedical = NULL;
+	bool gotAmmo = false;
+	bool gotMedical = false;
+	for (int i = 0; i < supplyFactories->size(); i++)
+	{
+		if (gotAmmo && gotMedical)
+		{
+			break;
+		}
+		if (supplyFactories->at(i)->getType()[0] == 'A' && !gotAmmo)
+		{
+			newAmmo = supplyFactories->at(i)->makeSupply(5);
+			gotAmmo = true;
+		}
+		if (supplyFactories->at(i)->getType()[0] == 'M' && !gotMedical)
+		{
+			newMedical = supplyFactories->at(i)->makeSupply(5);
+			gotMedical = true;
+		}
+	}
 	// set the new supplies
-	setNewAmmoSupplies(ammo);
-	setNewMedicalSupplies(meds);
+	setNewAmmoSupplies((AmmoSupply *)newAmmo);
+	setNewMedicalSupplies((MedicalSupply *)newMedical);
 
-	// send them to the transport line
-	ammoTransportLine->notify(this);
+	if (ammoTransportLine == NULL)
+	{
+		std::cout << name << " cannot send ammo supplies since the ammo transport line is destroyed!" << std::endl;
+	}
+	else
+	{
+		ammoTransportLine->notify(this);
+	}
+
+	if (medicalTransportLine == NULL)
+	{
+		std::cout << name << " cannot send medical supplies since the medical transport line is destroyed!" << std::endl;
+	}
+	else
+	{
+		medicalTransportLine->notify(this);
+	}
 }
 
 AmmoSupply *Country::getNewAmmoSupply()
