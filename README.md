@@ -63,8 +63,8 @@ Factory Method Activity Diagram v1 - Supply Factory
 <!-- end of bulleted list -->
 #### **_Form Alliance Process_** <br/>
 FormAlliance Activity Diagram v1
-* [Visual Paradigm Project](https://drive.google.com/file/d/1n-Yo6yf94kIuEdWytGLKXh0qyNkW19AO/view?usp=share_link)<br/>
-* [View PDF](https://drive.google.com/file/d/1m0-UtwP5NvZf0jkM50MxH-uTexhTJyZ0/view?usp=share_link)<br/>
+* [Visual Paradigm Project](https://drive.google.com/file/d/1fyzToPI06tTDnrAY6hzrfZgqpc-kl_fJ/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1KsOVa3vVsrOnopNDdZrZj4gB6BJ3ynkw/view?usp=share_link)<br/>
 <!-- end of bulleted list -->
 ***
 > ### Object Diagrams
