@@ -145,6 +145,12 @@ void War::startWarSim()
 	{
 		// std::cout << Country::alliance1.size() << std::endl;
 		// std::cout << Country::alliance1.size() << std::endl;
+
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "DECISION PHASE"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
 			// std::cout << "in here" << std::endl;
@@ -156,10 +162,27 @@ void War::startWarSim()
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 				Country::alliance2.at(i)->takeTurn(this);
 		}
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
+
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "WAR THEATRES"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 
 		warTheatres.at("Land")->conflict();
 		warTheatres.at("Sea")->conflict();
 		warTheatres.at("Air")->conflict();
+
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 
 		bool alliance1AllSurrendered = true;
 		for (int i = 0; i < Country::alliance1.size(); i++)
@@ -184,13 +207,17 @@ void War::startWarSim()
 
 		if (alliance1AllSurrendered)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 1 has totally withdraw from the war, alliance 2 wins!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
 		if (alliance2AllSurrendered)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 2 has totally withdraw from the war, alliance 1 wins!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
@@ -209,15 +236,24 @@ void War::startWarSim()
 
 		if (warTheatres.at("Land")->getContentionState() == 1 && warTheatres.at("Sea")->getContentionState() == 1 && warTheatres.at("Air")->getContentionState() == 1)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 		if (warTheatres.at("Land")->getContentionState() == 2 && warTheatres.at("Sea")->getContentionState() == 2 && warTheatres.at("Air")->getContentionState() == 2)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "EARNINGS PHASE"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
@@ -242,6 +278,11 @@ void War::startWarSim()
 				Country::alliance2.at(i)->earnGDP(gdp);
 			}
 		}
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 
 		// to pause during debugging
 		std::string test;
@@ -297,6 +338,11 @@ void War::startWarGame()
 
 	while (isActive)
 	{
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "DECISION PHASE"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
@@ -365,10 +411,27 @@ void War::startWarGame()
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 				Country::alliance2.at(i)->takeTurn(this);
 		}
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
+
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "WAR THEATRES"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 
 		warTheatres.at("Land")->conflict();
 		warTheatres.at("Sea")->conflict();
 		warTheatres.at("Air")->conflict();
+
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 
 		bool alliance1AllSurrendered = true;
 		for (int i = 0; i < Country::alliance1.size(); i++)
@@ -394,13 +457,17 @@ void War::startWarGame()
 
 		if (alliance1AllSurrendered)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 1 has totally withdraw from the war, alliance 2 wins!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
 		if (alliance2AllSurrendered)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 2 has totally withdraw from the war, alliance 1 wins!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
@@ -419,12 +486,16 @@ void War::startWarGame()
 
 		if (warTheatres.at("Land")->getContentionState() == 1 && warTheatres.at("Sea")->getContentionState() == 1 && warTheatres.at("Air")->getContentionState() == 1)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 		if (warTheatres.at("Land")->getContentionState() == 2 && warTheatres.at("Sea")->getContentionState() == 2 && warTheatres.at("Air")->getContentionState() == 2)
 		{
+			std::cout << "\033[1;37m";
 			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
+			std::cout << "\033[;0m";
 			break;
 		}
 
@@ -462,5 +533,7 @@ void War::stopWar()
 	{
 		changePhase();
 	}
+	std::cout << "\033[1;37m";
 	std::cout << "The war has concluded." << std::endl;
+	std::cout << "\033[;0m";
 }
