@@ -8,7 +8,7 @@
 
 ## Pre-Initial Designs
 #### Note that versions 1 and 2 were drafted informally in meetings
-[Version 3](https://drive.google.com/file/d/13orxZ_sFOLb1FlrlfD1qOhBYgQFn2nFo/view?usp=sharing)<br />
+[Version 3](https://drive.google.com/file/d/1X7BIpcM84tJI-jKWnbUa4yTkxvy6Kxrb/view?usp=share_link)<br />
 [Version 4](https://drive.google.com/file/d/13WXN5KfDBFu2LrKkYfL3vg4j4mqa1Q8M/view?usp=sharing)<br />
 [Version 5](https://drive.google.com/file/d/1Zr10uR4nGRNjmxdcwDAmZb4Ks0d2QbK3/view?usp=sharing)<br />
 [Version 6](https://drive.google.com/file/d/1WG9n-VlnI-AYp_BLX6WniaaNpoUTVeaB/view?usp=sharing)<br />
