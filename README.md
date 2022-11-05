@@ -8,10 +8,10 @@
 
 ## Pre-Initial Designs
 #### Note that versions 1 and 2 were drafted informally in meetings
-[Version 3](https://drive.google.com/file/d/1X7BIpcM84tJI-jKWnbUa4yTkxvy6Kxrb/view?usp=share_link)<br />
-[Version 4](https://drive.google.com/file/d/1zypmBTo7UJJKXWHUjyhIJOqPuVEyR1A6/view?usp=share_link)<br />
-[Version 5](https://drive.google.com/file/d/1kJ8KX5Du98V_uNOdFYTlgRAb3cTTT70l/view?usp=share_link)<br />
-[Version 6](https://drive.google.com/file/d/1KiVPlr2pf9UIaaFpgy3qCFdS0gLlSAq9/view?usp=share_link)<br />
+[Version 3](https://drive.google.com/file/d/1X7BIpcM84tJI-jKWnbUa4yTkxvy6Kxrb/view?usp=share_link)<br/>
+[Version 4](https://drive.google.com/file/d/1zypmBTo7UJJKXWHUjyhIJOqPuVEyR1A6/view?usp=share_link)<br/>
+[Version 5](https://drive.google.com/file/d/1kJ8KX5Du98V_uNOdFYTlgRAb3cTTT70l/view?usp=share_link)<br/>
+[Version 6](https://drive.google.com/file/d/1KiVPlr2pf9UIaaFpgy3qCFdS0gLlSAq9/view?usp=share_link)<br/>
 [Version 7](https://drive.google.com/file/d/1MvZ0nuDfLJ7AOLk1EIC1n25Ki_BF00Jd/view?usp=share_link)<br/>
 
 ## Class Diagrams
