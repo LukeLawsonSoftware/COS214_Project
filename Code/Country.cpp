@@ -106,6 +106,7 @@ Country::~Country()
 
 void Country::earnGDP(double gdpEarned)
 {
+	setColour();
 	std::cout << name << " earns GDP of " << gdpEarned << std::endl;
 	this->gdp += gdpEarned;
 	if (this->gdp >= 500000)
@@ -126,10 +127,12 @@ void Country::earnGDP(double gdpEarned)
 		this->ecoState = new Poor();
 		std::cout << name << " is in a Poor economic state" << std::endl;
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::spendGDP(double gdpSpent)
 {
+	setColour();
 	std::cout << name << " spends GDP of " << gdpSpent << std::endl;
 	this->gdp -= gdpSpent;
 	if (this->gdp >= 500000)
@@ -150,10 +153,12 @@ void Country::spendGDP(double gdpSpent)
 		this->ecoState = new Poor();
 		std::cout << name << " is in a Poor economic state" << std::endl;
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::takeTurn(War *currWar)
 {
+
 	int decision = this->ecoState->decideMyTurn(this);
 	switch (decision)
 	{
@@ -201,6 +206,7 @@ void Country::takeTurn(War *currWar)
 
 void Country::formAlliance()
 {
+	setColour();
 	std::cout << name << " decides to form a new alliance" << std::endl;
 	if (Country::neutral.size() == 0)
 	{
@@ -229,10 +235,12 @@ void Country::formAlliance()
 			}
 		}
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::raiseArmy()
 {
+	setColour();
 	std::cout << name << " decides to raise an army" << std::endl;
 	if (gdp > 300000)
 	{
@@ -270,10 +278,12 @@ void Country::raiseArmy()
 	{
 		std::cout << name << " does not have enough GDP to raise an army!" << std::endl;
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::upgradeUnitFactory()
 {
+	setColour();
 	std::cout << name << " decides to upgrade its Unit Factories!" << std::endl;
 	if (gdp > 100000)
 	{
@@ -288,10 +298,12 @@ void Country::upgradeUnitFactory()
 	{
 		std::cout << name << " does not have enough GDP to perform the upgrade!" << std::endl;
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::upgradeSupplyFactory()
 {
+	setColour();
 	std::cout << name << " decides to upgrade its Supply Factories!" << std::endl;
 	if (gdp > 100000)
 	{
@@ -306,10 +318,12 @@ void Country::upgradeSupplyFactory()
 	{
 		std::cout << name << " does not have enough GDP to perform the upgrade!" << std::endl;
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::enterArmyIntoTheatre(War *war)
 {
+	setColour();
 	std::cout << name << " decides to enter a War Theatre" << std::endl;
 	std::string armyType = army->getType();
 	WarTheatre *theatre = NULL;
@@ -328,10 +342,12 @@ void Country::enterArmyIntoTheatre(War *war)
 	std::cout << name << "'s Military Commander commands army to enter " << theatre->getName() << std::endl;
 	commander->setTheatreTarget(army, theatre);
 	commander->enterTheatre();
+	std::cout << "\033[0m";
 }
 
 void Country::changeArmyStrategy()
 {
+	setColour();
 	std::cout << name << " decides to change their army's current strategy" << std::endl;
 	int choice = rand() % 3;
 	std::string newStrat = "Neutral";
@@ -350,10 +366,12 @@ void Country::changeArmyStrategy()
 	std::cout << name << "'s Military Commander commands the army to adopt a " << newStrat << " strategy!" << std::endl;
 	commander->setStrategy(army, newStrat);
 	commander->changeStrategy();
+	std::cout << "\033[0m";
 }
 
 void Country::attackTransport()
 {
+	setColour();
 	std::cout << name << " decides to attack a Transport line!" << std::endl;
 	int enemyAlliance = 1;
 	for (int i = 0; i < Country::alliance1.size(); i++)
@@ -387,16 +405,20 @@ void Country::attackTransport()
 		commander->setTransportTarget(target, army);
 		commander->attackTransport();
 	}
+	std::cout << "\033[0m";
 }
 
 void Country::surrender()
 {
+	setColour();
 	std::cout << name << " decides to surrender from the war!" << std::endl;
 	hasSurrendered = true;
+	std::cout << "\033[0m";
 }
 
 void Country::sendSupplies()
 {
+	setColour();
 	// This function needs to do the following:
 	//- create the new ammo and medical supplies to send using the factories such that this function no longer needs paramters
 	//- set both ammo and medical supplies
@@ -447,6 +469,7 @@ void Country::sendSupplies()
 	{
 		medicalTransportLine->notify(this);
 	}
+	std::cout << "\033[0m";
 }
 
 AmmoSupply *Country::getNewAmmoSupply()
@@ -494,5 +517,25 @@ void Country::destroyTransport()
 	else
 	{
 		std::cout << name << " has no transport lines to be destroyed" << std::endl;
+	}
+}
+
+void Country::setColour()
+{
+	for (int i = 0; i < Country::alliance1.size(); i++)
+	{
+		if (this->getName() == alliance1.at(i)->getName())
+		{
+			std::cout << "\033[;32m";
+			return;
+		}
+	}
+	for (int i = 0; i < Country::alliance2.size(); i++)
+	{
+		if (this->getName() == alliance2.at(i)->getName())
+		{
+			std::cout << "\033[;31m";
+			return;
+		}
 	}
 }

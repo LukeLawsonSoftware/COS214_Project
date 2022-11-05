@@ -87,8 +87,9 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 	// Make sure there are two armies in this theatre:
 	if (contentionState == 3) // 2 Armies are present - conflict is possible
 	{
+		std::cout << "\033[1;34m";
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
-
+		std::cout << "\033[0m";
 		//  apply terrain bonus
 		applyTerrainBonus();
 
@@ -100,6 +101,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		BattleStatistics *StatsArmy1 = armies[0]->getBattleStatistics();
 		BattleStatistics *StatsArmy2 = armies[1]->getBattleStatistics();
 
+		std::cout << "\033[;34m";
 		std::cout << "===================================== Battle Statistics : " + name + " =====================================" << std::endl;
 		std::cout << std::endl;
 
@@ -116,7 +118,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 		std::cout << std::endl;
 		std::cout << "=============================================== " + name + " ===============================================" << std::endl;
-
+		std::cout << "\033[0m";
 		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much
 		//    damage to do to morale
 		int moraleArmy1 = StatsArmy1->getMorale();
@@ -190,15 +192,19 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 		if (moraleArmy1 <= 0)
 		{
+			std::cout << "\033[;31m";
 			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName();
 			armies[0] = NULL;
 			contentionState = 2;
+			std::cout << "\033[0m";
 		}
 		else if (moraleArmy2 <= 0)
 		{
+			std::cout << "\033[;32m";
 			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName();
 			armies[1] = NULL;
 			contentionState = 1;
+			std::cout << "\033[0m";
 		}
 
 		//  surviving armies call recuperate (this uses the armys' medical supplies)
@@ -246,19 +252,27 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 	if (contentionState == 1) // Only an army from alliance 1 is present
 	{
+		std::cout << "\033[;32m";
 		std::cout << "The " + armies[0]->getName() + " army from alliance 1 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
 	else if (contentionState == 2) // Only an army from alliance 2 is present
 	{
+		std::cout << "\033[;31m";
 		std::cout << "The " + armies[1]->getName() + " army from alliance 2 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
 	else if (contentionState == 0) // No armies in the war theatre yet
 	{
+		std::cout << "\033[;34m";
 		std::cout << name + " war theatre is peaceful." << std::endl;
+		std::cout << "\033[0m";
 	}
 	else // 2 armies are present in the war theatre
 	{
+		std::cout << "\033[1;34m";
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
 }
 
@@ -308,7 +322,9 @@ void WarTheatre::addArmy(Army *newArmy)
 	{
 		if (alliance == 1)
 		{
+			std::cout << "\033[;32m";
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 1 already arrived!" << std::endl;
+			std::cout << "\033[;0m";
 		}
 		else if (alliance == 2)
 		{
@@ -321,7 +337,9 @@ void WarTheatre::addArmy(Army *newArmy)
 	{
 		if (alliance == 2)
 		{
+			std::cout << "\033[;31m";
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 2 already arrived!" << std::endl;
+			std::cout << "\033[;0m";
 		}
 		else if (alliance == 1)
 		{
@@ -332,7 +350,9 @@ void WarTheatre::addArmy(Army *newArmy)
 	}
 	else if (contentionState == 3) // Contentionstate = 3 ->  armies in contention (different alliances) :
 	{
+		std::cout << "\033[;34m";
 		std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> 2 armies are already at battle!" << std::endl;
+		std::cout << "\033[;0m";
 	}
 }
 

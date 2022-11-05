@@ -205,12 +205,12 @@ void War::startWarSim()
 		}
 		*/
 
-		if (warTheatres.at("Land")->getContentionState() == 1 || warTheatres.at("Sea")->getContentionState() == 1 || warTheatres.at("Air")->getContentionState() == 1)
+		if (warTheatres.at("Land")->getContentionState() == 1 && warTheatres.at("Sea")->getContentionState() == 1 && warTheatres.at("Air")->getContentionState() == 1)
 		{
 			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
 			break;
 		}
-		if (warTheatres.at("Land")->getContentionState() == 2 || warTheatres.at("Sea")->getContentionState() == 2 || warTheatres.at("Air")->getContentionState() == 2)
+		if (warTheatres.at("Land")->getContentionState() == 2 && warTheatres.at("Sea")->getContentionState() == 2 && warTheatres.at("Air")->getContentionState() == 2)
 		{
 			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
 			break;
@@ -409,12 +409,12 @@ void War::startWarGame()
 		}
 		*/
 
-		if (warTheatres.at("Land")->getContentionState() == 1 || warTheatres.at("Sea")->getContentionState() == 1 || warTheatres.at("Air")->getContentionState() == 1)
+		if (warTheatres.at("Land")->getContentionState() == 1 && warTheatres.at("Sea")->getContentionState() == 1 && warTheatres.at("Air")->getContentionState() == 1)
 		{
 			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
 			break;
 		}
-		if (warTheatres.at("Land")->getContentionState() == 2 || warTheatres.at("Sea")->getContentionState() == 2 || warTheatres.at("Air")->getContentionState() == 2)
+		if (warTheatres.at("Land")->getContentionState() == 2 && warTheatres.at("Sea")->getContentionState() == 2 && warTheatres.at("Air")->getContentionState() == 2)
 		{
 			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
 			break;
@@ -446,5 +446,9 @@ void War::startWarGame()
 
 void War::stopWar()
 {
+	while (phase->peaceChance != 1)
+	{
+		changePhase();
+	}
 	std::cout << "The war has concluded." << std::endl;
 }

@@ -26,13 +26,13 @@ Supply *AmmoFactory::makeSupply(int quantity)
 			if (possibleAmount > getBudget())
 			{
 				quantity = counter - 1;
-				std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 			else if (possibleAmount == getBudget())
 			{
 				quantity = counter;
-				std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 

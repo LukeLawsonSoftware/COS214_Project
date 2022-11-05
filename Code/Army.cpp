@@ -176,7 +176,7 @@ std::string Army::getName()
 
 void Army::makeDeployed()
 {
-	this->isDeployed = false;
+	this->isDeployed = true;
 }
 
 bool Army::armyIsDeployed()

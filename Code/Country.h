@@ -23,6 +23,7 @@ class AmmoSupply;
 class MedicalSupply;
 #include <vector>
 #include <string>
+#include <stdlib.h>
 
 class War;
 class EconomicState;
@@ -152,6 +153,9 @@ public:
 	Army *getArmy();
 
 	void destroyArmy();
+
+private:
+	void setColour();
 };
 
 #endif

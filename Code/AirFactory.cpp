@@ -15,7 +15,7 @@ ArmyComponent *AirFactory::createVehicle()
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
+		std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 		return nullptr;
 	}
 	else
@@ -35,7 +35,7 @@ ArmyComponent *AirFactory::createSoldier()
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: FACTORY BUDGET REACHED." << std::endl;
+		std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 		return nullptr;
 	}
 	else
