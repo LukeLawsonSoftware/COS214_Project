@@ -89,8 +89,8 @@ Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *
 
 void Army::applyStrategyBonus()
 {
-	this->currentStrategy->applyStrategyBonus(*(this->stats), (Battalion *)(this->army));
-	std::cout << "Army has had its Battle Statistics altered" << std::endl;
+	this->currentStrategy->applyStrategyBonus(*(this->stats), (Battalion *)(this->army), name);
+	// std::cout << "Army has had its Battle Statistics altered" << std::endl;
 }
 
 void Army::recuperate()

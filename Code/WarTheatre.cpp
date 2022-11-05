@@ -80,6 +80,7 @@ void WarTheatre::applyTerrainBonus()
 {
 	// templateMethod (calls the two primitive operations)
 	this->adjustAttack();
+	// std::cout << "perhaps here?" << std::endl;
 	this->adjustDefence();
 }
 
@@ -93,8 +94,9 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
 		std::cout << "\033[0m";
 		//  apply terrain bonus
+		//	std::cout << "here1" << std::endl;
 		applyTerrainBonus();
-
+		//	std::cout << "here2" << std::endl;
 		//  apply army->applyStrategyBonus
 		armies[0]->applyStrategyBonus();
 		armies[1]->applyStrategyBonus();
@@ -195,7 +197,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		if (moraleArmy1 <= 0)
 		{
 			std::cout << "\033[;31m";
-			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName();
+			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName() << std::endl;
 			armies[0] = NULL;
 			contentionState = 2;
 			std::cout << "\033[0m";
@@ -203,7 +205,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		else if (moraleArmy2 <= 0)
 		{
 			std::cout << "\033[;32m";
-			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName();
+			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName() << std::endl;
 			armies[1] = NULL;
 			contentionState = 1;
 			std::cout << "\033[0m";
@@ -397,7 +399,7 @@ std::string WarTheatre::getName()
 	return name;
 }
 
-Army *WarTheatre::getArmies()
+Army **WarTheatre::getArmies()
 {
-	return *armies;
+	return armies;
 }

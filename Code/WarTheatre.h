@@ -67,7 +67,7 @@ public:
 	/// @brief a get method to return the armies currently present in the war theatre
 	/// @author Jonelle Coertze (u21446271)
 	/// @return pointer to the army array containing the armies currently present in the war theatre
-	Army *getArmies();
+	Army **getArmies();
 
 	int getContentionState();
 };

@@ -2,13 +2,13 @@
 #include "BattleStatistics.h"
 #include "Battalion.h"
 
-void Offensive::applyStrategyBonus(BattleStatistics in, Battalion *inArmy)
+void Offensive::applyStrategyBonus(BattleStatistics in, Battalion *inArmy, std::string country)
 {
 	if (inArmy == NULL)
 	{
 		throw std::invalid_argument("Cannot accept an ArmyComponent of Null");
 	}
-	std::cout << "The army has applied a offensive strategy." << std::endl;
+	std::cout << "The " << country << " army is applying a offensive strategy." << std::endl;
 	in.airAttack = inArmy->calculateAirOffense();
 	in.airDefence = inArmy->calculateAirDefense();
 	in.landAttack = inArmy->calculateLandOffense();
