@@ -32,22 +32,63 @@
 [Version 21](https://drive.google.com/file/d/1eo7a1TbM5AuuEQWYTSB-A8r1dZFi1Jqj/view?usp=share_link)<br/>
 
 ## Auxilliary Diagrams (Sequence, Activity, Communication, etc.)
-[Builder Sequence Diagram v1](https://drive.google.com/file/d/1jBRNcWKESwqAe2WA11ZBeBOWWEIe8Uvx/view?usp=sharing)<br/>
-[Builder Sequence Diagram v2](https://drive.google.com/file/d/17J3VSdXyPXQLQpD5OUltIvrh95HwA5Ym/view?usp=sharing)<br/>
-[Mediator Sequence Diagram v1 - Transport process](https://drive.google.com/file/d/1ds6hGFgzr1XNG5wbES8kfQJ5eEq6DSx7/view?usp=sharing)<br/>
-[Mediator Sequence Diagram v2 - Transport process](https://drive.google.com/file/d/1LMJzE9KyeKDkbZ0dHirZV36i0Fr_P2iL/view?usp=sharing)<br/>
+> ### Sequence Diagrams
+#### <ins> **_Build Army Process_** </ins> <br/>
+[Builder Sequence Diagram v1](https://drive.google.com/file/d/13JB2W5WKPMUYsIhw18f_Vfs5Z1nyeyTP/view?usp=share_link)<br/>
+Builder Sequence Diagram v2 (view below)
+* [Visual Paradigm Project](https://drive.google.com/file/d/1525KpkkEnW-G1LlFBWZVf8X7F61uvsMX/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/13rsSv1n9F5QgrEgBERmESXupfMd6Ljot/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
+#### <ins> **_Transport Process_** </ins> <br/>
+[Mediator Sequence Diagram v1](https://drive.google.com/file/d/1wvjcfvfr88HGQll9RNgF4ly6cWQ6xZgU/view?usp=share_link)<br/>
+Mediator Sequence Diagram v2 (view below) 
+* [Visual Paradigm Project](https://drive.google.com/file/d/1gbEZd8h8ZP1844zwQqUtYh7sdjuPc-vr/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1nV7S92MNhp_FFz35ETtaeTWApFezeMYu/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
 ***
-[Command Communication Diagram v1](https://drive.google.com/file/d/14X7xYim03jVv5opfTKZOYe-8rHQ1rtZt/view?usp=sharing)<br/>
-[Command Communication Diagram v2](https://drive.google.com/file/d/1jfmGl3jx8oHPEBYJW2wZP-BqSBTnZku4/view?usp=sharing)<br/>
+> ### Communication Diagrams
+#### <ins> **_Command Process_** </ins> <br/>
+[Command Communication Diagram v1](https://drive.google.com/file/d/1Fgl2iJOJhOJaV1UmZeaMtXs7aDN2GplF/view?usp=share_link)<br/>
+Command Communication Diagram v2 (view below)
+* [Visual Paradigm Project](https://drive.google.com/file/d/1ohsXV-Hly5W3cuXQPvUyfz8PDnhP1TGt/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1-ru-1h-dxi4MtKL1rTDNSH_aPk-wHZOx/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
 ***
-[Factory Method Activity Diagram v1 - Supply Factory](https://drive.google.com/file/d/1eAPctL0zrF2hyQgoJUbLdeDhJuJD32W9/view?usp=sharing)<br/>
-[FormAlliance Activity Diagram v1](https://drive.google.com/file/d/15kN6rdPEecJFMHB1MZ9MVaApOe9ig64V/view?usp=sharing)<br/>
+> ### Activity Diagrams
+#### <ins> **_Upgrade & Make Supplies_** </ins> <br/>
+Factory Method Activity Diagram v1 - Supply Factory
+* [Visual Paradigm Project](https://drive.google.com/file/d/1EBdnFrqVyZ-9bZmklmUJZbSlaMK8xiKT/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1pZM0BkpUGqecUt8wBrSsRNL6fOtYuqQR/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
+#### **_Form Alliance Process_** <br/>
+FormAlliance Activity Diagram v1
+* [Visual Paradigm Project](https://drive.google.com/file/d/1n-Yo6yf94kIuEdWytGLKXh0qyNkW19AO/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1m0-UtwP5NvZf0jkM50MxH-uTexhTJyZ0/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
 ***
-[Country Object Diagram v1](https://drive.google.com/file/d/19-Syc1vF37fJ7wXcB-aWRT_bHVaWSbQi/view?usp=sharing)<br/>
-[War Object Diagram v1](https://drive.google.com/file/d/1JeRoi5Ajeq6IawTksmtrwYaCpQ9jNWNI/view?usp=sharing)
+> ### Object Diagrams
+#### <ins> **_Country Class_** </ins> <br/>
+Country Object Diagram v1
+* [Visual Paradigm Project](https://drive.google.com/file/d/1o-yb0Q_Z0BzptcrSWAvSTLCP9nwzNUqK/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1Fl_qa9S4h0BwcSmeAWQPxSTX0iEP8uHC/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
+#### <ins> **_War Class_** </ins> <br/>
+War Object Diagram v1
+* [Visual Paradigm Project](https://drive.google.com/file/d/1a8R0VawAAuu0z4QcTBGe3MCVJl8AbWyr/view?usp=share_link)<br/>
+* [View PDF](https://drive.google.com/file/d/1Ft4f9le8D-T7N-OROjvGNc-C3R3Oe9gv/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
 ***
-[EconomicState State Diagram v1](https://drive.google.com/file/d/1aA4bAcO0tm01cu5uwLOfeAOd_xMYy9i9/view?usp=sharing)<br/>
-[War Phase State Diagram v1](https://drive.google.com/file/d/148be-O9nPzwdszQ_UXCoqMjY5EGEokeh/view?usp=sharing)<br/>
+> ### State Diagrams
+#### <ins> **_Economic State Class_** </ins> <br/>
+Economic State - State Diagram v1
+* [Visual Paradigm Project](https://drive.google.com/file/d/1aA4bAcO0tm01cu5uwLOfeAOd_xMYy9i9/view?usp=sharing)<br/>
+* [View PDF](https://drive.google.com/file/d/1xTZKwClYsL8jPc1O_nPhbfOkmSWi83qQ/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
+#### <ins> **War Phase Class_** </ins> <br/>
+War Phase - State Diagram v1
+* [Visual Paradigm Project](https://drive.google.com/file/d/148be-O9nPzwdszQ_UXCoqMjY5EGEokeh/view?usp=sharing)<br/>
+* [View PDF](https://drive.google.com/file/d/1Uf97D890KJebWaE-gndhM2UmzPNAZ_vJ/view?usp=share_link)<br/>
+<!-- end of bulleted list -->
 ***
 ## Research Brief
 [Research Brief v1 (Rough)](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
