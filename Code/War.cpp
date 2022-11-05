@@ -191,6 +191,8 @@ void War::startWarSim()
 			std::cout << "Alliance 2 has totally withdraw from the war, alliance 1 wins!" << std::endl;
 			break;
 		}
+
+		/*
 		if (warTheatres.at("Land")->getContentionState() != 0 || warTheatres.at("Sea")->getContentionState() != 0 || warTheatres.at("Air")->getContentionState() != 0)
 		{
 			if (warTheatres.at("Land")->getContentionState() != 3 || warTheatres.at("Sea")->getContentionState() != 3 || warTheatres.at("Air")->getContentionState() != 3)
@@ -200,6 +202,18 @@ void War::startWarSim()
 					isActive = false;
 				}
 			}
+		}
+		*/
+
+		if (warTheatres.at("Land")->getContentionState() == 1 || warTheatres.at("Sea")->getContentionState() == 1 || warTheatres.at("Air")->getContentionState() == 1)
+		{
+			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
+			break;
+		}
+		if (warTheatres.at("Land")->getContentionState() == 2 || warTheatres.at("Sea")->getContentionState() == 2 || warTheatres.at("Air")->getContentionState() == 2)
+		{
+			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
+			break;
 		}
 
 		for (int i = 0; i < Country::alliance1.size(); i++)
@@ -227,6 +241,7 @@ void War::startWarSim()
 		std::string test;
 		std::cin >> test;
 	}
+	stopWar();
 }
 
 void War::startWarGame()
@@ -381,6 +396,7 @@ void War::startWarGame()
 			break;
 		}
 
+		/*
 		if (warTheatres.at("Land")->getContentionState() != 0 || warTheatres.at("Sea")->getContentionState() != 0 || warTheatres.at("Air")->getContentionState() != 0)
 		{
 			if (warTheatres.at("Land")->getContentionState() != 3 || warTheatres.at("Sea")->getContentionState() != 3 || warTheatres.at("Air")->getContentionState() != 3)
@@ -390,6 +406,18 @@ void War::startWarGame()
 					isActive = false;
 				}
 			}
+		}
+		*/
+
+		if (warTheatres.at("Land")->getContentionState() == 1 || warTheatres.at("Sea")->getContentionState() == 1 || warTheatres.at("Air")->getContentionState() == 1)
+		{
+			std::cout << "Alliance 1 controls all the war theatres and subsequently wins the war!" << std::endl;
+			break;
+		}
+		if (warTheatres.at("Land")->getContentionState() == 2 || warTheatres.at("Sea")->getContentionState() == 2 || warTheatres.at("Air")->getContentionState() == 2)
+		{
+			std::cout << "Alliance 2 controls all the war theatres and subsequently wins the war!" << std::endl;
+			break;
 		}
 
 		for (int i = 0; i < Country::alliance1.size(); i++)

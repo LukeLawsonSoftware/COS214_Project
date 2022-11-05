@@ -13,6 +13,7 @@
 
 Army::Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *> *individuals, std::vector<Supply *> *supplies, std::string type)
 {
+	this->isDeployed = false;
 	this->type = type;
 	this->ammoSupply = new std::vector<AmmoSupply *>();
 	this->medicalSupply = new std::vector<MedicalSupply *>();
@@ -158,7 +159,7 @@ std::string Army::getType()
 	return this->type;
 }
 
-BattleStatistics* Army::getBattleStatistics()
+BattleStatistics *Army::getBattleStatistics()
 {
 	return stats;
 }
@@ -171,4 +172,14 @@ void Army::setName(std::string Name)
 std::string Army::getName()
 {
 	return name;
+}
+
+void Army::makeDeployed()
+{
+	this->isDeployed = false;
+}
+
+bool Army::armyIsDeployed()
+{
+	return isDeployed;
 }

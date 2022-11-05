@@ -2,6 +2,7 @@
 #include "Country.h"
 #include <ctime>
 #include <cstdlib>
+#include "Army.h"
 
 int Poor::mySeed = 3857256;
 
@@ -32,8 +33,15 @@ int Poor::decideMyTurn(Country *country)
 		}
 	}
 
-	// 2. raiseArmy (this methdo will fail if the country does not have enough gdp)
-	Possibilities[1] = true;
+	// 2. raiseArmy
+	if (country->getArmy() != NULL)
+	{
+		Possibilities[1] = false;
+	}
+	else
+	{
+		Possibilities[1] = true;
+	}
 
 	// 3. upgradeUnitFactory = not possible
 	Possibilities[2] = false;
@@ -57,11 +65,11 @@ int Poor::decideMyTurn(Country *country)
 	else
 	{
 		Possibilities[4] = true;
-		Possibilities[5] = true;
-		Possibilities[6] = true;
+		Possibilities[5] = country->getArmy()->armyIsDeployed();
+		Possibilities[6] = !country->getArmy()->armyIsDeployed();
 
-		// 9. sendSupplies
-		Possibilities[8] = true;
+		// 9 .sendSupplies
+		Possibilities[8] = country->getArmy()->armyIsDeployed();
 	}
 
 	// 8. surrender
@@ -71,7 +79,7 @@ int Poor::decideMyTurn(Country *country)
 	//	Possibilities[8] = true;
 
 	// 10. do nothing
-	Possibilities[9] = true;
+	Possibilities[9] = false;
 
 	// Generate random number
 	// srand(time(0));
@@ -117,15 +125,17 @@ int Poor::decideMyTurn(Country *country)
 	}
 	int index = (temp) % numOptions;
 
-	std::cout << "Index " << index << std::endl;
-	std::cout << "Options: ";
-	for (int i = 0; i < numOptions; i++)
-	{
-		std::cout << options[i] + 1 << " ";
-	}
-	std::cout << std::endl;
+	/*
+		std::cout << "Index " << index << std::endl;
+		std::cout << "Options: ";
+		for (int i = 0; i < numOptions; i++)
+		{
+			std::cout << options[i] + 1 << " ";
+		}
+		std::cout << std::endl;
+	*/
 
 	Decision = options[index];
-	std::cout << country->getName() << " " << Decision + 1 << std::endl;
+	// std::cout << country->getName() << " " << Decision + 1 << std::endl;
 	return Decision + 1;
 }

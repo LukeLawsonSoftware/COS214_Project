@@ -207,11 +207,11 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 			armies[0]->recuperate();
 			armies[1]->recuperate();
 		}
-		else if (contentionState == 1) // Army from allience 1 is left
+		else if (contentionState == 1) // Army from alliance 1 is left
 		{
 			armies[0]->recuperate();
 		}
-		else if (contentionState == 2) // Army from allience 2 is left
+		else if (contentionState == 2) // Army from alliance 2 is left
 		{
 			armies[1]->recuperate();
 		}
@@ -246,11 +246,11 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 	if (contentionState == 1) // Only an army from alliance 1 is present
 	{
-		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "The " + armies[0]->getName() + " army from alliance 1 is controlling " + name + " war theatre!" << std::endl;
 	}
 	else if (contentionState == 2) // Only an army from alliance 2 is present
 	{
-		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "The " + armies[1]->getName() + " army from alliance 2 is controlling " + name + " war theatre!" << std::endl;
 	}
 	else if (contentionState == 0) // No armies in the war theatre yet
 	{
@@ -294,11 +294,13 @@ void WarTheatre::addArmy(Army *newArmy)
 		if (alliance == 1)
 		{
 			armies[0] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 1;
 		}
 		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 2;
 		}
 	}
@@ -311,6 +313,7 @@ void WarTheatre::addArmy(Army *newArmy)
 		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 3;
 		}
 	}
@@ -323,6 +326,7 @@ void WarTheatre::addArmy(Army *newArmy)
 		else if (alliance == 1)
 		{
 			armies[0] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 3;
 		}
 	}

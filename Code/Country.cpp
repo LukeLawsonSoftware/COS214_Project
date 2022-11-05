@@ -474,6 +474,11 @@ Army *Country::getArmy()
 	return army;
 }
 
+void Country::destroyArmy()
+{
+	this->army = NULL;
+}
+
 void Country::destroyTransport()
 {
 	if (this->medicalTransportLine != NULL)

@@ -150,6 +150,8 @@ public:
 	/// @author Reuben Jooste (u21457060)
 	/// @return Returns the army of the Country as a pointer
 	Army *getArmy();
+
+	void destroyArmy();
 };
 
 #endif
