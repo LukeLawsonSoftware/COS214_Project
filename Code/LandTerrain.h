@@ -7,7 +7,7 @@
  * @ref WarTheatre.h "(See the definition of the WarTheatre class)"
  * 
  * The LandTerrain class is a derived class derived from the WarTheatre class
- * The LandTerrain will be used to create an Land Terrain Theatre where the war can will take place.
+ * The LandTerrain will be used to create a Land Terrain Theatre where the war can will take place.
  * @note This class is used to expand the War by adding a new Theatre to it.
 */
 class LandTerrain : public WarTheatre

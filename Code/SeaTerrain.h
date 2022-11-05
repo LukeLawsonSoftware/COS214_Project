@@ -7,7 +7,7 @@
  * @ref WarTheatre.h "(See the definition of the WarTheatre class)"
  * 
  * The SeaTerrain class is a derived class derived from the WarTheatre class
- * The SeaTerrain will be used to create an Sea Terrain Theatre where the war can will take place.
+ * The SeaTerrain will be used to create a Sea Terrain Theatre where the war can will take place.
  * @note This class is used to expand the War by adding a new Theatre to it.
 */
 class SeaTerrain : public WarTheatre

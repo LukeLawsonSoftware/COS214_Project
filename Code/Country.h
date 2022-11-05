@@ -28,6 +28,23 @@ class War;
 class EconomicState;
 // class Army;
 
+/**
+ * @class Country Country.h
+ * 
+ * The Country class is a big component in the War since we use this class to fight the on going war.
+ * Countries will be able to form an alliance with other countries and fight together againts other countries.
+ * - For this War there will only be three alliance groups: group1, group2 and group3.
+ * Group 1 will fight against Countries in Group 2 and the Countries in Group 3 will "watch" the on going war and may decide (at a later stage) which
+ * alliance group they want to join.
+ * - Each Country will also have different factories for Supplies and to create Soldiers/Vehicles. But creating the units and supplies will cost them money
+ * therefore each Country will need to keep track of their budget (gdp) in order to determine if they can afford to create more supplies/units.
+ * - If a Country starts to realise that it is losing the war then it has the option of surrendering to the enemy Country.
+ * - The Country also has the option to upgrade its different factories but this would only be possible if the Country is in a Rich EconomicState.
+ * - Countries will have millitary commanders which will issue different commands for the Country for example raising an army to prepare for the war.
+ * - Finally the Country will be able to create suppplies and signal the millitary commander to send the supplies to the Country's transport lines such that it can
+ * be transported to the armies of the Country.
+ * @note This class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies.
+*/
 class Country : public Corresponder
 {
 
@@ -54,6 +71,7 @@ public:
 	///@author Luke Lawson (u21433811)
 	/// @param ecoState String of value Rich, Average or Poor
 	/// @param name the name of the Country
+	/// @note The ecoState can only be one of the specified three (Rich, Average, Poor)
 	Country(std::string ecoState, std::string name);
 
 	/// @brief Destructor to deallocate any dynamic memory involved
@@ -73,11 +91,13 @@ public:
 	/// @brief Function to increase Country GDP and manage change of economic state.
 	///@author Luke Lawson (u21433811)
 	/// @param gdpEarned double which indicates the amount to increase GDP by
+	/// @warning The parameter must be a positive double value. If we want to decrease the GDP we must use the function "spendGDP()".
 	void earnGDP(double gdpEarned);
 
 	/// @brief Function to decrease Country GDP and manage change of economic state.
 	/// @author Luke Lawson (u21433811)
 	/// @param gdpSpent double which indicates the amount to decrease GDP by
+	/// @warning The parameter must be a negative double value. If we want to increase the GDP we must use the function "earnGDP()".
 	void spendGDP(double gdpSpent);
 
 	/// @brief Function to decide and enact the Country's play for a turn.
@@ -95,10 +115,12 @@ public:
 
 	/// @brief Function to upgrade a Country's Unit Factory such to produce better military units
 	///@author Luke Lawson (u21433811)
+	/// @warning This function can only be used when the Country is in a Rich EconomicState
 	void upgradeUnitFactory();
 
 	/// @brief Function to upgrade a Country's Supply Factory such to produce better/greater quantity of medical supplies and ammo
 	///@author Luke Lawson (u21433811)
+	/// @warning This function can only be used when the Country is in a Rich EconomicState
 	void upgradeSupplyFactory();
 
 	/// @brief Function to use MilitaryCommander to send an Army into a WarTheatre
