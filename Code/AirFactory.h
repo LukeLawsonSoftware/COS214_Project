@@ -6,7 +6,7 @@ class AirVehicle;
 class AirUnit;
 /**
  * @class AirFactory AirFactory.h
- * @brief The AirFactory class is a derived class derived from the UnitFactory class
+ * The AirFactory class is a derived class derived from the UnitFactory class
  * @ref UnitFactory.h "(See the definition of the UnitFactory class)"
  * 
  * The AirFactory will be used to create Air Units for the War. The AirFactory
