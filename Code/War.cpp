@@ -126,7 +126,9 @@ void War::startWarSim()
 
 	while (phase->peaceChance != 0)
 	{
-		srand((unsigned)time(NULL));
+		static int seeder = 1298;
+		seeder += 6753;
+		srand((unsigned)time(0) + seeder); // to generate a different value each time
 		changePhase();
 		bool peace = ((double)rand() / (double)RAND_MAX) < (phase->peaceChance);
 		// std::cout << "here" << std::endl;
@@ -220,7 +222,9 @@ void War::startWarSim()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL) + seed);
+				static int seeder = 12300;
+				seeder += 67848;
+				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance1.at(i)->earnGDP(gdp);
@@ -230,7 +234,9 @@ void War::startWarSim()
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL) + seed);
+				static int seeder = 37890;
+				seeder += 3000;
+				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance2.at(i)->earnGDP(gdp);
@@ -275,7 +281,9 @@ void War::startWarGame()
 
 	while (phase->peaceChance != 0)
 	{
-		srand((unsigned)time(NULL) + seed);
+		static int seeder = 9876;
+		seeder += 1234;
+		srand((unsigned)time(0) + seeder); // to generate a different value each time
 		// seed *= 1.378;
 		changePhase();
 		bool peace = ((double)rand() / (double)RAND_MAX) < (phase->peaceChance);
@@ -424,7 +432,9 @@ void War::startWarGame()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL) + seed);
+				static int seeder = 1357;
+				seeder += 2468;
+				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				//	seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance1.at(i)->earnGDP(gdp);
@@ -434,7 +444,9 @@ void War::startWarGame()
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 			{
-				srand((unsigned)time(NULL) + seed);
+				static int seeder = 1256;
+				seeder += 2367;
+				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				//	seed *= 1.378;
 				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
 				Country::alliance2.at(i)->earnGDP(gdp);

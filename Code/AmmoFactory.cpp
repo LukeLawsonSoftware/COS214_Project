@@ -8,7 +8,9 @@ Supply *AmmoFactory::makeSupply(int quantity)
 {
 	// TODO - implement AmmoFactory::makeSupply
 
-	srand((unsigned)time(0));			   // to generate a different value each time
+	static int seeder = 4352525;
+	seeder += 346457;
+	srand((unsigned)time(0) + seeder);	   // to generate a different value each time
 	int cost = (double)(2 + (rand() % 5)); // random number between 2 and 4
 
 	int totalToBeProduced = cost * quantity;

@@ -117,7 +117,9 @@ int Poor::decideMyTurn(Country *country)
 		}
 	}
 
-	srand(mySeed + 100);
+	static int seeder = 11;
+	seeder += 13;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	int temp = rand() + mySeed + 100;
 	if (temp < 0)
 	{

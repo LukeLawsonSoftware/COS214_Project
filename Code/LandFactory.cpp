@@ -8,7 +8,9 @@ LandFactory::LandFactory(double budget, int level, std::string type)
 
 ArmyComponent *LandFactory::createVehicle()
 {
-	srand((unsigned)time(0));				 // to generate a different value each time
+	static int seeder = 1718191;
+	seeder += 927;
+	srand((unsigned)time(0) + seeder);		 // to generate a different value each time
 	int cost = (double)(15 + (rand() % 21)); // random number between 15 and 21 (21 excluded)
 
 	int costAfterProduction = cost + totalSpent;
@@ -28,7 +30,9 @@ ArmyComponent *LandFactory::createVehicle()
 
 ArmyComponent *LandFactory::createSoldier()
 {
-	srand((unsigned)time(0));				 // to generate a different value each time
+	static int seeder = 3777;
+	seeder += 9898;
+	srand((unsigned)time(0) + seeder);		 // to generate a different value each time
 	int cost = (double)(10 + (rand() % 15)); // random number between 5 and 15 (15 excluded)
 
 	int costAfterProduction = cost + totalSpent;

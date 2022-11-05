@@ -23,7 +23,9 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	}
 
 	// Populate Civilian and Medic Vectors
-	srand(time(0));
+	static int seeder = 1;
+	seeder += 2;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 
 	int Civilians = rand() % 19 + 2;
 	int refugees = Civilians / 2;

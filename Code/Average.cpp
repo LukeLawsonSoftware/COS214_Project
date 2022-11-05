@@ -118,7 +118,9 @@ int Average::decideMyTurn(Country *country)
 		}
 	}
 
-	srand(mySeed + 100);
+	static int seeder = 99892928;
+	seeder += 191019;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	int temp = rand() + mySeed + 100;
 	if (temp < 0)
 	{
