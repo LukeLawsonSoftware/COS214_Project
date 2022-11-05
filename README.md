@@ -12,7 +12,7 @@
 [Version 4](https://drive.google.com/file/d/1zypmBTo7UJJKXWHUjyhIJOqPuVEyR1A6/view?usp=share_link)<br />
 [Version 5](https://drive.google.com/file/d/1kJ8KX5Du98V_uNOdFYTlgRAb3cTTT70l/view?usp=share_link)<br />
 [Version 6](https://drive.google.com/file/d/1KiVPlr2pf9UIaaFpgy3qCFdS0gLlSAq9/view?usp=share_link)<br />
-[Version 7](https://drive.google.com/file/d/1MvZ0nuDfLJ7AOLk1EIC1n25Ki_BF00Jd/view?usp=share_link)<br />
+[Version 7](https://drive.google.com/file/d/1MvZ0nuDfLJ7AOLk1EIC1n25Ki_BF00Jd/view?usp=share_link)<br/>
 
 ## Class Diagrams
 #### Note that the versions begin at 8 since they follow on directly from the pre-initial design
