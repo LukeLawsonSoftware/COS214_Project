@@ -4,7 +4,16 @@
 #include "UnitFactory.h"
 class AirVehicle;
 class AirUnit;
-
+/**
+ * @class AirFactory AirFactory.h
+ * @brief The AirFactory class is a derived class derived from the UnitFactory class
+ * @ref UnitFactory.h "(See the definition of the UnitFactory class)"
+ * 
+ * The AirFactory will be used to create Air Units for the War. The AirFactory
+ * has methods "createSoldier()" and "createVehicle()" which will create Soldier objects and
+ * Vehicle objects respectively.
+ * @note This class is ONLY used to create AirUnit objects (Soldiers or Vehicles)
+*/
 class AirFactory : public UnitFactory
 {
 
