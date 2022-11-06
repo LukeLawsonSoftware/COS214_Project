@@ -1,0 +1,301 @@
+\hypertarget{class_army_builder}{}\section{Army\+Builder Class Reference}
+\label{class_army_builder}\index{ArmyBuilder@{ArmyBuilder}}
+
+
+{\ttfamily \#include $<$Army\+Builder.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_army_builder_aa9f5c5cd78a653da928f234e0b93f677}{Army\+Builder}} (std\+::string type, std\+::vector$<$ \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} $\ast$ $>$ $\ast$unit\+Factories, std\+::vector$<$ \mbox{\hyperlink{class_supply_factory}{Supply\+Factory}} $\ast$ $>$ $\ast$supply\+Factories)
+\begin{DoxyCompactList}\small\item\em Class constructor used to instantiate the object and initialize the type member variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}{create\+Individuals}} ()
+\begin{DoxyCompactList}\small\item\em Function to create individual army components (soldiers or vehicles) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}{build\+Battalions}} ()
+\begin{DoxyCompactList}\small\item\em Function to create battalions which consist out of other battalions, soldiers or vehicles. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}{determine\+Supplies}} ()
+\begin{DoxyCompactList}\small\item\em Function tp create supplies for the army. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_army_builder_a0a813968845cf859ba06a091d4c48385}{put\+Army\+Together}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to merge the different parts (objects) of an army into one \mbox{\hyperlink{class_army}{Army}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_army_builder_a4a9b287a30f22d84cd30474edbeec24e}{get\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Function to receive the newly constructed \mbox{\hyperlink{class_army}{Army}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_acfd27d8925670504e95c8cc62b560dfb}{get\+Individuals}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to return the vector of individuals which was create by the \mbox{\hyperlink{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}{create\+Individuals()}} method. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_a9a2e7c35c1565bd2f15f2174457f220a}{get\+Battalions}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to return the vector of battalions which was create by the \mbox{\hyperlink{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}{build\+Battalions()}} method. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_army_builder_a48c19e9705bc720eec8f93f21ed15c55}{get\+Supplies}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to return the vector of supplies which was create by the \mbox{\hyperlink{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}{determine\+Supplies()}} method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_builder_aac7a2b1a5012fe2e9ff810636e53acf5}{set\+Individuals}} (std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$individuals)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function will set the member variable individuals in order to keep track of the individuals created. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_builder_a42dc02e38cf9c9f1ec18026e20cabb69}{set\+Battalions}} (std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$battalions)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function will set the member variable battalions in order to keep track of the battalions created. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_builder_ae8871d3c278ba62825e45fddcab90bb4}{set\+Supplies}} (std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$supplies)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function will set the member variable supplies in order to keep track of the supplies created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_army_builder}{Army\+Builder}} class is a big component in the \mbox{\hyperlink{class_war}{War}} since we use this class build each \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s army.
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_this}{This}} class creates the different parts of the army such as the Battalions, Individuals (Soldiers or Vehicles) and the army\textquotesingle{}s supplies (Ammo\+Supplies or Medical\+Supplies).
+\item The builder makes use of the country\textquotesingle{}s factories to build/train the different supplies/units.
+\item If the country\textquotesingle{}s factory do not have the budget to create even just a single unit/supply then the builder will not be able to build the army. \begin{DoxyWarning}{Warning}
+Without this class the \mbox{\hyperlink{class_country}{Country}} will not be able to raise an army. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_army_builder_aa9f5c5cd78a653da928f234e0b93f677}\label{class_army_builder_aa9f5c5cd78a653da928f234e0b93f677}} 
+\index{ArmyBuilder@{ArmyBuilder}!ArmyBuilder@{ArmyBuilder}}
+\index{ArmyBuilder@{ArmyBuilder}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{ArmyBuilder()}{ArmyBuilder()}}
+{\footnotesize\ttfamily Army\+Builder\+::\+Army\+Builder (\begin{DoxyParamCaption}\item[{std\+::string}]{type,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} $\ast$ $>$ $\ast$}]{unit\+Factories,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_supply_factory}{Supply\+Factory}} $\ast$ $>$ $\ast$}]{supply\+Factories }\end{DoxyParamCaption})}
+
+
+
+Class constructor used to instantiate the object and initialize the type member variable. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Specifies which type of army builder this class will construct \\
+\hline
+{\em unit\+Factories} & Unit\+Factories to choose from for creating the army \\
+\hline
+{\em supply\+Factories} & Supply\+Factories to choose from for creating the supplies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+To instantiate the \mbox{\hyperlink{class_army_builder}{Army\+Builder}} object, unit factories and supply factories vectors need be already defined. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+The type is used to specify which armies this builder will instantiate i.\+e. Land, Air or Sea. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}\label{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}} 
+\index{ArmyBuilder@{ArmyBuilder}!buildBattalions@{buildBattalions}}
+\index{buildBattalions@{buildBattalions}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{buildBattalions()}{buildBattalions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ Army\+Builder\+::build\+Battalions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to create battalions which consist out of other battalions, soldiers or vehicles. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Pointer to a list of pointers to battalions 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if all the unit factories did not have the budget to create a single soldier or vehicle. 
+
+\mbox{\hyperlink{class_this}{This}} function uses the \char`\"{}create\+Individuals()\char`\"{} to build the battalions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}\label{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}} 
+\index{ArmyBuilder@{ArmyBuilder}!createIndividuals@{createIndividuals}}
+\index{createIndividuals@{createIndividuals}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{createIndividuals()}{createIndividuals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ Army\+Builder\+::create\+Individuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to create individual army components (soldiers or vehicles) 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Pointer to a list used for storing pointers to Army\+Components 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if all the unit factories did not have the budget to create a single soldier or vehicle. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}\label{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}} 
+\index{ArmyBuilder@{ArmyBuilder}!determineSupplies@{determineSupplies}}
+\index{determineSupplies@{determineSupplies}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{determineSupplies()}{determineSupplies()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$ Army\+Builder\+::determine\+Supplies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function tp create supplies for the army. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Pointer to a list of pointers of Suppply objects (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} or \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if all the suppply factories did not have the budget to create a single ammo or medical supply. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_army_builder_a4a9b287a30f22d84cd30474edbeec24e}\label{class_army_builder_a4a9b287a30f22d84cd30474edbeec24e}} 
+\index{ArmyBuilder@{ArmyBuilder}!getArmy@{getArmy}}
+\index{getArmy@{getArmy}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{getArmy()}{getArmy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}} $\ast$ Army\+Builder\+::get\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to receive the newly constructed \mbox{\hyperlink{class_army}{Army}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Member variable of constructed \mbox{\hyperlink{class_army}{Army}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_builder_a9a2e7c35c1565bd2f15f2174457f220a}\label{class_army_builder_a9a2e7c35c1565bd2f15f2174457f220a}} 
+\index{ArmyBuilder@{ArmyBuilder}!getBattalions@{getBattalions}}
+\index{getBattalions@{getBattalions}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{getBattalions()}{getBattalions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ Army\+Builder\+::get\+Battalions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to return the vector of battalions which was create by the \mbox{\hyperlink{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}{build\+Battalions()}} method. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Return vector of battalion Army\+Components 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+If this function returns N\+U\+LL then the constructor initialised the member variable as N\+U\+LL. \mbox{\hyperlink{class_this}{This}} happens if a builder\textquotesingle{}s constructor is called with the second argument as N\+U\+LL. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_builder_acfd27d8925670504e95c8cc62b560dfb}\label{class_army_builder_acfd27d8925670504e95c8cc62b560dfb}} 
+\index{ArmyBuilder@{ArmyBuilder}!getIndividuals@{getIndividuals}}
+\index{getIndividuals@{getIndividuals}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{getIndividuals()}{getIndividuals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$ Army\+Builder\+::get\+Individuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to return the vector of individuals which was create by the \mbox{\hyperlink{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}{create\+Individuals()}} method. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Return vector of individual Army\+Components 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+If this function returns N\+U\+LL then the constructor initialised the member variable as N\+U\+LL. \mbox{\hyperlink{class_this}{This}} happens if a builder\textquotesingle{}s constructor is called with the second argument as N\+U\+LL. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_builder_a48c19e9705bc720eec8f93f21ed15c55}\label{class_army_builder_a48c19e9705bc720eec8f93f21ed15c55}} 
+\index{ArmyBuilder@{ArmyBuilder}!getSupplies@{getSupplies}}
+\index{getSupplies@{getSupplies}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{getSupplies()}{getSupplies()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$ Army\+Builder\+::get\+Supplies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to return the vector of supplies which was create by the \mbox{\hyperlink{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}{determine\+Supplies()}} method. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Return vector of supplies 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+If this function returns N\+U\+LL then the constructor initialised the member variable as N\+U\+LL. \mbox{\hyperlink{class_this}{This}} happens if a builder\textquotesingle{}s constructor is called with the third argument as N\+U\+LL. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_builder_a0a813968845cf859ba06a091d4c48385}\label{class_army_builder_a0a813968845cf859ba06a091d4c48385}} 
+\index{ArmyBuilder@{ArmyBuilder}!putArmyTogether@{putArmyTogether}}
+\index{putArmyTogether@{putArmyTogether}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{putArmyTogether()}{putArmyTogether()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}} $\ast$ Army\+Builder\+::put\+Army\+Together (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to merge the different parts (objects) of an army into one \mbox{\hyperlink{class_army}{Army}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Completed \mbox{\hyperlink{class_army}{Army}} object 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function returns a \mbox{\hyperlink{class_army}{Army}} object by call the \mbox{\hyperlink{class_army}{Army}} class\textquotesingle{}s constructor 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_army_builder_a42dc02e38cf9c9f1ec18026e20cabb69}\label{class_army_builder_a42dc02e38cf9c9f1ec18026e20cabb69}} 
+\index{ArmyBuilder@{ArmyBuilder}!setBattalions@{setBattalions}}
+\index{setBattalions@{setBattalions}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{setBattalions()}{setBattalions()}}
+{\footnotesize\ttfamily void Army\+Builder\+::set\+Battalions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$}]{battalions }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function will set the member variable battalions in order to keep track of the battalions created. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em battalions} & The parameter is used to set our member variable by making a deep copy of it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the parameter is N\+U\+LL the member variable will N\+OT be set. 
+
+\mbox{\hyperlink{class_this}{This}} function overwrites the current member variable because this function should only be called inside the \mbox{\hyperlink{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}{build\+Battalions()}} method. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_builder_aac7a2b1a5012fe2e9ff810636e53acf5}\label{class_army_builder_aac7a2b1a5012fe2e9ff810636e53acf5}} 
+\index{ArmyBuilder@{ArmyBuilder}!setIndividuals@{setIndividuals}}
+\index{setIndividuals@{setIndividuals}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{setIndividuals()}{setIndividuals()}}
+{\footnotesize\ttfamily void Army\+Builder\+::set\+Individuals (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$}]{individuals }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function will set the member variable individuals in order to keep track of the individuals created. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em individuals} & The parameter is used to set our member variable by making a deep copy of it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the parameter is N\+U\+LL the member variable will N\+OT be set. 
+
+\mbox{\hyperlink{class_this}{This}} function overwrites the current member variable because this function should only be called inside the \mbox{\hyperlink{class_army_builder_a4ff1c6808926f65820eceaf9adab2c16}{build\+Battalions()}} method and the \mbox{\hyperlink{class_army_builder_aefae08ee6f43f41d94d06891ad6fdbbb}{create\+Individuals()}} method. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_builder_ae8871d3c278ba62825e45fddcab90bb4}\label{class_army_builder_ae8871d3c278ba62825e45fddcab90bb4}} 
+\index{ArmyBuilder@{ArmyBuilder}!setSupplies@{setSupplies}}
+\index{setSupplies@{setSupplies}!ArmyBuilder@{ArmyBuilder}}
+\subsubsection{\texorpdfstring{setSupplies()}{setSupplies()}}
+{\footnotesize\ttfamily void Army\+Builder\+::set\+Supplies (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$}]{supplies }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function will set the member variable supplies in order to keep track of the supplies created. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em supplies} & The parameter is used to set our member variable by making a deep copy of it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the parameter is N\+U\+LL the member variable will N\+OT be set. 
+
+\mbox{\hyperlink{class_this}{This}} function overwrites the current member variable because this function should only be called inside the \mbox{\hyperlink{class_army_builder_ae999bf5bc4c83243f2d000e6f981c986}{determine\+Supplies()}} method. 
+\end{DoxyWarning}

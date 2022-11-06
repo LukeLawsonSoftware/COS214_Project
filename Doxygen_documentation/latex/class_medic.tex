@@ -1,0 +1,96 @@
+\hypertarget{class_medic}{}\section{Medic Class Reference}
+\label{class_medic}\index{Medic@{Medic}}
+
+
+{\ttfamily \#include $<$Medic.\+h$>$}
+
+Inheritance diagram for Medic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medic_a6bd1946f4e44fe417380daf53d70eb17}{Medic}} ()
+\begin{DoxyCompactList}\small\item\em A default constructor that generates the amount of healing of a \mbox{\hyperlink{class_medic}{Medic}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_medic_a75c6387c59af4a70cccad2f449b1fb21}{Medic}} (int Healing)
+\begin{DoxyCompactList}\small\item\em a parameterized constructor to be used in the clone function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} $\ast$ \mbox{\hyperlink{class_medic_a973bcb165d5cb3d3b4f522496234f690}{clone}} ()
+\begin{DoxyCompactList}\small\item\em clone the current \mbox{\hyperlink{class_medic}{Medic}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_medic_a9fb060ee25f974cc27d0786ca6c43ddf}{get\+Healing}} ()
+\begin{DoxyCompactList}\small\item\em get a random number between 1 and 10 that can be seen as the healing value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medic_a6bd1946f4e44fe417380daf53d70eb17}\label{class_medic_a6bd1946f4e44fe417380daf53d70eb17}} 
+\index{Medic@{Medic}!Medic@{Medic}}
+\index{Medic@{Medic}!Medic@{Medic}}
+\subsubsection{\texorpdfstring{Medic()}{Medic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Medic\+::\+Medic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A default constructor that generates the amount of healing of a \mbox{\hyperlink{class_medic}{Medic}}. 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_medic_a75c6387c59af4a70cccad2f449b1fb21}\label{class_medic_a75c6387c59af4a70cccad2f449b1fb21}} 
+\index{Medic@{Medic}!Medic@{Medic}}
+\index{Medic@{Medic}!Medic@{Medic}}
+\subsubsection{\texorpdfstring{Medic()}{Medic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Medic\+::\+Medic (\begin{DoxyParamCaption}\item[{int}]{Healing }\end{DoxyParamCaption})}
+
+
+
+a parameterized constructor to be used in the clone function 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Healing} & an integer to set the healing of the \mbox{\hyperlink{class_medic}{Medic}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medic_a973bcb165d5cb3d3b4f522496234f690}\label{class_medic_a973bcb165d5cb3d3b4f522496234f690}} 
+\index{Medic@{Medic}!clone@{clone}}
+\index{clone@{clone}!Medic@{Medic}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} $\ast$ Medic\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+clone the current \mbox{\hyperlink{class_medic}{Medic}} 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a pointer to the cloned/new \mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} \+: \mbox{\hyperlink{class_medic}{Medic}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_non_combat_entity_a4d6e9ad6c7682a10e2e491cac30fd0c0}{Non\+Combat\+Entity}}.
+
+\mbox{\Hypertarget{class_medic_a9fb060ee25f974cc27d0786ca6c43ddf}\label{class_medic_a9fb060ee25f974cc27d0786ca6c43ddf}} 
+\index{Medic@{Medic}!getHealing@{getHealing}}
+\index{getHealing@{getHealing}!Medic@{Medic}}
+\subsubsection{\texorpdfstring{getHealing()}{getHealing()}}
+{\footnotesize\ttfamily int Medic\+::get\+Healing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get a random number between 1 and 10 that can be seen as the healing value 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a integer to indicate the amount of healing of a \mbox{\hyperlink{class_medic}{Medic}} 
+\end{DoxyReturn}

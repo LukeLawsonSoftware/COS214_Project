@@ -1,0 +1,220 @@
+\hypertarget{class_supply_factory}{}\section{Supply\+Factory Class Reference}
+\label{class_supply_factory}\index{SupplyFactory@{SupplyFactory}}
+
+
+{\ttfamily \#include $<$Supply\+Factory.\+h$>$}
+
+Inheritance diagram for Supply\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_supply_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_supply_factory_a3ba27cc94d78eadf7b832f93dce23263}{Supply\+Factory}} (int budget, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Class constructor for the Suply\+Factory which will initialize the budget of the factory as well as set the level to 1. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_supply_factory_a04ca5073b6c72efcde47ddc300c2cf47}{$\sim$\+Supply\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor to reset the member variables. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_supply}{Supply}} $\ast$ \mbox{\hyperlink{class_supply_factory_a110ff7418c656661e935a33e49300722}{make\+Supply}} (int quantity)=0
+\begin{DoxyCompactList}\small\item\em Factory method to let \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} and \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} create the \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} and \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} products, respectively. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supply_factory_af3930f1f67a23500a56e52045d4c9f67}{upgrade}} ()
+\begin{DoxyCompactList}\small\item\em Upgrades the factory, which will increase the budget capacity and level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supply_factory_aa5d3ab719c7a296b8cfd2ca33eb833ba}{set\+Budget}} (int new\+Budget)
+\begin{DoxyCompactList}\small\item\em Sets a new budget for the factory (it will mostly be used by the \mbox{\hyperlink{class_supply_factory_af3930f1f67a23500a56e52045d4c9f67}{upgrade()}} method to increase/set a new budget). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_supply_factory_afbb886c670c202fa929913da4bc8ae7c}{get\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the current budget of the factory in order to get access to the private member variable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_supply_factory_a9f75ffec504f752de0a7f4beb36ded96}{get\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the current level of the factory in order to get access to the private member variable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_supply_factory_a0633bf00c82f0d350fe29e02d21f0631}{get\+Total\+Spent}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the total amount spent so far by the factory. \mbox{\hyperlink{class_this}{This}} will be used to test if the factory can produce more supplies based on the budget capacity. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_supply_factory_a8ddbed1efefb6a93df95f480953d85c6}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the type of factory ,either an Ammo or a medical factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_supply_factory_a750f6f87cfc10a860862e8f36043cf94}{total\+Spent}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is a necessity if a \mbox{\hyperlink{class_country}{Country}} wants to create ammo supplies or medical supplies and send the supplies to the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s army. There are two types of factories\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}}
+\item \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_supply_factory_a3ba27cc94d78eadf7b832f93dce23263}\label{class_supply_factory_a3ba27cc94d78eadf7b832f93dce23263}} 
+\index{SupplyFactory@{SupplyFactory}!SupplyFactory@{SupplyFactory}}
+\index{SupplyFactory@{SupplyFactory}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{SupplyFactory()}{SupplyFactory()}}
+{\footnotesize\ttfamily Supply\+Factory\+::\+Supply\+Factory (\begin{DoxyParamCaption}\item[{int}]{budget,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Class constructor for the Suply\+Factory which will initialize the budget of the factory as well as set the level to 1. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & The amount that can be spent to make supplies. \\
+\hline
+{\em type} & The type of supply factory that will be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The budget must be a interger value greater than zero. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_supply_factory_a04ca5073b6c72efcde47ddc300c2cf47}\label{class_supply_factory_a04ca5073b6c72efcde47ddc300c2cf47}} 
+\index{SupplyFactory@{SupplyFactory}!````~SupplyFactory@{$\sim$SupplyFactory}}
+\index{````~SupplyFactory@{$\sim$SupplyFactory}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{$\sim$SupplyFactory()}{~SupplyFactory()}}
+{\footnotesize\ttfamily Supply\+Factory\+::$\sim$\+Supply\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Class destructor to reset the member variables. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_supply_factory_afbb886c670c202fa929913da4bc8ae7c}\label{class_supply_factory_afbb886c670c202fa929913da4bc8ae7c}} 
+\index{SupplyFactory@{SupplyFactory}!getBudget@{getBudget}}
+\index{getBudget@{getBudget}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{getBudget()}{getBudget()}}
+{\footnotesize\ttfamily int Supply\+Factory\+::get\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the current budget of the factory in order to get access to the private member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+current budget of type int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_supply_factory_a9f75ffec504f752de0a7f4beb36ded96}\label{class_supply_factory_a9f75ffec504f752de0a7f4beb36ded96}} 
+\index{SupplyFactory@{SupplyFactory}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int Supply\+Factory\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the current level of the factory in order to get access to the private member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+current factory level of type int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_supply_factory_a0633bf00c82f0d350fe29e02d21f0631}\label{class_supply_factory_a0633bf00c82f0d350fe29e02d21f0631}} 
+\index{SupplyFactory@{SupplyFactory}!getTotalSpent@{getTotalSpent}}
+\index{getTotalSpent@{getTotalSpent}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{getTotalSpent()}{getTotalSpent()}}
+{\footnotesize\ttfamily int Supply\+Factory\+::get\+Total\+Spent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the total amount spent so far by the factory. \mbox{\hyperlink{class_this}{This}} will be used to test if the factory can produce more supplies based on the budget capacity. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+current amount spent of type int. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} helps us to keep track of how much we already spent on supplies. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_supply_factory_a8ddbed1efefb6a93df95f480953d85c6}\label{class_supply_factory_a8ddbed1efefb6a93df95f480953d85c6}} 
+\index{SupplyFactory@{SupplyFactory}!getType@{getType}}
+\index{getType@{getType}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Supply\+Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the type of factory ,either an Ammo or a medical factory. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Type of factory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_supply_factory_a110ff7418c656661e935a33e49300722}\label{class_supply_factory_a110ff7418c656661e935a33e49300722}} 
+\index{SupplyFactory@{SupplyFactory}!makeSupply@{makeSupply}}
+\index{makeSupply@{makeSupply}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{makeSupply()}{makeSupply()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_supply}{Supply}}$\ast$ Supply\+Factory\+::make\+Supply (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Factory method to let \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} and \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} create the \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} and \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} products, respectively. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_supply}{Supply}} product (it will be either a \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} or \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_medical_factory_a323b36eb230b6b4e261dd2fed1164d5c}{Medical\+Factory}}, and \mbox{\hyperlink{class_ammo_factory_a8d2b1cb24f145547af1de2d051f0e02c}{Ammo\+Factory}}.
+
+\mbox{\Hypertarget{class_supply_factory_aa5d3ab719c7a296b8cfd2ca33eb833ba}\label{class_supply_factory_aa5d3ab719c7a296b8cfd2ca33eb833ba}} 
+\index{SupplyFactory@{SupplyFactory}!setBudget@{setBudget}}
+\index{setBudget@{setBudget}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{setBudget()}{setBudget()}}
+{\footnotesize\ttfamily void Supply\+Factory\+::set\+Budget (\begin{DoxyParamCaption}\item[{int}]{new\+Budget }\end{DoxyParamCaption})}
+
+
+
+Sets a new budget for the factory (it will mostly be used by the \mbox{\hyperlink{class_supply_factory_af3930f1f67a23500a56e52045d4c9f67}{upgrade()}} method to increase/set a new budget). 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Budget} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The input must be a value greater than zero. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function only increases the current budget by the given parameter. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_supply_factory_af3930f1f67a23500a56e52045d4c9f67}\label{class_supply_factory_af3930f1f67a23500a56e52045d4c9f67}} 
+\index{SupplyFactory@{SupplyFactory}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{upgrade()}{upgrade()}}
+{\footnotesize\ttfamily void Supply\+Factory\+::upgrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Upgrades the factory, which will increase the budget capacity and level. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_supply_factory_a750f6f87cfc10a860862e8f36043cf94}\label{class_supply_factory_a750f6f87cfc10a860862e8f36043cf94}} 
+\index{SupplyFactory@{SupplyFactory}!totalSpent@{totalSpent}}
+\index{totalSpent@{totalSpent}!SupplyFactory@{SupplyFactory}}
+\subsubsection{\texorpdfstring{totalSpent}{totalSpent}}
+{\footnotesize\ttfamily double Supply\+Factory\+::total\+Spent\hspace{0.3cm}{\ttfamily [protected]}}
+

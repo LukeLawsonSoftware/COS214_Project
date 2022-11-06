@@ -1,0 +1,510 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{6}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}AirFactory()}{6}{subsubsection.3.1.2.1}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{6}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}createSoldier()}{6}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}createVehicle()}{7}{subsubsection.3.1.3.2}%
+\contentsline {section}{\numberline {3.2}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Terrain Class Reference}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{8}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}AirTerrain()}{8}{subsubsection.3.2.2.1}%
+\contentsline {section}{\numberline {3.3}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit Class Reference}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}AirUnit()}{9}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{9}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}calculateAirDefense()}{9}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}calculateAirOffense()}{10}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}calculateLandDefense()}{10}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}calculateLandOffense()}{11}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}calculateSeaDefense()}{11}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}calculateSeaOffense()}{12}{subsubsection.3.3.3.6}%
+\contentsline {section}{\numberline {3.4}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vehicle Class Reference}{12}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{13}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{13}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}AirVehicle()}{13}{subsubsection.3.4.2.1}%
+\contentsline {subsection}{\numberline {3.4.3}Member Function Documentation}{13}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}calculateAirDefense()}{13}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}calculateAirOffense()}{14}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}calculateLandDefense()}{14}{subsubsection.3.4.3.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.4}calculateLandOffense()}{15}{subsubsection.3.4.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.3.5}calculateSeaDefense()}{15}{subsubsection.3.4.3.5}%
+\contentsline {subsubsection}{\numberline {3.4.3.6}calculateSeaOffense()}{16}{subsubsection.3.4.3.6}%
+\contentsline {section}{\numberline {3.5}Ammo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{16}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{17}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{17}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}AmmoFactory()}{17}{subsubsection.3.5.2.1}%
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{17}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}makeSupply()}{17}{subsubsection.3.5.3.1}%
+\contentsline {section}{\numberline {3.6}Ammo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Supply Class Reference}{18}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{19}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{19}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}AmmoSupply()}{19}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{19}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}getAmmoBonus()}{19}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}setAmmoBonus()}{20}{subsubsection.3.6.3.2}%
+\contentsline {section}{\numberline {3.7}Ammo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transporter Class Reference}{20}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{21}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{21}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}AmmoTransporter()}{21}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}$\sim $AmmoTransporter()}{21}{subsubsection.3.7.2.2}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{21}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}notify()}{21}{subsubsection.3.7.3.1}%
+\contentsline {section}{\numberline {3.8}Army Class Reference}{22}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{23}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{23}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Army()}{23}{subsubsection.3.8.2.1}%
+\contentsline {subsection}{\numberline {3.8.3}Member Function Documentation}{24}{subsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.1}addNewAmmoSupplies()}{24}{subsubsection.3.8.3.1}%
+\contentsline {subsubsection}{\numberline {3.8.3.2}addNewMedicalSupplies()}{24}{subsubsection.3.8.3.2}%
+\contentsline {subsubsection}{\numberline {3.8.3.3}applyStrategyBonus()}{24}{subsubsection.3.8.3.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.4}attackTransport()}{25}{subsubsection.3.8.3.4}%
+\contentsline {subsubsection}{\numberline {3.8.3.5}changeStrategy()}{25}{subsubsection.3.8.3.5}%
+\contentsline {subsubsection}{\numberline {3.8.3.6}getBattleStatistics()}{25}{subsubsection.3.8.3.6}%
+\contentsline {subsubsection}{\numberline {3.8.3.7}getName()}{26}{subsubsection.3.8.3.7}%
+\contentsline {subsubsection}{\numberline {3.8.3.8}getType()}{26}{subsubsection.3.8.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.3.9}recuperate()}{26}{subsubsection.3.8.3.9}%
+\contentsline {subsubsection}{\numberline {3.8.3.10}setBattleField()}{26}{subsubsection.3.8.3.10}%
+\contentsline {subsubsection}{\numberline {3.8.3.11}setName()}{27}{subsubsection.3.8.3.11}%
+\contentsline {section}{\numberline {3.9}Army\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder Class Reference}{27}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{28}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Constructor \& Destructor Documentation}{28}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}ArmyBuilder()}{28}{subsubsection.3.9.2.1}%
+\contentsline {subsection}{\numberline {3.9.3}Member Function Documentation}{29}{subsection.3.9.3}%
+\contentsline {subsubsection}{\numberline {3.9.3.1}buildBattalions()}{29}{subsubsection.3.9.3.1}%
+\contentsline {subsubsection}{\numberline {3.9.3.2}createIndividuals()}{30}{subsubsection.3.9.3.2}%
+\contentsline {subsubsection}{\numberline {3.9.3.3}determineSupplies()}{30}{subsubsection.3.9.3.3}%
+\contentsline {subsubsection}{\numberline {3.9.3.4}getArmy()}{30}{subsubsection.3.9.3.4}%
+\contentsline {subsubsection}{\numberline {3.9.3.5}getBattalions()}{31}{subsubsection.3.9.3.5}%
+\contentsline {subsubsection}{\numberline {3.9.3.6}getIndividuals()}{31}{subsubsection.3.9.3.6}%
+\contentsline {subsubsection}{\numberline {3.9.3.7}getSupplies()}{32}{subsubsection.3.9.3.7}%
+\contentsline {subsubsection}{\numberline {3.9.3.8}putArmyTogether()}{32}{subsubsection.3.9.3.8}%
+\contentsline {subsubsection}{\numberline {3.9.3.9}setBattalions()}{32}{subsubsection.3.9.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.3.10}setIndividuals()}{33}{subsubsection.3.9.3.10}%
+\contentsline {subsubsection}{\numberline {3.9.3.11}setSupplies()}{33}{subsubsection.3.9.3.11}%
+\contentsline {section}{\numberline {3.10}Army\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{34}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{34}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Member Function Documentation}{35}{subsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.2.1}addMember()}{35}{subsubsection.3.10.2.1}%
+\contentsline {subsubsection}{\numberline {3.10.2.2}calculateAirDefense()}{35}{subsubsection.3.10.2.2}%
+\contentsline {subsubsection}{\numberline {3.10.2.3}calculateAirOffense()}{35}{subsubsection.3.10.2.3}%
+\contentsline {subsubsection}{\numberline {3.10.2.4}calculateLandDefense()}{36}{subsubsection.3.10.2.4}%
+\contentsline {subsubsection}{\numberline {3.10.2.5}calculateLandOffense()}{36}{subsubsection.3.10.2.5}%
+\contentsline {subsubsection}{\numberline {3.10.2.6}calculateSeaDefense()}{36}{subsubsection.3.10.2.6}%
+\contentsline {subsubsection}{\numberline {3.10.2.7}calculateSeaOffense()}{37}{subsubsection.3.10.2.7}%
+\contentsline {section}{\numberline {3.11}Army\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Director Class Reference}{37}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{37}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Constructor \& Destructor Documentation}{37}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}ArmyDirector()}{37}{subsubsection.3.11.2.1}%
+\contentsline {subsection}{\numberline {3.11.3}Member Function Documentation}{38}{subsection.3.11.3}%
+\contentsline {subsubsection}{\numberline {3.11.3.1}constructArmy()}{38}{subsubsection.3.11.3.1}%
+\contentsline {section}{\numberline {3.12}Army\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Strategy Class Reference}{38}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{38}{subsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.12.2}Member Function Documentation}{39}{subsection.3.12.2}%
+\contentsline {subsubsection}{\numberline {3.12.2.1}applyStrategyBonus()}{39}{subsubsection.3.12.2.1}%
+\contentsline {section}{\numberline {3.13}Attack\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transport Class Reference}{39}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}Member Function Documentation}{40}{subsection.3.13.1}%
+\contentsline {subsubsection}{\numberline {3.13.1.1}execute()}{40}{subsubsection.3.13.1.1}%
+\contentsline {subsubsection}{\numberline {3.13.1.2}setTransport()}{40}{subsubsection.3.13.1.2}%
+\contentsline {subsection}{\numberline {3.13.2}Member Data Documentation}{40}{subsection.3.13.2}%
+\contentsline {subsubsection}{\numberline {3.13.2.1}transport}{40}{subsubsection.3.13.2.1}%
+\contentsline {section}{\numberline {3.14}Average Class Reference}{41}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Member Function Documentation}{41}{subsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.1.1}decideMyTurn()}{41}{subsubsection.3.14.1.1}%
+\contentsline {section}{\numberline {3.15}Battalion Class Reference}{41}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Constructor \& Destructor Documentation}{42}{subsection.3.15.1}%
+\contentsline {subsubsection}{\numberline {3.15.1.1}Battalion()}{42}{subsubsection.3.15.1.1}%
+\contentsline {subsection}{\numberline {3.15.2}Member Function Documentation}{42}{subsection.3.15.2}%
+\contentsline {subsubsection}{\numberline {3.15.2.1}addMember()}{42}{subsubsection.3.15.2.1}%
+\contentsline {subsubsection}{\numberline {3.15.2.2}calculateAirDefense()}{43}{subsubsection.3.15.2.2}%
+\contentsline {subsubsection}{\numberline {3.15.2.3}calculateAirOffense()}{43}{subsubsection.3.15.2.3}%
+\contentsline {subsubsection}{\numberline {3.15.2.4}calculateLandDefense()}{44}{subsubsection.3.15.2.4}%
+\contentsline {subsubsection}{\numberline {3.15.2.5}calculateLandOffense()}{44}{subsubsection.3.15.2.5}%
+\contentsline {subsubsection}{\numberline {3.15.2.6}calculateSeaDefense()}{44}{subsubsection.3.15.2.6}%
+\contentsline {subsubsection}{\numberline {3.15.2.7}calculateSeaOffense()}{45}{subsubsection.3.15.2.7}%
+\contentsline {section}{\numberline {3.16}Battle\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Statistics Class Reference}{45}{section.3.16}%
+\contentsline {subsection}{\numberline {3.16.1}Member Function Documentation}{46}{subsection.3.16.1}%
+\contentsline {subsubsection}{\numberline {3.16.1.1}getAirAttack()}{46}{subsubsection.3.16.1.1}%
+\contentsline {subsubsection}{\numberline {3.16.1.2}getAirDefence()}{46}{subsubsection.3.16.1.2}%
+\contentsline {subsubsection}{\numberline {3.16.1.3}getAvailableAmmo()}{46}{subsubsection.3.16.1.3}%
+\contentsline {subsubsection}{\numberline {3.16.1.4}getLandAttack()}{46}{subsubsection.3.16.1.4}%
+\contentsline {subsubsection}{\numberline {3.16.1.5}getLandDefence()}{46}{subsubsection.3.16.1.5}%
+\contentsline {subsubsection}{\numberline {3.16.1.6}getMedical()}{46}{subsubsection.3.16.1.6}%
+\contentsline {subsubsection}{\numberline {3.16.1.7}getMorale()}{46}{subsubsection.3.16.1.7}%
+\contentsline {subsubsection}{\numberline {3.16.1.8}getSeaAttack()}{47}{subsubsection.3.16.1.8}%
+\contentsline {subsubsection}{\numberline {3.16.1.9}getSeaDefence()}{47}{subsubsection.3.16.1.9}%
+\contentsline {subsubsection}{\numberline {3.16.1.10}setAirAttack()}{47}{subsubsection.3.16.1.10}%
+\contentsline {subsubsection}{\numberline {3.16.1.11}setAirDefence()}{47}{subsubsection.3.16.1.11}%
+\contentsline {subsubsection}{\numberline {3.16.1.12}setAvailableAmmo()}{47}{subsubsection.3.16.1.12}%
+\contentsline {subsubsection}{\numberline {3.16.1.13}setLandAttack()}{47}{subsubsection.3.16.1.13}%
+\contentsline {subsubsection}{\numberline {3.16.1.14}setLandDefence()}{47}{subsubsection.3.16.1.14}%
+\contentsline {subsubsection}{\numberline {3.16.1.15}setMedical()}{48}{subsubsection.3.16.1.15}%
+\contentsline {subsubsection}{\numberline {3.16.1.16}setMorale()}{48}{subsubsection.3.16.1.16}%
+\contentsline {subsubsection}{\numberline {3.16.1.17}setSeaAttack()}{48}{subsubsection.3.16.1.17}%
+\contentsline {subsubsection}{\numberline {3.16.1.18}setSeaDefence()}{48}{subsubsection.3.16.1.18}%
+\contentsline {subsection}{\numberline {3.16.2}Friends And Related Function Documentation}{48}{subsection.3.16.2}%
+\contentsline {subsubsection}{\numberline {3.16.2.1}Defensive}{48}{subsubsection.3.16.2.1}%
+\contentsline {subsubsection}{\numberline {3.16.2.2}Neutral}{48}{subsubsection.3.16.2.2}%
+\contentsline {subsubsection}{\numberline {3.16.2.3}Offensive}{48}{subsubsection.3.16.2.3}%
+\contentsline {section}{\numberline {3.17}Change\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Strategy Class Reference}{49}{section.3.17}%
+\contentsline {subsection}{\numberline {3.17.1}Constructor \& Destructor Documentation}{49}{subsection.3.17.1}%
+\contentsline {subsubsection}{\numberline {3.17.1.1}ChangeStrategy()}{49}{subsubsection.3.17.1.1}%
+\contentsline {subsection}{\numberline {3.17.2}Member Function Documentation}{49}{subsection.3.17.2}%
+\contentsline {subsubsection}{\numberline {3.17.2.1}execute()}{49}{subsubsection.3.17.2.1}%
+\contentsline {subsubsection}{\numberline {3.17.2.2}setStrategy()}{50}{subsubsection.3.17.2.2}%
+\contentsline {subsection}{\numberline {3.17.3}Member Data Documentation}{50}{subsection.3.17.3}%
+\contentsline {subsubsection}{\numberline {3.17.3.1}newStrategy}{50}{subsubsection.3.17.3.1}%
+\contentsline {section}{\numberline {3.18}Civilian Class Reference}{50}{section.3.18}%
+\contentsline {subsection}{\numberline {3.18.1}Constructor \& Destructor Documentation}{51}{subsection.3.18.1}%
+\contentsline {subsubsection}{\numberline {3.18.1.1}Civilian()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{51}{subsubsection.3.18.1.1}%
+\contentsline {subsubsection}{\numberline {3.18.1.2}Civilian()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{51}{subsubsection.3.18.1.2}%
+\contentsline {subsection}{\numberline {3.18.2}Member Function Documentation}{51}{subsection.3.18.2}%
+\contentsline {subsubsection}{\numberline {3.18.2.1}clone()}{51}{subsubsection.3.18.2.1}%
+\contentsline {subsubsection}{\numberline {3.18.2.2}getDesignation()}{52}{subsubsection.3.18.2.2}%
+\contentsline {subsubsection}{\numberline {3.18.2.3}setDesignation()}{52}{subsubsection.3.18.2.3}%
+\contentsline {section}{\numberline {3.19}Command Class Reference}{52}{section.3.19}%
+\contentsline {subsection}{\numberline {3.19.1}Constructor \& Destructor Documentation}{53}{subsection.3.19.1}%
+\contentsline {subsubsection}{\numberline {3.19.1.1}Command()}{53}{subsubsection.3.19.1.1}%
+\contentsline {subsection}{\numberline {3.19.2}Member Function Documentation}{53}{subsection.3.19.2}%
+\contentsline {subsubsection}{\numberline {3.19.2.1}execute()}{53}{subsubsection.3.19.2.1}%
+\contentsline {subsubsection}{\numberline {3.19.2.2}getArmy()}{53}{subsubsection.3.19.2.2}%
+\contentsline {subsubsection}{\numberline {3.19.2.3}setArmy()}{53}{subsubsection.3.19.2.3}%
+\contentsline {subsection}{\numberline {3.19.3}Member Data Documentation}{54}{subsection.3.19.3}%
+\contentsline {subsubsection}{\numberline {3.19.3.1}army}{54}{subsubsection.3.19.3.1}%
+\contentsline {section}{\numberline {3.20}Corresponder Class Reference}{54}{section.3.20}%
+\contentsline {subsection}{\numberline {3.20.1}Detailed Description}{54}{subsection.3.20.1}%
+\contentsline {subsection}{\numberline {3.20.2}Member Function Documentation}{55}{subsection.3.20.2}%
+\contentsline {subsubsection}{\numberline {3.20.2.1}regToTransport()}{55}{subsubsection.3.20.2.1}%
+\contentsline {subsection}{\numberline {3.20.3}Member Data Documentation}{56}{subsection.3.20.3}%
+\contentsline {subsubsection}{\numberline {3.20.3.1}ammoTransportLine}{56}{subsubsection.3.20.3.1}%
+\contentsline {subsubsection}{\numberline {3.20.3.2}medicalTransportLine}{56}{subsubsection.3.20.3.2}%
+\contentsline {section}{\numberline {3.21}Country Class Reference}{56}{section.3.21}%
+\contentsline {subsection}{\numberline {3.21.1}Detailed Description}{58}{subsection.3.21.1}%
+\contentsline {subsection}{\numberline {3.21.2}Constructor \& Destructor Documentation}{58}{subsection.3.21.2}%
+\contentsline {subsubsection}{\numberline {3.21.2.1}Country()}{58}{subsubsection.3.21.2.1}%
+\contentsline {subsubsection}{\numberline {3.21.2.2}$\sim $Country()}{59}{subsubsection.3.21.2.2}%
+\contentsline {subsection}{\numberline {3.21.3}Member Function Documentation}{59}{subsection.3.21.3}%
+\contentsline {subsubsection}{\numberline {3.21.3.1}attackTransport()}{59}{subsubsection.3.21.3.1}%
+\contentsline {subsubsection}{\numberline {3.21.3.2}changeArmyStrategy()}{59}{subsubsection.3.21.3.2}%
+\contentsline {subsubsection}{\numberline {3.21.3.3}destroyTransport()}{60}{subsubsection.3.21.3.3}%
+\contentsline {subsubsection}{\numberline {3.21.3.4}earnGDP()}{60}{subsubsection.3.21.3.4}%
+\contentsline {subsubsection}{\numberline {3.21.3.5}enterArmyIntoTheatre()}{60}{subsubsection.3.21.3.5}%
+\contentsline {subsubsection}{\numberline {3.21.3.6}formAlliance()}{61}{subsubsection.3.21.3.6}%
+\contentsline {subsubsection}{\numberline {3.21.3.7}getArmy()}{61}{subsubsection.3.21.3.7}%
+\contentsline {subsubsection}{\numberline {3.21.3.8}getName()}{61}{subsubsection.3.21.3.8}%
+\contentsline {subsubsection}{\numberline {3.21.3.9}getNewAmmoSupply()}{62}{subsubsection.3.21.3.9}%
+\contentsline {subsubsection}{\numberline {3.21.3.10}getNewMedicalSupply()}{62}{subsubsection.3.21.3.10}%
+\contentsline {subsubsection}{\numberline {3.21.3.11}isSurrendered()}{62}{subsubsection.3.21.3.11}%
+\contentsline {subsubsection}{\numberline {3.21.3.12}raiseArmy()}{63}{subsubsection.3.21.3.12}%
+\contentsline {subsubsection}{\numberline {3.21.3.13}sendSupplies()}{63}{subsubsection.3.21.3.13}%
+\contentsline {subsubsection}{\numberline {3.21.3.14}setNewAmmoSupplies()}{63}{subsubsection.3.21.3.14}%
+\contentsline {subsubsection}{\numberline {3.21.3.15}setNewMedicalSupplies()}{64}{subsubsection.3.21.3.15}%
+\contentsline {subsubsection}{\numberline {3.21.3.16}spendGDP()}{64}{subsubsection.3.21.3.16}%
+\contentsline {subsubsection}{\numberline {3.21.3.17}surrender()}{64}{subsubsection.3.21.3.17}%
+\contentsline {subsubsection}{\numberline {3.21.3.18}takeTurn()}{65}{subsubsection.3.21.3.18}%
+\contentsline {subsubsection}{\numberline {3.21.3.19}upgradeSupplyFactory()}{65}{subsubsection.3.21.3.19}%
+\contentsline {subsubsection}{\numberline {3.21.3.20}upgradeUnitFactory()}{65}{subsubsection.3.21.3.20}%
+\contentsline {subsection}{\numberline {3.21.4}Member Data Documentation}{66}{subsection.3.21.4}%
+\contentsline {subsubsection}{\numberline {3.21.4.1}alliance1}{66}{subsubsection.3.21.4.1}%
+\contentsline {subsubsection}{\numberline {3.21.4.2}alliance2}{66}{subsubsection.3.21.4.2}%
+\contentsline {subsubsection}{\numberline {3.21.4.3}neutral}{66}{subsubsection.3.21.4.3}%
+\contentsline {section}{\numberline {3.22}Defensive Class Reference}{66}{section.3.22}%
+\contentsline {subsection}{\numberline {3.22.1}Member Function Documentation}{66}{subsection.3.22.1}%
+\contentsline {subsubsection}{\numberline {3.22.1.1}applyStrategyBonus()}{66}{subsubsection.3.22.1.1}%
+\contentsline {section}{\numberline {3.23}Early\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Crisis Class Reference}{67}{section.3.23}%
+\contentsline {subsection}{\numberline {3.23.1}Constructor \& Destructor Documentation}{67}{subsection.3.23.1}%
+\contentsline {subsubsection}{\numberline {3.23.1.1}EarlyCrisis()}{67}{subsubsection.3.23.1.1}%
+\contentsline {subsection}{\numberline {3.23.2}Member Function Documentation}{68}{subsection.3.23.2}%
+\contentsline {subsubsection}{\numberline {3.23.2.1}outputChange()}{68}{subsubsection.3.23.2.1}%
+\contentsline {section}{\numberline {3.24}Early\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Conflict Class Reference}{68}{section.3.24}%
+\contentsline {subsection}{\numberline {3.24.1}Constructor \& Destructor Documentation}{68}{subsection.3.24.1}%
+\contentsline {subsubsection}{\numberline {3.24.1.1}EarlyOpenConflict()}{69}{subsubsection.3.24.1.1}%
+\contentsline {subsection}{\numberline {3.24.2}Member Function Documentation}{69}{subsection.3.24.2}%
+\contentsline {subsubsection}{\numberline {3.24.2.1}outputChange()}{69}{subsubsection.3.24.2.1}%
+\contentsline {section}{\numberline {3.25}Early\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Peace Class Reference}{69}{section.3.25}%
+\contentsline {subsection}{\numberline {3.25.1}Constructor \& Destructor Documentation}{70}{subsection.3.25.1}%
+\contentsline {subsubsection}{\numberline {3.25.1.1}EarlyPeace()}{70}{subsubsection.3.25.1.1}%
+\contentsline {section}{\numberline {3.26}Early\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phase Class Reference}{70}{section.3.26}%
+\contentsline {subsection}{\numberline {3.26.1}Member Function Documentation}{70}{subsection.3.26.1}%
+\contentsline {subsubsection}{\numberline {3.26.1.1}handleChange()}{70}{subsubsection.3.26.1.1}%
+\contentsline {subsubsection}{\numberline {3.26.1.2}outputChange()}{71}{subsubsection.3.26.1.2}%
+\contentsline {subsection}{\numberline {3.26.2}Member Data Documentation}{71}{subsection.3.26.2}%
+\contentsline {subsubsection}{\numberline {3.26.2.1}next}{71}{subsubsection.3.26.2.1}%
+\contentsline {section}{\numberline {3.27}Early\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unstable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Peace Class Reference}{71}{section.3.27}%
+\contentsline {subsection}{\numberline {3.27.1}Constructor \& Destructor Documentation}{72}{subsection.3.27.1}%
+\contentsline {subsubsection}{\numberline {3.27.1.1}EarlyUnstablePeace()}{72}{subsubsection.3.27.1.1}%
+\contentsline {subsection}{\numberline {3.27.2}Member Function Documentation}{72}{subsection.3.27.2}%
+\contentsline {subsubsection}{\numberline {3.27.2.1}outputChange()}{72}{subsubsection.3.27.2.1}%
+\contentsline {section}{\numberline {3.28}Economic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{72}{section.3.28}%
+\contentsline {subsection}{\numberline {3.28.1}Member Function Documentation}{73}{subsection.3.28.1}%
+\contentsline {subsubsection}{\numberline {3.28.1.1}decideMyTurn()}{73}{subsubsection.3.28.1.1}%
+\contentsline {section}{\numberline {3.29}Econommic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{73}{section.3.29}%
+\contentsline {subsection}{\numberline {3.29.1}Detailed Description}{73}{subsection.3.29.1}%
+\contentsline {section}{\numberline {3.30}Land\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{74}{section.3.30}%
+\contentsline {subsection}{\numberline {3.30.1}Detailed Description}{74}{subsection.3.30.1}%
+\contentsline {subsection}{\numberline {3.30.2}Constructor \& Destructor Documentation}{74}{subsection.3.30.2}%
+\contentsline {subsubsection}{\numberline {3.30.2.1}LandFactory()}{74}{subsubsection.3.30.2.1}%
+\contentsline {subsection}{\numberline {3.30.3}Member Function Documentation}{75}{subsection.3.30.3}%
+\contentsline {subsubsection}{\numberline {3.30.3.1}createSoldier()}{75}{subsubsection.3.30.3.1}%
+\contentsline {subsubsection}{\numberline {3.30.3.2}createVehicle()}{75}{subsubsection.3.30.3.2}%
+\contentsline {section}{\numberline {3.31}Land\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Terrain Class Reference}{76}{section.3.31}%
+\contentsline {subsection}{\numberline {3.31.1}Detailed Description}{76}{subsection.3.31.1}%
+\contentsline {subsection}{\numberline {3.31.2}Constructor \& Destructor Documentation}{76}{subsection.3.31.2}%
+\contentsline {subsubsection}{\numberline {3.31.2.1}LandTerrain()}{76}{subsubsection.3.31.2.1}%
+\contentsline {section}{\numberline {3.32}Land\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit Class Reference}{77}{section.3.32}%
+\contentsline {subsection}{\numberline {3.32.1}Detailed Description}{77}{subsection.3.32.1}%
+\contentsline {subsection}{\numberline {3.32.2}Constructor \& Destructor Documentation}{77}{subsection.3.32.2}%
+\contentsline {subsubsection}{\numberline {3.32.2.1}LandUnit()}{78}{subsubsection.3.32.2.1}%
+\contentsline {subsection}{\numberline {3.32.3}Member Function Documentation}{78}{subsection.3.32.3}%
+\contentsline {subsubsection}{\numberline {3.32.3.1}calculateAirDefense()}{78}{subsubsection.3.32.3.1}%
+\contentsline {subsubsection}{\numberline {3.32.3.2}calculateAirOffense()}{79}{subsubsection.3.32.3.2}%
+\contentsline {subsubsection}{\numberline {3.32.3.3}calculateLandDefense()}{79}{subsubsection.3.32.3.3}%
+\contentsline {subsubsection}{\numberline {3.32.3.4}calculateLandOffense()}{80}{subsubsection.3.32.3.4}%
+\contentsline {subsubsection}{\numberline {3.32.3.5}calculateSeaDefense()}{80}{subsubsection.3.32.3.5}%
+\contentsline {subsubsection}{\numberline {3.32.3.6}calculateSeaOffense()}{81}{subsubsection.3.32.3.6}%
+\contentsline {section}{\numberline {3.33}Land\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vehicle Class Reference}{81}{section.3.33}%
+\contentsline {subsection}{\numberline {3.33.1}Detailed Description}{82}{subsection.3.33.1}%
+\contentsline {subsection}{\numberline {3.33.2}Constructor \& Destructor Documentation}{82}{subsection.3.33.2}%
+\contentsline {subsubsection}{\numberline {3.33.2.1}LandVehicle()}{82}{subsubsection.3.33.2.1}%
+\contentsline {subsection}{\numberline {3.33.3}Member Function Documentation}{82}{subsection.3.33.3}%
+\contentsline {subsubsection}{\numberline {3.33.3.1}calculateAirDefense()}{82}{subsubsection.3.33.3.1}%
+\contentsline {subsubsection}{\numberline {3.33.3.2}calculateAirOffense()}{83}{subsubsection.3.33.3.2}%
+\contentsline {subsubsection}{\numberline {3.33.3.3}calculateLandDefense()}{84}{subsubsection.3.33.3.3}%
+\contentsline {subsubsection}{\numberline {3.33.3.4}calculateLandOffense()}{84}{subsubsection.3.33.3.4}%
+\contentsline {subsubsection}{\numberline {3.33.3.5}calculateSeaDefense()}{85}{subsubsection.3.33.3.5}%
+\contentsline {subsubsection}{\numberline {3.33.3.6}calculateSeaOffense()}{85}{subsubsection.3.33.3.6}%
+\contentsline {section}{\numberline {3.34}Late\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Crisis Class Reference}{86}{section.3.34}%
+\contentsline {subsection}{\numberline {3.34.1}Constructor \& Destructor Documentation}{86}{subsection.3.34.1}%
+\contentsline {subsubsection}{\numberline {3.34.1.1}LateCrisis()}{86}{subsubsection.3.34.1.1}%
+\contentsline {subsection}{\numberline {3.34.2}Member Function Documentation}{86}{subsection.3.34.2}%
+\contentsline {subsubsection}{\numberline {3.34.2.1}outputChange()}{86}{subsubsection.3.34.2.1}%
+\contentsline {section}{\numberline {3.35}Late\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Conflict Class Reference}{87}{section.3.35}%
+\contentsline {subsection}{\numberline {3.35.1}Constructor \& Destructor Documentation}{87}{subsection.3.35.1}%
+\contentsline {subsubsection}{\numberline {3.35.1.1}LateOpenConflict()}{87}{subsubsection.3.35.1.1}%
+\contentsline {subsection}{\numberline {3.35.2}Member Function Documentation}{87}{subsection.3.35.2}%
+\contentsline {subsubsection}{\numberline {3.35.2.1}outputChange()}{87}{subsubsection.3.35.2.1}%
+\contentsline {section}{\numberline {3.36}Late\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Peace Class Reference}{88}{section.3.36}%
+\contentsline {subsection}{\numberline {3.36.1}Constructor \& Destructor Documentation}{88}{subsection.3.36.1}%
+\contentsline {subsubsection}{\numberline {3.36.1.1}LatePeace()}{88}{subsubsection.3.36.1.1}%
+\contentsline {section}{\numberline {3.37}Late\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phase Class Reference}{88}{section.3.37}%
+\contentsline {subsection}{\numberline {3.37.1}Member Function Documentation}{89}{subsection.3.37.1}%
+\contentsline {subsubsection}{\numberline {3.37.1.1}handleChange()}{89}{subsubsection.3.37.1.1}%
+\contentsline {subsubsection}{\numberline {3.37.1.2}outputChange()}{89}{subsubsection.3.37.1.2}%
+\contentsline {subsection}{\numberline {3.37.2}Member Data Documentation}{90}{subsection.3.37.2}%
+\contentsline {subsubsection}{\numberline {3.37.2.1}next}{90}{subsubsection.3.37.2.1}%
+\contentsline {section}{\numberline {3.38}Late\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unstable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Peace Class Reference}{90}{section.3.38}%
+\contentsline {subsection}{\numberline {3.38.1}Constructor \& Destructor Documentation}{90}{subsection.3.38.1}%
+\contentsline {subsubsection}{\numberline {3.38.1.1}LateUnstablePeace()}{90}{subsubsection.3.38.1.1}%
+\contentsline {subsection}{\numberline {3.38.2}Member Function Documentation}{91}{subsection.3.38.2}%
+\contentsline {subsubsection}{\numberline {3.38.2.1}outputChange()}{91}{subsubsection.3.38.2.1}%
+\contentsline {section}{\numberline {3.39}Medic Class Reference}{91}{section.3.39}%
+\contentsline {subsection}{\numberline {3.39.1}Constructor \& Destructor Documentation}{91}{subsection.3.39.1}%
+\contentsline {subsubsection}{\numberline {3.39.1.1}Medic()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{92}{subsubsection.3.39.1.1}%
+\contentsline {subsubsection}{\numberline {3.39.1.2}Medic()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{92}{subsubsection.3.39.1.2}%
+\contentsline {subsection}{\numberline {3.39.2}Member Function Documentation}{92}{subsection.3.39.2}%
+\contentsline {subsubsection}{\numberline {3.39.2.1}clone()}{92}{subsubsection.3.39.2.1}%
+\contentsline {subsubsection}{\numberline {3.39.2.2}getHealing()}{93}{subsubsection.3.39.2.2}%
+\contentsline {section}{\numberline {3.40}Medical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{93}{section.3.40}%
+\contentsline {subsection}{\numberline {3.40.1}Detailed Description}{93}{subsection.3.40.1}%
+\contentsline {subsection}{\numberline {3.40.2}Constructor \& Destructor Documentation}{94}{subsection.3.40.2}%
+\contentsline {subsubsection}{\numberline {3.40.2.1}MedicalFactory()}{94}{subsubsection.3.40.2.1}%
+\contentsline {subsection}{\numberline {3.40.3}Member Function Documentation}{94}{subsection.3.40.3}%
+\contentsline {subsubsection}{\numberline {3.40.3.1}makeSupply()}{94}{subsubsection.3.40.3.1}%
+\contentsline {section}{\numberline {3.41}Medical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Supply Class Reference}{95}{section.3.41}%
+\contentsline {subsection}{\numberline {3.41.1}Detailed Description}{95}{subsection.3.41.1}%
+\contentsline {subsection}{\numberline {3.41.2}Constructor \& Destructor Documentation}{96}{subsection.3.41.2}%
+\contentsline {subsubsection}{\numberline {3.41.2.1}MedicalSupply()}{96}{subsubsection.3.41.2.1}%
+\contentsline {subsection}{\numberline {3.41.3}Member Function Documentation}{96}{subsection.3.41.3}%
+\contentsline {subsubsection}{\numberline {3.41.3.1}getMedicalBonus()}{96}{subsubsection.3.41.3.1}%
+\contentsline {subsubsection}{\numberline {3.41.3.2}setMedicalBonus()}{97}{subsubsection.3.41.3.2}%
+\contentsline {section}{\numberline {3.42}Medic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transporter Class Reference}{97}{section.3.42}%
+\contentsline {subsection}{\numberline {3.42.1}Detailed Description}{97}{subsection.3.42.1}%
+\contentsline {subsection}{\numberline {3.42.2}Constructor \& Destructor Documentation}{98}{subsection.3.42.2}%
+\contentsline {subsubsection}{\numberline {3.42.2.1}MedicTransporter()}{98}{subsubsection.3.42.2.1}%
+\contentsline {subsubsection}{\numberline {3.42.2.2}$\sim $MedicTransporter()}{98}{subsubsection.3.42.2.2}%
+\contentsline {subsection}{\numberline {3.42.3}Member Function Documentation}{98}{subsection.3.42.3}%
+\contentsline {subsubsection}{\numberline {3.42.3.1}notify()}{98}{subsubsection.3.42.3.1}%
+\contentsline {section}{\numberline {3.43}Mid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phase Class Reference}{99}{section.3.43}%
+\contentsline {subsection}{\numberline {3.43.1}Constructor \& Destructor Documentation}{99}{subsection.3.43.1}%
+\contentsline {subsubsection}{\numberline {3.43.1.1}MidPhase()}{99}{subsubsection.3.43.1.1}%
+\contentsline {subsection}{\numberline {3.43.2}Member Function Documentation}{99}{subsection.3.43.2}%
+\contentsline {subsubsection}{\numberline {3.43.2.1}handleChange()}{99}{subsubsection.3.43.2.1}%
+\contentsline {section}{\numberline {3.44}Military\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Commander Class Reference}{100}{section.3.44}%
+\contentsline {subsection}{\numberline {3.44.1}Detailed Description}{100}{subsection.3.44.1}%
+\contentsline {subsection}{\numberline {3.44.2}Constructor \& Destructor Documentation}{101}{subsection.3.44.2}%
+\contentsline {subsubsection}{\numberline {3.44.2.1}MilitaryCommander()}{101}{subsubsection.3.44.2.1}%
+\contentsline {subsection}{\numberline {3.44.3}Member Function Documentation}{101}{subsection.3.44.3}%
+\contentsline {subsubsection}{\numberline {3.44.3.1}attackTransport()}{101}{subsubsection.3.44.3.1}%
+\contentsline {subsubsection}{\numberline {3.44.3.2}changeStrategy()}{101}{subsubsection.3.44.3.2}%
+\contentsline {subsubsection}{\numberline {3.44.3.3}enterTheatre()}{101}{subsubsection.3.44.3.3}%
+\contentsline {subsubsection}{\numberline {3.44.3.4}setStrategy()}{101}{subsubsection.3.44.3.4}%
+\contentsline {subsubsection}{\numberline {3.44.3.5}setTheatreTarget()}{102}{subsubsection.3.44.3.5}%
+\contentsline {subsubsection}{\numberline {3.44.3.6}setTransportTarget()}{102}{subsubsection.3.44.3.6}%
+\contentsline {section}{\numberline {3.45}Move\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Into\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Theatre Class Reference}{103}{section.3.45}%
+\contentsline {subsection}{\numberline {3.45.1}Member Function Documentation}{103}{subsection.3.45.1}%
+\contentsline {subsubsection}{\numberline {3.45.1.1}execute()}{103}{subsubsection.3.45.1.1}%
+\contentsline {subsubsection}{\numberline {3.45.1.2}setTheatre()}{104}{subsubsection.3.45.1.2}%
+\contentsline {subsection}{\numberline {3.45.2}Member Data Documentation}{104}{subsection.3.45.2}%
+\contentsline {subsubsection}{\numberline {3.45.2.1}theatre}{104}{subsubsection.3.45.2.1}%
+\contentsline {section}{\numberline {3.46}Neutral Class Reference}{104}{section.3.46}%
+\contentsline {subsection}{\numberline {3.46.1}Member Function Documentation}{104}{subsection.3.46.1}%
+\contentsline {subsubsection}{\numberline {3.46.1.1}applyStrategyBonus()}{105}{subsubsection.3.46.1.1}%
+\contentsline {section}{\numberline {3.47}Non\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Combat\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity Class Reference}{105}{section.3.47}%
+\contentsline {subsection}{\numberline {3.47.1}Member Function Documentation}{105}{subsection.3.47.1}%
+\contentsline {subsubsection}{\numberline {3.47.1.1}clone()}{105}{subsubsection.3.47.1.1}%
+\contentsline {section}{\numberline {3.48}Offensive Class Reference}{106}{section.3.48}%
+\contentsline {subsection}{\numberline {3.48.1}Member Function Documentation}{106}{subsection.3.48.1}%
+\contentsline {subsubsection}{\numberline {3.48.1.1}applyStrategyBonus()}{106}{subsubsection.3.48.1.1}%
+\contentsline {section}{\numberline {3.49}Poor Class Reference}{106}{section.3.49}%
+\contentsline {subsection}{\numberline {3.49.1}Member Function Documentation}{107}{subsection.3.49.1}%
+\contentsline {subsubsection}{\numberline {3.49.1.1}decideMyTurn()}{107}{subsubsection.3.49.1.1}%
+\contentsline {section}{\numberline {3.50}Rich Class Reference}{107}{section.3.50}%
+\contentsline {subsection}{\numberline {3.50.1}Member Function Documentation}{108}{subsection.3.50.1}%
+\contentsline {subsubsection}{\numberline {3.50.1.1}decideMyTurn()}{108}{subsubsection.3.50.1.1}%
+\contentsline {section}{\numberline {3.51}Sea\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{108}{section.3.51}%
+\contentsline {subsection}{\numberline {3.51.1}Detailed Description}{109}{subsection.3.51.1}%
+\contentsline {subsection}{\numberline {3.51.2}Constructor \& Destructor Documentation}{109}{subsection.3.51.2}%
+\contentsline {subsubsection}{\numberline {3.51.2.1}SeaFactory()}{109}{subsubsection.3.51.2.1}%
+\contentsline {subsection}{\numberline {3.51.3}Member Function Documentation}{109}{subsection.3.51.3}%
+\contentsline {subsubsection}{\numberline {3.51.3.1}createSoldier()}{109}{subsubsection.3.51.3.1}%
+\contentsline {subsubsection}{\numberline {3.51.3.2}createVehicle()}{110}{subsubsection.3.51.3.2}%
+\contentsline {section}{\numberline {3.52}Sea\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Terrain Class Reference}{110}{section.3.52}%
+\contentsline {subsection}{\numberline {3.52.1}Detailed Description}{111}{subsection.3.52.1}%
+\contentsline {subsection}{\numberline {3.52.2}Constructor \& Destructor Documentation}{111}{subsection.3.52.2}%
+\contentsline {subsubsection}{\numberline {3.52.2.1}SeaTerrain()}{111}{subsubsection.3.52.2.1}%
+\contentsline {section}{\numberline {3.53}Sea\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit Class Reference}{111}{section.3.53}%
+\contentsline {subsection}{\numberline {3.53.1}Detailed Description}{112}{subsection.3.53.1}%
+\contentsline {subsection}{\numberline {3.53.2}Constructor \& Destructor Documentation}{112}{subsection.3.53.2}%
+\contentsline {subsubsection}{\numberline {3.53.2.1}SeaUnit()}{112}{subsubsection.3.53.2.1}%
+\contentsline {subsection}{\numberline {3.53.3}Member Function Documentation}{113}{subsection.3.53.3}%
+\contentsline {subsubsection}{\numberline {3.53.3.1}calculateAirDefense()}{113}{subsubsection.3.53.3.1}%
+\contentsline {subsubsection}{\numberline {3.53.3.2}calculateAirOffense()}{113}{subsubsection.3.53.3.2}%
+\contentsline {subsubsection}{\numberline {3.53.3.3}calculateLandDefense()}{114}{subsubsection.3.53.3.3}%
+\contentsline {subsubsection}{\numberline {3.53.3.4}calculateLandOffense()}{114}{subsubsection.3.53.3.4}%
+\contentsline {subsubsection}{\numberline {3.53.3.5}calculateSeaDefense()}{115}{subsubsection.3.53.3.5}%
+\contentsline {subsubsection}{\numberline {3.53.3.6}calculateSeaOffense()}{115}{subsubsection.3.53.3.6}%
+\contentsline {section}{\numberline {3.54}Sea\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vehicle Class Reference}{116}{section.3.54}%
+\contentsline {subsection}{\numberline {3.54.1}Detailed Description}{116}{subsection.3.54.1}%
+\contentsline {subsection}{\numberline {3.54.2}Constructor \& Destructor Documentation}{117}{subsection.3.54.2}%
+\contentsline {subsubsection}{\numberline {3.54.2.1}SeaVehicle()}{117}{subsubsection.3.54.2.1}%
+\contentsline {subsection}{\numberline {3.54.3}Member Function Documentation}{117}{subsection.3.54.3}%
+\contentsline {subsubsection}{\numberline {3.54.3.1}calculateAirDefense()}{117}{subsubsection.3.54.3.1}%
+\contentsline {subsubsection}{\numberline {3.54.3.2}calculateAirOffense()}{118}{subsubsection.3.54.3.2}%
+\contentsline {subsubsection}{\numberline {3.54.3.3}calculateLandDefense()}{118}{subsubsection.3.54.3.3}%
+\contentsline {subsubsection}{\numberline {3.54.3.4}calculateLandOffense()}{119}{subsubsection.3.54.3.4}%
+\contentsline {subsubsection}{\numberline {3.54.3.5}calculateSeaDefense()}{119}{subsubsection.3.54.3.5}%
+\contentsline {subsubsection}{\numberline {3.54.3.6}calculateSeaOffense()}{120}{subsubsection.3.54.3.6}%
+\contentsline {section}{\numberline {3.55}Soldier Class Reference}{120}{section.3.55}%
+\contentsline {subsection}{\numberline {3.55.1}Constructor \& Destructor Documentation}{121}{subsection.3.55.1}%
+\contentsline {subsubsection}{\numberline {3.55.1.1}Soldier()}{121}{subsubsection.3.55.1.1}%
+\contentsline {subsection}{\numberline {3.55.2}Member Function Documentation}{121}{subsection.3.55.2}%
+\contentsline {subsubsection}{\numberline {3.55.2.1}addMember()}{121}{subsubsection.3.55.2.1}%
+\contentsline {subsubsection}{\numberline {3.55.2.2}calculateAirDefense()}{122}{subsubsection.3.55.2.2}%
+\contentsline {subsubsection}{\numberline {3.55.2.3}calculateAirOffense()}{122}{subsubsection.3.55.2.3}%
+\contentsline {subsubsection}{\numberline {3.55.2.4}calculateLandDefense()}{122}{subsubsection.3.55.2.4}%
+\contentsline {subsubsection}{\numberline {3.55.2.5}calculateLandOffense()}{123}{subsubsection.3.55.2.5}%
+\contentsline {subsubsection}{\numberline {3.55.2.6}calculateSeaDefense()}{123}{subsubsection.3.55.2.6}%
+\contentsline {subsubsection}{\numberline {3.55.2.7}calculateSeaOffense()}{123}{subsubsection.3.55.2.7}%
+\contentsline {subsection}{\numberline {3.55.3}Member Data Documentation}{124}{subsection.3.55.3}%
+\contentsline {subsubsection}{\numberline {3.55.3.1}trainingLevel}{124}{subsubsection.3.55.3.1}%
+\contentsline {section}{\numberline {3.56}Supply Class Reference}{124}{section.3.56}%
+\contentsline {subsection}{\numberline {3.56.1}Constructor \& Destructor Documentation}{124}{subsection.3.56.1}%
+\contentsline {subsubsection}{\numberline {3.56.1.1}Supply()}{124}{subsubsection.3.56.1.1}%
+\contentsline {subsubsection}{\numberline {3.56.1.2}$\sim $Supply()}{125}{subsubsection.3.56.1.2}%
+\contentsline {subsection}{\numberline {3.56.2}Member Data Documentation}{125}{subsection.3.56.2}%
+\contentsline {subsubsection}{\numberline {3.56.2.1}quantity}{125}{subsubsection.3.56.2.1}%
+\contentsline {section}{\numberline {3.57}Supply\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{125}{section.3.57}%
+\contentsline {subsection}{\numberline {3.57.1}Detailed Description}{126}{subsection.3.57.1}%
+\contentsline {subsection}{\numberline {3.57.2}Constructor \& Destructor Documentation}{126}{subsection.3.57.2}%
+\contentsline {subsubsection}{\numberline {3.57.2.1}SupplyFactory()}{126}{subsubsection.3.57.2.1}%
+\contentsline {subsubsection}{\numberline {3.57.2.2}$\sim $SupplyFactory()}{127}{subsubsection.3.57.2.2}%
+\contentsline {subsection}{\numberline {3.57.3}Member Function Documentation}{127}{subsection.3.57.3}%
+\contentsline {subsubsection}{\numberline {3.57.3.1}getBudget()}{127}{subsubsection.3.57.3.1}%
+\contentsline {subsubsection}{\numberline {3.57.3.2}getLevel()}{128}{subsubsection.3.57.3.2}%
+\contentsline {subsubsection}{\numberline {3.57.3.3}getTotalSpent()}{128}{subsubsection.3.57.3.3}%
+\contentsline {subsubsection}{\numberline {3.57.3.4}getType()}{128}{subsubsection.3.57.3.4}%
+\contentsline {subsubsection}{\numberline {3.57.3.5}makeSupply()}{129}{subsubsection.3.57.3.5}%
+\contentsline {subsubsection}{\numberline {3.57.3.6}setBudget()}{129}{subsubsection.3.57.3.6}%
+\contentsline {subsubsection}{\numberline {3.57.3.7}upgrade()}{129}{subsubsection.3.57.3.7}%
+\contentsline {subsection}{\numberline {3.57.4}Member Data Documentation}{130}{subsection.3.57.4}%
+\contentsline {subsubsection}{\numberline {3.57.4.1}totalSpent}{130}{subsubsection.3.57.4.1}%
+\contentsline {section}{\numberline {3.58}This Class Reference}{130}{section.3.58}%
+\contentsline {subsection}{\numberline {3.58.1}Detailed Description}{130}{subsection.3.58.1}%
+\contentsline {section}{\numberline {3.59}Transporter Class Reference}{130}{section.3.59}%
+\contentsline {subsection}{\numberline {3.59.1}Detailed Description}{131}{subsection.3.59.1}%
+\contentsline {subsection}{\numberline {3.59.2}Member Function Documentation}{131}{subsection.3.59.2}%
+\contentsline {subsubsection}{\numberline {3.59.2.1}notify()}{131}{subsubsection.3.59.2.1}%
+\contentsline {subsubsection}{\numberline {3.59.2.2}registerCorresponder()}{131}{subsubsection.3.59.2.2}%
+\contentsline {subsection}{\numberline {3.59.3}Member Data Documentation}{132}{subsection.3.59.3}%
+\contentsline {subsubsection}{\numberline {3.59.3.1}corresponderList}{132}{subsubsection.3.59.3.1}%
+\contentsline {section}{\numberline {3.60}Unit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{132}{section.3.60}%
+\contentsline {subsection}{\numberline {3.60.1}Detailed Description}{133}{subsection.3.60.1}%
+\contentsline {subsection}{\numberline {3.60.2}Constructor \& Destructor Documentation}{133}{subsection.3.60.2}%
+\contentsline {subsubsection}{\numberline {3.60.2.1}UnitFactory()}{133}{subsubsection.3.60.2.1}%
+\contentsline {subsection}{\numberline {3.60.3}Member Function Documentation}{134}{subsection.3.60.3}%
+\contentsline {subsubsection}{\numberline {3.60.3.1}createSoldier()}{134}{subsubsection.3.60.3.1}%
+\contentsline {subsubsection}{\numberline {3.60.3.2}createVehicle()}{134}{subsubsection.3.60.3.2}%
+\contentsline {subsubsection}{\numberline {3.60.3.3}determineActualLevel()}{135}{subsubsection.3.60.3.3}%
+\contentsline {subsubsection}{\numberline {3.60.3.4}getBudget()}{135}{subsubsection.3.60.3.4}%
+\contentsline {subsubsection}{\numberline {3.60.3.5}getTotalSpent()}{135}{subsubsection.3.60.3.5}%
+\contentsline {subsubsection}{\numberline {3.60.3.6}getType()}{136}{subsubsection.3.60.3.6}%
+\contentsline {subsubsection}{\numberline {3.60.3.7}setNewBudget()}{136}{subsubsection.3.60.3.7}%
+\contentsline {subsubsection}{\numberline {3.60.3.8}upgrade()}{136}{subsubsection.3.60.3.8}%
+\contentsline {subsection}{\numberline {3.60.4}Member Data Documentation}{137}{subsection.3.60.4}%
+\contentsline {subsubsection}{\numberline {3.60.4.1}cost}{137}{subsubsection.3.60.4.1}%
+\contentsline {subsubsection}{\numberline {3.60.4.2}level}{137}{subsubsection.3.60.4.2}%
+\contentsline {subsubsection}{\numberline {3.60.4.3}totalSpent}{137}{subsubsection.3.60.4.3}%
+\contentsline {section}{\numberline {3.61}Vehicle Class Reference}{137}{section.3.61}%
+\contentsline {subsection}{\numberline {3.61.1}Constructor \& Destructor Documentation}{138}{subsection.3.61.1}%
+\contentsline {subsubsection}{\numberline {3.61.1.1}Vehicle()}{138}{subsubsection.3.61.1.1}%
+\contentsline {subsection}{\numberline {3.61.2}Member Function Documentation}{138}{subsection.3.61.2}%
+\contentsline {subsubsection}{\numberline {3.61.2.1}addMember()}{138}{subsubsection.3.61.2.1}%
+\contentsline {subsubsection}{\numberline {3.61.2.2}calculateAirDefense()}{139}{subsubsection.3.61.2.2}%
+\contentsline {subsubsection}{\numberline {3.61.2.3}calculateAirOffense()}{139}{subsubsection.3.61.2.3}%
+\contentsline {subsubsection}{\numberline {3.61.2.4}calculateLandDefense()}{139}{subsubsection.3.61.2.4}%
+\contentsline {subsubsection}{\numberline {3.61.2.5}calculateLandOffense()}{140}{subsubsection.3.61.2.5}%
+\contentsline {subsubsection}{\numberline {3.61.2.6}calculateSeaDefense()}{140}{subsubsection.3.61.2.6}%
+\contentsline {subsubsection}{\numberline {3.61.2.7}calculateSeaOffense()}{140}{subsubsection.3.61.2.7}%
+\contentsline {subsection}{\numberline {3.61.3}Member Data Documentation}{141}{subsection.3.61.3}%
+\contentsline {subsubsection}{\numberline {3.61.3.1}armourRating}{141}{subsubsection.3.61.3.1}%
+\contentsline {subsubsection}{\numberline {3.61.3.2}weaponClass}{141}{subsubsection.3.61.3.2}%
+\contentsline {section}{\numberline {3.62}War Class Reference}{141}{section.3.62}%
+\contentsline {subsection}{\numberline {3.62.1}Detailed Description}{142}{subsection.3.62.1}%
+\contentsline {subsection}{\numberline {3.62.2}Constructor \& Destructor Documentation}{142}{subsection.3.62.2}%
+\contentsline {subsubsection}{\numberline {3.62.2.1}War()}{142}{subsubsection.3.62.2.1}%
+\contentsline {subsection}{\numberline {3.62.3}Member Function Documentation}{142}{subsection.3.62.3}%
+\contentsline {subsubsection}{\numberline {3.62.3.1}changePhase()}{143}{subsubsection.3.62.3.1}%
+\contentsline {subsubsection}{\numberline {3.62.3.2}getAirTheatre()}{143}{subsubsection.3.62.3.2}%
+\contentsline {subsubsection}{\numberline {3.62.3.3}getLandTheatre()}{143}{subsubsection.3.62.3.3}%
+\contentsline {subsubsection}{\numberline {3.62.3.4}getSeaTheatre()}{144}{subsubsection.3.62.3.4}%
+\contentsline {subsubsection}{\numberline {3.62.3.5}setUpCountries()}{144}{subsubsection.3.62.3.5}%
+\contentsline {subsubsection}{\numberline {3.62.3.6}setWarPhase()}{144}{subsubsection.3.62.3.6}%
+\contentsline {subsubsection}{\numberline {3.62.3.7}startWarGame()}{144}{subsubsection.3.62.3.7}%
+\contentsline {subsubsection}{\numberline {3.62.3.8}startWarSim()}{145}{subsubsection.3.62.3.8}%
+\contentsline {subsubsection}{\numberline {3.62.3.9}stopWar()}{145}{subsubsection.3.62.3.9}%
+\contentsline {section}{\numberline {3.63}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Phase Class Reference}{145}{section.3.63}%
+\contentsline {subsection}{\numberline {3.63.1}Member Function Documentation}{146}{subsection.3.63.1}%
+\contentsline {subsubsection}{\numberline {3.63.1.1}handleChange()}{146}{subsubsection.3.63.1.1}%
+\contentsline {subsection}{\numberline {3.63.2}Member Data Documentation}{146}{subsection.3.63.2}%
+\contentsline {subsubsection}{\numberline {3.63.2.1}peaceChance}{146}{subsubsection.3.63.2.1}%
+\contentsline {section}{\numberline {3.64}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Theatre Class Reference}{146}{section.3.64}%
+\contentsline {subsection}{\numberline {3.64.1}Detailed Description}{147}{subsection.3.64.1}%
+\contentsline {subsection}{\numberline {3.64.2}Constructor \& Destructor Documentation}{147}{subsection.3.64.2}%
+\contentsline {subsubsection}{\numberline {3.64.2.1}WarTheatre()}{147}{subsubsection.3.64.2.1}%
+\contentsline {subsubsection}{\numberline {3.64.2.2}$\sim $WarTheatre()}{148}{subsubsection.3.64.2.2}%
+\contentsline {subsection}{\numberline {3.64.3}Member Function Documentation}{148}{subsection.3.64.3}%
+\contentsline {subsubsection}{\numberline {3.64.3.1}addArmy()}{148}{subsubsection.3.64.3.1}%
+\contentsline {subsubsection}{\numberline {3.64.3.2}applyTerrainBonus()}{148}{subsubsection.3.64.3.2}%
+\contentsline {subsubsection}{\numberline {3.64.3.3}conflict()}{149}{subsubsection.3.64.3.3}%
+\contentsline {subsubsection}{\numberline {3.64.3.4}getArmies()}{149}{subsubsection.3.64.3.4}%
+\contentsline {subsubsection}{\numberline {3.64.3.5}getContentionState()}{149}{subsubsection.3.64.3.5}%
+\contentsline {subsubsection}{\numberline {3.64.3.6}getName()}{150}{subsubsection.3.64.3.6}%
+\contentsline {subsubsection}{\numberline {3.64.3.7}getType()}{150}{subsubsection.3.64.3.7}%
+\contentsline {subsubsection}{\numberline {3.64.3.8}replenishNonCombatEntities()}{150}{subsubsection.3.64.3.8}%

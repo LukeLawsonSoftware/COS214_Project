@@ -6,6 +6,20 @@
 #include <vector>
 #include <string>
 
+/**
+ * @class WarTheatre WarTheatre.h
+ * 
+ * This class is used to create different locations where the War will take place.
+ * - A Country can enter its armies to different war theatres. The different war theatres include:
+ * 		- AirTerrain: This is where air units will be fighting against each other.
+ * 		- LandTerrain: This is where land units will be fighting against each other.
+ * 		- SeaTerrain: This is where sea units will be fighting against each other.
+ * - A theatre will also have civilians and medics. This is to make is more realistic to an actual war.
+ * - It will also consist of armies from two alliances. The two alliances will be fighting against each other.
+ * 
+ * @note The War will only consists of the three terrains (one of each type of terrain).
+ */
+
 class WarTheatre
 {
 
@@ -32,6 +46,7 @@ public:
 	/// @author Jonelle Coertze (u21446271)
 	/// @param Type string used to indicate if the war theatre is a land, sea or air terrain
 	/// @param Name string used to give the war theatre a name
+	/// @warning The type can only be Sea, Air or Land. Not any other type.
 	WarTheatre(std::string Type, std::string Name);
 
 	/// @brief a destructor to delete the medics and civilian vectors
@@ -69,6 +84,9 @@ public:
 	/// @return pointer to the army array containing the armies currently present in the war theatre
 	Army **getArmies();
 
+	/// @brief a get method to return the contention state to specify what is happening in the current war theatre.
+	/// @author Jonelle Coertze (u21446271)
+	/// @return integer value (a value between 0 and 3, both included)
 	int getContentionState();
 };
 

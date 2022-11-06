@@ -1,0 +1,95 @@
+\hypertarget{class_transporter}{}\section{Transporter Class Reference}
+\label{class_transporter}\index{Transporter@{Transporter}}
+
+
+{\ttfamily \#include $<$Transporter.\+h$>$}
+
+Inheritance diagram for Transporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transporter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_transporter_aadf5e8b8dabe203e8b184ae00847c249}{notify}} (\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$corresponder)=0
+\begin{DoxyCompactList}\small\item\em Notify all \mbox{\hyperlink{class_corresponder}{Corresponder}} objects of the changes made by the parameter object. Implemented in derived classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transporter_ab9c0e1033746e012d0d784d2a293b079}{register\+Corresponder}} (\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$corresponder)
+\begin{DoxyCompactList}\small\item\em Register a \mbox{\hyperlink{class_corresponder}{Corresponder}} object by adding the passed in object to the list of corresponders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$ $>$ \mbox{\hyperlink{class_transporter_afd7004c5986280b5c65aac41c66a1ec7}{corresponder\+List}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is used to create transport lines for a \mbox{\hyperlink{class_country}{Country}}.
+
+There are two types of transport lines\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} \+: the ammo transport line which is used by the \mbox{\hyperlink{class_country}{Country}} to send suppplies to its armies.
+\item \mbox{\hyperlink{class_medic_transporter}{Medic\+Transporter}} \+: the medical transport line which is used by the \mbox{\hyperlink{class_country}{Country}} to send medical supplies to its armies
+\end{DoxyItemize}
+
+\begin{DoxyWarning}{Warning}
+If a country does not have a ammo transport line it cannot send any ammo supplies to its army. 
+
+If a country does not have a medical transport line it cannot send any medcial supplies to its army meaning the army will not be able to recuperate during the \mbox{\hyperlink{class_war}{War}}. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transporter_aadf5e8b8dabe203e8b184ae00847c249}\label{class_transporter_aadf5e8b8dabe203e8b184ae00847c249}} 
+\index{Transporter@{Transporter}!notify@{notify}}
+\index{notify@{notify}!Transporter@{Transporter}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily virtual void Transporter\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$}]{corresponder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Notify all \mbox{\hyperlink{class_corresponder}{Corresponder}} objects of the changes made by the parameter object. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em corresponder} & pointer to the \mbox{\hyperlink{class_corresponder}{Corresponder}} in which a changed has happened. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_ammo_transporter_a2f29d78a7be5b6116b7299494fef2b7e}{Ammo\+Transporter}}, and \mbox{\hyperlink{class_medic_transporter_ab77bbb1ad9e370c2045f1bbeb02f620b}{Medic\+Transporter}}.
+
+\mbox{\Hypertarget{class_transporter_ab9c0e1033746e012d0d784d2a293b079}\label{class_transporter_ab9c0e1033746e012d0d784d2a293b079}} 
+\index{Transporter@{Transporter}!registerCorresponder@{registerCorresponder}}
+\index{registerCorresponder@{registerCorresponder}!Transporter@{Transporter}}
+\subsubsection{\texorpdfstring{registerCorresponder()}{registerCorresponder()}}
+{\footnotesize\ttfamily void Transporter\+::register\+Corresponder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$}]{corresponder }\end{DoxyParamCaption})}
+
+
+
+Register a \mbox{\hyperlink{class_corresponder}{Corresponder}} object by adding the passed in object to the list of corresponders. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em corresponder} & pointer to a \mbox{\hyperlink{class_corresponder}{Corresponder}} object which needs to be added to the list of corresponders. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function allows the Transport lines to know which \mbox{\hyperlink{class_country}{Country}} is currently sending supplies to the armies. 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_transporter_afd7004c5986280b5c65aac41c66a1ec7}\label{class_transporter_afd7004c5986280b5c65aac41c66a1ec7}} 
+\index{Transporter@{Transporter}!corresponderList@{corresponderList}}
+\index{corresponderList@{corresponderList}!Transporter@{Transporter}}
+\subsubsection{\texorpdfstring{corresponderList}{corresponderList}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_corresponder}{Corresponder}}$\ast$$>$ Transporter\+::corresponder\+List\hspace{0.3cm}{\ttfamily [protected]}}
+

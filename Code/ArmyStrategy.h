@@ -3,6 +3,14 @@
 class BattleStatistics;
 class Battalion;
 #include <iostream>
+
+/**
+ * @class ArmyStrategy ArmyStrategy.h
+ * 
+ * This class is only used to specify the strategy an Army is using.
+ * 
+ */
+
 class ArmyStrategy
 {
 

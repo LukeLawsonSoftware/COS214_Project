@@ -1,0 +1,63 @@
+\hypertarget{class_army_director}{}\section{Army\+Director Class Reference}
+\label{class_army_director}\index{ArmyDirector@{ArmyDirector}}
+
+
+{\ttfamily \#include $<$Army\+Director.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_army_director_a5d24ebede0923adfbb6dd8b06af3809f}{Army\+Director}} (\mbox{\hyperlink{class_army_builder}{Army\+Builder}} $\ast$builder)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_army_director}{Army\+Director}} class to instantiate the object and set the member variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_director_a18fcc0cd2f4122ed600388f12efe92b9}{construct\+Army}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to construct an army which will be used by the \mbox{\hyperlink{class_country}{Country}} to fight the war. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_army_director}{Army\+Director}} class is a big component in the \mbox{\hyperlink{class_war}{War}} since we use this class to command the \mbox{\hyperlink{class_army_builder}{Army\+Builder}} to build the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s army.
+\begin{DoxyItemize}
+\item Each country must have a director otherwise the country will not be able to build any armies.
+\item The director receives the command \char`\"{}raise army\char`\"{} from the millitary commander and then only instructs the \mbox{\hyperlink{class_army_builder}{Army\+Builder}} to build the army. \begin{DoxyWarning}{Warning}
+If the member variable (builder) is N\+U\+LL we cannot build the army. 
+\end{DoxyWarning}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_army_director_a5d24ebede0923adfbb6dd8b06af3809f}\label{class_army_director_a5d24ebede0923adfbb6dd8b06af3809f}} 
+\index{ArmyDirector@{ArmyDirector}!ArmyDirector@{ArmyDirector}}
+\index{ArmyDirector@{ArmyDirector}!ArmyDirector@{ArmyDirector}}
+\subsubsection{\texorpdfstring{ArmyDirector()}{ArmyDirector()}}
+{\footnotesize\ttfamily Army\+Director\+::\+Army\+Director (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_builder}{Army\+Builder}} $\ast$}]{builder }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_army_director}{Army\+Director}} class to instantiate the object and set the member variable. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & pointer to an existing \mbox{\hyperlink{class_army_builder}{Army\+Builder}} object used to set this class\textquotesingle{} member variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The parameter M\+U\+ST N\+OT BE N\+U\+LL otherwise the it is impossible to build an army for a \mbox{\hyperlink{class_country}{Country}}. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_director_a18fcc0cd2f4122ed600388f12efe92b9}\label{class_army_director_a18fcc0cd2f4122ed600388f12efe92b9}} 
+\index{ArmyDirector@{ArmyDirector}!constructArmy@{constructArmy}}
+\index{constructArmy@{constructArmy}!ArmyDirector@{ArmyDirector}}
+\subsubsection{\texorpdfstring{constructArmy()}{constructArmy()}}
+{\footnotesize\ttfamily void Army\+Director\+::construct\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to construct an army which will be used by the \mbox{\hyperlink{class_country}{Country}} to fight the war. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}

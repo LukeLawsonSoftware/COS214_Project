@@ -1,0 +1,107 @@
+\hypertarget{class_land_factory}{}\section{Land\+Factory Class Reference}
+\label{class_land_factory}\index{LandFactory@{LandFactory}}
+
+
+{\ttfamily \#include $<$Land\+Factory.\+h$>$}
+
+Inheritance diagram for Land\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_land_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_land_factory_a6863eabc4fe2248aff95aa82b8ce0e16}{Land\+Factory}} (double budget, int \mbox{\hyperlink{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}{level}}, std\+::string type=\char`\"{}Land\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_land_factory}{Land\+Factory}} class used to instantiate an \mbox{\hyperlink{class_land_factory}{Land\+Factory}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_land_factory_a6f1a99f8b975ca829a188f862060fdcf}{create\+Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}}, using level to determine power\+Rating. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_land_factory_a4a5150ab9c2a8b50922c9dbf39bd7214}{create\+Soldier}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_land_unit}{Land\+Unit}}, using level to determine power\+Rating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_land_factory}{Land\+Factory}} class is a derived class derived from the \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} class \mbox{\hyperlink{_unit_factory_8h_source}{(See the definition of the Unit\+Factory class)}}
+
+The \mbox{\hyperlink{class_land_factory}{Land\+Factory}} will be used to create Land Units for the \mbox{\hyperlink{class_war}{War}}. The \mbox{\hyperlink{class_land_factory}{Land\+Factory}} has methods \char`\"{}create\+Soldier()\char`\"{} and \char`\"{}create\+Vehicle()\char`\"{} which will create \mbox{\hyperlink{class_soldier}{Soldier}} objects and \mbox{\hyperlink{class_vehicle}{Vehicle}} objects respectively. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is O\+N\+LY used to create \mbox{\hyperlink{class_land_unit}{Land\+Unit}} objects (Soldiers or Vehicles) 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_land_factory_a6863eabc4fe2248aff95aa82b8ce0e16}\label{class_land_factory_a6863eabc4fe2248aff95aa82b8ce0e16}} 
+\index{LandFactory@{LandFactory}!LandFactory@{LandFactory}}
+\index{LandFactory@{LandFactory}!LandFactory@{LandFactory}}
+\subsubsection{\texorpdfstring{LandFactory()}{LandFactory()}}
+{\footnotesize\ttfamily Land\+Factory\+::\+Land\+Factory (\begin{DoxyParamCaption}\item[{double}]{budget,  }\item[{int}]{level,  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}Land\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_land_factory}{Land\+Factory}} class used to instantiate an \mbox{\hyperlink{class_land_factory}{Land\+Factory}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & Starting budget of \mbox{\hyperlink{class_land_factory}{Land\+Factory}} class \\
+\hline
+{\em level} & Starting level of \mbox{\hyperlink{class_land_factory}{Land\+Factory}} class \\
+\hline
+{\em type} & Type will be \char`\"{}\+Land\char`\"{} since this function creates Land army components \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The \char`\"{}budget\char`\"{} must be a positive value. The \char`\"{}level\char`\"{} must be greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_land_factory_a4a5150ab9c2a8b50922c9dbf39bd7214}\label{class_land_factory_a4a5150ab9c2a8b50922c9dbf39bd7214}} 
+\index{LandFactory@{LandFactory}!createSoldier@{createSoldier}}
+\index{createSoldier@{createSoldier}!LandFactory@{LandFactory}}
+\subsubsection{\texorpdfstring{createSoldier()}{createSoldier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Land\+Factory\+::create\+Soldier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_land_unit}{Land\+Unit}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_land_unit}{Land\+Unit}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}{Unit\+Factory}}.
+
+\mbox{\Hypertarget{class_land_factory_a6f1a99f8b975ca829a188f862060fdcf}\label{class_land_factory_a6f1a99f8b975ca829a188f862060fdcf}} 
+\index{LandFactory@{LandFactory}!createVehicle@{createVehicle}}
+\index{createVehicle@{createVehicle}!LandFactory@{LandFactory}}
+\subsubsection{\texorpdfstring{createVehicle()}{createVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Land\+Factory\+::create\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a465dd9ec1883939eb27274164e967822}{Unit\+Factory}}.
+

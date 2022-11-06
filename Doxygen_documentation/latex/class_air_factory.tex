@@ -1,0 +1,107 @@
+\hypertarget{class_air_factory}{}\section{Air\+Factory Class Reference}
+\label{class_air_factory}\index{AirFactory@{AirFactory}}
+
+
+{\ttfamily \#include $<$Air\+Factory.\+h$>$}
+
+Inheritance diagram for Air\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_air_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_air_factory_a732ac84bdb7a41c7118ac5e55a737165}{Air\+Factory}} (double budget, int \mbox{\hyperlink{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}{level}}, std\+::string type=\char`\"{}Air\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_air_factory}{Air\+Factory}} class used to instantiate an \mbox{\hyperlink{class_air_factory}{Air\+Factory}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_air_factory_aede47fe0f3be3714ccef1faed3354d00}{create\+Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_air_vehicle}{Air\+Vehicle}}, using level to determine power\+Rating. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_air_factory_a1a83eb38a4fd955b2f65064d508b9dda}{create\+Soldier}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_air_unit}{Air\+Unit}}, using level to determine power\+Rating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_air_factory}{Air\+Factory}} class is a derived class derived from the \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} class \mbox{\hyperlink{_unit_factory_8h_source}{(See the definition of the Unit\+Factory class)}}
+
+The \mbox{\hyperlink{class_air_factory}{Air\+Factory}} will be used to create Air Units for the \mbox{\hyperlink{class_war}{War}}. The \mbox{\hyperlink{class_air_factory}{Air\+Factory}} has methods \char`\"{}create\+Soldier()\char`\"{} and \char`\"{}create\+Vehicle()\char`\"{} which will create \mbox{\hyperlink{class_soldier}{Soldier}} objects and \mbox{\hyperlink{class_vehicle}{Vehicle}} objects respectively. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is O\+N\+LY used to create \mbox{\hyperlink{class_air_unit}{Air\+Unit}} objects (Soldiers or Vehicles) 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_air_factory_a732ac84bdb7a41c7118ac5e55a737165}\label{class_air_factory_a732ac84bdb7a41c7118ac5e55a737165}} 
+\index{AirFactory@{AirFactory}!AirFactory@{AirFactory}}
+\index{AirFactory@{AirFactory}!AirFactory@{AirFactory}}
+\subsubsection{\texorpdfstring{AirFactory()}{AirFactory()}}
+{\footnotesize\ttfamily Air\+Factory\+::\+Air\+Factory (\begin{DoxyParamCaption}\item[{double}]{budget,  }\item[{int}]{level,  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}Air\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_air_factory}{Air\+Factory}} class used to instantiate an \mbox{\hyperlink{class_air_factory}{Air\+Factory}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & Starting budget of \mbox{\hyperlink{class_air_factory}{Air\+Factory}} class \\
+\hline
+{\em level} & Starting level of \mbox{\hyperlink{class_air_factory}{Air\+Factory}} class \\
+\hline
+{\em type} & Type will be \char`\"{}\+Air\char`\"{} since this function creates Air army components \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The \char`\"{}budget\char`\"{} must be a positive value. The \char`\"{}level\char`\"{} must be greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_air_factory_a1a83eb38a4fd955b2f65064d508b9dda}\label{class_air_factory_a1a83eb38a4fd955b2f65064d508b9dda}} 
+\index{AirFactory@{AirFactory}!createSoldier@{createSoldier}}
+\index{createSoldier@{createSoldier}!AirFactory@{AirFactory}}
+\subsubsection{\texorpdfstring{createSoldier()}{createSoldier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Air\+Factory\+::create\+Soldier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_air_unit}{Air\+Unit}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_air_unit}{Air\+Unit}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}{Unit\+Factory}}.
+
+\mbox{\Hypertarget{class_air_factory_aede47fe0f3be3714ccef1faed3354d00}\label{class_air_factory_aede47fe0f3be3714ccef1faed3354d00}} 
+\index{AirFactory@{AirFactory}!createVehicle@{createVehicle}}
+\index{createVehicle@{createVehicle}!AirFactory@{AirFactory}}
+\subsubsection{\texorpdfstring{createVehicle()}{createVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Air\+Factory\+::create\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_air_vehicle}{Air\+Vehicle}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_air_vehicle}{Air\+Vehicle}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a465dd9ec1883939eb27274164e967822}{Unit\+Factory}}.
+

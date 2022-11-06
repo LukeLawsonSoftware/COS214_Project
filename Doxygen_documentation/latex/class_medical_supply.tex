@@ -1,0 +1,97 @@
+\hypertarget{class_medical_supply}{}\section{Medical\+Supply Class Reference}
+\label{class_medical_supply}\index{MedicalSupply@{MedicalSupply}}
+
+
+{\ttfamily \#include $<$Medical\+Supply.\+h$>$}
+
+Inheritance diagram for Medical\+Supply\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medical_supply}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medical_supply_aa7b8f6fe340a4579a5a6d09b17e426ef}{Medical\+Supply}} (int factory\+Level, int \mbox{\hyperlink{class_supply_a947a0ffbf0c36dc21d79c05f1a9f48a4}{quantity}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} class to specify the factory level and quantity that will be produced. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_medical_supply_accd0925a397355951d782a43eb8a0d55}{get\+Medical\+Bonus}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the medical bonus member variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_medical_supply_a7dfad8dcb02fa936a063fb1a430c5f42}{set\+Medical\+Bonus}} (int bonus)
+\begin{DoxyCompactList}\small\item\em Setter for the medical bonus member variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is derived from the \mbox{\hyperlink{class_supply}{Supply}} class. \mbox{\hyperlink{class_this}{This}} is the actual product created by the \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}}.
+\begin{DoxyItemize}
+\item Armies will use medical supply objects to recuperate during the war.
+\item If an army\textquotesingle{}s medical supply runs out they are in great disadvantage. \begin{DoxyNote}{Note}
+The medical supply has a variety of small and large medical kits. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medical_supply_aa7b8f6fe340a4579a5a6d09b17e426ef}\label{class_medical_supply_aa7b8f6fe340a4579a5a6d09b17e426ef}} 
+\index{MedicalSupply@{MedicalSupply}!MedicalSupply@{MedicalSupply}}
+\index{MedicalSupply@{MedicalSupply}!MedicalSupply@{MedicalSupply}}
+\subsubsection{\texorpdfstring{MedicalSupply()}{MedicalSupply()}}
+{\footnotesize\ttfamily Medical\+Supply\+::\+Medical\+Supply (\begin{DoxyParamCaption}\item[{int}]{factory\+Level,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} class to specify the factory level and quantity that will be produced. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em factory\+Level} & Specifies the currrent factory level in order to set the multiplier of the bonus. \\
+\hline
+{\em quantity} & Specifies the quentity of medical supplies to be produced. \mbox{\hyperlink{class_this}{This}} amount will be used to calculate the medical\+Bonus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The factory\+Level must be a value greater than the integer value 0. 
+
+The quantity must also be a value greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medical_supply_accd0925a397355951d782a43eb8a0d55}\label{class_medical_supply_accd0925a397355951d782a43eb8a0d55}} 
+\index{MedicalSupply@{MedicalSupply}!getMedicalBonus@{getMedicalBonus}}
+\index{getMedicalBonus@{getMedicalBonus}!MedicalSupply@{MedicalSupply}}
+\subsubsection{\texorpdfstring{getMedicalBonus()}{getMedicalBonus()}}
+{\footnotesize\ttfamily int Medical\+Supply\+::get\+Medical\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the medical bonus member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+medical bonus of type int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_medical_supply_a7dfad8dcb02fa936a063fb1a430c5f42}\label{class_medical_supply_a7dfad8dcb02fa936a063fb1a430c5f42}} 
+\index{MedicalSupply@{MedicalSupply}!setMedicalBonus@{setMedicalBonus}}
+\index{setMedicalBonus@{setMedicalBonus}!MedicalSupply@{MedicalSupply}}
+\subsubsection{\texorpdfstring{setMedicalBonus()}{setMedicalBonus()}}
+{\footnotesize\ttfamily void Medical\+Supply\+::set\+Medical\+Bonus (\begin{DoxyParamCaption}\item[{int}]{bonus }\end{DoxyParamCaption})}
+
+
+
+Setter for the medical bonus member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em bonus} & Specfies to which value the medical bonus will be set. \\
+\hline
+\end{DoxyParams}

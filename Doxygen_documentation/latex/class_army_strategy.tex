@@ -1,0 +1,47 @@
+\hypertarget{class_army_strategy}{}\section{Army\+Strategy Class Reference}
+\label{class_army_strategy}\index{ArmyStrategy@{ArmyStrategy}}
+
+
+{\ttfamily \#include $<$Army\+Strategy.\+h$>$}
+
+Inheritance diagram for Army\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_army_strategy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_army_strategy_ade28f2b5107c9fcdc58e73e1053e6cff}{apply\+Strategy\+Bonus}} (\mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}, \mbox{\hyperlink{class_battalion}{Battalion}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Applies desired bonuses to \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is only used to specify the strategy an \mbox{\hyperlink{class_army}{Army}} is using. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_strategy_ade28f2b5107c9fcdc58e73e1053e6cff}\label{class_army_strategy_ade28f2b5107c9fcdc58e73e1053e6cff}} 
+\index{ArmyStrategy@{ArmyStrategy}!applyStrategyBonus@{applyStrategyBonus}}
+\index{applyStrategyBonus@{applyStrategyBonus}!ArmyStrategy@{ArmyStrategy}}
+\subsubsection{\texorpdfstring{applyStrategyBonus()}{applyStrategyBonus()}}
+{\footnotesize\ttfamily void Army\+Strategy\+::apply\+Strategy\+Bonus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}}]{in,  }\item[{\mbox{\hyperlink{class_battalion}{Battalion}} $\ast$}]{in\+Battalion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Applies desired bonuses to \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}} & passes in the \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} to be edited. \\
+\hline
+{\em \mbox{\hyperlink{class_battalion}{Battalion}}} & passes in the \mbox{\hyperlink{class_battalion}{Battalion}} to calculate base statistics to be editted. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_defensive_a6585a77b2d245fc8671fbf959483e1e0}{Defensive}}, \mbox{\hyperlink{class_neutral_aa6ce5f87e34cf849324d42031e2901d1}{Neutral}}, and \mbox{\hyperlink{class_offensive_aaaaf9b44b3fa438b5067c01463b3353a}{Offensive}}.
+

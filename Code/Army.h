@@ -16,6 +16,16 @@ class Supply;
 
 #include <string>
 #include <vector>
+
+/**
+ * @class Army Army.h
+ * 
+ * The Army class is a big component in the War since we use this class to keep track of the army's supplies (AmmoSupply & MedicalSupply).
+ * - We also use this class to fight against other Countries. 
+ * - We are also able to attack the enemy's Transport which will disable the enemy's
+ * transport lines. Thus they won't be able to send supplies to their armies, giving our Army a slight advantage.
+ * @note This class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies.
+*/
 class Army : public Corresponder
 {
 
@@ -36,6 +46,8 @@ public:
 	/// @param individuals pointer to vector of ArmyComponent pointers representing individuals (vehicles or units)
 	/// @param supplies pointer to vector of Supply pointers for Ammo and Meds
 	/// @param type string type of the army. Land, Air or Sea
+	/// @warning To instantiate the Army object, the battalions, individuals and suppplies need to be already defined.
+	/// @note The type is used to specify which army we will instantiate i.e. in which theatre the army will be fighting (Land, Air or Sea).
 	Army(std::vector<ArmyComponent *> *battalions, std::vector<ArmyComponent *> *individuals, std::vector<Supply *> *supplies, std::string type);
 
 	/// @brief Function to apply bonus to the army's BattleStatistics
@@ -44,6 +56,7 @@ public:
 
 	/// @brief Function to use medical supplies to replenish army's morale/hp
 	/// @author Luke Lawson (u21433811)
+	/// @note This function is used to heal our army by using the medical supplies.
 	void recuperate();
 
 	/// @brief Function to add to Army's available ammo supplies
@@ -64,6 +77,7 @@ public:
 	/// @brief Function move this Army into a War Theatre
 	/// @author Luke Lawson (u21433811)
 	/// @param theatre pointer to War Theatre to be added to
+	/// @warning The specified WarTheatre needs to be of the same type as the Army object. We cannot let Land armies fight in an Air theatre.
 	void setBattleField(WarTheatre *theatre); // theatre->add(this)
 
 	/// @brief Function for an Army to attack a Country's

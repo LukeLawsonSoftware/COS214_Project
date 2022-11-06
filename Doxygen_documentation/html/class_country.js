@@ -1,0 +1,25 @@
+var class_country =
+[
+    [ "Country", "class_country.html#a04fa29f8caa2b8dcf72b89d43687aa34", null ],
+    [ "~Country", "class_country.html#a5013557e0d93fabc976bfa0d7f0564a3", null ],
+    [ "attackTransport", "class_country.html#a1097aaf13d5a15eb30ea0ccc4b7fa211", null ],
+    [ "changeArmyStrategy", "class_country.html#adfb891f4f46c41276395d09cc9bc2a6a", null ],
+    [ "destroyTransport", "class_country.html#af8b0fd589846db503b902d6f6ed19003", null ],
+    [ "earnGDP", "class_country.html#af7a71e97969c6d107831785e868e2649", null ],
+    [ "enterArmyIntoTheatre", "class_country.html#ad034f149b2f19a246dc367b05ae1dedf", null ],
+    [ "formAlliance", "class_country.html#a1ff39065671bb89e426c97efed4c80e9", null ],
+    [ "getArmy", "class_country.html#a3959c7dc7ade25ff431098fffea6156a", null ],
+    [ "getName", "class_country.html#aa584ff75674728736d4952b32693501a", null ],
+    [ "getNewAmmoSupply", "class_country.html#a959665cddc5e2cbadaae9736f376cf23", null ],
+    [ "getNewMedicalSupply", "class_country.html#a1b51d2e6356a8368dd6ee7cbc21db0e4", null ],
+    [ "isSurrendered", "class_country.html#a5bef51b05acceb350babfd766f2f9752", null ],
+    [ "raiseArmy", "class_country.html#a41ad154bf05464bf47c7e12d6e25a30e", null ],
+    [ "sendSupplies", "class_country.html#ae14d96ddafd2eb7b9c173fb26908fab7", null ],
+    [ "setNewAmmoSupplies", "class_country.html#a39b4294819a0b5e2513d4093401ec6a7", null ],
+    [ "setNewMedicalSupplies", "class_country.html#a0db028ef78f6b28b925e504e8f017266", null ],
+    [ "spendGDP", "class_country.html#ad39ce8ab2c88a4ff7e09d3fcab56f558", null ],
+    [ "surrender", "class_country.html#ac3fe57380b664018f560b43b2f549193", null ],
+    [ "takeTurn", "class_country.html#a4d6965d1a45f1d45f5af747f8225bd40", null ],
+    [ "upgradeSupplyFactory", "class_country.html#ac2dbba23738d7aa781066d12d8b60db1", null ],
+    [ "upgradeUnitFactory", "class_country.html#ae1250eaf85c6269b64ceb857bff5cea6", null ]
+];

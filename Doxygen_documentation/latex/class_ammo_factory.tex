@@ -1,0 +1,88 @@
+\hypertarget{class_ammo_factory}{}\section{Ammo\+Factory Class Reference}
+\label{class_ammo_factory}\index{AmmoFactory@{AmmoFactory}}
+
+
+{\ttfamily \#include $<$Ammo\+Factory.\+h$>$}
+
+Inheritance diagram for Ammo\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ammo_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ammo_factory_aab95615266049285e200316183a7f15e}{Ammo\+Factory}} (int budget, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Class constructor for the \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} to initialize the budget. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_supply}{Supply}} $\ast$ \mbox{\hyperlink{class_ammo_factory_a8d2b1cb24f145547af1de2d051f0e02c}{make\+Supply}} (int quantity)
+\begin{DoxyCompactList}\small\item\em Creates ammo supplies by creating a new \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} product. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} class is a derived class derived from the \mbox{\hyperlink{class_supply_factory}{Supply\+Factory}} class \mbox{\hyperlink{_supply_factory_8h_source}{(See the definition of the Supply\+Factory class)}}
+
+The \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} will be used to create Ammo Supplies for the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Armies. The \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} has a method \char`\"{}make\+Supply()\char`\"{} which will create the Ammo\+Suppply object. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is O\+N\+LY used to create \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} objects 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ammo_factory_aab95615266049285e200316183a7f15e}\label{class_ammo_factory_aab95615266049285e200316183a7f15e}} 
+\index{AmmoFactory@{AmmoFactory}!AmmoFactory@{AmmoFactory}}
+\index{AmmoFactory@{AmmoFactory}!AmmoFactory@{AmmoFactory}}
+\subsubsection{\texorpdfstring{AmmoFactory()}{AmmoFactory()}}
+{\footnotesize\ttfamily Ammo\+Factory\+::\+Ammo\+Factory (\begin{DoxyParamCaption}\item[{int}]{budget,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Class constructor for the \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}} to initialize the budget. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & The amount that can be spent to make ammo supplies. \\
+\hline
+{\em type} & The type of the factory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+\char`\"{}type\char`\"{} has to be \char`\"{}\+Ammo\char`\"{} and \char`\"{}budget\char`\"{} may not be less than or equal to zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ammo_factory_a8d2b1cb24f145547af1de2d051f0e02c}\label{class_ammo_factory_a8d2b1cb24f145547af1de2d051f0e02c}} 
+\index{AmmoFactory@{AmmoFactory}!makeSupply@{makeSupply}}
+\index{makeSupply@{makeSupply}!AmmoFactory@{AmmoFactory}}
+\subsubsection{\texorpdfstring{makeSupply()}{makeSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_supply}{Supply}} $\ast$ Ammo\+Factory\+::make\+Supply (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates ammo supplies by creating a new \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} product. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The quantity of ammo supplies to be produced by the ammo factory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} product. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\char`\"{}quantity\char`\"{} need to be positive. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_supply_factory_a110ff7418c656661e935a33e49300722}{Supply\+Factory}}.
+

@@ -5,6 +5,30 @@
 // #include "WarTheatre.h"
 class WarPhase;
 class WarTheatre;
+
+/**
+ * @class War War.h
+ * 
+ * This class represent the actual war gameplay.
+ * 
+ * - The war will consist of three different war theatres namely: AirTheatre, LandTheatre and SeaTheatre.
+ * - Throughout the gameplay it is possible to change from one WarPhase to another. The different war phases include:
+ * 		- EarlyPhase: This phases is sort of the introduction phase of a war where the tention between two countries is only starting to develop. There are three early phases of the war:
+ * 						- EarlyCrisis
+ * 						- EarlyOpenConflict
+ * 						- EarlyPeace
+ * 						- EarlyUnstablePeace
+ * 		- MidPhase: In this phase the actual war between two countries starts. We enter this phase once two countries have declared War against one another.
+ * 		- LatePhase: Once we enter the late phase the war starts coming to an end. In order end the war one country either needs to surrender against the enemy country or the country needs to be defeated by the enemy country. There are four late phases of the war:
+ * 						- LateCrisis
+ * 						- LateOpenConflict
+ * 						- LatePeace
+ * 						- LateUnstablePeace
+ * @note The flow of the war phases will be from early phase -> mid phase -> late phase
+ * 
+ * 
+ */
+
 class War
 {
 

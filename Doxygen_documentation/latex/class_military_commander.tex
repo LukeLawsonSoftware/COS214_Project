@@ -1,0 +1,158 @@
+\hypertarget{class_military_commander}{}\section{Military\+Commander Class Reference}
+\label{class_military_commander}\index{MilitaryCommander@{MilitaryCommander}}
+
+
+{\ttfamily \#include $<$Military\+Commander.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_military_commander_aa787892a0f992455849804cf7ee939da}{Military\+Commander}} ()
+\item 
+void \mbox{\hyperlink{class_military_commander_a13eca5a78f356e36533cade003264a3c}{change\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em executes the change\+Strategy \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_military_commander_ade59c82b3b5b429e7d0d53a352c03ec6}{set\+Strategy}} (\mbox{\hyperlink{class_army}{Army}} $\ast$army, std\+::string new\+Strategy)
+\begin{DoxyCompactList}\small\item\em sets variables of the \mbox{\hyperlink{class_change_strategy}{Change\+Strategy}} \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_military_commander_a1a1a7520c843505e6111f78c291983f6}{enter\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em executes the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_military_commander_a061489dab4cb1f0255e901534daaa4a9}{set\+Theatre\+Target}} (\mbox{\hyperlink{class_army}{Army}} $\ast$army, \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$theatre\+Target)
+\begin{DoxyCompactList}\small\item\em sets variables of the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_military_commander_a7f2df2a43dc6fe5bfdd03c6471278fc3}{attack\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em executes the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_military_commander_a3482b017f78a33581ee32fb3cad7e3e0}{set\+Transport\+Target}} (\mbox{\hyperlink{class_country}{Country}} $\ast$transport\+Target, \mbox{\hyperlink{class_army}{Army}} $\ast$army)
+\begin{DoxyCompactList}\small\item\em sets variables of the attack\+Transport \mbox{\hyperlink{class_command}{Command}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} is one of the big components in the \mbox{\hyperlink{class_war}{War}}. Each \mbox{\hyperlink{class_country}{Country}} will make use of the military commander to issue different commands throughout the duration of the war. The different commands which a commander can issue includes the following\+:
+\begin{DoxyItemize}
+\item change strategy\+: \mbox{\hyperlink{class_this}{This}} command is issued when a \mbox{\hyperlink{class_country}{Country}} either has the greater advantage in the war or when it realises that the enemy has the greater advantage.
+\item set strategy\+: \mbox{\hyperlink{class_this}{This}} command will be issued when a country has decided to use a different strategy in the war.
+\item enter theatre\+: Issuing this command will allow the country to start participating in the war.
+\item set theatre target\+: \mbox{\hyperlink{class_this}{This}} command is issued to order the country\textquotesingle{}s army to attack/fight in a specific \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}.
+\item attack transport\+: \mbox{\hyperlink{class_this}{This}} command orders the country\textquotesingle{}s army to attack an enemy\textquotesingle{}s transport lines with the hope of destroying it to gain the upper hand in the war.
+\item set transport target\+: \mbox{\hyperlink{class_this}{This}} command allows the country\textquotesingle{}s army to attack a specific \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s transport lines.
+\end{DoxyItemize}
+
+The military commander is definitely a crucial component for a country because without a commander the country will not be able to instruct its army to attack/surrender.
+
+\begin{DoxyNote}{Note}
+A country can only have one military commander. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_military_commander_aa787892a0f992455849804cf7ee939da}\label{class_military_commander_aa787892a0f992455849804cf7ee939da}} 
+\index{MilitaryCommander@{MilitaryCommander}!MilitaryCommander@{MilitaryCommander}}
+\index{MilitaryCommander@{MilitaryCommander}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{MilitaryCommander()}{MilitaryCommander()}}
+{\footnotesize\ttfamily Military\+Commander\+::\+Military\+Commander (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_military_commander_a7f2df2a43dc6fe5bfdd03c6471278fc3}\label{class_military_commander_a7f2df2a43dc6fe5bfdd03c6471278fc3}} 
+\index{MilitaryCommander@{MilitaryCommander}!attackTransport@{attackTransport}}
+\index{attackTransport@{attackTransport}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{attackTransport()}{attackTransport()}}
+{\footnotesize\ttfamily void Military\+Commander\+::attack\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+executes the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_military_commander_a13eca5a78f356e36533cade003264a3c}\label{class_military_commander_a13eca5a78f356e36533cade003264a3c}} 
+\index{MilitaryCommander@{MilitaryCommander}!changeStrategy@{changeStrategy}}
+\index{changeStrategy@{changeStrategy}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{changeStrategy()}{changeStrategy()}}
+{\footnotesize\ttfamily void Military\+Commander\+::change\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+executes the change\+Strategy \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_military_commander_a1a1a7520c843505e6111f78c291983f6}\label{class_military_commander_a1a1a7520c843505e6111f78c291983f6}} 
+\index{MilitaryCommander@{MilitaryCommander}!enterTheatre@{enterTheatre}}
+\index{enterTheatre@{enterTheatre}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{enterTheatre()}{enterTheatre()}}
+{\footnotesize\ttfamily void Military\+Commander\+::enter\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+executes the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_military_commander_ade59c82b3b5b429e7d0d53a352c03ec6}\label{class_military_commander_ade59c82b3b5b429e7d0d53a352c03ec6}} 
+\index{MilitaryCommander@{MilitaryCommander}!setStrategy@{setStrategy}}
+\index{setStrategy@{setStrategy}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{setStrategy()}{setStrategy()}}
+{\footnotesize\ttfamily void Military\+Commander\+::set\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army}{Army}} $\ast$}]{army,  }\item[{std\+::string}]{new\+Strategy }\end{DoxyParamCaption})}
+
+
+
+sets variables of the \mbox{\hyperlink{class_change_strategy}{Change\+Strategy}} \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Army$\ast$} & the army to be set in the \mbox{\hyperlink{class_change_strategy}{Change\+Strategy}} \mbox{\hyperlink{class_command}{Command}}. \\
+\hline
+{\em String} & the string storing the state of the \mbox{\hyperlink{class_command}{Command}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The second argument must be a string value to specify a specific \mbox{\hyperlink{class_army_strategy}{Army\+Strategy}} 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_military_commander_a061489dab4cb1f0255e901534daaa4a9}\label{class_military_commander_a061489dab4cb1f0255e901534daaa4a9}} 
+\index{MilitaryCommander@{MilitaryCommander}!setTheatreTarget@{setTheatreTarget}}
+\index{setTheatreTarget@{setTheatreTarget}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{setTheatreTarget()}{setTheatreTarget()}}
+{\footnotesize\ttfamily void Military\+Commander\+::set\+Theatre\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army}{Army}} $\ast$}]{army,  }\item[{\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$}]{theatre\+Target }\end{DoxyParamCaption})}
+
+
+
+sets variables of the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Army$\ast$} & the army to be set in the enter\+Theatre \mbox{\hyperlink{class_command}{Command}}. \\
+\hline
+{\em War\+Theatre$\ast$} & the war theatre the army is to fight in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The second argument must be an existing \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} in the current \mbox{\hyperlink{class_war}{War}} 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_military_commander_a3482b017f78a33581ee32fb3cad7e3e0}\label{class_military_commander_a3482b017f78a33581ee32fb3cad7e3e0}} 
+\index{MilitaryCommander@{MilitaryCommander}!setTransportTarget@{setTransportTarget}}
+\index{setTransportTarget@{setTransportTarget}!MilitaryCommander@{MilitaryCommander}}
+\subsubsection{\texorpdfstring{setTransportTarget()}{setTransportTarget()}}
+{\footnotesize\ttfamily void Military\+Commander\+::set\+Transport\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{transport\+Target,  }\item[{\mbox{\hyperlink{class_army}{Army}} $\ast$}]{army }\end{DoxyParamCaption})}
+
+
+
+sets variables of the attack\+Transport \mbox{\hyperlink{class_command}{Command}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Army$\ast$} & the army to be set in the attack\+Transport \mbox{\hyperlink{class_command}{Command}}. \\
+\hline
+{\em Transporter$\ast$} & the transport to be attacked. \\
+\hline
+\end{DoxyParams}

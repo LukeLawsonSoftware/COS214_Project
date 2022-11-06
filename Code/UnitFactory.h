@@ -3,6 +3,22 @@
 #include "ArmyComponent.h"
 #include <iostream>
 
+/**
+ * @class UnitFactory UnitFactory.h
+ * 
+ * This class is a necessity if a Country wants to create different units for its army.
+ * There are three types of factories based on which type of WarTheatre the country is fighting in:
+ * - AirFactory: This factory will create an AirUnit which includes:
+ * 					- Soldiers and Vehicles
+ * - LandFactory: This factory will create an LandUnit which includes:
+ * 					- Soldiers and Vehicles
+ * - SeaFactory: This factory will create an SeaUnit which includes:
+ * 					- Soldiers and Vehicles
+ * 
+ * @note The country will only create units for the specific type of war theatre it is in. In other words air units will only be created for an air-type war theatre etc. 
+ * 
+ */
+
 class UnitFactory
 {
 private:
@@ -18,6 +34,8 @@ public:
 	/// @param budget The starting budget of the factory
 	/// @param level The starting level of the factory (all factories start at level one)
 	/// @param type The type of factory
+	/// @warning The budget must be a interger value greater than zero.
+	/// @warning The level must also be an integer value greate than zero.
 	UnitFactory(double budget, int level, std::string type);
 
 	/// @brief Calls constructor of appropriate Vehicle (Air, Land or Sea), using level to determine powerRating. Implemented in child class
@@ -45,9 +63,11 @@ public:
 	/// @return The maximum amount we can spent on creating products
 	double getBudget();
 
-	/// @brief Function to set the new budgett of the factory after we upgraded the factory
+	/// @brief Function to set the new budget of the factory after we upgraded the factory
 	/// @author Reuben Jooste (u21457060)
 	/// @param newBudget The new budget of the factory
+	/// @warning The passed in value must be a value greater than zero.
+	/// @note This function only increases the current budget by the passed in value.
 	void setNewBudget(double newBudget);
 
 	/// @brief Upgrades the factory, which will increase the budget capacity and level.

@@ -1,0 +1,97 @@
+\hypertarget{class_ammo_supply}{}\section{Ammo\+Supply Class Reference}
+\label{class_ammo_supply}\index{AmmoSupply@{AmmoSupply}}
+
+
+{\ttfamily \#include $<$Ammo\+Supply.\+h$>$}
+
+Inheritance diagram for Ammo\+Supply\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ammo_supply}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ammo_supply_a7a39f58fb5ef1b4ea058f38bba9b2d3d}{Ammo\+Supply}} (int factory\+Level, int \mbox{\hyperlink{class_supply_a947a0ffbf0c36dc21d79c05f1a9f48a4}{quantity}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} class to specify the factory level and quantity that will be produced. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ammo_supply_a0bb29802e0d64f63d25c10d0cafa71f8}{get\+Ammo\+Bonus}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the ammo bonus member variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ammo_supply_a39af493b4b03a58a57b347ebf61c8f73}{set\+Ammo\+Bonus}} (int bonus)
+\begin{DoxyCompactList}\small\item\em Setter for the ammo bonus member variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is derived from the \mbox{\hyperlink{class_supply}{Supply}} class. \mbox{\hyperlink{class_this}{This}} is the actual product created by the \mbox{\hyperlink{class_ammo_factory}{Ammo\+Factory}}.
+\begin{DoxyItemize}
+\item Armies will use ammo supply objects to fight the war.
+\item If an army\textquotesingle{}s ammo supply runs out they are in great disadvantage. \begin{DoxyNote}{Note}
+The ammo supply has a variety of small and large ammo i.\+e. small bullets and heavy bullets. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ammo_supply_a7a39f58fb5ef1b4ea058f38bba9b2d3d}\label{class_ammo_supply_a7a39f58fb5ef1b4ea058f38bba9b2d3d}} 
+\index{AmmoSupply@{AmmoSupply}!AmmoSupply@{AmmoSupply}}
+\index{AmmoSupply@{AmmoSupply}!AmmoSupply@{AmmoSupply}}
+\subsubsection{\texorpdfstring{AmmoSupply()}{AmmoSupply()}}
+{\footnotesize\ttfamily Ammo\+Supply\+::\+Ammo\+Supply (\begin{DoxyParamCaption}\item[{int}]{factory\+Level,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} class to specify the factory level and quantity that will be produced. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em factory\+Level} & Specifies the currrent factory level in order to set the multiplier of the bonus. \\
+\hline
+{\em quantity} & Specifies the quentity of ammo supplies to be produced. \mbox{\hyperlink{class_this}{This}} amount will be used to calculate the ammo\+Bonus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The factory\+Level must be a value greater than the integer value 0. 
+
+The quantity must also be a value greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ammo_supply_a0bb29802e0d64f63d25c10d0cafa71f8}\label{class_ammo_supply_a0bb29802e0d64f63d25c10d0cafa71f8}} 
+\index{AmmoSupply@{AmmoSupply}!getAmmoBonus@{getAmmoBonus}}
+\index{getAmmoBonus@{getAmmoBonus}!AmmoSupply@{AmmoSupply}}
+\subsubsection{\texorpdfstring{getAmmoBonus()}{getAmmoBonus()}}
+{\footnotesize\ttfamily int Ammo\+Supply\+::get\+Ammo\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the ammo bonus member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+ammo bonus of type int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ammo_supply_a39af493b4b03a58a57b347ebf61c8f73}\label{class_ammo_supply_a39af493b4b03a58a57b347ebf61c8f73}} 
+\index{AmmoSupply@{AmmoSupply}!setAmmoBonus@{setAmmoBonus}}
+\index{setAmmoBonus@{setAmmoBonus}!AmmoSupply@{AmmoSupply}}
+\subsubsection{\texorpdfstring{setAmmoBonus()}{setAmmoBonus()}}
+{\footnotesize\ttfamily void Ammo\+Supply\+::set\+Ammo\+Bonus (\begin{DoxyParamCaption}\item[{int}]{bonus }\end{DoxyParamCaption})}
+
+
+
+Setter for the ammo bonus member variable. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em bonus} & Specfies to which value the ammo bonus will be set. \\
+\hline
+\end{DoxyParams}

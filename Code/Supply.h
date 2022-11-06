@@ -7,6 +7,7 @@ public:
 	/// @brief Class constructor for the Supply class that wil initialize the quantity member variable.
 	/// @author Arno Jooste (u21457451)
 	/// @param quantity The amount that is produced by the factory.
+	/// @warning The quantity must be a value greate than zero.
 	Supply(int quantity)
 	{
 		this->quantity = quantity;
