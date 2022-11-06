@@ -111,3 +111,4 @@ War Phase - State Diagram v1
 [Report on Design Patterns](https://docs.google.com/document/d/1usSzrIGBnv6CRmBcQjSZJM7rQqoF0H61nNNkRuSn2eI/edit?usp=share_link)
 
 ## Combined Report (Research Brief and Report on Patterns)
+[Complete Report](https://docs.google.com/document/d/1usSzrIGBnv6CRmBcQjSZJM7rQqoF0H61nNNkRuSn2eI/edit?usp=share_link)
