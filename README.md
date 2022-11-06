@@ -3,7 +3,7 @@
 
 ### Notice
 All links provided below are links to a Google Drive where the file is stored. The access policy is that such that anyone with the link can view the content.
-The following documents have also been included in the repository directly (in the "Report" directory).
+#### The following documents have also been included in the repository directly (in the "Report" directory).
 1) The latest and final version of the class diagram as both a PDF and a VPP project
 2) A minimal version of the final class diagram as a PDF, that does not include attributes or operations, only relationships between classes
 3) PDF versions of the latest versions of all the Activity, Sequence, State, Communication and Object diagrams
