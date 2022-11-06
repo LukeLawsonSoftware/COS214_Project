@@ -1,6 +1,12 @@
 # COS214_Project
 "War, war never changes"
 
+## How to compile and run
+1) Navigate to the folder named "Code" and open the terminal
+2) Simply type "make" and enter to compile the code
+3) Type "make run" and enter once compilation has completed to run the code (this can be performed any number of times after compilation)
+4) Follow the prompts in terminal and have fun!
+
 ## Functional Requirements
 #### Specifications of the system's functional requirements at a high level
 [Specification of Functional Requirements](https://docs.google.com/document/d/1FI2bZ3nHOD-c8ti6TUO3enkvk95sN-nQmOg7ApcTxNY/edit?usp=share_link)
