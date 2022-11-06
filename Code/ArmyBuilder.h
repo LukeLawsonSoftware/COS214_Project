@@ -13,7 +13,9 @@ class Supply;
  * @class ArmyBuilder ArmyBuilder.h
  * 
  * The ArmyBuilder class is a big component in the War since we use this class build each Country's army.
- * This class creates the different parts of the army such as the Battalions, Individuals (Soldiers or Vehicles) and the army's supplies (AmmoSupplies or MedicalSupplies).
+ * - This class creates the different parts of the army such as the Battalions, Individuals (Soldiers or Vehicles) and the army's supplies (AmmoSupplies or MedicalSupplies).
+ * - The builder makes use of the country's factories to build/train the different supplies/units.
+ * - If the country's factory do not have the budget to create even just a single unit/supply then the builder will not be able to build the army.
  * @warning Without this class the Country will not be able to raise an army.
  * @note This class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies.
 */

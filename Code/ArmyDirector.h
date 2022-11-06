@@ -7,7 +7,9 @@ class ArmyBuilder;
  * @class ArmyDirector ArmyDirector.h
  * 
  * The ArmyDirector class is a big component in the War since we use this class to command the ArmyBuilder to build the Country's army.
- * @warning If the member variable is NULL we cannot build the army.
+ * - Each country must have a director otherwise the country will not be able to build any armies.
+ * - The director receives the command "raise army" from the millitary commander and then only instructs the ArmyBuilder to build the army. 
+ * @warning If the member variable (builder) is NULL we cannot build the army.
 */
 
 class ArmyDirector

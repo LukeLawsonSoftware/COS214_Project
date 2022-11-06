@@ -21,7 +21,8 @@ class Supply;
  * @class Army Army.h
  * 
  * The Army class is a big component in the War since we use this class to keep track of the army's supplies (AmmoSuppply & MedicalSupply).
- * We also use this class to fight against other Countries. We are also able to attack the enemy's Transport which will disable the enemy's
+ * - We also use this class to fight against other Countries. 
+ * - We are also able to attack the enemy's Transport which will disable the enemy's
  * transport lines. Thus they won't be able to send supplies to their armies, giving our Army a slight advantage.
  * @note This class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies.
 */

@@ -4,6 +4,18 @@
 #include <cmath>
 #include <ctime>
 
+/**
+ * @class ArmyComponent ArmyComponent.h
+ * 
+ * This class is just an abstract class for the following classes:
+ * - Soldier
+ * - Vehicle
+ * - Battalion
+ * 
+ * We use this class to instantiate different components of an army such that those components can be used to help fight the on going war.
+ * 
+ */
+
 class ArmyComponent
 {
 
