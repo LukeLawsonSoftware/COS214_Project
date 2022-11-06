@@ -23,7 +23,7 @@ ArmyComponent *AirFactory::createVehicle()
 	else
 	{
 		// std::cout << "NOTE: AIR FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
-		totalSpent += costAfterProduction;
+		totalSpent += cost;
 	}
 	return new AirVehicle(determineActualLevel());
 }
@@ -45,7 +45,7 @@ ArmyComponent *AirFactory::createSoldier()
 	else
 	{
 		// std::cout << "NOTE: AIR FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
-		totalSpent += costAfterProduction;
+		totalSpent += cost;
 	}
 	return new AirUnit(determineActualLevel());
 }

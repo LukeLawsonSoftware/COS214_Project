@@ -541,3 +541,15 @@ void War::stopWar()
 	std::cout << "The war has concluded." << std::endl;
 	std::cout << "\033[;0m";
 }
+
+void War::selectConfiguration()
+{
+	// 1 - allies vs axis powers
+
+	// 2 - lopsided battle between...
+
+	// 3 - tightly contested real battle
+
+	// 4 - own configuration
+	setUpCountries();
+}

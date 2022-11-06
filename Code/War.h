@@ -71,6 +71,8 @@ public:
 	/// @brief Ends the war.
 	/// @author Thomas Blendulf (u21446131)
 	void stopWar();
+
+	void selectConfiguration();
 };
 
 #endif

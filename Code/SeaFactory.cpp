@@ -23,7 +23,7 @@ ArmyComponent *SeaFactory::createVehicle()
 	else
 	{
 		//	std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
-		totalSpent += costAfterProduction;
+		totalSpent += cost;
 	}
 	return new SeaVehicle(determineActualLevel());
 }
@@ -45,7 +45,7 @@ ArmyComponent *SeaFactory::createSoldier()
 	else
 	{
 		//	std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
-		totalSpent += costAfterProduction;
+		totalSpent += cost;
 	}
 	return new SeaUnit(determineActualLevel());
 }

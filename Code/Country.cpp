@@ -42,9 +42,9 @@ Country::Country(std::string ecoState, std::string name)
 	{
 		this->gdp = (int)(rand() % (10000000 - 8000000 + 1) + 8000000);
 		this->ecoState = new Rich();
-		this->unitFactories->push_back(new LandFactory(1000000000, 3, "Land"));
-		this->unitFactories->push_back(new AirFactory(1000000000, 3, "Air"));
-		this->unitFactories->push_back(new SeaFactory(1000000000, 3, "Sea"));
+		this->unitFactories->push_back(new LandFactory(500000, 3, "Land"));
+		this->unitFactories->push_back(new AirFactory(500000, 3, "Air"));
+		this->unitFactories->push_back(new SeaFactory(500000, 3, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(500000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(500000, "Medical"));
@@ -55,12 +55,12 @@ Country::Country(std::string ecoState, std::string name)
 		this->gdp = (int)(rand() % (1000000 - 500000 + 1) + 500000);
 		this->ecoState = new Poor();
 
-		this->unitFactories->push_back(new LandFactory(30000000, 1, "Land"));
-		this->unitFactories->push_back(new AirFactory(30000000, 1, "Air"));
-		this->unitFactories->push_back(new SeaFactory(30000000, 1, "Sea"));
+		this->unitFactories->push_back(new LandFactory(30000, 1, "Land"));
+		this->unitFactories->push_back(new AirFactory(30000, 1, "Air"));
+		this->unitFactories->push_back(new SeaFactory(30000, 1, "Sea"));
 
-		this->supplyFactories->push_back(new AmmoFactory(100000, "Ammo"));
-		this->supplyFactories->push_back(new MedicalFactory(100000, "Medical"));
+		this->supplyFactories->push_back(new AmmoFactory(30000, "Ammo"));
+		this->supplyFactories->push_back(new MedicalFactory(30000, "Medical"));
 		this->army = NULL;
 	}
 	else
@@ -68,9 +68,9 @@ Country::Country(std::string ecoState, std::string name)
 		this->gdp = (int)(rand() % (5000000 - 3000000 + 1) + 3000000);
 		this->ecoState = new Average();
 
-		this->unitFactories->push_back(new LandFactory(800000000, 2, "Land"));
-		this->unitFactories->push_back(new AirFactory(800000000, 2, "Air"));
-		this->unitFactories->push_back(new SeaFactory(800000000, 2, "Sea"));
+		this->unitFactories->push_back(new LandFactory(250000, 2, "Land"));
+		this->unitFactories->push_back(new AirFactory(250000, 2, "Air"));
+		this->unitFactories->push_back(new SeaFactory(250000, 2, "Sea"));
 
 		this->supplyFactories->push_back(new AmmoFactory(250000, "Ammo"));
 		this->supplyFactories->push_back(new MedicalFactory(250000, "Medical"));
