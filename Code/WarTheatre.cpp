@@ -88,6 +88,47 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 {
 	std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ " + name + " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
 
+	if (armies[0] != NULL)
+	{
+		for (int i = 0; i < Country::alliance1.size(); i++)
+		{
+			if (armies[0]->getName() == Country::alliance1.at(i)->getName() && Country::alliance1.at(i)->isSurrendered())
+			{
+				armies[0] = NULL;
+				break;
+			}
+		}
+	}
+
+	if (armies[1] != NULL)
+	{
+		for (int i = 0; i < Country::alliance2.size(); i++)
+		{
+			if (armies[1]->getName() == Country::alliance2.at(i)->getName() && Country::alliance2.at(i)->isSurrendered())
+			{
+				armies[1] = NULL;
+				break;
+			}
+		}
+	}
+
+	if (armies[0] != NULL && armies[1] != NULL)
+	{
+		contentionState = 3;
+	}
+	else if (armies[0] != NULL && armies[1] == NULL)
+	{
+		contentionState = 1;
+	}
+	else if (armies[0] == NULL && armies[1] != NULL)
+	{
+		contentionState = 2;
+	}
+	else
+	{
+		contentionState = 0;
+	}
+
 	// Make sure there are two armies in this theatre:
 	if (contentionState == 3) // 2 Armies are present - conflict is possible
 	{
@@ -293,7 +334,11 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		// std::cout << "here" << std::endl;
 		int numCivilians = this->civilians->size();
 		// std::cout << "here" << std::endl;
-		int numCiviliansToDie = 28457 % numCivilians;
+		int numCiviliansToDie = 0;
+		if (numCivilians > 0)
+		{
+			numCiviliansToDie = 28457 % numCivilians;
+		}
 
 		std::cout << "\033[;35m";
 
@@ -319,7 +364,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		//	std::cout << "here" << std::endl;
 		int numMedics = this->medics->size();
 		//	std::cout << numMedics << std::endl;
-		int numMedicsToDie = 28457 % numMedics;
+
+		int numMedicsToDie = 0;
+		if (numMedics > 0)
+		{
+			numMedicsToDie = 28457 % numMedics;
+		}
+		// int numMedicsToDie = 28457 % numMedics;
 		//	std::cout << "here" << std::endl;
 
 		std::cout << numMedicsToDie << " third-party medics have left the battle field..." << std::endl;

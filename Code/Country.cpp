@@ -580,6 +580,7 @@ void Country::sendSupplies()
 	}
 	else
 	{
+		std::cout << name << " successfully sends ammo supplies to its army!" << std::endl;
 		ammoTransportLine->notify(this);
 	}
 
@@ -589,6 +590,7 @@ void Country::sendSupplies()
 	}
 	else
 	{
+		std::cout << name << " successfully sends medical supplies to its army!" << std::endl;
 		medicalTransportLine->notify(this);
 	}
 	std::cout << "\033[0m";

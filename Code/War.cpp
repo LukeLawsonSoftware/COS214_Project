@@ -100,30 +100,31 @@ void War::startWarSim()
 	// setUpCountries();
 	int seed = 146863583;
 
-	// Hardcoded setup for debugging
-	Country *russia = new Country("Rich", "Russia");
-	Country *china = new Country("Rich", "China");
-	Country *india = new Country("Average", "India");
-	Country *rsa = new Country("Poor", "South Africa");
-	Country::alliance1.push_back(russia);
-	Country::alliance1.push_back(china);
-	Country::alliance1.push_back(india);
-	Country::alliance1.push_back(rsa);
+	/*
+		// Hardcoded setup for debugging
+		Country *russia = new Country("Rich", "Russia");
+		Country *china = new Country("Rich", "China");
+		Country *india = new Country("Average", "India");
+		Country *rsa = new Country("Poor", "South Africa");
+		Country::alliance1.push_back(russia);
+		Country::alliance1.push_back(china);
+		Country::alliance1.push_back(india);
+		Country::alliance1.push_back(rsa);
 
-	Country *uk = new Country("Rich", "The UK");
-	Country *ukraine = new Country("Average", "Ukraine");
-	Country *germany = new Country("Average", "Germany");
-	Country *spain = new Country("Average", "Spain");
-	Country::alliance2.push_back(uk);
-	Country::alliance2.push_back(ukraine);
-	Country::alliance2.push_back(germany);
-	Country::alliance2.push_back(spain);
+		Country *uk = new Country("Rich", "The UK");
+		Country *ukraine = new Country("Average", "Ukraine");
+		Country *germany = new Country("Average", "Germany");
+		Country *spain = new Country("Average", "Spain");
+		Country::alliance2.push_back(uk);
+		Country::alliance2.push_back(ukraine);
+		Country::alliance2.push_back(germany);
+		Country::alliance2.push_back(spain);
 
-	Country *france = new Country("Poor", "France");
-	Country *america = new Country("Rich", "USA");
-	Country::neutral.push_back(france);
-	Country::neutral.push_back(america);
-
+		Country *france = new Country("Poor", "France");
+		Country *america = new Country("Rich", "USA");
+		Country::neutral.push_back(france);
+		Country::neutral.push_back(america);
+	*/
 	while (phase->peaceChance != 0)
 	{
 		static int seeder = 1298;
@@ -208,7 +209,13 @@ void War::startWarSim()
 		//	{
 		//		isActive = false;
 		//	}
-
+		if (alliance1AllSurrendered && alliance2AllSurrendered)
+		{
+			std::cout << "\033[1;37m";
+			std::cout << "Both alliances have surrendered! The war is effectively a tie and peace negotiations are made" << std::endl;
+			std::cout << "\033[;0m";
+			break;
+		}
 		if (alliance1AllSurrendered)
 		{
 			std::cout << "\033[1;37m";
@@ -322,29 +329,31 @@ void War::startWarGame()
 	int seed = 62857819;
 	// setUpCountries();
 
-	// Hardcoded setup for debugging
-	Country *russia = new Country("Rich", "Russia");
-	Country *china = new Country("Rich", "China");
-	Country *india = new Country("Average", "India");
-	Country *rsa = new Country("Poor", "South Africa");
-	Country::alliance1.push_back(russia);
-	Country::alliance1.push_back(china);
-	Country::alliance1.push_back(india);
-	Country::alliance1.push_back(rsa);
+	/*
+		// Hardcoded setup for debugging
+		Country *russia = new Country("Rich", "Russia");
+		Country *china = new Country("Rich", "China");
+		Country *india = new Country("Average", "India");
+		Country *rsa = new Country("Poor", "South Africa");
+		Country::alliance1.push_back(russia);
+		Country::alliance1.push_back(china);
+		Country::alliance1.push_back(india);
+		Country::alliance1.push_back(rsa);
 
-	Country *uk = new Country("Rich", "The UK");
-	Country *ukraine = new Country("Average", "Ukraine");
-	Country *germany = new Country("Average", "Germany");
-	Country *spain = new Country("Average", "Spain");
-	Country::alliance2.push_back(uk);
-	Country::alliance2.push_back(ukraine);
-	Country::alliance2.push_back(germany);
-	Country::alliance2.push_back(spain);
+		Country *uk = new Country("Rich", "The UK");
+		Country *ukraine = new Country("Average", "Ukraine");
+		Country *germany = new Country("Average", "Germany");
+		Country *spain = new Country("Average", "Spain");
+		Country::alliance2.push_back(uk);
+		Country::alliance2.push_back(ukraine);
+		Country::alliance2.push_back(germany);
+		Country::alliance2.push_back(spain);
 
-	Country *france = new Country("Poor", "France");
-	Country *america = new Country("Rich", "USA");
-	Country::neutral.push_back(france);
-	Country::neutral.push_back(america);
+		Country *france = new Country("Poor", "France");
+		Country *america = new Country("Rich", "USA");
+		Country::neutral.push_back(france);
+		Country::neutral.push_back(america);
+	*/
 
 	while (phase->peaceChance != 0)
 	{
@@ -487,6 +496,14 @@ void War::startWarGame()
 		//	isActive = false;
 		//}
 
+		if (alliance1AllSurrendered && alliance2AllSurrendered)
+		{
+			std::cout << "\033[1;37m";
+			std::cout << "Both alliances have surrendered! The war is effectively a tie and peace negotiations are made" << std::endl;
+			std::cout << "\033[;0m";
+			break;
+		}
+
 		if (alliance1AllSurrendered)
 		{
 			std::cout << "\033[1;37m";
@@ -610,12 +627,78 @@ void War::stopWar()
 
 void War::selectConfiguration()
 {
-	// 1 - allies vs axis powers
+	std::cout << "1. PRECONFIG: Allies (alliance 1) vs Axis Powers (alliance 2) [WW2]" << std::endl;
+	std::cout << "2. PRECONFIG: BRICS (alliance 1) vs NAFTA (alliance 2) [Hypothetical]" << std::endl;
+	std::cout << "3. CUSTOM: Configure your own war between two alliances!" << std::endl;
 
-	// 2 - lopsided battle between...
+	std::string choice;
+	std::getline(std::cin, choice);
+	int option = std::stoi(choice);
 
-	// 3 - tightly contested real battle (BRICS vs some other trade union)
+	if (option == 1)
+	{
+		std::cout << "Alliance 1 [Allies]: Great Britain, France, Russia" << std::endl;
+		std::cout << "Alliance 2 [Axis Powers]: Germany, Italy, Japan" << std::endl;
+		std::cout << "Initially Neutral: USA, South Africa" << std::endl;
 
-	// 4 - own configuration
-	setUpCountries();
+		Country *uk = new Country("Rich", "Great Britain");
+		Country *russia = new Country("Rich", "Russia");
+		Country *france = new Country("Poor", "France");
+
+		Country *germany = new Country("Rich", "Germany");
+		Country *italy = new Country("Average", "Italy");
+		Country *japan = new Country("Average", "Japan");
+
+		Country::alliance1.push_back(uk);
+		Country::alliance1.push_back(russia);
+		Country::alliance1.push_back(france);
+
+		Country::alliance2.push_back(germany);
+		Country::alliance2.push_back(italy);
+		Country::alliance2.push_back(japan);
+
+		Country *rsa = new Country("Poor", "South Africa");
+		Country *america = new Country("Rich", "USA");
+
+		Country::neutral.push_back(rsa);
+		Country::neutral.push_back(america);
+	}
+	else if (option == 2)
+	{
+		std::cout << "Alliance 1 [BRICS]: Brazil, Russia, India, China, South Africa" << std::endl;
+		std::cout << "Alliance 2 [NAFTA]: USA, Canada, Mexico" << std::endl;
+		std::cout << "Initially Neutral: The UK, Germany, The Netherlands" << std::endl;
+
+		Country *brazil = new Country("Average", "Brazil");
+		Country *russia = new Country("Rich", "Russia");
+		Country *india = new Country("Rich", "India");
+		Country *china = new Country("Rich", "China");
+		Country *rsa = new Country("Poor", "South Africa");
+
+		Country *usa = new Country("Rich", "USA");
+		Country *canada = new Country("Average", "Canada");
+		Country *mexico = new Country("Poor", "Mexico");
+
+		Country::alliance1.push_back(brazil);
+		Country::alliance1.push_back(russia);
+		Country::alliance1.push_back(india);
+		Country::alliance1.push_back(china);
+		Country::alliance1.push_back(rsa);
+
+		Country::alliance2.push_back(usa);
+		Country::alliance2.push_back(canada);
+		Country::alliance2.push_back(mexico);
+
+		Country *uk = new Country("Rich", "The UK");
+		Country *germany = new Country("Rich", "Germany");
+		Country *nether = new Country("Average", "The Netherlands");
+
+		Country::neutral.push_back(uk);
+		Country::neutral.push_back(germany);
+		Country::neutral.push_back(nether);
+	}
+	else
+	{
+		setUpCountries();
+	}
 }
