@@ -6,6 +6,7 @@ include_directories(${GTEST_INCLUDE_DIRS})
  
 # Link runTests with what we want to test and the GTest and pthread library
 add_executable(runTests unittests.cpp ArmyComponent_unittests.cpp Transport_unittests.cpp 
+EconomicState_unittests.cpp NonCombatEntity_unittests.cpp WarTheatre_unittests.cpp
 ../Code/Battalion.cpp ../Code/AirUnit.cpp ../Code/AirVehicle.cpp 
 ../Code/LandUnit.cpp ../Code/LandVehicle.cpp ../Code/SeaUnit.cpp 
 ../Code/SeaVehicle.cpp ../Code/Soldier.cpp ../Code/Vehicle.cpp 
