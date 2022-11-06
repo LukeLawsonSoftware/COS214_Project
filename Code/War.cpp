@@ -382,57 +382,97 @@ void War::startWarGame()
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
+				std::cout << "\033[;37m";
 				std::cout << "What action would you like " << Country::alliance1.at(i)->getName() << " to perform?" << std::endl;
-				std::cout << "1. Form Alliance.\t\t2. Raise an army." << std::endl;
+				std::cout << "1. Form Alliance.\t\t\t\t2. Raise an army." << std::endl;
 				//	std::cout << "2. Raise an army." << std::endl;
-				std::cout << "3. Upgrade a Unit Factory.\t\t4. Upgrade a Supply Factory." << std::endl;
+				std::cout << "3. Upgrade a Unit Factory.\t\t\t\t4. Upgrade a Supply Factory." << std::endl;
 				//	std::cout << "4. Upgrade a Supply Factory." << std::endl;
-				std::cout << "5. Enter the Army into the war theatre.\t\t6. Change the army strategy." << std::endl;
+				std::cout << "5. Enter the Army into the war theatre.\t\t\t\t6. Change the army strategy." << std::endl;
 				//	std::cout << "6. Change the army strategy." << std::endl;
-				std::cout << "7. Attack a transport line.\t\t8. Surrender." << std::endl;
+				std::cout << "7. Attack a transport line.\t\t\t\t8. Surrender." << std::endl;
 				//	std::cout << "8. Surrender." << std::endl;
-				std::cout << "9. Send supplies.\t\t10. Do Nothing." << std::endl;
+				std::cout << "9. Send supplies.\t\t\t\t10. Do Nothing." << std::endl;
 				//	std::cout << "10. Do Nothing." << std::endl;
 				std::cout << "(Please enter the corresponding number):";
+				std::cout << "\033[;0m";
 				std::string inLine;
-				std::getline(std::cin, inLine);
-				std::cout << std::endl;
+				//	std::getline(std::cin, inLine);
+				std::cin >> inLine;
+				// std::cout << std::endl;
 				int decision = std::stoi(inLine);
 				switch (decision)
 				{
 				case 1:
-					Country::alliance1.at(i)->formAlliance();
+					Country::alliance1.at(i)->formAlliance(); // no checking required
 					break;
 				case 2:
-					Country::alliance1.at(i)->raiseArmy();
+					if (Country::alliance1.at(i)->getArmy() == NULL)
+					{
+						Country::alliance1.at(i)->raiseArmy(); // check dont already have one
+					}
+					else
+					{
+						std::cout << "Country already has an army under its control" << std::endl;
+					}
+
 					break;
 
 				case 3:
-					Country::alliance1.at(i)->upgradeUnitFactory();
+					Country::alliance1.at(i)->upgradeUnitFactory(); // no checking required
 					break;
 
 				case 4:
-					Country::alliance1.at(i)->upgradeSupplyFactory();
+					Country::alliance1.at(i)->upgradeSupplyFactory(); // no checking required
 					break;
 
 				case 5:
-					Country::alliance1.at(i)->enterArmyIntoTheatre(this);
+					if (Country::alliance1.at(i)->getArmy() != NULL)
+					{
+						Country::alliance1.at(i)->enterArmyIntoTheatre(this); // requires army
+					}
+					else
+					{
+						std::cout << "Country does not have an army under its control" << std::endl;
+					}
+
 					break;
 
 				case 6:
-					Country::alliance1.at(i)->changeArmyStrategy();
+					if (Country::alliance1.at(i)->getArmy() != NULL)
+					{
+						Country::alliance1.at(i)->changeArmyStrategy(); // requires army
+					}
+					else
+					{
+						std::cout << "Country does not have an army under its control" << std::endl;
+					}
 					break;
 
 				case 7:
-					Country::alliance1.at(i)->attackTransport();
+					if (Country::alliance1.at(i)->getArmy() != NULL)
+					{
+						Country::alliance1.at(i)->attackTransport(); // requires army
+					}
+					else
+					{
+						std::cout << "Country does not have an army under its control to attack a transport" << std::endl;
+					}
 					break;
 
 				case 8:
-					Country::alliance1.at(i)->surrender();
+					Country::alliance1.at(i)->surrender(); // no checking required
 					break;
 
 				case 9:
-					Country::alliance1.at(i)->sendSupplies();
+					if (Country::alliance1.at(i)->getArmy() != NULL)
+					{
+						Country::alliance1.at(i)->sendSupplies(); // requires army
+					}
+					else
+					{
+						std::cout << "Country does not have an army to send supplies to" << std::endl;
+					}
 					break;
 
 				case 10:
