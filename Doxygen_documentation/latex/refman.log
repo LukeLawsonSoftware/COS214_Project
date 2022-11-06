@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.6)  6 NOV 2022 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.6)  6 NOV 2022 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,7 +837,7 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 149.
+(Font)              scaled to size 10.79993pt on input line 151.
  [1
 
 
@@ -851,8 +851,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 157.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 157.
- [1] [2] [3] [4] [5] [6] [7] [8] [9]
-[10]
+ [1] [2] [3]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 157.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [4] [5] [6] [7]
+[8] [9] [10] [11] [12] [13] [14
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 159.
 
 Chapter 1.
@@ -873,62 +883,23 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
+ [1
 
-
-LaTeX Warning: Reference `class_econommic_state' on page 1 undefined on input l
-ine 45.
-
-[1
-
-
-]
-
-LaTeX Warning: Reference `class_this' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Reference `class_early_peace' on page 2 undefined on input line 
-81.
-
-
-LaTeX Warning: Reference `class_late_peace' on page 2 undefined on input line 8
-8.
-
-) [2]
+]) [2]
 Chapter 2.
-(./annotated.tex
+(./annotated.tex [3
 
-LaTeX Warning: Reference `class_early_peace' on page 3 undefined on input line 
-27.
-
-
-LaTeX Warning: Reference `class_econommic_state' on page 3 undefined on input l
-ine 31.
-
-
-LaTeX Warning: Reference `class_late_peace' on page 3 undefined on input line 3
-8.
-
-[3
-
-]
-
-LaTeX Warning: Reference `class_this' on page 4 undefined on input line 60.
-
-) [4]
+]) [4]
 Chapter 3.
 (./class_air_factory.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 5.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Package epstopdf Info: Source file: <class_air_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_air_factory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5000 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_factory-eps-conv
 erted-to.pdf class_air_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -936,10 +907,10 @@ runsystem(repstopdf --outfile=class_air_factory-eps-converted-to.pdf class_air_
 factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_air_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:25
+(epstopdf)                    date: 2022-11-06 20:01:12
 (epstopdf)                    size: 5000 bytes.
  <./class_air_factory-eps-converted-to.pdf>
-<class_air_factory-eps-converted-to.pdf, id=2301, 501.875pt x 472.3547pt>
+<class_air_factory-eps-converted-to.pdf, id=2896, 501.875pt x 472.3547pt>
 File: class_air_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_air_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_air_factory-eps-converted-to.pdf  used on input 
@@ -951,7 +922,8 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 13.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 6.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
@@ -973,8 +945,6 @@ Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
 
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 38.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 38.
 [5
@@ -1021,9 +991,11 @@ Underfull \hbox (badness 10000) detected at line 101
 
 ) (./class_air_terrain.tex
 Package epstopdf Info: Source file: <class_air_terrain.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3979 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_air_terrain-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 4906 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_terrain-eps-conv
 erted-to.pdf class_air_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1031,10 +1003,10 @@ runsystem(repstopdf --outfile=class_air_terrain-eps-converted-to.pdf class_air_
 terrain.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_air_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:25
+(epstopdf)                    date: 2022-11-06 20:01:13
 (epstopdf)                    size: 4906 bytes.
  <./class_air_terrain-eps-converted-to.pdf>
-<class_air_terrain-eps-converted-to.pdf, id=2372, 501.875pt x 466.8642pt>
+<class_air_terrain-eps-converted-to.pdf, id=2965, 501.875pt x 466.8642pt>
 File: class_air_terrain-eps-converted-to.pdf Graphic file (type pdf)
 <use class_air_terrain-eps-converted-to.pdf>
 Package pdftex.def Info: class_air_terrain-eps-converted-to.pdf  used on input 
@@ -1052,9 +1024,11 @@ Underfull \hbox (badness 10000) detected at line 39
 
 ) (./class_air_unit.tex
 Package epstopdf Info: Source file: <class_air_unit.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4090 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_air_unit-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5590 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_unit-eps-convert
 ed-to.pdf class_air_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1062,10 +1036,10 @@ runsystem(repstopdf --outfile=class_air_unit-eps-converted-to.pdf class_air_uni
 t.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_air_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:26
+(epstopdf)                    date: 2022-11-06 20:01:13
 (epstopdf)                    size: 5590 bytes.
  <./class_air_unit-eps-converted-to.pdf>
-<class_air_unit-eps-converted-to.pdf, id=2399, 501.875pt x 532.9611pt>
+<class_air_unit-eps-converted-to.pdf, id=2989, 501.875pt x 532.9611pt>
 File: class_air_unit-eps-converted-to.pdf Graphic file (type pdf)
 <use class_air_unit-eps-converted-to.pdf>
 Package pdftex.def Info: class_air_unit-eps-converted-to.pdf  used on input lin
@@ -1204,9 +1178,11 @@ Underfull \hbox (badness 10000) detected at line 209
 
 ) (./class_air_vehicle.tex
 Package epstopdf Info: Source file: <class_air_vehicle.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4096 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3893 bytes
 (epstopdf)             Output file: <class_air_vehicle-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5483 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_vehicle-eps-conv
 erted-to.pdf class_air_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1214,10 +1190,10 @@ runsystem(repstopdf --outfile=class_air_vehicle-eps-converted-to.pdf class_air_
 vehicle.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_air_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:26
+(epstopdf)                    date: 2022-11-06 20:01:14
 (epstopdf)                    size: 5483 bytes.
  <./class_air_vehicle-eps-converted-to.pdf>
-<class_air_vehicle-eps-converted-to.pdf, id=2481, 501.875pt x 532.9611pt>
+<class_air_vehicle-eps-converted-to.pdf, id=3064, 501.875pt x 532.9611pt>
 File: class_air_vehicle-eps-converted-to.pdf Graphic file (type pdf)
 <use class_air_vehicle-eps-converted-to.pdf>
 Package pdftex.def Info: class_air_vehicle-eps-converted-to.pdf  used on input 
@@ -1335,9 +1311,11 @@ Underfull \hbox (badness 10000) detected at line 200
 
 ) (./class_ammo_factory.tex
 Package epstopdf Info: Source file: <class_ammo_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3987 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3790 bytes
 (epstopdf)             Output file: <class_ammo_factory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5315 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_factory-eps-con
 verted-to.pdf class_ammo_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1345,10 +1323,10 @@ runsystem(repstopdf --outfile=class_ammo_factory-eps-converted-to.pdf class_amm
 o_factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_ammo_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:27
+(epstopdf)                    date: 2022-11-06 20:01:14
 (epstopdf)                    size: 5315 bytes.
  <./class_ammo_factory-eps-converted-to.pdf>
-<class_ammo_factory-eps-converted-to.pdf, id=2563, 501.875pt x 389.80632pt>
+<class_ammo_factory-eps-converted-to.pdf, id=3138, 501.875pt x 389.80632pt>
 File: class_ammo_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_ammo_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_ammo_factory-eps-converted-to.pdf  used on input
@@ -1396,9 +1374,11 @@ Underfull \hbox (badness 10000) detected at line 82
 
 ) (./class_ammo_supply.tex
 Package epstopdf Info: Source file: <class_ammo_supply.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3971 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_ammo_supply-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 4777 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_supply-eps-conv
 erted-to.pdf class_ammo_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1406,10 +1386,10 @@ runsystem(repstopdf --outfile=class_ammo_supply-eps-converted-to.pdf class_ammo
 _supply.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_ammo_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:27
-(epstopdf)                    size: 4777 bytes.
+(epstopdf)                    date: 2022-11-06 20:01:15
+(epstopdf)                    size: 4775 bytes.
  <./class_ammo_supply-eps-converted-to.pdf>
-<class_ammo_supply-eps-converted-to.pdf, id=2607, 501.875pt x 431.7229pt>
+<class_ammo_supply-eps-converted-to.pdf, id=3180, 501.875pt x 431.7229pt>
 File: class_ammo_supply-eps-converted-to.pdf Graphic file (type pdf)
 <use class_ammo_supply-eps-converted-to.pdf>
 Package pdftex.def Info: class_ammo_supply-eps-converted-to.pdf  used on input 
@@ -1447,10 +1427,12 @@ Underfull \hbox (badness 10000) detected at line 90
 
 ) (./class_ammo_transporter.tex
 Package epstopdf Info: Source file: <class_ammo_transporter.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3991 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3794 bytes
 (epstopdf)             Output file: <class_ammo_transporter-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5080 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_transporter-eps
 -converted-to.pdf class_ammo_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1459,10 +1441,10 @@ _ammo_transporter.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_ammo_transporter-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2022-11-06 16:15:28
+(epstopdf)                    date: 2022-11-06 20:01:15
 (epstopdf)                    size: 5080 bytes.
  <./class_ammo_transporter-eps-converted-to.pdf>
-<class_ammo_transporter-eps-converted-to.pdf, id=2648, 501.875pt x 334.57997pt>
+<class_ammo_transporter-eps-converted-to.pdf, id=3217, 501.875pt x 334.57997pt>
 
 File: class_ammo_transporter-eps-converted-to.pdf Graphic file (type pdf)
 <use class_ammo_transporter-eps-converted-to.pdf>
@@ -1496,9 +1478,11 @@ Underfull \hbox (badness 10000) detected at line 83
 
 ) (./class_army.tex
 Package epstopdf Info: Source file: <class_army.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3971 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_army-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5121 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army-eps-converted-t
 o.pdf class_army.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1506,10 +1490,10 @@ runsystem(repstopdf --outfile=class_army-eps-converted-to.pdf class_army.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_army-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:28
+(epstopdf)                    date: 2022-11-06 20:01:15
 (epstopdf)                    size: 5121 bytes.
  <./class_army-eps-converted-to.pdf>
-<class_army-eps-converted-to.pdf, id=2692, 501.875pt x 405.55516pt>
+<class_army-eps-converted-to.pdf, id=3259, 501.875pt x 405.55516pt>
 File: class_army-eps-converted-to.pdf Graphic file (type pdf)
 <use class_army-eps-converted-to.pdf>
 Package pdftex.def Info: class_army-eps-converted-to.pdf  used on input line 10
@@ -1524,10 +1508,6 @@ Underfull \hbox (badness 10000) detected at line 47
 Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.9 on input line 77.
 
 
 Underfull \hbox (badness 10000) detected at line 78
@@ -1545,17 +1525,9 @@ Underfull \hbox (badness 10000) detected at line 97
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.10 on input line 104.
-
-
 Underfull \hbox (badness 10000) detected at line 115
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.11 on input line 122.
 
 
 Underfull \hbox (badness 10000) detected at line 133
@@ -1568,17 +1540,9 @@ Underfull \hbox (badness 10000) detected at line 146
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.12 on input line 153.
-
-
 Underfull \hbox (badness 10000) detected at line 164
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.13 on input line 171.
 
 
 Underfull \hbox (badness 10000) detected at line 182
@@ -1626,11 +1590,6 @@ Underfull \hbox (badness 10000) detected at line 246
  []
 
 [26]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.14 on input line 253.
-
-
 Underfull \hbox (badness 10000) detected at line 254
 [][][]
  []
@@ -1639,10 +1598,6 @@ Underfull \hbox (badness 10000) detected at line 254
 Underfull \hbox (badness 10000) detected at line 267
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.15 on input line 274.
 
 ) (./class_army_builder.tex [27]
 Underfull \hbox (badness 10000) detected at line 41
@@ -1660,11 +1615,6 @@ Underfull \hbox (badness 10000) detected at line 61
  []
 
 [28]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.16 on input line 72.
-
-
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
@@ -1795,11 +1745,6 @@ Underfull \hbox (badness 10000) detected at line 243
  []
 
 [32]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.17 on input line 250.
-
-
 Underfull \hbox (badness 10000) detected at line 251
 [][][]
  []
@@ -1808,10 +1753,6 @@ Underfull \hbox (badness 10000) detected at line 251
 Underfull \hbox (badness 10000) detected at line 266
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.18 on input line 273.
 
 
 Underfull \hbox (badness 10000) detected at line 274
@@ -1824,21 +1765,18 @@ Underfull \hbox (badness 10000) detected at line 289
  []
 
 [33]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.19 on input line 296.
-
-
 Underfull \hbox (badness 10000) detected at line 297
 [][][]
  []
 
 ) (./class_army_component.tex
 Package epstopdf Info: Source file: <class_army_component.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4820 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 4581 bytes
 (epstopdf)             Output file: <class_army_component-eps-converted-to.pdf>
 
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6654 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army_component-eps-c
 onverted-to.pdf class_army_component.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1847,10 +1785,10 @@ rmy_component.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_army_component-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:15:29
+(epstopdf)                    date: 2022-11-06 20:01:16
 (epstopdf)                    size: 6654 bytes.
  <./class_army_component-eps-converted-to.pdf>
-<class_army_component-eps-converted-to.pdf, id=2991, 501.875pt x 88.83188pt>
+<class_army_component-eps-converted-to.pdf, id=3531, 501.875pt x 88.83188pt>
 File: class_army_component-eps-converted-to.pdf Graphic file (type pdf)
 <use class_army_component-eps-converted-to.pdf>
 Package pdftex.def Info: class_army_component-eps-converted-to.pdf  used on inp
@@ -1861,10 +1799,6 @@ ut line 10.
 Underfull \hbox (badness 10000) detected at line 53
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.20 on input line 60.
 
 
 Underfull \hbox (badness 10000) detected at line 75
@@ -1937,11 +1871,6 @@ Underfull \hbox (badness 10000) detected at line 37
  []
 
 [37]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.21 on input line 44.
-
-
 Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
@@ -1953,9 +1882,11 @@ Underfull \hbox (badness 10000) detected at line 61
 
 ) (./class_army_strategy.tex
 Package epstopdf Info: Source file: <class_army_strategy.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4183 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3976 bytes
 (epstopdf)             Output file: <class_army_strategy-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6205 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army_strategy-eps-co
 nverted-to.pdf class_army_strategy.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1963,10 +1894,10 @@ runsystem(repstopdf --outfile=class_army_strategy-eps-converted-to.pdf class_ar
 my_strategy.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_army_strategy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:29
+(epstopdf)                    date: 2022-11-06 20:01:16
 (epstopdf)                    size: 6205 bytes.
  <./class_army_strategy-eps-converted-to.pdf>
-<class_army_strategy-eps-converted-to.pdf, id=3185, 501.875pt x 137.97548pt>
+<class_army_strategy-eps-converted-to.pdf, id=3717, 501.875pt x 137.97548pt>
 File: class_army_strategy-eps-converted-to.pdf Graphic file (type pdf)
 <use class_army_strategy-eps-converted-to.pdf>
 Package pdftex.def Info: class_army_strategy-eps-converted-to.pdf  used on inpu
@@ -1978,16 +1909,14 @@ Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.22 on input line 43.
-
 ) (./class_attack_transport.tex
 Package epstopdf Info: Source file: <class_attack_transport.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3983 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_attack_transport-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5443 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_attack_transport-eps
 -converted-to.pdf class_attack_transport.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -1996,10 +1925,10 @@ _attack_transport.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_attack_transport-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2022-11-06 16:15:30
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5443 bytes.
  <./class_attack_transport-eps-converted-to.pdf>
-<class_attack_transport-eps-converted-to.pdf, id=3226, 501.875pt x 368.34615pt>
+<class_attack_transport-eps-converted-to.pdf, id=3755, 501.875pt x 368.34615pt>
 
 File: class_attack_transport-eps-converted-to.pdf Graphic file (type pdf)
 <use class_attack_transport-eps-converted-to.pdf>
@@ -2016,15 +1945,13 @@ Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.23 on input line 63.
-
 ) (./class_average.tex
 Package epstopdf Info: Source file: <class_average.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3979 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_average-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5519 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_average-eps-converte
 d-to.pdf class_average.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2032,10 +1959,10 @@ runsystem(repstopdf --outfile=class_average-eps-converted-to.pdf class_average.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_average-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:30
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5519 bytes.
  <./class_average-eps-converted-to.pdf>
-<class_average-eps-converted-to.pdf, id=3263, 501.875pt x 389.80632pt>
+<class_average-eps-converted-to.pdf, id=3791, 501.875pt x 389.80632pt>
 File: class_average-eps-converted-to.pdf Graphic file (type pdf)
 <use class_average-eps-converted-to.pdf>
 Package pdftex.def Info: class_average-eps-converted-to.pdf  used on input line
@@ -2047,19 +1974,17 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.24 on input line 38.
-
-
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
 ) (./class_battalion.tex
 Package epstopdf Info: Source file: <class_battalion.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3983 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_battalion-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5440 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_battalion-eps-conver
 ted-to.pdf class_battalion.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2067,10 +1992,10 @@ runsystem(repstopdf --outfile=class_battalion-eps-converted-to.pdf class_battal
 ion.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_battalion-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:30
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5440 bytes.
  <./class_battalion-eps-converted-to.pdf>
-<class_battalion-eps-converted-to.pdf, id=3283, 501.875pt x 355.30743pt>
+<class_battalion-eps-converted-to.pdf, id=3812, 501.875pt x 355.30743pt>
 File: class_battalion-eps-converted-to.pdf Graphic file (type pdf)
 <use class_battalion-eps-converted-to.pdf>
 Package pdftex.def Info: class_battalion-eps-converted-to.pdf  used on input li
@@ -2082,11 +2007,6 @@ Underfull \hbox (badness 10000) detected at line 54
  []
 
 [42]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.25 on input line 61.
-
-
 Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
@@ -2149,10 +2069,12 @@ Underfull \hbox (badness 10000) detected at line 179
 ) (./class_battle_statistics.tex [44] [45] [46] [47])
 (./class_change_strategy.tex
 Package epstopdf Info: Source file: <class_change_strategy.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_change_strategy-eps-converted-to.pdf
 >
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5497 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_change_strategy-eps-
 converted-to.pdf class_change_strategy.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2161,10 +2083,10 @@ change_strategy.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_change_strategy-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2022-11-06 16:15:31
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 5497 bytes.
  <./class_change_strategy-eps-converted-to.pdf>
-<class_change_strategy-eps-converted-to.pdf, id=3445, 501.875pt x 361.71133pt>
+<class_change_strategy-eps-converted-to.pdf, id=3954, 501.875pt x 361.71133pt>
 File: class_change_strategy-eps-converted-to.pdf Graphic file (type pdf)
 <use class_change_strategy-eps-converted-to.pdf>
 Package pdftex.def Info: class_change_strategy-eps-converted-to.pdf  used on in
@@ -2181,15 +2103,13 @@ Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.26 on input line 74.
-
 ) (./class_civilian.tex
 Package epstopdf Info: Source file: <class_civilian.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3985 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3788 bytes
 (epstopdf)             Output file: <class_civilian-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5279 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_civilian-eps-convert
 ed-to.pdf class_civilian.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2197,10 +2117,10 @@ runsystem(repstopdf --outfile=class_civilian-eps-converted-to.pdf class_civilia
 n.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_civilian-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:31
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 5279 bytes.
  <./class_civilian-eps-converted-to.pdf>
-<class_civilian-eps-converted-to.pdf, id=3483, 501.875pt x 346.1231pt>
+<class_civilian-eps-converted-to.pdf, id=3984, 501.875pt x 346.1231pt>
 File: class_civilian-eps-converted-to.pdf Graphic file (type pdf)
 <use class_civilian-eps-converted-to.pdf>
 Package pdftex.def Info: class_civilian-eps-converted-to.pdf  used on input lin
@@ -2223,10 +2143,6 @@ Underfull \hbox (badness 10000) detected at line 39
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.27 on input line 59.
 
 
 Underfull \hbox (badness 10000) detected at line 73
@@ -2253,15 +2169,13 @@ Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.28 on input line 116.
-
 ) (./class_command.tex
 Package epstopdf Info: Source file: <class_command.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4211 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 4004 bytes
 (epstopdf)             Output file: <class_command-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6548 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_command-eps-converte
 d-to.pdf class_command.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2269,10 +2183,10 @@ runsystem(repstopdf --outfile=class_command-eps-converted-to.pdf class_command.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_command-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:32
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 6548 bytes.
  <./class_command-eps-converted-to.pdf>
-<class_command-eps-converted-to.pdf, id=3525, 501.875pt x 116.37477pt>
+<class_command-eps-converted-to.pdf, id=4023, 501.875pt x 116.37477pt>
 File: class_command-eps-converted-to.pdf Graphic file (type pdf)
 <use class_command-eps-converted-to.pdf>
 Package pdftex.def Info: class_command-eps-converted-to.pdf  used on input line
@@ -2293,16 +2207,13 @@ Underfull \hbox (badness 10000) detected at line 77
 [][][]
  []
 
-[53]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.29 on input line 84.
-
-) (./class_corresponder.tex
+[53]) (./class_corresponder.tex
 Package epstopdf Info: Source file: <class_corresponder.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4090 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_corresponder-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5398 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_corresponder-eps-con
 verted-to.pdf class_corresponder.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2310,10 +2221,10 @@ runsystem(repstopdf --outfile=class_corresponder-eps-converted-to.pdf class_cor
 responder.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_corresponder-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:32
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5398 bytes.
  <./class_corresponder-eps-converted-to.pdf>
-<class_corresponder-eps-converted-to.pdf, id=3567, 501.875pt x 202.77757pt>
+<class_corresponder-eps-converted-to.pdf, id=4064, 501.875pt x 202.77757pt>
 File: class_corresponder-eps-converted-to.pdf Graphic file (type pdf)
 <use class_corresponder-eps-converted-to.pdf>
 Package pdftex.def Info: class_corresponder-eps-converted-to.pdf  used on input
@@ -2325,20 +2236,17 @@ Underfull \hbox (badness 10000) detected at line 30
  []
 
 [54] [55]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.30 on input line 52.
-
-
 Underfull \hbox (badness 10000) detected at line 53
 [][][]
  []
 
 ) (./class_country.tex
 Package epstopdf Info: Source file: <class_country.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3977 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_country-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5034 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_country-eps-converte
 d-to.pdf class_country.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2346,10 +2254,10 @@ runsystem(repstopdf --outfile=class_country-eps-converted-to.pdf class_country.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_country-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:33
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5034 bytes.
  <./class_country-eps-converted-to.pdf>
-<class_country-eps-converted-to.pdf, id=3615, 501.875pt x 405.55516pt>
+<class_country-eps-converted-to.pdf, id=4110, 501.875pt x 405.55516pt>
 File: class_country-eps-converted-to.pdf Graphic file (type pdf)
 <use class_country-eps-converted-to.pdf>
 Package pdftex.def Info: class_country-eps-converted-to.pdf  used on input line
@@ -2364,10 +2272,6 @@ Underfull \hbox (badness 10000) detected at line 80
 Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.31 on input line 106.
 
 [58]
 Underfull \hbox (badness 10000) detected at line 107
@@ -2400,10 +2304,6 @@ Underfull \hbox (badness 10000) detected at line 175
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.32 on input line 182.
-
-
 Underfull \hbox (badness 10000) detected at line 183
 [][][]
  []
@@ -2414,11 +2314,6 @@ Underfull \hbox (badness 10000) detected at line 196
  []
 
 [60]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.33 on input line 203.
-
-
 Underfull \hbox (badness 10000) detected at line 214
 [][][]
  []
@@ -2484,17 +2379,9 @@ Underfull \hbox (badness 10000) detected at line 320
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.34 on input line 329.
-
-
 Underfull \hbox (badness 10000) detected at line 340
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.35 on input line 347.
 
 [63]
 Underfull \hbox (badness 10000) detected at line 358
@@ -2502,17 +2389,9 @@ Underfull \hbox (badness 10000) detected at line 358
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.36 on input line 365.
-
-
 Underfull \hbox (badness 10000) detected at line 376
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.37 on input line 383.
 
 
 Underfull \hbox (badness 10000) detected at line 384
@@ -2528,10 +2407,6 @@ Underfull \hbox (badness 10000) detected at line 397
 Underfull \hbox (badness 10000) detected at line 410
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.38 on input line 417.
 
 
 Underfull \hbox (badness 10000) detected at line 428
@@ -2555,9 +2430,11 @@ Underfull \hbox (badness 10000) detected at line 447
 
 [65]) (./class_defensive.tex
 Package epstopdf Info: Source file: <class_defensive.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_defensive-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5697 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_defensive-eps-conver
 ted-to.pdf class_defensive.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2565,10 +2442,10 @@ runsystem(repstopdf --outfile=class_defensive-eps-converted-to.pdf class_defens
 ive.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_defensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:33
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5697 bytes.
  <./class_defensive-eps-converted-to.pdf>
-<class_defensive-eps-converted-to.pdf, id=3871, 501.875pt x 413.91638pt>
+<class_defensive-eps-converted-to.pdf, id=4347, 501.875pt x 413.91638pt>
 File: class_defensive-eps-converted-to.pdf Graphic file (type pdf)
 <use class_defensive-eps-converted-to.pdf>
 Package pdftex.def Info: class_defensive-eps-converted-to.pdf  used on input li
@@ -2579,16 +2456,13 @@ Underfull \hbox (badness 10000) detected at line 31
 [][][]
  []
 
-[66]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.39 on input line 40.
-
-) (./class_early_crisis.tex
+[66]) (./class_early_crisis.tex
 Package epstopdf Info: Source file: <class_early_crisis.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4094 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3891 bytes
 (epstopdf)             Output file: <class_early_crisis-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5305 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_crisis-eps-con
 verted-to.pdf class_early_crisis.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2596,10 +2470,10 @@ runsystem(repstopdf --outfile=class_early_crisis-eps-converted-to.pdf class_ear
 ly_crisis.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_early_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:34
+(epstopdf)                    date: 2022-11-06 20:01:20
 (epstopdf)                    size: 5305 bytes.
  <./class_early_crisis-eps-converted-to.pdf>
-<class_early_crisis-eps-converted-to.pdf, id=3909, 501.875pt x 708.52705pt>
+<class_early_crisis-eps-converted-to.pdf, id=4382, 501.875pt x 708.52705pt>
 File: class_early_crisis-eps-converted-to.pdf Graphic file (type pdf)
 <use class_early_crisis-eps-converted-to.pdf>
 Package pdftex.def Info: class_early_crisis-eps-converted-to.pdf  used on input
@@ -2617,10 +2491,12 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_early_open_conflict.tex
 Package epstopdf Info: Source file: <class_early_open_conflict.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4106 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3903 bytes
 (epstopdf)             Output file: <class_early_open_conflict-eps-converted-to
 .pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_open_conflict-
 eps-converted-to.pdf class_early_open_conflict.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2629,10 +2505,10 @@ ass_early_open_conflict.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_early_open_conflict-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-06 16:15:34
+(epstopdf)                    date: 2022-11-06 20:01:20
 (epstopdf)                    size: 6035 bytes.
  <./class_early_open_conflict-eps-converted-to.pdf>
-<class_early_open_conflict-eps-converted-to.pdf, id=3935, 501.875pt x 485.68451
+<class_early_open_conflict-eps-converted-to.pdf, id=4405, 501.875pt x 485.68451
 pt>
 File: class_early_open_conflict-eps-converted-to.pdf Graphic file (type pdf)
 <use class_early_open_conflict-eps-converted-to.pdf>
@@ -2651,9 +2527,11 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_early_peace.tex
 Package epstopdf Info: Source file: <class_early_peace.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4092 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3889 bytes
 (epstopdf)             Output file: <class_early_peace-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5201 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_peace-eps-conv
 erted-to.pdf class_early_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2661,10 +2539,10 @@ runsystem(repstopdf --outfile=class_early_peace-eps-converted-to.pdf class_earl
 y_peace.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_early_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:35
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 5201 bytes.
  <./class_early_peace-eps-converted-to.pdf>
-<class_early_peace-eps-converted-to.pdf, id=3964, 501.875pt x 700.28624pt>
+<class_early_peace-eps-converted-to.pdf, id=4430, 501.875pt x 700.28624pt>
 File: class_early_peace-eps-converted-to.pdf Graphic file (type pdf)
 <use class_early_peace-eps-converted-to.pdf>
 Package pdftex.def Info: class_early_peace-eps-converted-to.pdf  used on input 
@@ -2677,9 +2555,11 @@ Underfull \hbox (badness 10000) detected at line 32
 
 ) (./class_early_phase.tex
 Package epstopdf Info: Source file: <class_early_phase.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4419 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 4202 bytes
 (epstopdf)             Output file: <class_early_phase-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6396 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_phase-eps-conv
 erted-to.pdf class_early_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2687,10 +2567,10 @@ runsystem(repstopdf --outfile=class_early_phase-eps-converted-to.pdf class_earl
 y_phase.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_early_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:35
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 6396 bytes.
  <./class_early_phase-eps-converted-to.pdf>
-<class_early_phase-eps-converted-to.pdf, id=3983, 501.875pt x 112.35977pt>
+<class_early_phase-eps-converted-to.pdf, id=4448, 501.875pt x 112.35977pt>
 File: class_early_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use class_early_phase-eps-converted-to.pdf>
 Package pdftex.def Info: class_early_phase-eps-converted-to.pdf  used on input 
@@ -2702,21 +2582,18 @@ Underfull \hbox (badness 10000) detected at line 38
  []
 
 [70]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.40 on input line 45.
-
-
 Underfull \hbox (badness 10000) detected at line 60
 [][][]
  []
 
 ) (./class_early_unstable_peace.tex
 Package epstopdf Info: Source file: <class_early_unstable_peace.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4108 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3905 bytes
 (epstopdf)             Output file: <class_early_unstable_peace-eps-converted-t
 o.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5628 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_unstable_peace
 -eps-converted-to.pdf class_early_unstable_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2725,10 +2602,10 @@ lass_early_unstable_peace.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_early_unstable_peace-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:36
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 5628 bytes.
  <./class_early_unstable_peace-eps-converted-to.pdf>
-<class_early_unstable_peace-eps-converted-to.pdf, id=4022, 501.875pt x 449.4391
+<class_early_unstable_peace-eps-converted-to.pdf, id=4485, 501.875pt x 449.4391
 pt>
 File: class_early_unstable_peace-eps-converted-to.pdf Graphic file (type pdf)
 <use class_early_unstable_peace-eps-converted-to.pdf>
@@ -2747,10 +2624,12 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_economic_state.tex
 Package epstopdf Info: Source file: <class_economic_state.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4165 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3958 bytes
 (epstopdf)             Output file: <class_economic_state-eps-converted-to.pdf>
 
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5978 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_economic_state-eps-c
 onverted-to.pdf class_economic_state.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2759,10 +2638,10 @@ conomic_state.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_economic_state-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:15:36
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5978 bytes.
  <./class_economic_state-eps-converted-to.pdf>
-<class_economic_state-eps-converted-to.pdf, id=4051, 501.875pt x 129.93544pt>
+<class_economic_state-eps-converted-to.pdf, id=4510, 501.875pt x 129.93544pt>
 File: class_economic_state-eps-converted-to.pdf Graphic file (type pdf)
 <use class_economic_state-eps-converted-to.pdf>
 Package pdftex.def Info: class_economic_state-eps-converted-to.pdf  used on inp
@@ -2773,10 +2652,6 @@ ut line 10.
 Underfull \hbox (badness 10000) detected at line 31
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.41 on input line 38.
 
 
 Underfull \hbox (badness 10000) detected at line 39
@@ -2790,9 +2665,11 @@ Underfull \hbox (badness 10000) detected at line 19
 
 ) (./class_land_factory.tex
 Package epstopdf Info: Source file: <class_land_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3983 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_land_factory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5089 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_factory-eps-con
 verted-to.pdf class_land_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2800,10 +2677,10 @@ runsystem(repstopdf --outfile=class_land_factory-eps-converted-to.pdf class_lan
 d_factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_land_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:37
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5089 bytes.
  <./class_land_factory-eps-converted-to.pdf>
-<class_land_factory-eps-converted-to.pdf, id=4096, 501.875pt x 436.41043pt>
+<class_land_factory-eps-converted-to.pdf, id=4552, 501.875pt x 436.41043pt>
 File: class_land_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_land_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_land_factory-eps-converted-to.pdf  used on input
@@ -2820,11 +2697,6 @@ Underfull \hbox (badness 10000) detected at line 44
  []
 
 [74]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.42 on input line 55.
-
-
 Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
@@ -2861,9 +2733,11 @@ Underfull \hbox (badness 10000) detected at line 101
 
 ) (./class_land_terrain.tex
 Package epstopdf Info: Source file: <class_land_terrain.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_land_terrain-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5000 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_terrain-eps-con
 verted-to.pdf class_land_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2871,10 +2745,10 @@ runsystem(repstopdf --outfile=class_land_terrain-eps-converted-to.pdf class_lan
 d_terrain.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_land_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:37
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5000 bytes.
  <./class_land_terrain-eps-converted-to.pdf>
-<class_land_terrain-eps-converted-to.pdf, id=4152, 501.875pt x 451.1254pt>
+<class_land_terrain-eps-converted-to.pdf, id=4608, 501.875pt x 451.1254pt>
 File: class_land_terrain-eps-converted-to.pdf Graphic file (type pdf)
 <use class_land_terrain-eps-converted-to.pdf>
 Package pdftex.def Info: class_land_terrain-eps-converted-to.pdf  used on input
@@ -2893,9 +2767,11 @@ Underfull \hbox (badness 10000) detected at line 39
 
 ) (./class_land_unit.tex
 Package epstopdf Info: Source file: <class_land_unit.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4092 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3889 bytes
 (epstopdf)             Output file: <class_land_unit-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5827 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_unit-eps-conver
 ted-to.pdf class_land_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -2903,10 +2779,10 @@ runsystem(repstopdf --outfile=class_land_unit-eps-converted-to.pdf class_land_u
 nit.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_land_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:38
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5827 bytes.
  <./class_land_unit-eps-converted-to.pdf>
-<class_land_unit-eps-converted-to.pdf, id=4176, 501.875pt x 532.9611pt>
+<class_land_unit-eps-converted-to.pdf, id=4629, 501.875pt x 532.9611pt>
 File: class_land_unit-eps-converted-to.pdf Graphic file (type pdf)
 <use class_land_unit-eps-converted-to.pdf>
 Package pdftex.def Info: class_land_unit-eps-converted-to.pdf  used on input li
@@ -2921,10 +2797,6 @@ Underfull \hbox (badness 10000) detected at line 36
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.43 on input line 59.
 
 
 Underfull \hbox (badness 10000) detected at line 60
@@ -3043,9 +2915,11 @@ Underfull \hbox (badness 10000) detected at line 209
 
 ) (./class_land_vehicle.tex
 Package epstopdf Info: Source file: <class_land_vehicle.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4098 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3895 bytes
 (epstopdf)             Output file: <class_land_vehicle-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5842 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_vehicle-eps-con
 verted-to.pdf class_land_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3053,10 +2927,10 @@ runsystem(repstopdf --outfile=class_land_vehicle-eps-converted-to.pdf class_lan
 d_vehicle.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_land_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:38
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5842 bytes.
  <./class_land_vehicle-eps-converted-to.pdf>
-<class_land_vehicle-eps-converted-to.pdf, id=4255, 501.875pt x 532.9611pt>
+<class_land_vehicle-eps-converted-to.pdf, id=4698, 501.875pt x 532.9611pt>
 File: class_land_vehicle-eps-converted-to.pdf Graphic file (type pdf)
 <use class_land_vehicle-eps-converted-to.pdf>
 Package pdftex.def Info: class_land_vehicle-eps-converted-to.pdf  used on input
@@ -3072,10 +2946,6 @@ Underfull \hbox (badness 10000) detected at line 36
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.44 on input line 59.
 
 
 Underfull \hbox (badness 10000) detected at line 60
@@ -3194,9 +3064,11 @@ Underfull \hbox (badness 10000) detected at line 209
 
 ) (./class_late_crisis.tex
 Package epstopdf Info: Source file: <class_late_crisis.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4090 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_late_crisis-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5149 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_crisis-eps-conv
 erted-to.pdf class_late_crisis.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3204,10 +3076,10 @@ runsystem(repstopdf --outfile=class_late_crisis-eps-converted-to.pdf class_late
 _crisis.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_late_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:39
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5149 bytes.
  <./class_late_crisis-eps-converted-to.pdf>
-<class_late_crisis-eps-converted-to.pdf, id=4321, 501.875pt x 762.33807pt>
+<class_late_crisis-eps-converted-to.pdf, id=4757, 501.875pt x 762.33807pt>
 File: class_late_crisis-eps-converted-to.pdf Graphic file (type pdf)
 <use class_late_crisis-eps-converted-to.pdf>
 Package pdftex.def Info: class_late_crisis-eps-converted-to.pdf  used on input 
@@ -3225,10 +3097,12 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_late_open_conflict.tex
 Package epstopdf Info: Source file: <class_late_open_conflict.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4102 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3899 bytes
 (epstopdf)             Output file: <class_late_open_conflict-eps-converted-to.
 pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5853 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_open_conflict-e
 ps-converted-to.pdf class_late_open_conflict.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3237,10 +3111,10 @@ ss_late_open_conflict.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_late_open_conflict-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2022-11-06 16:15:39
+(epstopdf)                    date: 2022-11-06 20:01:24
 (epstopdf)                    size: 5853 bytes.
  <./class_late_open_conflict-eps-converted-to.pdf>
-<class_late_open_conflict-eps-converted-to.pdf, id=4343, 501.875pt x 510.37677p
+<class_late_open_conflict-eps-converted-to.pdf, id=4776, 501.875pt x 510.37677p
 t>
 File: class_late_open_conflict-eps-converted-to.pdf Graphic file (type pdf)
 <use class_late_open_conflict-eps-converted-to.pdf>
@@ -3259,9 +3133,11 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_late_peace.tex
 Package epstopdf Info: Source file: <class_late_peace.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4088 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3885 bytes
 (epstopdf)             Output file: <class_late_peace-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 4948 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_peace-eps-conve
 rted-to.pdf class_late_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3269,10 +3145,10 @@ runsystem(repstopdf --outfile=class_late_peace-eps-converted-to.pdf class_late_
 peace.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_late_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:40
-(epstopdf)                    size: 4948 bytes.
+(epstopdf)                    date: 2022-11-06 20:01:24
+(epstopdf)                    size: 4954 bytes.
  <./class_late_peace-eps-converted-to.pdf>
-<class_late_peace-eps-converted-to.pdf, id=4369, 501.875pt x 752.8125pt>
+<class_late_peace-eps-converted-to.pdf, id=4801, 501.875pt x 752.8125pt>
 File: class_late_peace-eps-converted-to.pdf Graphic file (type pdf)
 <use class_late_peace-eps-converted-to.pdf>
 Package pdftex.def Info: class_late_peace-eps-converted-to.pdf  used on input l
@@ -3285,9 +3161,11 @@ Underfull \hbox (badness 10000) detected at line 32
 
 ) (./class_late_phase.tex
 Package epstopdf Info: Source file: <class_late_phase.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4409 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 4192 bytes
 (epstopdf)             Output file: <class_late_phase-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6224 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_phase-eps-conve
 rted-to.pdf class_late_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3295,10 +3173,10 @@ runsystem(repstopdf --outfile=class_late_phase-eps-converted-to.pdf class_late_
 phase.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_late_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:40
+(epstopdf)                    date: 2022-11-06 20:01:24
 (epstopdf)                    size: 6224 bytes.
  <./class_late_phase-eps-converted-to.pdf>
-<class_late_phase-eps-converted-to.pdf, id=4391, 501.875pt x 117.62947pt>
+<class_late_phase-eps-converted-to.pdf, id=4821, 501.875pt x 117.62947pt>
 File: class_late_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use class_late_phase-eps-converted-to.pdf>
 Package pdftex.def Info: class_late_phase-eps-converted-to.pdf  used on input l
@@ -3316,10 +3194,6 @@ Underfull \hbox (badness 10000) detected at line 38
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.45 on input line 45.
-
-
 Underfull \hbox (badness 1394) in paragraph at lines 58--59
 [][] \T1/phv/m/n/10 func-tion will be im-ple-mented by the de-rived classes. ([
 ], [], [] &
@@ -3332,10 +3206,12 @@ Underfull \hbox (badness 10000) detected at line 60
 
 [89]) (./class_late_unstable_peace.tex
 Package epstopdf Info: Source file: <class_late_unstable_peace.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4104 bytes
+(epstopdf)                    date: 2022-11-06 19:58:49
+(epstopdf)                    size: 3901 bytes
 (epstopdf)             Output file: <class_late_unstable_peace-eps-converted-to
 .pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5418 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_unstable_peace-
 eps-converted-to.pdf class_late_unstable_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3344,10 +3220,10 @@ ass_late_unstable_peace.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_late_unstable_peace-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-06 16:15:41
-(epstopdf)                    size: 5418 bytes.
+(epstopdf)                    date: 2022-11-06 20:01:25
+(epstopdf)                    size: 5420 bytes.
  <./class_late_unstable_peace-eps-converted-to.pdf>
-<class_late_unstable_peace-eps-converted-to.pdf, id=4438, 501.875pt x 470.50781
+<class_late_unstable_peace-eps-converted-to.pdf, id=4867, 501.875pt x 470.50781
 pt>
 File: class_late_unstable_peace-eps-converted-to.pdf Graphic file (type pdf)
 <use class_late_unstable_peace-eps-converted-to.pdf>
@@ -3366,9 +3242,11 @@ Underfull \hbox (badness 10000) detected at line 50
 
 ) (./class_medic.tex
 Package epstopdf Info: Source file: <class_medic.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3979 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_medic-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5518 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medic-eps-converted-
 to.pdf class_medic.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3376,10 +3254,10 @@ runsystem(repstopdf --outfile=class_medic-eps-converted-to.pdf class_medic.eps)
 ...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_medic-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:41
+(epstopdf)                    date: 2022-11-06 20:01:25
 (epstopdf)                    size: 5518 bytes.
  <./class_medic-eps-converted-to.pdf>
-<class_medic-eps-converted-to.pdf, id=4460, 501.875pt x 346.1231pt>
+<class_medic-eps-converted-to.pdf, id=4888, 501.875pt x 346.1231pt>
 File: class_medic-eps-converted-to.pdf Graphic file (type pdf)
 <use class_medic-eps-converted-to.pdf>
 Package pdftex.def Info: class_medic-eps-converted-to.pdf  used on input line 1
@@ -3394,10 +3272,6 @@ Underfull \hbox (badness 10000) detected at line 37
 Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.46 on input line 57.
 
 
 Underfull \hbox (badness 10000) detected at line 71
@@ -3421,10 +3295,12 @@ Underfull \hbox (badness 10000) detected at line 94
 
 ) (./class_medical_factory.tex
 Package epstopdf Info: Source file: <class_medical_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3993 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3796 bytes
 (epstopdf)             Output file: <class_medical_factory-eps-converted-to.pdf
 >
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5476 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medical_factory-eps-
 converted-to.pdf class_medical_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3433,10 +3309,10 @@ medical_factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_medical_factory-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2022-11-06 16:15:41
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5476 bytes.
  <./class_medical_factory-eps-converted-to.pdf>
-<class_medical_factory-eps-converted-to.pdf, id=4499, 501.875pt x 368.34615pt>
+<class_medical_factory-eps-converted-to.pdf, id=4927, 501.875pt x 368.34615pt>
 File: class_medical_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_medical_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_medical_factory-eps-converted-to.pdf  used on in
@@ -3458,10 +3334,6 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.47 on input line 51.
-
-
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
@@ -3470,10 +3342,6 @@ Underfull \hbox (badness 10000) detected at line 52
 Underfull \hbox (badness 10000) detected at line 68
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.48 on input line 75.
 
 [94]
 Underfull \hbox (badness 10000) detected at line 76
@@ -3492,10 +3360,12 @@ Underfull \hbox (badness 10000) detected at line 82
 
 ) (./class_medical_supply.tex
 Package epstopdf Info: Source file: <class_medical_supply.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3977 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_medical_supply-eps-converted-to.pdf>
 
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5089 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medical_supply-eps-c
 onverted-to.pdf class_medical_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3504,10 +3374,10 @@ edical_supply.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_medical_supply-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:15:42
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5089 bytes.
  <./class_medical_supply-eps-converted-to.pdf>
-<class_medical_supply-eps-converted-to.pdf, id=4545, 501.875pt x 386.06232pt>
+<class_medical_supply-eps-converted-to.pdf, id=4968, 501.875pt x 386.06232pt>
 File: class_medical_supply-eps-converted-to.pdf Graphic file (type pdf)
 <use class_medical_supply-eps-converted-to.pdf>
 Package pdftex.def Info: class_medical_supply-eps-converted-to.pdf  used on inp
@@ -3522,10 +3392,6 @@ Underfull \hbox (badness 10000) detected at line 29
 Underfull \hbox (badness 10000) detected at line 46
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.49 on input line 55.
 
 
 Underfull \hbox (badness 10000) detected at line 56
@@ -3547,16 +3413,14 @@ Underfull \hbox (badness 10000) detected at line 90
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.50 on input line 97.
-
 ) (./class_medic_transporter.tex
 Package epstopdf Info: Source file: <class_medic_transporter.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3993 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3796 bytes
 (epstopdf)             Output file: <class_medic_transporter-eps-converted-to.p
 df>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medic_transporter-ep
 s-converted-to.pdf class_medic_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3565,10 +3429,10 @@ s_medic_transporter.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_medic_transporter-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:15:42
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5211 bytes.
  <./class_medic_transporter-eps-converted-to.pdf>
-<class_medic_transporter-eps-converted-to.pdf, id=4581, 501.875pt x 331.81966pt
+<class_medic_transporter-eps-converted-to.pdf, id=5003, 501.875pt x 331.81966pt
 >
 File: class_medic_transporter-eps-converted-to.pdf Graphic file (type pdf)
 <use class_medic_transporter-eps-converted-to.pdf>
@@ -3602,9 +3466,11 @@ Underfull \hbox (badness 10000) detected at line 83
 
 ) (./class_mid_phase.tex
 Package epstopdf Info: Source file: <class_mid_phase.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3971 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_mid_phase-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5013 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_mid_phase-eps-conver
 ted-to.pdf class_mid_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3612,10 +3478,10 @@ runsystem(repstopdf --outfile=class_mid_phase-eps-converted-to.pdf class_mid_ph
 ase.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_mid_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:43
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5013 bytes.
  <./class_mid_phase-eps-converted-to.pdf>
-<class_mid_phase-eps-converted-to.pdf, id=4623, 501.875pt x 514.74309pt>
+<class_mid_phase-eps-converted-to.pdf, id=5040, 501.875pt x 514.74309pt>
 File: class_mid_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use class_mid_phase-eps-converted-to.pdf>
 Package pdftex.def Info: class_mid_phase-eps-converted-to.pdf  used on input li
@@ -3626,12 +3492,7 @@ Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
-[99]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.52 on input line 50.
-
-) (./class_military_commander.tex
+[99]) (./class_military_commander.tex
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
@@ -3657,11 +3518,6 @@ Underfull \hbox (badness 10000) detected at line 103
  []
 
 [101]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.53 on input line 112.
-
-
 Underfull \hbox (badness 10000) detected at line 113
 [][][]
  []
@@ -3670,10 +3526,6 @@ Underfull \hbox (badness 10000) detected at line 113
 Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.54 on input line 135.
 
 
 Underfull \hbox (badness 10000) detected at line 136
@@ -3685,17 +3537,14 @@ Underfull \hbox (badness 10000) detected at line 149
 [][][]
  []
 
-[102]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.55 on input line 158.
-
-) (./class_move_into_theatre.tex
+[102]) (./class_move_into_theatre.tex
 Package epstopdf Info: Source file: <class_move_into_theatre.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3983 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_move_into_theatre-eps-converted-to.p
 df>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5334 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_move_into_theatre-ep
 s-converted-to.pdf class_move_into_theatre.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3704,10 +3553,10 @@ s_move_into_theatre.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_move_into_theatre-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:15:43
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5334 bytes.
  <./class_move_into_theatre-eps-converted-to.pdf>
-<class_move_into_theatre-eps-converted-to.pdf, id=4740, 501.875pt x 349.13435pt
+<class_move_into_theatre-eps-converted-to.pdf, id=5147, 501.875pt x 349.13435pt
 >
 File: class_move_into_theatre-eps-converted-to.pdf Graphic file (type pdf)
 <use class_move_into_theatre-eps-converted-to.pdf>
@@ -3724,15 +3573,13 @@ Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.56 on input line 63.
-
 ) (./class_neutral.tex
 Package epstopdf Info: Source file: <class_neutral.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3977 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_neutral-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5329 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_neutral-eps-converte
 d-to.pdf class_neutral.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3740,10 +3587,10 @@ runsystem(repstopdf --outfile=class_neutral-eps-converted-to.pdf class_neutral.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_neutral-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:44
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5329 bytes.
  <./class_neutral-eps-converted-to.pdf>
-<class_neutral-eps-converted-to.pdf, id=4770, 501.875pt x 413.91638pt>
+<class_neutral-eps-converted-to.pdf, id=5175, 501.875pt x 413.91638pt>
 File: class_neutral-eps-converted-to.pdf Graphic file (type pdf)
 <use class_neutral-eps-converted-to.pdf>
 Package pdftex.def Info: class_neutral-eps-converted-to.pdf  used on input line
@@ -3754,16 +3601,14 @@ Underfull \hbox (badness 10000) detected at line 31
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.57 on input line 40.
-
 ) (./class_non_combat_entity.tex
 Package epstopdf Info: Source file: <class_non_combat_entity.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4100 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3897 bytes
 (epstopdf)             Output file: <class_non_combat_entity-eps-converted-to.p
 df>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5735 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_non_combat_entity-ep
 s-converted-to.pdf class_non_combat_entity.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3772,10 +3617,10 @@ s_non_combat_entity.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_non_combat_entity-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:15:44
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5735 bytes.
  <./class_non_combat_entity-eps-converted-to.pdf>
-<class_non_combat_entity-eps-converted-to.pdf, id=4808, 501.875pt x 173.05653pt
+<class_non_combat_entity-eps-converted-to.pdf, id=5210, 501.875pt x 173.05653pt
 >
 File: class_non_combat_entity-eps-converted-to.pdf Graphic file (type pdf)
 <use class_non_combat_entity-eps-converted-to.pdf>
@@ -3794,9 +3639,11 @@ Underfull \hbox (badness 10000) detected at line 34
 
 ) (./class_offensive.tex [105]
 Package epstopdf Info: Source file: <class_offensive.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_offensive-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5711 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_offensive-eps-conver
 ted-to.pdf class_offensive.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3804,10 +3651,10 @@ runsystem(repstopdf --outfile=class_offensive-eps-converted-to.pdf class_offens
 ive.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_offensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:44
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5711 bytes.
  <./class_offensive-eps-converted-to.pdf>
-<class_offensive-eps-converted-to.pdf, id=4829, 501.875pt x 413.91638pt>
+<class_offensive-eps-converted-to.pdf, id=5233, 501.875pt x 413.91638pt>
 File: class_offensive-eps-converted-to.pdf Graphic file (type pdf)
 <use class_offensive-eps-converted-to.pdf>
 Package pdftex.def Info: class_offensive-eps-converted-to.pdf  used on input li
@@ -3818,15 +3665,13 @@ Underfull \hbox (badness 10000) detected at line 31
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.58 on input line 40.
-
 ) (./class_poor.tex
 Package epstopdf Info: Source file: <class_poor.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3973 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <class_poor-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_poor-eps-converted-t
 o.pdf class_poor.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3834,10 +3679,10 @@ runsystem(repstopdf --outfile=class_poor-eps-converted-to.pdf class_poor.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_poor-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:45
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5211 bytes.
  <./class_poor-eps-converted-to.pdf>
-<class_poor-eps-converted-to.pdf, id=4857, 501.875pt x 389.80632pt>
+<class_poor-eps-converted-to.pdf, id=5261, 501.875pt x 389.80632pt>
 File: class_poor-eps-converted-to.pdf Graphic file (type pdf)
 <use class_poor-eps-converted-to.pdf>
 Package pdftex.def Info: class_poor-eps-converted-to.pdf  used on input line 10
@@ -3849,19 +3694,17 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.59 on input line 38.
-
-
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
 ) (./class_rich.tex
 Package epstopdf Info: Source file: <class_rich.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3973 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <class_rich-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5252 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_rich-eps-converted-t
 o.pdf class_rich.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3869,10 +3712,10 @@ runsystem(repstopdf --outfile=class_rich-eps-converted-to.pdf class_rich.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_rich-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:45
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 5252 bytes.
  <./class_rich-eps-converted-to.pdf>
-<class_rich-eps-converted-to.pdf, id=4878, 501.875pt x 389.80632pt>
+<class_rich-eps-converted-to.pdf, id=5281, 501.875pt x 389.80632pt>
 File: class_rich-eps-converted-to.pdf Graphic file (type pdf)
 <use class_rich-eps-converted-to.pdf>
 Package pdftex.def Info: class_rich-eps-converted-to.pdf  used on input line 10
@@ -3884,19 +3727,17 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.60 on input line 38.
-
-
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
 ) (./class_sea_factory.tex
 Package epstopdf Info: Source file: <class_sea_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3981 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_sea_factory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5148 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_factory-eps-conv
 erted-to.pdf class_sea_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3904,10 +3745,10 @@ runsystem(repstopdf --outfile=class_sea_factory-eps-converted-to.pdf class_sea_
 factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_sea_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:46
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 5148 bytes.
  <./class_sea_factory-eps-converted-to.pdf>
-<class_sea_factory-eps-converted-to.pdf, id=4901, 501.875pt x 466.8642pt>
+<class_sea_factory-eps-converted-to.pdf, id=5302, 501.875pt x 466.8642pt>
 File: class_sea_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_sea_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_sea_factory-eps-converted-to.pdf  used on input 
@@ -3922,10 +3763,6 @@ Underfull \hbox (badness 10000) detected at line 28
 Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.61 on input line 55.
 
 
 Underfull \hbox (badness 10000) detected at line 56
@@ -3964,9 +3801,11 @@ Underfull \hbox (badness 10000) detected at line 101
 
 ) (./class_sea_terrain.tex
 Package epstopdf Info: Source file: <class_sea_terrain.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 3979 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_sea_terrain-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 4937 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_terrain-eps-conv
 erted-to.pdf class_sea_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3974,10 +3813,10 @@ runsystem(repstopdf --outfile=class_sea_terrain-eps-converted-to.pdf class_sea_
 terrain.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_sea_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:46
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 4937 bytes.
  <./class_sea_terrain-eps-converted-to.pdf>
-<class_sea_terrain-eps-converted-to.pdf, id=4967, 501.875pt x 466.8642pt>
+<class_sea_terrain-eps-converted-to.pdf, id=5366, 501.875pt x 466.8642pt>
 File: class_sea_terrain-eps-converted-to.pdf Graphic file (type pdf)
 <use class_sea_terrain-eps-converted-to.pdf>
 Package pdftex.def Info: class_sea_terrain-eps-converted-to.pdf  used on input 
@@ -3995,9 +3834,11 @@ Underfull \hbox (badness 10000) detected at line 39
 
 ) (./class_sea_unit.tex
 Package epstopdf Info: Source file: <class_sea_unit.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4090 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_sea_unit-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5750 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_unit-eps-convert
 ed-to.pdf class_sea_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4005,10 +3846,10 @@ runsystem(repstopdf --outfile=class_sea_unit-eps-converted-to.pdf class_sea_uni
 t.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_sea_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:47
+(epstopdf)                    date: 2022-11-06 20:01:30
 (epstopdf)                    size: 5750 bytes.
  <./class_sea_unit-eps-converted-to.pdf>
-<class_sea_unit-eps-converted-to.pdf, id=4989, 501.875pt x 532.9611pt>
+<class_sea_unit-eps-converted-to.pdf, id=5386, 501.875pt x 532.9611pt>
 File: class_sea_unit-eps-converted-to.pdf Graphic file (type pdf)
 <use class_sea_unit-eps-converted-to.pdf>
 Package pdftex.def Info: class_sea_unit-eps-converted-to.pdf  used on input lin
@@ -4025,11 +3866,6 @@ Underfull \hbox (badness 10000) detected at line 52
  []
 
 [112]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.62 on input line 59.
-
-
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
@@ -4141,9 +3977,11 @@ Underfull \hbox (badness 10000) detected at line 206
 
 ) (./class_sea_vehicle.tex
 Package epstopdf Info: Source file: <class_sea_vehicle.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4096 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3893 bytes
 (epstopdf)             Output file: <class_sea_vehicle-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5807 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_vehicle-eps-conv
 erted-to.pdf class_sea_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4151,10 +3989,10 @@ runsystem(repstopdf --outfile=class_sea_vehicle-eps-converted-to.pdf class_sea_
 vehicle.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_sea_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:47
+(epstopdf)                    date: 2022-11-06 20:01:30
 (epstopdf)                    size: 5807 bytes.
  <./class_sea_vehicle-eps-converted-to.pdf>
-<class_sea_vehicle-eps-converted-to.pdf, id=5057, 501.875pt x 532.9611pt>
+<class_sea_vehicle-eps-converted-to.pdf, id=5451, 501.875pt x 532.9611pt>
 File: class_sea_vehicle-eps-converted-to.pdf Graphic file (type pdf)
 <use class_sea_vehicle-eps-converted-to.pdf>
 Package pdftex.def Info: class_sea_vehicle-eps-converted-to.pdf  used on input 
@@ -4169,10 +4007,6 @@ Underfull \hbox (badness 10000) detected at line 36
 Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.63 on input line 59.
 
 
 Underfull \hbox (badness 10000) detected at line 60
@@ -4291,9 +4125,11 @@ Underfull \hbox (badness 10000) detected at line 209
 
 ) (./class_soldier.tex [119]
 Package epstopdf Info: Source file: <class_soldier.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4290 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 4077 bytes
 (epstopdf)             Output file: <class_soldier-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5931 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_soldier-eps-converte
 d-to.pdf class_soldier.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4301,10 +4137,10 @@ runsystem(repstopdf --outfile=class_soldier-eps-converted-to.pdf class_soldier.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_soldier-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:47
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5931 bytes.
  <./class_soldier-eps-converted-to.pdf>
-<class_soldier-eps-converted-to.pdf, id=5126, 501.875pt x 177.65372pt>
+<class_soldier-eps-converted-to.pdf, id=5514, 501.875pt x 177.65372pt>
 File: class_soldier-eps-converted-to.pdf Graphic file (type pdf)
 <use class_soldier-eps-converted-to.pdf>
 Package pdftex.def Info: class_soldier-eps-converted-to.pdf  used on input line
@@ -4316,17 +4152,9 @@ Underfull \hbox (badness 10000) detected at line 50
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.64 on input line 57.
-
-
 Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.65 on input line 78.
 
 [121]
 Underfull \hbox (badness 10000) detected at line 93
@@ -4390,9 +4218,11 @@ Underfull \hbox (badness 10000) detected at line 216
 
 ) (./class_supply.tex [123]
 Package epstopdf Info: Source file: <class_supply.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4102 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3899 bytes
 (epstopdf)             Output file: <class_supply-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5539 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_supply-eps-converted
 -to.pdf class_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4400,10 +4230,10 @@ runsystem(repstopdf --outfile=class_supply-eps-converted-to.pdf class_supply.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:48
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5539 bytes.
  <./class_supply-eps-converted-to.pdf>
-<class_supply-eps-converted-to.pdf, id=5206, 501.875pt x 193.03116pt>
+<class_supply-eps-converted-to.pdf, id=5587, 501.875pt x 193.03116pt>
 File: class_supply-eps-converted-to.pdf Graphic file (type pdf)
 <use class_supply-eps-converted-to.pdf>
 Package pdftex.def Info: class_supply-eps-converted-to.pdf  used on input line 
@@ -4415,11 +4245,6 @@ Underfull \hbox (badness 10000) detected at line 38
  []
 
 [124]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.66 on input line 45.
-
-
 Underfull \hbox (badness 10000) detected at line 46
 [][][]
  []
@@ -4431,10 +4256,12 @@ Underfull \hbox (badness 10000) detected at line 59
 
 ) (./class_supply_factory.tex
 Package epstopdf Info: Source file: <class_supply_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4120 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3917 bytes
 (epstopdf)             Output file: <class_supply_factory-eps-converted-to.pdf>
 
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5815 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_supply_factory-eps-c
 onverted-to.pdf class_supply_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4443,10 +4270,10 @@ upply_factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_supply_factory-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:15:48
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5815 bytes.
  <./class_supply_factory-eps-converted-to.pdf>
-<class_supply_factory-eps-converted-to.pdf, id=5229, 501.875pt x 184.1781pt>
+<class_supply_factory-eps-converted-to.pdf, id=5608, 501.875pt x 184.1781pt>
 File: class_supply_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_supply_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_supply_factory-eps-converted-to.pdf  used on inp
@@ -4459,11 +4286,6 @@ Underfull \hbox (badness 10000) detected at line 59
  []
 
 [126]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.67 on input line 68.
-
-
 Underfull \hbox (badness 10000) detected at line 69
 [][][]
  []
@@ -4554,9 +4376,11 @@ Underfull \hbox (badness 10000) detected at line 209
 
 ) (./class_this.tex) (./class_transporter.tex
 Package epstopdf Info: Source file: <class_transporter.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4128 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3925 bytes
 (epstopdf)             Output file: <class_transporter-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5571 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_transporter-eps-conv
 erted-to.pdf class_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4564,10 +4388,10 @@ runsystem(repstopdf --outfile=class_transporter-eps-converted-to.pdf class_tran
 sporter.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_transporter-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:49
+(epstopdf)                    date: 2022-11-06 20:01:32
 (epstopdf)                    size: 5571 bytes.
  <./class_transporter-eps-converted-to.pdf>
-<class_transporter-eps-converted-to.pdf, id=5314, 501.875pt x 165.90984pt>
+<class_transporter-eps-converted-to.pdf, id=5688, 501.875pt x 165.90984pt>
 File: class_transporter-eps-converted-to.pdf Graphic file (type pdf)
 <use class_transporter-eps-converted-to.pdf>
 Package pdftex.def Info: class_transporter-eps-converted-to.pdf  used on input 
@@ -4584,29 +4408,22 @@ Underfull \hbox (badness 10000) detected at line 54
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.69 on input line 61.
-
-
 Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
 
 [131]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.70 on input line 83.
-
-
 Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
 ) (./class_unit_factory.tex
 Package epstopdf Info: Source file: <class_unit_factory.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4193 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3986 bytes
 (epstopdf)             Output file: <class_unit_factory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5571 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_unit_factory-eps-con
 verted-to.pdf class_unit_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4614,10 +4431,10 @@ runsystem(repstopdf --outfile=class_unit_factory-eps-converted-to.pdf class_uni
 t_factory.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_unit_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:49
+(epstopdf)                    date: 2022-11-06 20:01:32
 (epstopdf)                    size: 5571 bytes.
  <./class_unit_factory-eps-converted-to.pdf>
-<class_unit_factory-eps-converted-to.pdf, id=5368, 501.875pt x 145.47348pt>
+<class_unit_factory-eps-converted-to.pdf, id=5738, 501.875pt x 145.47348pt>
 File: class_unit_factory-eps-converted-to.pdf Graphic file (type pdf)
 <use class_unit_factory-eps-converted-to.pdf>
 Package pdftex.def Info: class_unit_factory-eps-converted-to.pdf  used on input
@@ -4635,11 +4452,6 @@ Underfull \hbox (badness 10000) detected at line 81
  []
 
 [133]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.71 on input line 92.
-
-
 Underfull \hbox (badness 10000) detected at line 93
 [][][]
  []
@@ -4710,10 +4522,6 @@ Underfull \hbox (badness 10000) detected at line 215
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.72 on input line 222.
-
-
 Underfull \hbox (badness 10000) detected at line 223
 [][][]
  []
@@ -4730,9 +4538,11 @@ Underfull \hbox (badness 10000) detected at line 239
 
 [136]) (./class_vehicle.tex
 Package epstopdf Info: Source file: <class_vehicle.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4308 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 4095 bytes
 (epstopdf)             Output file: <class_vehicle-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 6116 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_vehicle-eps-converte
 d-to.pdf class_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4740,10 +4550,10 @@ runsystem(repstopdf --outfile=class_vehicle-eps-converted-to.pdf class_vehicle.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:50
+(epstopdf)                    date: 2022-11-06 20:01:33
 (epstopdf)                    size: 6116 bytes.
  <./class_vehicle-eps-converted-to.pdf>
-<class_vehicle-eps-converted-to.pdf, id=5473, 501.875pt x 177.65372pt>
+<class_vehicle-eps-converted-to.pdf, id=5830, 501.875pt x 177.65372pt>
 File: class_vehicle-eps-converted-to.pdf Graphic file (type pdf)
 <use class_vehicle-eps-converted-to.pdf>
 Package pdftex.def Info: class_vehicle-eps-converted-to.pdf  used on input line
@@ -4755,17 +4565,9 @@ Underfull \hbox (badness 10000) detected at line 52
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.73 on input line 59.
-
-
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.74 on input line 80.
 
 [138]
 Underfull \hbox (badness 10000) detected at line 95
@@ -4894,9 +4696,11 @@ Underfull \hbox (badness 10000) detected at line 194
 
 ) (./class_war_phase.tex
 Package epstopdf Info: Source file: <class_war_phase.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 5085 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 4838 bytes
 (epstopdf)             Output file: <class_war_phase-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 7014 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_war_phase-eps-conver
 ted-to.pdf class_war_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4904,10 +4708,10 @@ runsystem(repstopdf --outfile=class_war_phase-eps-converted-to.pdf class_war_ph
 ase.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_war_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:50
+(epstopdf)                    date: 2022-11-06 20:01:33
 (epstopdf)                    size: 7014 bytes.
  <./class_war_phase-eps-converted-to.pdf>
-<class_war_phase-eps-converted-to.pdf, id=5656, 501.875pt x 224.71956pt>
+<class_war_phase-eps-converted-to.pdf, id=5984, 501.875pt x 224.71956pt>
 File: class_war_phase-eps-converted-to.pdf Graphic file (type pdf)
 <use class_war_phase-eps-converted-to.pdf>
 Package pdftex.def Info: class_war_phase-eps-converted-to.pdf  used on input li
@@ -4918,15 +4722,13 @@ Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.75 on input line 43.
-
 ) (./class_war_theatre.tex
 Package epstopdf Info: Source file: <class_war_theatre.eps>
-(epstopdf)                    date: 2022-11-06 13:53:21
-(epstopdf)                    size: 4191 bytes
+(epstopdf)                    date: 2022-11-06 19:58:50
+(epstopdf)                    size: 3984 bytes
 (epstopdf)             Output file: <class_war_theatre-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    size: 5410 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_war_theatre-eps-conv
 erted-to.pdf class_war_theatre.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -4934,10 +4736,10 @@ runsystem(repstopdf --outfile=class_war_theatre-eps-converted-to.pdf class_war_
 theatre.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <class_war_theatre-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:15:51
+(epstopdf)                    date: 2022-11-06 20:01:34
 (epstopdf)                    size: 5410 bytes.
  <./class_war_theatre-eps-converted-to.pdf>
-<class_war_theatre-eps-converted-to.pdf, id=5688, 501.875pt x 150.37178pt>
+<class_war_theatre-eps-converted-to.pdf, id=6011, 501.875pt x 150.37178pt>
 File: class_war_theatre-eps-converted-to.pdf Graphic file (type pdf)
 <use class_war_theatre-eps-converted-to.pdf>
 Package pdftex.def Info: class_war_theatre-eps-converted-to.pdf  used on input 
@@ -4954,11 +4756,6 @@ Underfull \hbox (badness 10000) detected at line 67
  []
 
 [147]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.76 on input line 76.
-
-
 Underfull \hbox (badness 10000) detected at line 77
 [][][]
  []
@@ -4972,10 +4769,6 @@ Underfull \hbox (badness 10000) detected at line 90
 Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.77 on input line 113.
 
 [148]
 Underfull \hbox (badness 10000) detected at line 124
@@ -5037,33 +4830,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
 (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 5E8289F8C923D600EAA38CA9C8EBACD9;112038.
 
 
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: 1EFEF53107DC2A75A45B70BC3FA76F89;86860
-(rerunfilecheck)             After:  5E8289F8C923D600EAA38CA9C8EBACD9;112038.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 19980 strings out of 481239
- 330967 string characters out of 5920377
- 623648 words of memory out of 5000000
- 33351 multiletter control sequences out of 15000+600000
+ 19889 strings out of 481239
+ 328057 string characters out of 5920377
+ 653748 words of memory out of 5000000
+ 33434 multiletter control sequences out of 15000+600000
  598302 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,96p,942b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,96p,942b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{_supply_factory_8h_source} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -5079,528 +4861,6 @@ s not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_unit_factory_8h_source} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.3.60.1.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.60.1.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.60.1.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.60.1.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.60.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.60.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.59.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.8} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.58.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.8} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.57.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.3.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.3.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.56.3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.9} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.8} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.56.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.55.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.54.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.53.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.53.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.3.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.3.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.52.3} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.8} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.52.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.51.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.50.2.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.50.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.48.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.48.2.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.48.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.44.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.42.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.42.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.41.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.40.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.38.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.31.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.30.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.28.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.28.2.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.28.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.25.2.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.25.2} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.20} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.19} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.18} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.17} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.16} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.15} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.14} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.13} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.12} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.11} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.10} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.9} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.8} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.2.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.21.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.20.2.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.20.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.15.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.12.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.11.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.7} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.6} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.5} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.4} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.10.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.11} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.10} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.9} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.8} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.7} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.6} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.4} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.9.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.8} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.7} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.6} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.4} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.8.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.7.1.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.7.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.6.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.6.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.5.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.2.6} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.2.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.2.4} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.2.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.4.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.2.6} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.2.5} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.2.4} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.2.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.3.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.1.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.3.1.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
@@ -5614,10 +4874,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on refman.pdf (162 pages, 635165 bytes).
+Output written on refman.pdf (166 pages, 644715 bytes).
 PDF statistics:
- 6124 PDF objects out of 6186 (max. 8388607)
- 5646 compressed objects within 57 object streams
- 1437 named destinations out of 1440 (max. 500000)
- 3446 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6394 PDF objects out of 7423 (max. 8388607)
+ 5909 compressed objects within 60 object streams
+ 1263 named destinations out of 1440 (max. 500000)
+ 4358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

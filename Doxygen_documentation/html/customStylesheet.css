@@ -1,0 +1,31 @@
+body {
+    /* background-image: url("https://img.freepik.com/free-photo/cruel-war-scenes-digital-painting_456031-162.jpg"); */
+    background-image: url("https://images.unsplash.com/photo-1541339246244-261d72e381b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRhbmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+
+    background-size: cover;
+}
+
+#titlearea{
+    background-color: black;
+    color: rgb(189, 164, 25);
+}
+
+#projectname{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70pt;
+}
+
+.contents {
+    background-color: white;
+    opacity: 0.95;
+}
+#memberNames table{
+    margin-top: 15px;
+}
+#memberNames td{
+    padding-left: 5px;
+    padding-right: 18px;
+}
+div.contents{
+    margin: 0px;
+}
