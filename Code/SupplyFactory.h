@@ -3,6 +3,16 @@
 #include "Supply.h"
 #include <iostream>
 
+/**
+ * @class SupplyFactory SupplyFactory.h
+ * 
+ * This class is a necessity if a Country wants to create ammo supplies or medical supplies and send the supplies to the Country's army.
+ * There are two types of factories:
+ * - AmmoFactory
+ * - MedicalFactory
+ * 
+ */
+
 class SupplyFactory
 {
 	public:
@@ -10,6 +20,7 @@ class SupplyFactory
 		/// @author Arno Jooste (u21457451)
 		/// @param budget The amount that can be spent to make supplies.
 		/// @param type The type of supply factory that will be created.
+		/// @warning The budget must be a interger value greater than zero.
 		SupplyFactory(int budget, std::string type);
 
 		/// @brief Class destructor to reset the member variables.
@@ -28,6 +39,8 @@ class SupplyFactory
 		/// @brief Sets a new budget for the factory (it will mostly be used by the upgrade() method to increase/set a new budget).
 		/// @author Arno Jooste (u21457451)
 		/// @param newBudget 
+		/// @warning The input must be a value greater than zero.
+		/// @note This function only increases the current budget by the given parameter.
 		void setBudget(int newBudget);
 
 		/// @brief Getter for the current budget of the factory in order to get access to the private member variable.
@@ -43,6 +56,7 @@ class SupplyFactory
 		/// @brief Getter for the total amount spent so far by the factory. This will be used to test if the factory can produce more supplies based on the budget capacity.
 		/// @author Arno Jooste (u21457451)
 		/// @return current amount spent of type int.
+		/// @note This helps us to keep track of how much we already spent on supplies.
 		int getTotalSpent();
 
 		/// @brief Getter for the type of factory ,either an Ammo or a medical factory
