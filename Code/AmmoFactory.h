@@ -9,10 +9,10 @@ class AmmoSupply;
 #include <ctime>
 /**
  * @class AmmoFactory AmmoFactory.h
- * The AmmoFactory class is a derived class derived from the UnitFactory class
+ * The AmmoFactory class is a derived class derived from the SupplyFactory class
  * @ref SupplyFactory.h "(See the definition of the SupplyFactory class)"
  * 
- * The AmmoFactory will be used to create Ammo Suppliess for the Country's Armies. The AmmoFactory
+ * The AmmoFactory will be used to create Ammo Supplies for the Country's Armies. The AmmoFactory
  * has a method "makeSupply()" which will create the AmmoSuppply object.
  * @note This class is ONLY used to create AmmoSupply objects
 */

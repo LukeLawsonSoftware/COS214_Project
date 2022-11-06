@@ -40,8 +40,8 @@ class EconomicState;
  * therefore each Country will need to keep track of their budget (gdp) in order to determine if they can afford to create more supplies/units.
  * - If a Country starts to realise that it is losing the war then it has the option of surrendering to the enemy Country.
  * - The Country also has the option to upgrade its different factories but this would only be possible if the Country is in a Rich EconomicState.
- * - Countries will have millitary commanders which will issue different commands for the Country for example raising an army to prepare for the war.
- * - Finally the Country will be able to create suppplies and signal the millitary commander to send the supplies to the Country's transport lines such that it can
+ * - Countries will have military commanders which will issue different commands for the Country for example raising an army to prepare for the war.
+ * - Finally the Country will be able to create suppplies and signal the military commander to send the supplies to the Country's transport lines such that it can
  * be transported to the armies of the Country.
  * @note This class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies.
 */
