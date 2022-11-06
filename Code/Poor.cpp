@@ -74,7 +74,8 @@ int Poor::decideMyTurn(Country *country)
 		Possibilities[6] = !country->getArmy()->armyIsDeployed();
 
 		// 9 .sendSupplies
-		Possibilities[8] = country->getArmy()->armyIsDeployed();
+		Possibilities[8] = true;
+		;
 	}
 
 	// 8. surrender

@@ -109,6 +109,7 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/AttackTransport.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Transporter.h
 
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Army.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Average.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Average.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Average.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
@@ -171,6 +172,8 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Defensive.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Defensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Defensive.h
 
@@ -324,6 +327,8 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Neutral.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Neutral.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Neutral.h
 
@@ -331,15 +336,19 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Offensive.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Offensive.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Offensive.h
 
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Army.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EconomicState.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Poor.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Poor.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Poor.h
 
+CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Army.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/Rich.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EconomicState.h
@@ -425,27 +434,36 @@ CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/WarTheatre.cpp
 CMakeFiles/runTests.dir/home/lukelawson/projects/luke_wsl/COS_214/COS214_Project/Code/WarTheatre.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/WarTheatre.h
 
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirTerrain.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirUnit.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AirVehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoFactory.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoSupply.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/AmmoTransporter.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Army.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyBuilder.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyComponent.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyDirector.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/ArmyStrategy.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Average.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Battalion.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/BattleStatistics.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Corresponder.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Country.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Defensive.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/EconomicState.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandTerrain.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandUnit.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/LandVehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicTransporter.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicalFactory.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/MedicalSupply.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Neutral.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/NonCombatEntity.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Offensive.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Poor.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Rich.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaTerrain.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaUnit.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SeaVehicle.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Soldier.h
@@ -453,10 +471,13 @@ CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/SupplyFactory.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Transporter.h
 CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/Vehicle.h
+CMakeFiles/runTests.dir/unittests.cpp.o: /home/lukelawson/projects/luke_wsl/COS\ 214/COS214_Project/Code/WarTheatre.h
 CMakeFiles/runTests.dir/unittests.cpp.o: ArmyBuilder_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: ArmyComponent_unittests.cpp
+CMakeFiles/runTests.dir/unittests.cpp.o: EconomicState_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: SupplyProduct_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: Transport_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: WarPhase_unittests.cpp
+CMakeFiles/runTests.dir/unittests.cpp.o: WarTheatre_unittests.cpp
 CMakeFiles/runTests.dir/unittests.cpp.o: unittests.cpp
 

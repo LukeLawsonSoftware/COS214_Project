@@ -156,11 +156,13 @@ void War::startWarSim()
 			// std::cout << "in here" << std::endl;
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 				Country::alliance1.at(i)->takeTurn(this);
+			std::cout << std::endl;
 		}
 		for (int i = 0; i < Country::alliance2.size(); i++)
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 				Country::alliance2.at(i)->takeTurn(this);
+			std::cout << std::endl;
 		}
 		std::cout << "\033[1;37m";
 		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
@@ -175,7 +177,9 @@ void War::startWarSim()
 		std::cout << "\033[;0m";
 
 		warTheatres.at("Land")->conflict();
+		std::cout << std::endl;
 		warTheatres.at("Sea")->conflict();
+		std::cout << std::endl;
 		warTheatres.at("Air")->conflict();
 
 		std::cout << "\033[1;37m";
@@ -262,8 +266,17 @@ void War::startWarSim()
 				seeder += 67848;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
-				int gdp = 5000000 - (std::rand() % (10000000 - 0 + 1));
-				Country::alliance1.at(i)->earnGDP(gdp);
+				int gdp = 500000 - (std::rand() % (2000000 - 0 + 1));
+				if (gdp < 0)
+				{
+					gdp = -1 * gdp;
+					Country::alliance1.at(i)->spendGDP(gdp);
+				}
+				else
+				{
+					Country::alliance1.at(i)->earnGDP(gdp);
+				}
+				std::cout << std::endl;
 			}
 		}
 		for (int i = 0; i < Country::alliance2.size(); i++)
@@ -274,8 +287,17 @@ void War::startWarSim()
 				seeder += 3000;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
 				// seed *= 1.378;
-				int gdp = 5000000 - (std::rand() % (10000000 - 0 + 1));
-				Country::alliance2.at(i)->earnGDP(gdp);
+				int gdp = 500000 - (std::rand() % (2000000 - 0 + 1));
+				if (gdp < 0)
+				{
+					gdp = -1 * gdp;
+					Country::alliance2.at(i)->spendGDP(gdp);
+				}
+				else
+				{
+					Country::alliance2.at(i)->earnGDP(gdp);
+				}
+				std::cout << std::endl;
 			}
 		}
 		std::cout << "\033[1;37m";
@@ -352,16 +374,16 @@ void War::startWarGame()
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
 				std::cout << "What action would you like " << Country::alliance1.at(i)->getName() << " to perform?" << std::endl;
-				std::cout << "1. Form Alliance." << std::endl;
-				std::cout << "2. Raise an army." << std::endl;
-				std::cout << "3. Upgrade a Unit Factory." << std::endl;
-				std::cout << "4. Upgrade a Supply Factory." << std::endl;
-				std::cout << "5. Enter the Army into the war theatre." << std::endl;
-				std::cout << "6. Change the army strategy." << std::endl;
-				std::cout << "7. Attack a transport line." << std::endl;
-				std::cout << "8. Surrender." << std::endl;
-				std::cout << "9. Send supplies." << std::endl;
-				std::cout << "10. Do Nothing." << std::endl;
+				std::cout << "1. Form Alliance.\t\t2. Raise an army." << std::endl;
+				//	std::cout << "2. Raise an army." << std::endl;
+				std::cout << "3. Upgrade a Unit Factory.\t\t4. Upgrade a Supply Factory." << std::endl;
+				//	std::cout << "4. Upgrade a Supply Factory." << std::endl;
+				std::cout << "5. Enter the Army into the war theatre.\t\t6. Change the army strategy." << std::endl;
+				//	std::cout << "6. Change the army strategy." << std::endl;
+				std::cout << "7. Attack a transport line.\t\t8. Surrender." << std::endl;
+				//	std::cout << "8. Surrender." << std::endl;
+				std::cout << "9. Send supplies.\t\t10. Do Nothing." << std::endl;
+				//	std::cout << "10. Do Nothing." << std::endl;
 				std::cout << "(Please enter the corresponding number):";
 				std::string inLine;
 				std::getline(std::cin, inLine);
@@ -407,6 +429,9 @@ void War::startWarGame()
 				case 10:
 
 					break;
+
+				default:
+					break;
 				}
 			}
 		}
@@ -414,6 +439,7 @@ void War::startWarGame()
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 				Country::alliance2.at(i)->takeTurn(this);
+			std::cout << std::endl;
 		}
 		std::cout << "\033[1;37m";
 		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
@@ -428,7 +454,9 @@ void War::startWarGame()
 		std::cout << "\033[;0m";
 
 		warTheatres.at("Land")->conflict();
+		std::cout << std::endl;
 		warTheatres.at("Sea")->conflict();
+		std::cout << std::endl;
 		warTheatres.at("Air")->conflict();
 
 		std::cout << "\033[1;37m";
@@ -503,29 +531,67 @@ void War::startWarGame()
 			break;
 		}
 
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "EARNINGS PHASE"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
 		for (int i = 0; i < Country::alliance1.size(); i++)
 		{
 			if (Country::alliance1.at(i)->isSurrendered() == false)
 			{
-				static int seeder = 1357;
-				seeder += 2468;
+				static int seeder = 12300;
+				seeder += 67848;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
-				//	seed *= 1.378;
-				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
-				Country::alliance1.at(i)->earnGDP(gdp);
+				// seed *= 1.378;
+				int gdp = 500000 - (std::rand() % (2000000 - 0 + 1));
+				if (gdp < 0)
+				{
+					gdp = -1 * gdp;
+					Country::alliance1.at(i)->spendGDP(gdp);
+				}
+				else
+				{
+					Country::alliance1.at(i)->earnGDP(gdp);
+				}
+				std::cout << std::endl;
 			}
 		}
 		for (int i = 0; i < Country::alliance2.size(); i++)
 		{
 			if (Country::alliance2.at(i)->isSurrendered() == false)
 			{
-				static int seeder = 1256;
-				seeder += 2367;
+				static int seeder = 37890;
+				seeder += 3000;
 				srand((unsigned)time(0) + seeder); // to generate a different value each time
-				//	seed *= 1.378;
-				int gdp = 50000 - (std::rand() % (100000 - 0 + 1));
-				Country::alliance2.at(i)->earnGDP(gdp);
+				// seed *= 1.378;
+				int gdp = 500000 - (std::rand() % (2000000 - 0 + 1));
+
+				if (gdp < 0)
+				{
+					gdp = -1 * gdp;
+					Country::alliance2.at(i)->spendGDP(gdp);
+				}
+				else
+				{
+					Country::alliance2.at(i)->earnGDP(gdp);
+				}
+
+				std::cout << std::endl;
 			}
+		}
+		std::cout << "\033[1;37m";
+		std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ "
+				  << "++++++++++++"
+				  << " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+		std::cout << "\033[;0m";
+
+		// to pause during debugging
+		std::string test;
+		std::cin >> test;
+		if (test == "stop")
+		{
+			break;
 		}
 	}
 	stopWar();
@@ -548,7 +614,7 @@ void War::selectConfiguration()
 
 	// 2 - lopsided battle between...
 
-	// 3 - tightly contested real battle
+	// 3 - tightly contested real battle (BRICS vs some other trade union)
 
 	// 4 - own configuration
 	setUpCountries();

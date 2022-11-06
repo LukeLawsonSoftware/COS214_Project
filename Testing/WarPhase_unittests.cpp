@@ -35,7 +35,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Defensive *d = new Defensive();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete u1;
             delete u2;
@@ -63,7 +63,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Defensive *d = new Defensive();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete army;
         }
@@ -95,7 +95,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Neutral *d = new Neutral();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete u1;
             delete u2;
@@ -123,7 +123,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Neutral *d = new Neutral();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete army;
         }
@@ -155,7 +155,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Offensive *d = new Offensive();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete u1;
             delete u2;
@@ -183,7 +183,7 @@ namespace
             stats.setSeaDefence(army->calculateSeaDefense());
 
             Offensive *d = new Offensive();
-            d->applyStrategyBonus(stats, army);
+            d->applyStrategyBonus(stats, army, "Country_Name");
             delete d;
             delete army;
         }
@@ -201,7 +201,7 @@ namespace
             BattleStatistics stats;
 
             Offensive *d = new Offensive();
-            d->applyStrategyBonus(stats, NULL);
+            d->applyStrategyBonus(stats, NULL, "Country_Name");
             FAIL();
             delete d;
         }
@@ -223,7 +223,7 @@ namespace
             BattleStatistics stats;
 
             Neutral *d = new Neutral();
-            d->applyStrategyBonus(stats, NULL);
+            d->applyStrategyBonus(stats, NULL, "Country_Name");
             FAIL();
             delete d;
         }
@@ -245,7 +245,7 @@ namespace
             BattleStatistics stats;
 
             Defensive *d = new Defensive();
-            d->applyStrategyBonus(stats, NULL);
+            d->applyStrategyBonus(stats, NULL, "Country_Name");
             FAIL();
             delete d;
         }

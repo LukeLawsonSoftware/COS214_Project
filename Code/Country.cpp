@@ -109,13 +109,13 @@ void Country::earnGDP(double gdpEarned)
 	setColour();
 	std::cout << name << " earns GDP of " << gdpEarned << std::endl;
 	this->gdp += gdpEarned;
-	if (this->gdp >= 500000)
+	if (this->gdp >= 5000000)
 	{
 		delete this->ecoState;
 		this->ecoState = new Rich();
 		std::cout << name << " is in a Rich economic state" << std::endl;
 	}
-	else if (this->gdp >= 100000)
+	else if (this->gdp >= 1000000)
 	{
 		delete this->ecoState;
 		this->ecoState = new Average();
@@ -135,13 +135,13 @@ void Country::spendGDP(double gdpSpent)
 	setColour();
 	std::cout << name << " spends GDP of " << gdpSpent << std::endl;
 	this->gdp -= gdpSpent;
-	if (this->gdp >= 500000)
+	if (this->gdp >= 5000000)
 	{
 		delete this->ecoState;
 		this->ecoState = new Rich();
 		std::cout << name << " is in a Rich economic state" << std::endl;
 	}
-	else if (this->gdp >= 100000)
+	else if (this->gdp >= 1000000)
 	{
 		delete this->ecoState;
 		this->ecoState = new Average();
@@ -242,11 +242,11 @@ void Country::raiseArmy()
 {
 	setColour();
 	std::cout << name << " decides to raise an army" << std::endl;
-	if (gdp >= 500000)
+	if (gdp >= 800000)
 	{
 		if (this->army == NULL)
 		{
-			spendGDP(500000);
+			spendGDP(800000);
 			std::string type = decideArmyType();
 			if (type[0] == 'R')
 			{
@@ -299,7 +299,7 @@ std::string Country::decideArmyType()
 			types[2] = true; // air
 			for (int j = 0; j < Country::alliance1.size(); j++)
 			{
-				if (this->getName() != Country::alliance1.at(j)->getName())
+				if (this->getName() != Country::alliance1.at(j)->getName() && !Country::alliance1.at(j)->isSurrendered())
 				{
 					if (Country::alliance1.at(j)->getArmy() != NULL && Country::alliance1.at(j)->getArmy()->getType()[0] == 'L')
 					{
@@ -338,50 +338,48 @@ std::string Country::decideArmyType()
 	}
 	for (int i = 0; i < Country::alliance2.size(); i++)
 	{
+
 		if (this->getName() == Country::alliance2.at(i)->getName())
 		{
-			if (this->getName() == Country::alliance2.at(i)->getName())
+			bool types[3];
+			types[0] = true; // land
+			types[1] = true; // sea
+			types[2] = true; // air
+			for (int j = 0; j < Country::alliance2.size(); j++)
 			{
-				bool types[3];
-				types[0] = true; // land
-				types[1] = true; // sea
-				types[2] = true; // air
-				for (int j = 0; j < Country::alliance2.size(); j++)
+				if (this->getName() != Country::alliance2.at(j)->getName() && !Country::alliance2.at(j)->isSurrendered())
 				{
-					if (this->getName() != Country::alliance2.at(j)->getName())
+					if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'L')
 					{
-						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'L')
-						{
-							types[0] = false;
-						}
-						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'S')
-						{
-							types[1] = false;
-						}
-						if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'A')
-						{
-							types[2] = false;
-						}
+						types[0] = false;
+					}
+					if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'S')
+					{
+						types[1] = false;
+					}
+					if (Country::alliance2.at(j)->getArmy() != NULL && Country::alliance2.at(j)->getArmy()->getType()[0] == 'A')
+					{
+						types[2] = false;
 					}
 				}
-				for (int k = 0; k < 3; k++)
+			}
+			for (int k = 0; k < 3; k++)
+			{
+				if (types[0])
 				{
-					if (types[0])
-					{
-						return "Land";
-					}
-					else if (types[1])
-					{
-						return "Sea";
-					}
-					else if (types[2])
-					{
-						return "Air";
-					}
-					else
-					{
-						return "Random";
-					}
+					return "Land";
+				}
+				else if (types[1])
+				{
+					return "Sea";
+				}
+				else if (types[2])
+				{
+					return "Air";
+				}
+				else
+				{
+					return "Random";
 				}
 			}
 		}
@@ -393,18 +391,22 @@ void Country::upgradeUnitFactory()
 {
 	setColour();
 	std::cout << name << " decides to upgrade its Unit Factories!" << std::endl;
-	if (gdp > 100000)
+	if (gdp > 500000)
 	{
-		spendGDP(100000);
+		spendGDP(500000);
 		for (int i = 0; i < unitFactories->size(); i++)
 		{
 			unitFactories->at(i)->upgrade();
 		}
+		setColour();
 		std::cout << name << " has upgraded its Unit Factories." << std::endl;
+		std::cout << "\033[;0m";
 	}
 	else
 	{
+		setColour();
 		std::cout << name << " does not have enough GDP to perform the upgrade!" << std::endl;
+		std::cout << "\033[;0m";
 	}
 	std::cout << "\033[0m";
 }
@@ -413,18 +415,22 @@ void Country::upgradeSupplyFactory()
 {
 	setColour();
 	std::cout << name << " decides to upgrade its Supply Factories!" << std::endl;
-	if (gdp > 100000)
+	if (gdp > 500000)
 	{
-		spendGDP(100000);
+		spendGDP(500000);
 		for (int i = 0; i < supplyFactories->size(); i++)
 		{
 			supplyFactories->at(i)->upgrade();
 		}
+		setColour();
 		std::cout << name << " has upgraded its Supply Factories." << std::endl;
+		std::cout << "\033[;0m";
 	}
 	else
 	{
+		setColour();
 		std::cout << name << " does not have enough GDP to perform the upgrade!" << std::endl;
+		std::cout << "\033[;0m";
 	}
 	std::cout << "\033[0m";
 }
