@@ -6,7 +6,9 @@ MedicalSupply::MedicalSupply(int factoryLevel, int quantity) : Supply(quantity)
 	// TODO - implement MedicalSupply::MedicalSupply
 
 	double bonus = 0;
-	srand((unsigned)time(0)); // to generate a different value each time
+	static int seeder = 133;
+	seeder += 112;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 
 	// generate bonus based on factory level
 	if (factoryLevel == 1)

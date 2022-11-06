@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirUnit.h
 Soldier.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
@@ -40,6 +44,14 @@ Transporter.h
 iostream
 -
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+Corresponder.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Corresponder.h
+string
+-
+vector
+-
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyBuilder.h
 iostream
 -
@@ -60,6 +72,10 @@ ctime
 iostream
 -
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
 ArmyComponent.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
@@ -77,10 +93,20 @@ vector
 -
 string
 -
+stdlib.h
+-
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Defensive.h
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandUnit.h
 Soldier.h
@@ -120,9 +146,23 @@ iostream
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Offensive.h
 ArmyStrategy.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyStrategy.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.h
+EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.h
+WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaUnit.h
 Soldier.h
@@ -158,6 +198,18 @@ iostream
 ArmyComponent.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/ArmyComponent.h
 iostream
+-
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+Army.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Army.h
+NonCombatEntity.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/NonCombatEntity.h
+BattleStatistics.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/BattleStatistics.h
+vector
+-
+string
 -
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyBuilder_unittests.cpp
@@ -211,6 +263,24 @@ gtest/gtest.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaVehicle.h
 ../Code/Battalion.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Battalion.h
+
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/EconomicState_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/EconomicState.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/EconomicState.h
+../Code/Rich.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Rich.h
+../Code/Average.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Average.h
+../Code/Poor.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Poor.h
+../Code/Country.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Country.h
 
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/SupplyProduct_unittests.cpp
 limits.h
@@ -272,6 +342,22 @@ gtest/gtest.h
 ../Code/Soldier.h
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/Soldier.h
 
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarTheatre_unittests.cpp
+limits.h
+-
+stdexcept
+-
+gtest/gtest.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/gtest/gtest.h
+../Code/WarTheatre.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/WarTheatre.h
+../Code/LandTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/LandTerrain.h
+../Code/AirTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/AirTerrain.h
+../Code/SeaTerrain.h
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Code/SeaTerrain.h
+
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/unittests.cpp
 ArmyComponent_unittests.cpp
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/ArmyComponent_unittests.cpp
@@ -283,6 +369,10 @@ WarPhase_unittests.cpp
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarPhase_unittests.cpp
 SupplyProduct_unittests.cpp
 /home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/SupplyProduct_unittests.cpp
+EconomicState_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/EconomicState_unittests.cpp
+WarTheatre_unittests.cpp
+/home/lukelawson/projects/luke_wsl/COS 214/COS214_Project/Testing/WarTheatre_unittests.cpp
 gtest/gtest.h
 -
 

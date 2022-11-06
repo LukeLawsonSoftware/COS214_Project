@@ -8,7 +8,9 @@ Supply *AmmoFactory::makeSupply(int quantity)
 {
 	// TODO - implement AmmoFactory::makeSupply
 
-	srand((unsigned)time(0));			   // to generate a different value each time
+	static int seeder = 4352525;
+	seeder += 346457;
+	srand((unsigned)time(0) + seeder);	   // to generate a different value each time
 	int cost = (double)(2 + (rand() % 5)); // random number between 2 and 4
 
 	int totalToBeProduced = cost * quantity;
@@ -26,13 +28,13 @@ Supply *AmmoFactory::makeSupply(int quantity)
 			if (possibleAmount > getBudget())
 			{
 				quantity = counter - 1;
-				std::cout << "NOTE: BUDGET FOR AMMO FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 			else if (possibleAmount == getBudget())
 			{
 				quantity = counter;
-				std::cout << "NOTE: BUDGET FOR AMMO FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 
@@ -43,7 +45,7 @@ Supply *AmmoFactory::makeSupply(int quantity)
 	}
 	else
 	{
-		std::cout << "NOTE: AMMO FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
+		// std::cout << "NOTE: AMMO FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
 		totalSpent += costAfterProduction;
 	}
 

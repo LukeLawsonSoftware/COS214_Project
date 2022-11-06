@@ -2,9 +2,9 @@
 
 EarlyUnstablePeace::EarlyUnstablePeace()
 {
-    outputChange();
+    //  outputChange();
     next = new EarlyOpenConflict();
-    peaceChance = 0.6;
+    peaceChance = 0.06;
 }
 
 void EarlyUnstablePeace::outputChange()

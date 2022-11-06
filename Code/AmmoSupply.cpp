@@ -6,7 +6,9 @@ AmmoSupply::AmmoSupply(int factoryLevel, int quantity) : Supply(quantity)
 	// TODO - implement AmmoSupply::AmmoSupply
 
 	double bonus = 0;
-	srand((unsigned)time(0)); // to generate a different value each time
+	static int seeder = 1352352;
+	seeder += 1212121;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 
 	// generate bonus based on factory level
 	if (factoryLevel == 1)

@@ -16,7 +16,9 @@ int SeaUnit::calculateSeaOffense()
 	int mean = this->trainingLevel * 10;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 1235;
+	seeder += 8;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation
@@ -27,7 +29,9 @@ int SeaUnit::calculateSeaDefense()
 	int mean = this->trainingLevel * 5;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 996;
+	seeder += 80085;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation

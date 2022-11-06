@@ -3,7 +3,7 @@ EarlyCrisis::EarlyCrisis()
 {
 
     next = nullptr;
-    peaceChance = 0.2;
+    peaceChance = 0.02;
 }
 
 void EarlyCrisis::outputChange()

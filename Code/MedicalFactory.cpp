@@ -8,7 +8,9 @@ Supply *MedicalFactory::makeSupply(int quantity)
 {
 	// TODO - implement MedicalFactory::makeSupply
 
-	srand((unsigned)time(0));			   // to generate a different value each time
+	static int seeder = 561717;
+	seeder += 555;
+	srand((unsigned)time(0) + seeder);	   // to generate a different value each time
 	int cost = (double)(2 + (rand() % 5)); // random number between 2 and 4
 
 	int totalToBeProduced = cost * quantity;
@@ -26,13 +28,13 @@ Supply *MedicalFactory::makeSupply(int quantity)
 			if (possibleAmount > getBudget())
 			{
 				quantity = counter - 1;
-				std::cout << "NOTE: BUDGET FOR MEDICAL FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 			else if (possibleAmount == getBudget())
 			{
 				quantity = counter;
-				std::cout << "NOTE: BUDGET FOR MEDICAL FACTORY PRODUCTION REACHED." << std::endl;
+				std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 				break;
 			}
 
@@ -43,7 +45,7 @@ Supply *MedicalFactory::makeSupply(int quantity)
 	}
 	else
 	{
-		std::cout << "NOTE: MEDICAL FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
+		// std::cout << "NOTE: MEDICAL FACTORY STILL ABLE TO PRODUCE MORE SUPPLIES." << std::endl;
 		totalSpent += costAfterProduction;
 	}
 

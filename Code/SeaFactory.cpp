@@ -8,40 +8,44 @@ SeaFactory::SeaFactory(double budget, int level, std::string type)
 
 ArmyComponent *SeaFactory::createVehicle()
 {
-	srand((unsigned)time(0));				 // to generate a different value each time
+	static int seeder = 12345;
+	seeder += 6789;
+	srand((unsigned)time(0) + seeder);		 // to generate a different value each time
 	int cost = (double)(18 + (rand() % 25)); // random number between 18 and 25 (25 excluded)
 
 	int costAfterProduction = cost + totalSpent;
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: CANNOT CREATE A VEHICLE DUE TO THE SEA FACTORY'S BUDGET THAT HAS BEEN REACHED." << std::endl;
+		std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 		return nullptr;
 	}
 	else
 	{
-		std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
-		totalSpent += costAfterProduction;
+		//	std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE VEHICLES." << std::endl;
+		totalSpent += cost;
 	}
 	return new SeaVehicle(determineActualLevel());
 }
 
 ArmyComponent *SeaFactory::createSoldier()
 {
-	srand((unsigned)time(0));				 // to generate a different value each time
+	static int seeder = 5;
+	seeder += 8;
+	srand((unsigned)time(0) + seeder);		 // to generate a different value each time
 	int cost = (double)(10 + (rand() % 15)); // random number between 10 and 15 (15 excluded) {SOLDIER COST KEPT THE SAME AS THE OTHER SOLDIERS}
 
 	int costAfterProduction = cost + totalSpent;
 
 	if (costAfterProduction > getBudget())
 	{
-		std::cout << "NOTE: CANNOT CREATE A SOLDIER DUE TO THE SEA FACTORY'S BUDGET THAT HAS BEEN REACHED." << std::endl;
+		std::cout << "\033[;33mNOTE: FACTORY BUDGET REACHED.\033[0m" << std::endl;
 		return nullptr;
 	}
 	else
 	{
-		std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
-		totalSpent += costAfterProduction;
+		//	std::cout << "NOTE: SEA FACTORY STILL ABLE TO CREATE MORE SOLDIERS." << std::endl;
+		totalSpent += cost;
 	}
 	return new SeaUnit(determineActualLevel());
 }
