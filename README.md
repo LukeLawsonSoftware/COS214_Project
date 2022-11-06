@@ -7,7 +7,7 @@ All links provided below are links to a Google Drive where the file is stored. T
 1) The latest and final version of the class diagram as both a PDF and a VPP project
 2) A minimal version of the final class diagram as a PDF, that does not include attributes or operations, only relationships between classes
 3) PDF versions of the latest versions of all the Activity, Sequence, State, Communication and Object diagrams
-4) The functional requirements of the system as a PDF (with a link to the Google Doc version)
+4) The functional requirements of the system as a PDF
 5) The complete project report as a PDF (with a link to the Google Doc version), containing the research brief and report on design patterns employed as stipulated by Task 4.
 
 ## How to compile and run
