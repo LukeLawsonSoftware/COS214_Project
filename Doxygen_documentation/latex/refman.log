@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.6)  6 NOV 2022 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.6)  6 NOV 2022 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,17 +898,12 @@ Package epstopdf Info: Source file: <class_air_factory.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_air_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:12
 (epstopdf)                    size: 5000 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_factory-eps-conv
 erted-to.pdf class_air_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_air_factory-eps-converted-to.pdf class_air_
-factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_air_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:12
-(epstopdf)                    size: 5000 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_air_factory-eps-converted-to.pdf>
 <class_air_factory-eps-converted-to.pdf, id=2896, 501.875pt x 472.3547pt>
 File: class_air_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -994,17 +989,12 @@ Package epstopdf Info: Source file: <class_air_terrain.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_air_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:13
 (epstopdf)                    size: 4906 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_terrain-eps-conv
 erted-to.pdf class_air_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_air_terrain-eps-converted-to.pdf class_air_
-terrain.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_air_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:13
-(epstopdf)                    size: 4906 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_air_terrain-eps-converted-to.pdf>
 <class_air_terrain-eps-converted-to.pdf, id=2965, 501.875pt x 466.8642pt>
 File: class_air_terrain-eps-converted-to.pdf Graphic file (type pdf)
@@ -1027,17 +1017,12 @@ Package epstopdf Info: Source file: <class_air_unit.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_air_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:13
 (epstopdf)                    size: 5590 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_unit-eps-convert
 ed-to.pdf class_air_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_air_unit-eps-converted-to.pdf class_air_uni
-t.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_air_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:13
-(epstopdf)                    size: 5590 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_air_unit-eps-converted-to.pdf>
 <class_air_unit-eps-converted-to.pdf, id=2989, 501.875pt x 532.9611pt>
 File: class_air_unit-eps-converted-to.pdf Graphic file (type pdf)
@@ -1181,17 +1166,12 @@ Package epstopdf Info: Source file: <class_air_vehicle.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3893 bytes
 (epstopdf)             Output file: <class_air_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:14
 (epstopdf)                    size: 5483 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_air_vehicle-eps-conv
 erted-to.pdf class_air_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_air_vehicle-eps-converted-to.pdf class_air_
-vehicle.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_air_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:14
-(epstopdf)                    size: 5483 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_air_vehicle-eps-converted-to.pdf>
 <class_air_vehicle-eps-converted-to.pdf, id=3064, 501.875pt x 532.9611pt>
 File: class_air_vehicle-eps-converted-to.pdf Graphic file (type pdf)
@@ -1314,17 +1294,12 @@ Package epstopdf Info: Source file: <class_ammo_factory.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3790 bytes
 (epstopdf)             Output file: <class_ammo_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:14
 (epstopdf)                    size: 5315 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_factory-eps-con
 verted-to.pdf class_ammo_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_ammo_factory-eps-converted-to.pdf class_amm
-o_factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_ammo_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:14
-(epstopdf)                    size: 5315 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_ammo_factory-eps-converted-to.pdf>
 <class_ammo_factory-eps-converted-to.pdf, id=3138, 501.875pt x 389.80632pt>
 File: class_ammo_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -1377,17 +1352,12 @@ Package epstopdf Info: Source file: <class_ammo_supply.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_ammo_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
-(epstopdf)                    size: 4777 bytes
+(epstopdf)                    date: 2022-11-06 20:01:15
+(epstopdf)                    size: 4775 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_supply-eps-conv
 erted-to.pdf class_ammo_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_ammo_supply-eps-converted-to.pdf class_ammo
-_supply.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_ammo_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:15
-(epstopdf)                    size: 4775 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_ammo_supply-eps-converted-to.pdf>
 <class_ammo_supply-eps-converted-to.pdf, id=3180, 501.875pt x 431.7229pt>
 File: class_ammo_supply-eps-converted-to.pdf Graphic file (type pdf)
@@ -1431,18 +1401,12 @@ Package epstopdf Info: Source file: <class_ammo_transporter.eps>
 (epstopdf)                    size: 3794 bytes
 (epstopdf)             Output file: <class_ammo_transporter-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:15
 (epstopdf)                    size: 5080 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_ammo_transporter-eps
 -converted-to.pdf class_ammo_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_ammo_transporter-eps-converted-to.pdf class
-_ammo_transporter.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_ammo_transporter-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2022-11-06 20:01:15
-(epstopdf)                    size: 5080 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_ammo_transporter-eps-converted-to.pdf>
 <class_ammo_transporter-eps-converted-to.pdf, id=3217, 501.875pt x 334.57997pt>
 
@@ -1481,17 +1445,12 @@ Package epstopdf Info: Source file: <class_army.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_army-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:15
 (epstopdf)                    size: 5121 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army-eps-converted-t
 o.pdf class_army.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_army-eps-converted-to.pdf class_army.eps)..
-.executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_army-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:15
-(epstopdf)                    size: 5121 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_army-eps-converted-to.pdf>
 <class_army-eps-converted-to.pdf, id=3259, 501.875pt x 405.55516pt>
 File: class_army-eps-converted-to.pdf Graphic file (type pdf)
@@ -1775,18 +1734,12 @@ Package epstopdf Info: Source file: <class_army_component.eps>
 (epstopdf)                    size: 4581 bytes
 (epstopdf)             Output file: <class_army_component-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:16
 (epstopdf)                    size: 6654 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army_component-eps-c
 onverted-to.pdf class_army_component.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_army_component-eps-converted-to.pdf class_a
-rmy_component.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_army_component-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2022-11-06 20:01:16
-(epstopdf)                    size: 6654 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_army_component-eps-converted-to.pdf>
 <class_army_component-eps-converted-to.pdf, id=3531, 501.875pt x 88.83188pt>
 File: class_army_component-eps-converted-to.pdf Graphic file (type pdf)
@@ -1885,17 +1838,12 @@ Package epstopdf Info: Source file: <class_army_strategy.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3976 bytes
 (epstopdf)             Output file: <class_army_strategy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:16
 (epstopdf)                    size: 6205 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_army_strategy-eps-co
 nverted-to.pdf class_army_strategy.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_army_strategy-eps-converted-to.pdf class_ar
-my_strategy.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_army_strategy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:16
-(epstopdf)                    size: 6205 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_army_strategy-eps-converted-to.pdf>
 <class_army_strategy-eps-converted-to.pdf, id=3717, 501.875pt x 137.97548pt>
 File: class_army_strategy-eps-converted-to.pdf Graphic file (type pdf)
@@ -1915,18 +1863,12 @@ Package epstopdf Info: Source file: <class_attack_transport.eps>
 (epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_attack_transport-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5443 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_attack_transport-eps
 -converted-to.pdf class_attack_transport.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_attack_transport-eps-converted-to.pdf class
-_attack_transport.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_attack_transport-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2022-11-06 20:01:17
-(epstopdf)                    size: 5443 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_attack_transport-eps-converted-to.pdf>
 <class_attack_transport-eps-converted-to.pdf, id=3755, 501.875pt x 368.34615pt>
 
@@ -1950,17 +1892,12 @@ Package epstopdf Info: Source file: <class_average.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_average-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5519 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_average-eps-converte
 d-to.pdf class_average.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_average-eps-converted-to.pdf class_average.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_average-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:17
-(epstopdf)                    size: 5519 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_average-eps-converted-to.pdf>
 <class_average-eps-converted-to.pdf, id=3791, 501.875pt x 389.80632pt>
 File: class_average-eps-converted-to.pdf Graphic file (type pdf)
@@ -1983,17 +1920,12 @@ Package epstopdf Info: Source file: <class_battalion.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_battalion-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:17
 (epstopdf)                    size: 5440 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_battalion-eps-conver
 ted-to.pdf class_battalion.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_battalion-eps-converted-to.pdf class_battal
-ion.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_battalion-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:17
-(epstopdf)                    size: 5440 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_battalion-eps-converted-to.pdf>
 <class_battalion-eps-converted-to.pdf, id=3812, 501.875pt x 355.30743pt>
 File: class_battalion-eps-converted-to.pdf Graphic file (type pdf)
@@ -2073,18 +2005,12 @@ Package epstopdf Info: Source file: <class_change_strategy.eps>
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_change_strategy-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 5497 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_change_strategy-eps-
 converted-to.pdf class_change_strategy.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_change_strategy-eps-converted-to.pdf class_
-change_strategy.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_change_strategy-eps-converted-to.pdf
->
-(epstopdf)                    date: 2022-11-06 20:01:18
-(epstopdf)                    size: 5497 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_change_strategy-eps-converted-to.pdf>
 <class_change_strategy-eps-converted-to.pdf, id=3954, 501.875pt x 361.71133pt>
 File: class_change_strategy-eps-converted-to.pdf Graphic file (type pdf)
@@ -2108,17 +2034,12 @@ Package epstopdf Info: Source file: <class_civilian.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3788 bytes
 (epstopdf)             Output file: <class_civilian-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 5279 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_civilian-eps-convert
 ed-to.pdf class_civilian.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_civilian-eps-converted-to.pdf class_civilia
-n.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_civilian-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:18
-(epstopdf)                    size: 5279 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_civilian-eps-converted-to.pdf>
 <class_civilian-eps-converted-to.pdf, id=3984, 501.875pt x 346.1231pt>
 File: class_civilian-eps-converted-to.pdf Graphic file (type pdf)
@@ -2174,17 +2095,12 @@ Package epstopdf Info: Source file: <class_command.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 4004 bytes
 (epstopdf)             Output file: <class_command-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:18
 (epstopdf)                    size: 6548 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_command-eps-converte
 d-to.pdf class_command.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_command-eps-converted-to.pdf class_command.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_command-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:18
-(epstopdf)                    size: 6548 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_command-eps-converted-to.pdf>
 <class_command-eps-converted-to.pdf, id=4023, 501.875pt x 116.37477pt>
 File: class_command-eps-converted-to.pdf Graphic file (type pdf)
@@ -2212,17 +2128,12 @@ Package epstopdf Info: Source file: <class_corresponder.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_corresponder-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5398 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_corresponder-eps-con
 verted-to.pdf class_corresponder.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_corresponder-eps-converted-to.pdf class_cor
-responder.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_corresponder-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:19
-(epstopdf)                    size: 5398 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_corresponder-eps-converted-to.pdf>
 <class_corresponder-eps-converted-to.pdf, id=4064, 501.875pt x 202.77757pt>
 File: class_corresponder-eps-converted-to.pdf Graphic file (type pdf)
@@ -2245,17 +2156,12 @@ Package epstopdf Info: Source file: <class_country.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_country-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5034 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_country-eps-converte
 d-to.pdf class_country.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_country-eps-converted-to.pdf class_country.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_country-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:19
-(epstopdf)                    size: 5034 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_country-eps-converted-to.pdf>
 <class_country-eps-converted-to.pdf, id=4110, 501.875pt x 405.55516pt>
 File: class_country-eps-converted-to.pdf Graphic file (type pdf)
@@ -2433,17 +2339,12 @@ Package epstopdf Info: Source file: <class_defensive.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_defensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:19
 (epstopdf)                    size: 5697 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_defensive-eps-conver
 ted-to.pdf class_defensive.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_defensive-eps-converted-to.pdf class_defens
-ive.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_defensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:19
-(epstopdf)                    size: 5697 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_defensive-eps-converted-to.pdf>
 <class_defensive-eps-converted-to.pdf, id=4347, 501.875pt x 413.91638pt>
 File: class_defensive-eps-converted-to.pdf Graphic file (type pdf)
@@ -2461,17 +2362,12 @@ Package epstopdf Info: Source file: <class_early_crisis.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3891 bytes
 (epstopdf)             Output file: <class_early_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:20
 (epstopdf)                    size: 5305 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_crisis-eps-con
 verted-to.pdf class_early_crisis.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_early_crisis-eps-converted-to.pdf class_ear
-ly_crisis.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_early_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:20
-(epstopdf)                    size: 5305 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_early_crisis-eps-converted-to.pdf>
 <class_early_crisis-eps-converted-to.pdf, id=4382, 501.875pt x 708.52705pt>
 File: class_early_crisis-eps-converted-to.pdf Graphic file (type pdf)
@@ -2495,18 +2391,12 @@ Package epstopdf Info: Source file: <class_early_open_conflict.eps>
 (epstopdf)                    size: 3903 bytes
 (epstopdf)             Output file: <class_early_open_conflict-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:20
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_open_conflict-
 eps-converted-to.pdf class_early_open_conflict.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_early_open_conflict-eps-converted-to.pdf cl
-ass_early_open_conflict.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_early_open_conflict-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:20
-(epstopdf)                    size: 6035 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_early_open_conflict-eps-converted-to.pdf>
 <class_early_open_conflict-eps-converted-to.pdf, id=4405, 501.875pt x 485.68451
 pt>
@@ -2530,17 +2420,12 @@ Package epstopdf Info: Source file: <class_early_peace.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3889 bytes
 (epstopdf)             Output file: <class_early_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 5201 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_peace-eps-conv
 erted-to.pdf class_early_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_early_peace-eps-converted-to.pdf class_earl
-y_peace.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_early_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:21
-(epstopdf)                    size: 5201 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_early_peace-eps-converted-to.pdf>
 <class_early_peace-eps-converted-to.pdf, id=4430, 501.875pt x 700.28624pt>
 File: class_early_peace-eps-converted-to.pdf Graphic file (type pdf)
@@ -2558,17 +2443,12 @@ Package epstopdf Info: Source file: <class_early_phase.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 4202 bytes
 (epstopdf)             Output file: <class_early_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 6396 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_phase-eps-conv
 erted-to.pdf class_early_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_early_phase-eps-converted-to.pdf class_earl
-y_phase.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_early_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:21
-(epstopdf)                    size: 6396 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_early_phase-eps-converted-to.pdf>
 <class_early_phase-eps-converted-to.pdf, id=4448, 501.875pt x 112.35977pt>
 File: class_early_phase-eps-converted-to.pdf Graphic file (type pdf)
@@ -2592,18 +2472,12 @@ Package epstopdf Info: Source file: <class_early_unstable_peace.eps>
 (epstopdf)                    size: 3905 bytes
 (epstopdf)             Output file: <class_early_unstable_peace-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:21
 (epstopdf)                    size: 5628 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_early_unstable_peace
 -eps-converted-to.pdf class_early_unstable_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_early_unstable_peace-eps-converted-to.pdf c
-lass_early_unstable_peace.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_early_unstable_peace-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:21
-(epstopdf)                    size: 5628 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_early_unstable_peace-eps-converted-to.pdf>
 <class_early_unstable_peace-eps-converted-to.pdf, id=4485, 501.875pt x 449.4391
 pt>
@@ -2628,18 +2502,12 @@ Package epstopdf Info: Source file: <class_economic_state.eps>
 (epstopdf)                    size: 3958 bytes
 (epstopdf)             Output file: <class_economic_state-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5978 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_economic_state-eps-c
 onverted-to.pdf class_economic_state.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_economic_state-eps-converted-to.pdf class_e
-conomic_state.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_economic_state-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2022-11-06 20:01:22
-(epstopdf)                    size: 5978 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_economic_state-eps-converted-to.pdf>
 <class_economic_state-eps-converted-to.pdf, id=4510, 501.875pt x 129.93544pt>
 File: class_economic_state-eps-converted-to.pdf Graphic file (type pdf)
@@ -2668,17 +2536,12 @@ Package epstopdf Info: Source file: <class_land_factory.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_land_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5089 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_factory-eps-con
 verted-to.pdf class_land_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_land_factory-eps-converted-to.pdf class_lan
-d_factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_land_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:22
-(epstopdf)                    size: 5089 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_land_factory-eps-converted-to.pdf>
 <class_land_factory-eps-converted-to.pdf, id=4552, 501.875pt x 436.41043pt>
 File: class_land_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -2736,17 +2599,12 @@ Package epstopdf Info: Source file: <class_land_terrain.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_land_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:22
 (epstopdf)                    size: 5000 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_terrain-eps-con
 verted-to.pdf class_land_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_land_terrain-eps-converted-to.pdf class_lan
-d_terrain.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_land_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:22
-(epstopdf)                    size: 5000 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_land_terrain-eps-converted-to.pdf>
 <class_land_terrain-eps-converted-to.pdf, id=4608, 501.875pt x 451.1254pt>
 File: class_land_terrain-eps-converted-to.pdf Graphic file (type pdf)
@@ -2770,17 +2628,12 @@ Package epstopdf Info: Source file: <class_land_unit.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3889 bytes
 (epstopdf)             Output file: <class_land_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5827 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_unit-eps-conver
 ted-to.pdf class_land_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_land_unit-eps-converted-to.pdf class_land_u
-nit.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_land_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:23
-(epstopdf)                    size: 5827 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_land_unit-eps-converted-to.pdf>
 <class_land_unit-eps-converted-to.pdf, id=4629, 501.875pt x 532.9611pt>
 File: class_land_unit-eps-converted-to.pdf Graphic file (type pdf)
@@ -2918,17 +2771,12 @@ Package epstopdf Info: Source file: <class_land_vehicle.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3895 bytes
 (epstopdf)             Output file: <class_land_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5842 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_land_vehicle-eps-con
 verted-to.pdf class_land_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_land_vehicle-eps-converted-to.pdf class_lan
-d_vehicle.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_land_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:23
-(epstopdf)                    size: 5842 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_land_vehicle-eps-converted-to.pdf>
 <class_land_vehicle-eps-converted-to.pdf, id=4698, 501.875pt x 532.9611pt>
 File: class_land_vehicle-eps-converted-to.pdf Graphic file (type pdf)
@@ -3067,17 +2915,12 @@ Package epstopdf Info: Source file: <class_late_crisis.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_late_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:23
 (epstopdf)                    size: 5149 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_crisis-eps-conv
 erted-to.pdf class_late_crisis.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_late_crisis-eps-converted-to.pdf class_late
-_crisis.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_late_crisis-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:23
-(epstopdf)                    size: 5149 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_late_crisis-eps-converted-to.pdf>
 <class_late_crisis-eps-converted-to.pdf, id=4757, 501.875pt x 762.33807pt>
 File: class_late_crisis-eps-converted-to.pdf Graphic file (type pdf)
@@ -3101,18 +2944,12 @@ Package epstopdf Info: Source file: <class_late_open_conflict.eps>
 (epstopdf)                    size: 3899 bytes
 (epstopdf)             Output file: <class_late_open_conflict-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:24
 (epstopdf)                    size: 5853 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_open_conflict-e
 ps-converted-to.pdf class_late_open_conflict.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_late_open_conflict-eps-converted-to.pdf cla
-ss_late_open_conflict.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_late_open_conflict-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2022-11-06 20:01:24
-(epstopdf)                    size: 5853 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_late_open_conflict-eps-converted-to.pdf>
 <class_late_open_conflict-eps-converted-to.pdf, id=4776, 501.875pt x 510.37677p
 t>
@@ -3136,17 +2973,12 @@ Package epstopdf Info: Source file: <class_late_peace.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 3885 bytes
 (epstopdf)             Output file: <class_late_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
-(epstopdf)                    size: 4948 bytes
+(epstopdf)                    date: 2022-11-06 20:01:24
+(epstopdf)                    size: 4954 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_peace-eps-conve
 rted-to.pdf class_late_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_late_peace-eps-converted-to.pdf class_late_
-peace.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_late_peace-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:24
-(epstopdf)                    size: 4954 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_late_peace-eps-converted-to.pdf>
 <class_late_peace-eps-converted-to.pdf, id=4801, 501.875pt x 752.8125pt>
 File: class_late_peace-eps-converted-to.pdf Graphic file (type pdf)
@@ -3164,17 +2996,12 @@ Package epstopdf Info: Source file: <class_late_phase.eps>
 (epstopdf)                    date: 2022-11-06 19:58:49
 (epstopdf)                    size: 4192 bytes
 (epstopdf)             Output file: <class_late_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:24
 (epstopdf)                    size: 6224 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_phase-eps-conve
 rted-to.pdf class_late_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_late_phase-eps-converted-to.pdf class_late_
-phase.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_late_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:24
-(epstopdf)                    size: 6224 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_late_phase-eps-converted-to.pdf>
 <class_late_phase-eps-converted-to.pdf, id=4821, 501.875pt x 117.62947pt>
 File: class_late_phase-eps-converted-to.pdf Graphic file (type pdf)
@@ -3210,18 +3037,12 @@ Package epstopdf Info: Source file: <class_late_unstable_peace.eps>
 (epstopdf)                    size: 3901 bytes
 (epstopdf)             Output file: <class_late_unstable_peace-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
-(epstopdf)                    size: 5418 bytes
+(epstopdf)                    date: 2022-11-06 20:01:25
+(epstopdf)                    size: 5420 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_late_unstable_peace-
 eps-converted-to.pdf class_late_unstable_peace.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_late_unstable_peace-eps-converted-to.pdf cl
-ass_late_unstable_peace.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_late_unstable_peace-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:25
-(epstopdf)                    size: 5420 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_late_unstable_peace-eps-converted-to.pdf>
 <class_late_unstable_peace-eps-converted-to.pdf, id=4867, 501.875pt x 470.50781
 pt>
@@ -3245,17 +3066,12 @@ Package epstopdf Info: Source file: <class_medic.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_medic-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:25
 (epstopdf)                    size: 5518 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medic-eps-converted-
 to.pdf class_medic.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_medic-eps-converted-to.pdf class_medic.eps)
-...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_medic-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:25
-(epstopdf)                    size: 5518 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_medic-eps-converted-to.pdf>
 <class_medic-eps-converted-to.pdf, id=4888, 501.875pt x 346.1231pt>
 File: class_medic-eps-converted-to.pdf Graphic file (type pdf)
@@ -3299,18 +3115,12 @@ Package epstopdf Info: Source file: <class_medical_factory.eps>
 (epstopdf)                    size: 3796 bytes
 (epstopdf)             Output file: <class_medical_factory-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5476 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medical_factory-eps-
 converted-to.pdf class_medical_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_medical_factory-eps-converted-to.pdf class_
-medical_factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_medical_factory-eps-converted-to.pdf
->
-(epstopdf)                    date: 2022-11-06 20:01:26
-(epstopdf)                    size: 5476 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_medical_factory-eps-converted-to.pdf>
 <class_medical_factory-eps-converted-to.pdf, id=4927, 501.875pt x 368.34615pt>
 File: class_medical_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -3364,18 +3174,12 @@ Package epstopdf Info: Source file: <class_medical_supply.eps>
 (epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_medical_supply-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5089 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medical_supply-eps-c
 onverted-to.pdf class_medical_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_medical_supply-eps-converted-to.pdf class_m
-edical_supply.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_medical_supply-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2022-11-06 20:01:26
-(epstopdf)                    size: 5089 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_medical_supply-eps-converted-to.pdf>
 <class_medical_supply-eps-converted-to.pdf, id=4968, 501.875pt x 386.06232pt>
 File: class_medical_supply-eps-converted-to.pdf Graphic file (type pdf)
@@ -3419,18 +3223,12 @@ Package epstopdf Info: Source file: <class_medic_transporter.eps>
 (epstopdf)                    size: 3796 bytes
 (epstopdf)             Output file: <class_medic_transporter-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:26
 (epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_medic_transporter-ep
 s-converted-to.pdf class_medic_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_medic_transporter-eps-converted-to.pdf clas
-s_medic_transporter.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_medic_transporter-eps-converted-to.p
-df>
-(epstopdf)                    date: 2022-11-06 20:01:26
-(epstopdf)                    size: 5211 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_medic_transporter-eps-converted-to.pdf>
 <class_medic_transporter-eps-converted-to.pdf, id=5003, 501.875pt x 331.81966pt
 >
@@ -3469,17 +3267,12 @@ Package epstopdf Info: Source file: <class_mid_phase.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3774 bytes
 (epstopdf)             Output file: <class_mid_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5013 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_mid_phase-eps-conver
 ted-to.pdf class_mid_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_mid_phase-eps-converted-to.pdf class_mid_ph
-ase.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_mid_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:27
-(epstopdf)                    size: 5013 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_mid_phase-eps-converted-to.pdf>
 <class_mid_phase-eps-converted-to.pdf, id=5040, 501.875pt x 514.74309pt>
 File: class_mid_phase-eps-converted-to.pdf Graphic file (type pdf)
@@ -3543,18 +3336,12 @@ Package epstopdf Info: Source file: <class_move_into_theatre.eps>
 (epstopdf)                    size: 3786 bytes
 (epstopdf)             Output file: <class_move_into_theatre-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5334 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_move_into_theatre-ep
 s-converted-to.pdf class_move_into_theatre.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_move_into_theatre-eps-converted-to.pdf clas
-s_move_into_theatre.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_move_into_theatre-eps-converted-to.p
-df>
-(epstopdf)                    date: 2022-11-06 20:01:27
-(epstopdf)                    size: 5334 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_move_into_theatre-eps-converted-to.pdf>
 <class_move_into_theatre-eps-converted-to.pdf, id=5147, 501.875pt x 349.13435pt
 >
@@ -3578,17 +3365,12 @@ Package epstopdf Info: Source file: <class_neutral.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3780 bytes
 (epstopdf)             Output file: <class_neutral-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:27
 (epstopdf)                    size: 5329 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_neutral-eps-converte
 d-to.pdf class_neutral.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_neutral-eps-converted-to.pdf class_neutral.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_neutral-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:27
-(epstopdf)                    size: 5329 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_neutral-eps-converted-to.pdf>
 <class_neutral-eps-converted-to.pdf, id=5175, 501.875pt x 413.91638pt>
 File: class_neutral-eps-converted-to.pdf Graphic file (type pdf)
@@ -3607,18 +3389,12 @@ Package epstopdf Info: Source file: <class_non_combat_entity.eps>
 (epstopdf)                    size: 3897 bytes
 (epstopdf)             Output file: <class_non_combat_entity-eps-converted-to.p
 df>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5735 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_non_combat_entity-ep
 s-converted-to.pdf class_non_combat_entity.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_non_combat_entity-eps-converted-to.pdf clas
-s_non_combat_entity.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_non_combat_entity-eps-converted-to.p
-df>
-(epstopdf)                    date: 2022-11-06 20:01:28
-(epstopdf)                    size: 5735 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_non_combat_entity-eps-converted-to.pdf>
 <class_non_combat_entity-eps-converted-to.pdf, id=5210, 501.875pt x 173.05653pt
 >
@@ -3642,17 +3418,12 @@ Package epstopdf Info: Source file: <class_offensive.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_offensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5711 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_offensive-eps-conver
 ted-to.pdf class_offensive.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_offensive-eps-converted-to.pdf class_offens
-ive.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_offensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:28
-(epstopdf)                    size: 5711 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_offensive-eps-converted-to.pdf>
 <class_offensive-eps-converted-to.pdf, id=5233, 501.875pt x 413.91638pt>
 File: class_offensive-eps-converted-to.pdf Graphic file (type pdf)
@@ -3670,17 +3441,12 @@ Package epstopdf Info: Source file: <class_poor.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <class_poor-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:28
 (epstopdf)                    size: 5211 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_poor-eps-converted-t
 o.pdf class_poor.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_poor-eps-converted-to.pdf class_poor.eps)..
-.executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_poor-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:28
-(epstopdf)                    size: 5211 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_poor-eps-converted-to.pdf>
 <class_poor-eps-converted-to.pdf, id=5261, 501.875pt x 389.80632pt>
 File: class_poor-eps-converted-to.pdf Graphic file (type pdf)
@@ -3703,17 +3469,12 @@ Package epstopdf Info: Source file: <class_rich.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <class_rich-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 5252 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_rich-eps-converted-t
 o.pdf class_rich.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_rich-eps-converted-to.pdf class_rich.eps)..
-.executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_rich-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:29
-(epstopdf)                    size: 5252 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_rich-eps-converted-to.pdf>
 <class_rich-eps-converted-to.pdf, id=5281, 501.875pt x 389.80632pt>
 File: class_rich-eps-converted-to.pdf Graphic file (type pdf)
@@ -3736,17 +3497,12 @@ Package epstopdf Info: Source file: <class_sea_factory.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <class_sea_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 5148 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_factory-eps-conv
 erted-to.pdf class_sea_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_sea_factory-eps-converted-to.pdf class_sea_
-factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_sea_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:29
-(epstopdf)                    size: 5148 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_sea_factory-eps-converted-to.pdf>
 <class_sea_factory-eps-converted-to.pdf, id=5302, 501.875pt x 466.8642pt>
 File: class_sea_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -3804,17 +3560,12 @@ Package epstopdf Info: Source file: <class_sea_terrain.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3782 bytes
 (epstopdf)             Output file: <class_sea_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:29
 (epstopdf)                    size: 4937 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_terrain-eps-conv
 erted-to.pdf class_sea_terrain.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_sea_terrain-eps-converted-to.pdf class_sea_
-terrain.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_sea_terrain-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:29
-(epstopdf)                    size: 4937 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_sea_terrain-eps-converted-to.pdf>
 <class_sea_terrain-eps-converted-to.pdf, id=5366, 501.875pt x 466.8642pt>
 File: class_sea_terrain-eps-converted-to.pdf Graphic file (type pdf)
@@ -3837,17 +3588,12 @@ Package epstopdf Info: Source file: <class_sea_unit.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3887 bytes
 (epstopdf)             Output file: <class_sea_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:30
 (epstopdf)                    size: 5750 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_unit-eps-convert
 ed-to.pdf class_sea_unit.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_sea_unit-eps-converted-to.pdf class_sea_uni
-t.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_sea_unit-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:30
-(epstopdf)                    size: 5750 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_sea_unit-eps-converted-to.pdf>
 <class_sea_unit-eps-converted-to.pdf, id=5386, 501.875pt x 532.9611pt>
 File: class_sea_unit-eps-converted-to.pdf Graphic file (type pdf)
@@ -3980,17 +3726,12 @@ Package epstopdf Info: Source file: <class_sea_vehicle.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3893 bytes
 (epstopdf)             Output file: <class_sea_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:30
 (epstopdf)                    size: 5807 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_sea_vehicle-eps-conv
 erted-to.pdf class_sea_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_sea_vehicle-eps-converted-to.pdf class_sea_
-vehicle.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_sea_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:30
-(epstopdf)                    size: 5807 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_sea_vehicle-eps-converted-to.pdf>
 <class_sea_vehicle-eps-converted-to.pdf, id=5451, 501.875pt x 532.9611pt>
 File: class_sea_vehicle-eps-converted-to.pdf Graphic file (type pdf)
@@ -4128,17 +3869,12 @@ Package epstopdf Info: Source file: <class_soldier.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 4077 bytes
 (epstopdf)             Output file: <class_soldier-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5931 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_soldier-eps-converte
 d-to.pdf class_soldier.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_soldier-eps-converted-to.pdf class_soldier.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_soldier-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:31
-(epstopdf)                    size: 5931 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_soldier-eps-converted-to.pdf>
 <class_soldier-eps-converted-to.pdf, id=5514, 501.875pt x 177.65372pt>
 File: class_soldier-eps-converted-to.pdf Graphic file (type pdf)
@@ -4221,17 +3957,12 @@ Package epstopdf Info: Source file: <class_supply.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3899 bytes
 (epstopdf)             Output file: <class_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5539 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_supply-eps-converted
 -to.pdf class_supply.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_supply-eps-converted-to.pdf class_supply.ep
-s)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_supply-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:31
-(epstopdf)                    size: 5539 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_supply-eps-converted-to.pdf>
 <class_supply-eps-converted-to.pdf, id=5587, 501.875pt x 193.03116pt>
 File: class_supply-eps-converted-to.pdf Graphic file (type pdf)
@@ -4260,18 +3991,12 @@ Package epstopdf Info: Source file: <class_supply_factory.eps>
 (epstopdf)                    size: 3917 bytes
 (epstopdf)             Output file: <class_supply_factory-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:31
 (epstopdf)                    size: 5815 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_supply_factory-eps-c
 onverted-to.pdf class_supply_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_supply_factory-eps-converted-to.pdf class_s
-upply_factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_supply_factory-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2022-11-06 20:01:31
-(epstopdf)                    size: 5815 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_supply_factory-eps-converted-to.pdf>
 <class_supply_factory-eps-converted-to.pdf, id=5608, 501.875pt x 184.1781pt>
 File: class_supply_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -4356,10 +4081,6 @@ Underfull \hbox (badness 10000) detected at line 185
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.68 on input line 192.
-
-
 Underfull \hbox (badness 10000) detected at line 193
 [][][]
  []
@@ -4379,17 +4100,12 @@ Package epstopdf Info: Source file: <class_transporter.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3925 bytes
 (epstopdf)             Output file: <class_transporter-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:32
 (epstopdf)                    size: 5571 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_transporter-eps-conv
 erted-to.pdf class_transporter.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_transporter-eps-converted-to.pdf class_tran
-sporter.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_transporter-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:32
-(epstopdf)                    size: 5571 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_transporter-eps-converted-to.pdf>
 <class_transporter-eps-converted-to.pdf, id=5688, 501.875pt x 165.90984pt>
 File: class_transporter-eps-converted-to.pdf Graphic file (type pdf)
@@ -4422,17 +4138,12 @@ Package epstopdf Info: Source file: <class_unit_factory.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3986 bytes
 (epstopdf)             Output file: <class_unit_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:32
 (epstopdf)                    size: 5571 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_unit_factory-eps-con
 verted-to.pdf class_unit_factory.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_unit_factory-eps-converted-to.pdf class_uni
-t_factory.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_unit_factory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:32
-(epstopdf)                    size: 5571 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_unit_factory-eps-converted-to.pdf>
 <class_unit_factory-eps-converted-to.pdf, id=5738, 501.875pt x 145.47348pt>
 File: class_unit_factory-eps-converted-to.pdf Graphic file (type pdf)
@@ -4541,17 +4252,12 @@ Package epstopdf Info: Source file: <class_vehicle.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 4095 bytes
 (epstopdf)             Output file: <class_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:33
 (epstopdf)                    size: 6116 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_vehicle-eps-converte
 d-to.pdf class_vehicle.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_vehicle-eps-converted-to.pdf class_vehicle.
-eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_vehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:33
-(epstopdf)                    size: 6116 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_vehicle-eps-converted-to.pdf>
 <class_vehicle-eps-converted-to.pdf, id=5830, 501.875pt x 177.65372pt>
 File: class_vehicle-eps-converted-to.pdf Graphic file (type pdf)
@@ -4699,17 +4405,12 @@ Package epstopdf Info: Source file: <class_war_phase.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 4838 bytes
 (epstopdf)             Output file: <class_war_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:33
 (epstopdf)                    size: 7014 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_war_phase-eps-conver
 ted-to.pdf class_war_phase.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_war_phase-eps-converted-to.pdf class_war_ph
-ase.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_war_phase-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:33
-(epstopdf)                    size: 7014 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_war_phase-eps-converted-to.pdf>
 <class_war_phase-eps-converted-to.pdf, id=5984, 501.875pt x 224.71956pt>
 File: class_war_phase-eps-converted-to.pdf Graphic file (type pdf)
@@ -4727,17 +4428,12 @@ Package epstopdf Info: Source file: <class_war_theatre.eps>
 (epstopdf)                    date: 2022-11-06 19:58:50
 (epstopdf)                    size: 3984 bytes
 (epstopdf)             Output file: <class_war_theatre-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 16:23:42
+(epstopdf)                    date: 2022-11-06 20:01:34
 (epstopdf)                    size: 5410 bytes
 (epstopdf)             Command: <repstopdf --outfile=class_war_theatre-eps-conv
 erted-to.pdf class_war_theatre.eps>
 (epstopdf)             \includegraphics on input line 10.
-runsystem(repstopdf --outfile=class_war_theatre-eps-converted-to.pdf class_war_
-theatre.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <class_war_theatre-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 20:01:34
-(epstopdf)                    size: 5410 bytes.
+Package epstopdf Info: Output file is already uptodate.
  <./class_war_theatre-eps-converted-to.pdf>
 <class_war_theatre-eps-converted-to.pdf, id=6011, 501.875pt x 150.37178pt>
 File: class_war_theatre-eps-converted-to.pdf Graphic file (type pdf)
@@ -4822,9 +4518,6 @@ Underfull \hbox (badness 10000) detected at line 207
 
 ) [150]
 No file refman.ind.
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
 (./refman.aux)
@@ -4841,7 +4534,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  19889 strings out of 481239
  328057 string characters out of 5920377
- 653748 words of memory out of 5000000
+ 653744 words of memory out of 5000000
  33434 multiletter control sequences out of 15000+600000
  598302 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4874,7 +4567,7 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on refman.pdf (166 pages, 644715 bytes).
+Output written on refman.pdf (166 pages, 644890 bytes).
 PDF statistics:
  6394 PDF objects out of 7423 (max. 8388607)
  5909 compressed objects within 60 object streams
