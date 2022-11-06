@@ -25,7 +25,9 @@ int LandUnit::calculateLandOffense()
 	int mean = this->trainingLevel * 10;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 2242424;
+	seeder += 2222;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation
@@ -36,7 +38,9 @@ int LandUnit::calculateLandDefense()
 	int mean = this->trainingLevel * 5;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 12121212;
+	seeder += 373939;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation

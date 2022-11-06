@@ -651,8 +651,10 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 			if (totalAmmoSupplies < allowedAmmoSupplies)
 			{
 				for (int i = 0; i < allowedAmmoSupplies; i++)
-				{												   // create soldiers
-					srand((unsigned)time(0));					   // to generate a different value each time
+				{ // create soldiers
+					static int seeder = 28781;
+					seeder += 899999;
+					srand((unsigned)time(0) + seeder);			   // to generate a different value each time
 					int quantity = (double)(200 + (rand() % 400)); // random number between 200 and 400 bullets
 
 					Supply *unit = (*it)->makeSupply(quantity);
@@ -688,8 +690,10 @@ std::vector<Supply *> *ArmyBuilder::determineSupplies()
 			if (totalMedSupplies < allowedMedSupplies)
 			{
 				for (int i = 0; i < allowedMedSupplies; i++)
-				{												  // create soldiers
-					srand((unsigned)time(0));					  // to generate a different value each time
+				{ // create soldiers
+					static int seeder = 9999999;
+					seeder += 99999;
+					srand((unsigned)time(0) + seeder);			  // to generate a different value each time
 					int quantity = (double)(50 + (rand() % 100)); // random number between 50 and 100 meds
 
 					Supply *unit = (*it)->makeSupply(quantity);

@@ -3,6 +3,8 @@
 #include "ArmyBuilder_unittests.cpp"
 #include "WarPhase_unittests.cpp"
 #include "SupplyProduct_unittests.cpp"
+#include "EconomicState_unittests.cpp"
+#include "WarTheatre_unittests.cpp"
 #include <gtest/gtest.h>
 
 int main(int argc, char **argv)

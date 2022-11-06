@@ -7,6 +7,9 @@
 
 MilitaryCommander::MilitaryCommander()
 {
+	_changeStrategy = new ChangeStrategy();
+	_enterTheatre = new MoveIntoTheatre();
+	_attackTransport = new AttackTransport();
 }
 
 void MilitaryCommander::changeStrategy()

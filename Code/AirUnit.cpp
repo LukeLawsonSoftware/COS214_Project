@@ -10,7 +10,9 @@ int AirUnit::calculateAirOffense()
 	int mean = this->trainingLevel * 10;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 2464326;
+	seeder += 275376;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation
@@ -21,7 +23,9 @@ int AirUnit::calculateAirDefense()
 	int mean = this->trainingLevel * 5;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 24637;
+	seeder += 13243333;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation
@@ -40,7 +44,9 @@ int AirUnit::calculateLandOffense()
 	int mean = this->trainingLevel * 8;
 	double stdDev = sqrt(mean);
 
-	srand(time(0)); // random seed
+	static int seeder = 423463247;
+	seeder += 4344444;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 	float u1 = (float)rand() / (float)RAND_MAX;
 	float u2 = (float)rand() / (float)RAND_MAX;
 	double randNorm = sqrt(-2 * log(u1)) * cos(2 * M_PI * u2); // Box-Muller Transformation

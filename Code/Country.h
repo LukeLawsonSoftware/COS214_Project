@@ -23,6 +23,7 @@ class AmmoSupply;
 class MedicalSupply;
 #include <vector>
 #include <string>
+#include <stdlib.h>
 
 class War;
 class EconomicState;
@@ -122,11 +123,9 @@ public:
 	/// @author Luke Lawson (u21433811)
 	void destroyTransport();
 
-	/// @brief Function to send/distribute supplies to a Country's armies
+	/// @brief Function to send/distribute supplies to a Country's armies. This function calls the appropriate factory method to create the supplies
 	/// @author Luke Lawson (u21433811)
-	/// @param ammo AmmoSupplies to be transported
-	/// @param meds MedicalSupplies to be transported
-	void sendSupplies(AmmoSupply *ammo, MedicalSupply *meds);
+	void sendSupplies();
 
 	/// @brief Function to get the newly created supply such that we know which supply to send to the transport line
 	/// @author Reuben Jooste (u21457060)
@@ -152,6 +151,12 @@ public:
 	/// @author Reuben Jooste (u21457060)
 	/// @return Returns the army of the Country as a pointer
 	Army *getArmy();
+
+	void destroyArmy();
+
+private:
+	void setColour();
+	std::string decideArmyType();
 };
 
 #endif

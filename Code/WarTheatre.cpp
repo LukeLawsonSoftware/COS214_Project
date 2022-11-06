@@ -13,6 +13,9 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	name = Name;
 	contentionState = 0;
 
+	this->civilians = new std::vector<NonCombatEntity *>();
+	this->medics = new std::vector<NonCombatEntity *>();
+
 	// Initialise armies array:
 	for (int i = 0; i < 2; i++)
 	{
@@ -20,7 +23,9 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 	}
 
 	// Populate Civilian and Medic Vectors
-	srand(time(0));
+	static int seeder = 1;
+	seeder += 2;
+	srand((unsigned)time(0) + seeder); // to generate a different value each time
 
 	int Civilians = rand() % 19 + 2;
 	int refugees = Civilians / 2;
@@ -40,7 +45,7 @@ WarTheatre::WarTheatre(std::string Type, std::string Name)
 
 	for (int i = 0; i < Medics; i++)
 	{
-		civilians->push_back(new Medic());
+		medics->push_back(new Medic());
 	}
 }
 
@@ -75,20 +80,65 @@ void WarTheatre::applyTerrainBonus()
 {
 	// templateMethod (calls the two primitive operations)
 	this->adjustAttack();
+	// std::cout << "perhaps here?" << std::endl;
 	this->adjustDefence();
 }
 
 void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 {
+	std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ " + name + " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
+
+	if (armies[0] != NULL)
+	{
+		for (int i = 0; i < Country::alliance1.size(); i++)
+		{
+			if (armies[0]->getName() == Country::alliance1.at(i)->getName() && Country::alliance1.at(i)->isSurrendered())
+			{
+				armies[0] = NULL;
+				break;
+			}
+		}
+	}
+
+	if (armies[1] != NULL)
+	{
+		for (int i = 0; i < Country::alliance2.size(); i++)
+		{
+			if (armies[1]->getName() == Country::alliance2.at(i)->getName() && Country::alliance2.at(i)->isSurrendered())
+			{
+				armies[1] = NULL;
+				break;
+			}
+		}
+	}
+
+	if (armies[0] != NULL && armies[1] != NULL)
+	{
+		contentionState = 3;
+	}
+	else if (armies[0] != NULL && armies[1] == NULL)
+	{
+		contentionState = 1;
+	}
+	else if (armies[0] == NULL && armies[1] != NULL)
+	{
+		contentionState = 2;
+	}
+	else
+	{
+		contentionState = 0;
+	}
 
 	// Make sure there are two armies in this theatre:
 	if (contentionState == 3) // 2 Armies are present - conflict is possible
 	{
+		std::cout << "\033[1;34m";
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
-
+		std::cout << "\033[0m";
 		//  apply terrain bonus
+		//	std::cout << "here1" << std::endl;
 		applyTerrainBonus();
-
+		//	std::cout << "here2" << std::endl;
 		//  apply army->applyStrategyBonus
 		armies[0]->applyStrategyBonus();
 		armies[1]->applyStrategyBonus();
@@ -97,6 +147,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		BattleStatistics *StatsArmy1 = armies[0]->getBattleStatistics();
 		BattleStatistics *StatsArmy2 = armies[1]->getBattleStatistics();
 
+		std::cout << "\033[;34m";
 		std::cout << "===================================== Battle Statistics : " + name + " =====================================" << std::endl;
 		std::cout << std::endl;
 
@@ -113,7 +164,7 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 		std::cout << std::endl;
 		std::cout << "=============================================== " + name + " ===============================================" << std::endl;
-
+		std::cout << "\033[0m";
 		// make armies fight. Use some maths magic as well as the offense and defence stats to determine how much
 		//    damage to do to morale
 		int moraleArmy1 = StatsArmy1->getMorale();
@@ -162,13 +213,13 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		// At the end of each round,each army needs to lose some ammo.
 		if (moraleArmy1 > 0)
 		{
-			AmoArmy1 = AmoArmy1 - 20;
+			AmoArmy1 = AmoArmy1 - 200;
 			StatsArmy1->setAvailableAmmo(AmoArmy1);
 		}
 
 		if (moraleArmy2 > 0)
 		{
-			AmoArmy2 = AmoArmy2 - 20;
+			AmoArmy2 = AmoArmy2 - 200;
 			StatsArmy2->setAvailableAmmo(AmoArmy2);
 		}
 
@@ -187,15 +238,53 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 		//  if morale<=0, the army has 'died' (will need to print this and set Country's army to null)
 		if (moraleArmy1 <= 0)
 		{
-			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName();
+			std::cout << "\033[;31m";
+			std::cout << armies[0]->getName() + " army was overcome by " + armies[1]->getName() << std::endl;
+
+			for (int i = 0; i < Country::alliance1.size(); i++)
+			{
+				if (armies[0]->getName() == Country::alliance1.at(i)->getName())
+				{
+					Country::alliance1.at(i)->destroyArmy();
+					break;
+				}
+			}
+			for (int i = 0; i < Country::alliance2.size(); i++)
+			{
+				if (armies[0]->getName() == Country::alliance2.at(i)->getName())
+				{
+					Country::alliance2.at(i)->destroyArmy();
+					break;
+				}
+			}
+
 			armies[0] = NULL;
 			contentionState = 2;
+			std::cout << "\033[0m";
 		}
 		else if (moraleArmy2 <= 0)
 		{
-			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName();
+			std::cout << "\033[;32m";
+			std::cout << armies[1]->getName() + " army was overcome by " + armies[0]->getName() << std::endl;
+			for (int i = 0; i < Country::alliance1.size(); i++)
+			{
+				if (armies[1]->getName() == Country::alliance1.at(i)->getName())
+				{
+					Country::alliance1.at(i)->destroyArmy();
+					break;
+				}
+			}
+			for (int i = 0; i < Country::alliance2.size(); i++)
+			{
+				if (armies[1]->getName() == Country::alliance2.at(i)->getName())
+				{
+					Country::alliance2.at(i)->destroyArmy();
+					break;
+				}
+			}
 			armies[1] = NULL;
 			contentionState = 1;
+			std::cout << "\033[0m";
 		}
 
 		//  surviving armies call recuperate (this uses the armys' medical supplies)
@@ -204,38 +293,93 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 			armies[0]->recuperate();
 			armies[1]->recuperate();
 		}
-		else if (contentionState == 1) // Army from allience 1 is left
+		else if (contentionState == 1) // Army from alliance 1 is left
 		{
 			armies[0]->recuperate();
 		}
-		else if (contentionState == 2) // Army from allience 2 is left
+		else if (contentionState == 2) // Army from alliance 2 is left
 		{
 			armies[1]->recuperate();
 		}
 
 		//  medics use getHealing to 'heal' armies (healing an army is adding to morale)
 		// Dynamic casting
-		std::vector<Medic *> *_medics;
-		for (int i = 0; i < medics->size(); i++)
-		{
-			_medics->push_back(dynamic_cast<Medic *>(medics->at(i)));
-		}
+		//	std::vector<Medic *> *_medics;
+		//	for (int i = 0; i < medics->size(); i++)
+		//	{
+		//		_medics->push_back(dynamic_cast<Medic *>(medics->at(i)));
+		//	}
+
+		std::cout << "\033[;35m";
+		std::cout << "Third-party medics heal the wounded of both sides, increasing their morale" << std::endl;
+		std::cout << "\033[;0m";
 
 		for (int i = 0; i < medics->size(); i++)
 		{
 			if (contentionState == 3)
 			{
-				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
-				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+				moraleArmy1 = moraleArmy1 + ((Medic *)medics->at(i))->getHealing();
+				moraleArmy2 = moraleArmy2 + ((Medic *)medics->at(i))->getHealing();
 			}
 			else if (contentionState == 1)
 			{
-				moraleArmy1 = moraleArmy1 + _medics->at(i)->getHealing();
+				moraleArmy1 = moraleArmy1 + ((Medic *)medics->at(i))->getHealing();
 			}
 			else if (contentionState == 2)
 			{
-				moraleArmy2 = moraleArmy2 + _medics->at(i)->getHealing();
+				moraleArmy2 = moraleArmy2 + ((Medic *)medics->at(i))->getHealing();
 			}
+		}
+
+		// std::cout << "here" << std::endl;
+		int numCivilians = this->civilians->size();
+		// std::cout << "here" << std::endl;
+		int numCiviliansToDie = 0;
+		if (numCivilians > 0)
+		{
+			numCiviliansToDie = 28457 % numCivilians;
+		}
+
+		std::cout << "\033[;35m";
+
+		int civCount = 0;
+		int refCount = 0;
+
+		for (int i = 0; i < numCiviliansToDie; i++)
+		{
+			NonCombatEntity *temp = civilians->at(this->civilians->size() - 1);
+			civilians->pop_back();
+			if (((Civilian *)temp)->getDesignation()[0] == 'c')
+			{
+				civCount++;
+			}
+			else
+			{
+				refCount++;
+			}
+			// delete temp;
+		}
+
+		std::cout << civCount << " civilians and " << refCount << " refugees have been killed in the crossfire..." << std::endl;
+		//	std::cout << "here" << std::endl;
+		int numMedics = this->medics->size();
+		//	std::cout << numMedics << std::endl;
+
+		int numMedicsToDie = 0;
+		if (numMedics > 0)
+		{
+			numMedicsToDie = 28457 % numMedics;
+		}
+		// int numMedicsToDie = 28457 % numMedics;
+		//	std::cout << "here" << std::endl;
+
+		std::cout << numMedicsToDie << " third-party medics have left the battle field..." << std::endl;
+		std::cout << "\033[;0m";
+		for (int i = 0; i < numMedicsToDie; i++)
+		{
+			// Medic *temp;
+			medics->pop_back();
+			//	delete temp;
 		}
 
 		replenishNonCombatEntities();
@@ -243,20 +387,30 @@ void WarTheatre::conflict() // one call of conflict() = 1 turn in the WarTheatre
 
 	if (contentionState == 1) // Only an army from alliance 1 is present
 	{
-		std::cout << "The " + armies[0]->getName() + " army from allience 1 is controlling the " + name + " war theatre!" << std::endl;
+		std::cout << "\033[;32m";
+		std::cout << "The " + armies[0]->getName() + " army from alliance 1 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
 	else if (contentionState == 2) // Only an army from alliance 2 is present
 	{
-		std::cout << "The " + armies[1]->getName() + " army from allience 2 is controlling the " + name + " war theatre!" << std::endl;
+		std::cout << "\033[;31m";
+		std::cout << "The " + armies[1]->getName() + " army from alliance 2 is controlling " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
 	else if (contentionState == 0) // No armies in the war theatre yet
 	{
-		std::cout << "The " + name + " war theatre is peaceful." << std::endl;
+		std::cout << "\033[;34m";
+		std::cout << name + " war theatre is peaceful." << std::endl;
+		std::cout << "\033[0m";
 	}
 	else // 2 armies are present in the war theatre
 	{
+		std::cout << "\033[1;34m";
 		std::cout << "The " + armies[0]->getName() + " army is at battle with the " + armies[1]->getName() + " army in " + name + " war theatre!" << std::endl;
+		std::cout << "\033[0m";
 	}
+
+	std::cout << "++++++++++++++++++++++++++++++++++++++++++++++++ " + name + " ++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
 }
 
 void WarTheatre::addArmy(Army *newArmy)
@@ -291,11 +445,13 @@ void WarTheatre::addArmy(Army *newArmy)
 		if (alliance == 1)
 		{
 			armies[0] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 1;
 		}
 		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 2;
 		}
 	}
@@ -303,11 +459,14 @@ void WarTheatre::addArmy(Army *newArmy)
 	{
 		if (alliance == 1)
 		{
+			std::cout << "\033[;32m";
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 1 already arrived!" << std::endl;
+			std::cout << "\033[;0m";
 		}
 		else if (alliance == 2)
 		{
 			armies[1] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 3;
 		}
 	}
@@ -315,17 +474,22 @@ void WarTheatre::addArmy(Army *newArmy)
 	{
 		if (alliance == 2)
 		{
+			std::cout << "\033[;31m";
 			std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> army from alliance 2 already arrived!" << std::endl;
+			std::cout << "\033[;0m";
 		}
 		else if (alliance == 1)
 		{
 			armies[0] = newArmy;
+			newArmy->makeDeployed();
 			contentionState = 3;
 		}
 	}
 	else if (contentionState == 3) // Contentionstate = 3 ->  armies in contention (different alliances) :
 	{
+		std::cout << "\033[;34m";
 		std::cout << newArmy->getName() + " Army cannot be added to " + name + "  " + type + " war theatre -> 2 armies are already at battle!" << std::endl;
+		std::cout << "\033[;0m";
 	}
 }
 
@@ -336,6 +500,10 @@ void WarTheatre::replenishNonCombatEntities()
 	int Medics = 8;
 	int Refugees = 8;
 	int Citizens = 6;
+
+	std::cout << "\033[;35m";
+	std::cout << "A number of refugees, civilians and third-party medics have entered the war theatre" << std::endl;
+	std::cout << "\033[;0m";
 
 	for (int i = 0; i < Citizens; i++)
 	{
@@ -368,7 +536,7 @@ std::string WarTheatre::getName()
 	return name;
 }
 
-Army *WarTheatre::getArmies()
+Army **WarTheatre::getArmies()
 {
-	return *armies;
+	return armies;
 }

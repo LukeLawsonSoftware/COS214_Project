@@ -4,7 +4,7 @@ EarlyOpenConflict::EarlyOpenConflict()
 {
 
     next = new EarlyCrisis();
-    peaceChance = 0.35;
+    peaceChance = 0.035;
 }
 
 void EarlyOpenConflict::outputChange()
