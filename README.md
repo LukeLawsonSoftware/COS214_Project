@@ -1,6 +1,10 @@
 # COS214_Project
 "War, war never changes"
 
+### Notice
+All links provided below are links to a Google Drive where the file is stored. The access policy is that such that anyone with the link can view the content.
+A number of these documents have also been included in the repository directly.
+
 ## How to compile and run
 1) Navigate to the folder named "Code" and open the terminal
 2) Simply type "make" and enter to compile the code
