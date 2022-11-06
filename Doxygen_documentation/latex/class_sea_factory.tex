@@ -1,0 +1,107 @@
+\hypertarget{class_sea_factory}{}\section{Sea\+Factory Class Reference}
+\label{class_sea_factory}\index{SeaFactory@{SeaFactory}}
+
+
+{\ttfamily \#include $<$Sea\+Factory.\+h$>$}
+
+Inheritance diagram for Sea\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sea_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sea_factory_ac5469712b0ad4cfc597a12c56b37d953}{Sea\+Factory}} (double budget, int \mbox{\hyperlink{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}{level}}, std\+::string type=\char`\"{}Sea\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} class used to instantiate an \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_sea_factory_a0914bdb14680e6b0c8292ba6f6d13b54}{create\+Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_sea_vehicle}{Sea\+Vehicle}}, using level to determine power\+Rating. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_sea_factory_a29dad98d0d7b89028bd34814219b7b49}{create\+Soldier}} ()
+\begin{DoxyCompactList}\small\item\em Calls constructor of \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}}, using level to determine power\+Rating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} class is a derived class derived from the \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} class \mbox{\hyperlink{_unit_factory_8h_source}{(See the definition of the Unit\+Factory class)}}
+
+The \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} will be used to create Sea Units for the \mbox{\hyperlink{class_war}{War}}. The \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} has methods \char`\"{}create\+Soldier()\char`\"{} and \char`\"{}create\+Vehicle()\char`\"{} which will create \mbox{\hyperlink{class_soldier}{Soldier}} objects and \mbox{\hyperlink{class_vehicle}{Vehicle}} objects respectively. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is O\+N\+LY used to create \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}} objects (Soldiers or Vehicles) 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sea_factory_ac5469712b0ad4cfc597a12c56b37d953}\label{class_sea_factory_ac5469712b0ad4cfc597a12c56b37d953}} 
+\index{SeaFactory@{SeaFactory}!SeaFactory@{SeaFactory}}
+\index{SeaFactory@{SeaFactory}!SeaFactory@{SeaFactory}}
+\subsubsection{\texorpdfstring{SeaFactory()}{SeaFactory()}}
+{\footnotesize\ttfamily Sea\+Factory\+::\+Sea\+Factory (\begin{DoxyParamCaption}\item[{double}]{budget,  }\item[{int}]{level,  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}Sea\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} class used to instantiate an \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & Starting budget of \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} class \\
+\hline
+{\em level} & Starting level of \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}} class \\
+\hline
+{\em type} & Type will be \char`\"{}\+Sea\char`\"{} since this function creates Sea army components \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The \char`\"{}budget\char`\"{} must be a positive value. The \char`\"{}level\char`\"{} must be greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sea_factory_a29dad98d0d7b89028bd34814219b7b49}\label{class_sea_factory_a29dad98d0d7b89028bd34814219b7b49}} 
+\index{SeaFactory@{SeaFactory}!createSoldier@{createSoldier}}
+\index{createSoldier@{createSoldier}!SeaFactory@{SeaFactory}}
+\subsubsection{\texorpdfstring{createSoldier()}{createSoldier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Sea\+Factory\+::create\+Soldier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}{Unit\+Factory}}.
+
+\mbox{\Hypertarget{class_sea_factory_a0914bdb14680e6b0c8292ba6f6d13b54}\label{class_sea_factory_a0914bdb14680e6b0c8292ba6f6d13b54}} 
+\index{SeaFactory@{SeaFactory}!createVehicle@{createVehicle}}
+\index{createVehicle@{createVehicle}!SeaFactory@{SeaFactory}}
+\subsubsection{\texorpdfstring{createVehicle()}{createVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ Sea\+Factory\+::create\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls constructor of \mbox{\hyperlink{class_sea_vehicle}{Sea\+Vehicle}}, using level to determine power\+Rating. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a \mbox{\hyperlink{class_sea_vehicle}{Sea\+Vehicle}}) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_unit_factory_a465dd9ec1883939eb27274164e967822}{Unit\+Factory}}.
+

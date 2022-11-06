@@ -1,0 +1,88 @@
+\hypertarget{class_medical_factory}{}\section{Medical\+Factory Class Reference}
+\label{class_medical_factory}\index{MedicalFactory@{MedicalFactory}}
+
+
+{\ttfamily \#include $<$Medical\+Factory.\+h$>$}
+
+Inheritance diagram for Medical\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medical_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medical_factory_a4f870a142a0af80b8ae7beffed25c436}{Medical\+Factory}} (int budget, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Class constructor for \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_supply}{Supply}} $\ast$ \mbox{\hyperlink{class_medical_factory_a323b36eb230b6b4e261dd2fed1164d5c}{make\+Supply}} (int quantity)
+\begin{DoxyCompactList}\small\item\em Creates medical supplies by creating a new \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} product. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} class is a derived class derived from the \mbox{\hyperlink{class_supply_factory}{Supply\+Factory}} class \mbox{\hyperlink{_supply_factory_8h_source}{(See the definition of the Supply\+Factory class)}}
+
+The \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} will be used to create Medical Supplies for the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Armies. The \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}} has a method \char`\"{}make\+Supply()\char`\"{} which will create the Medical\+Suppply object. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is O\+N\+LY used to create \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} objects 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medical_factory_a4f870a142a0af80b8ae7beffed25c436}\label{class_medical_factory_a4f870a142a0af80b8ae7beffed25c436}} 
+\index{MedicalFactory@{MedicalFactory}!MedicalFactory@{MedicalFactory}}
+\index{MedicalFactory@{MedicalFactory}!MedicalFactory@{MedicalFactory}}
+\subsubsection{\texorpdfstring{MedicalFactory()}{MedicalFactory()}}
+{\footnotesize\ttfamily Medical\+Factory\+::\+Medical\+Factory (\begin{DoxyParamCaption}\item[{int}]{budget,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Class constructor for \mbox{\hyperlink{class_medical_factory}{Medical\+Factory}}. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & The amount that can be spent to make medical supplies. \\
+\hline
+{\em type} & The type of the factory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+\char`\"{}type\char`\"{} has to be \char`\"{}\+Medical\char`\"{} and \char`\"{}budget\char`\"{} may not be less than or equal to zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medical_factory_a323b36eb230b6b4e261dd2fed1164d5c}\label{class_medical_factory_a323b36eb230b6b4e261dd2fed1164d5c}} 
+\index{MedicalFactory@{MedicalFactory}!makeSupply@{makeSupply}}
+\index{makeSupply@{makeSupply}!MedicalFactory@{MedicalFactory}}
+\subsubsection{\texorpdfstring{makeSupply()}{makeSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_supply}{Supply}} $\ast$ Medical\+Factory\+::make\+Supply (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates medical supplies by creating a new \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} product. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The quantity of medical supplies to be produced by the medical factory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} product. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\char`\"{}quantity\char`\"{} need to be positive. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function may return N\+U\+LL if the budget has run out. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_supply_factory_a110ff7418c656661e935a33e49300722}{Supply\+Factory}}.
+

@@ -1,0 +1,75 @@
+\hypertarget{class_early_phase}{}\section{Early\+Phase Class Reference}
+\label{class_early_phase}\index{EarlyPhase@{EarlyPhase}}
+
+
+{\ttfamily \#include $<$Early\+Phase.\+h$>$}
+
+Inheritance diagram for Early\+Phase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_early_phase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_early_phase_a2f5485add7def09e0ec0538c552c88d8}{handle\+Change}} (\mbox{\hyperlink{class_war}{War}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Sets Wars phase to next early phase or \mbox{\hyperlink{class_mid_phase}{Mid\+Phase}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_early_phase_a4dec6915b8c177199bc2b92a49fdb3af}{output\+Change}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function will be implemented by the derived classes. (\mbox{\hyperlink{class_early_crisis}{Early\+Crisis}}, \mbox{\hyperlink{class_early_open_conflict}{Early\+Open\+Conflict}} \& \mbox{\hyperlink{class_early_peace}{Early\+Peace}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_early_phase}{Early\+Phase}} $\ast$ \mbox{\hyperlink{class_early_phase_a972cc28503787c749cad7b611204c951}{next}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_early_phase_a2f5485add7def09e0ec0538c552c88d8}\label{class_early_phase_a2f5485add7def09e0ec0538c552c88d8}} 
+\index{EarlyPhase@{EarlyPhase}!handleChange@{handleChange}}
+\index{handleChange@{handleChange}!EarlyPhase@{EarlyPhase}}
+\subsubsection{\texorpdfstring{handleChange()}{handleChange()}}
+{\footnotesize\ttfamily void Early\+Phase\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war}{War}} $\ast$}]{in\+War }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets Wars phase to next early phase or \mbox{\hyperlink{class_mid_phase}{Mid\+Phase}}. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em War$\ast$} & passes in the war which must have its phase changed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_war_phase_a258e9480c7b3dcbdebdf86863659f1e5}{War\+Phase}}.
+
+\mbox{\Hypertarget{class_early_phase_a4dec6915b8c177199bc2b92a49fdb3af}\label{class_early_phase_a4dec6915b8c177199bc2b92a49fdb3af}} 
+\index{EarlyPhase@{EarlyPhase}!outputChange@{outputChange}}
+\index{outputChange@{outputChange}!EarlyPhase@{EarlyPhase}}
+\subsubsection{\texorpdfstring{outputChange()}{outputChange()}}
+{\footnotesize\ttfamily virtual void Early\+Phase\+::output\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function will be implemented by the derived classes. (\mbox{\hyperlink{class_early_crisis}{Early\+Crisis}}, \mbox{\hyperlink{class_early_open_conflict}{Early\+Open\+Conflict}} \& \mbox{\hyperlink{class_early_peace}{Early\+Peace}}) 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+
+
+Reimplemented in \mbox{\hyperlink{class_early_crisis_af25e06788b565ba54a431175ab4c3c53}{Early\+Crisis}}, \mbox{\hyperlink{class_early_open_conflict_a5326352607a97d660280fc97da533cf6}{Early\+Open\+Conflict}}, and \mbox{\hyperlink{class_early_unstable_peace_ab48c4136bd2efb74c74c537f697bfd0c}{Early\+Unstable\+Peace}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_early_phase_a972cc28503787c749cad7b611204c951}\label{class_early_phase_a972cc28503787c749cad7b611204c951}} 
+\index{EarlyPhase@{EarlyPhase}!next@{next}}
+\index{next@{next}!EarlyPhase@{EarlyPhase}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_early_phase}{Early\+Phase}}$\ast$ Early\+Phase\+::next}
+

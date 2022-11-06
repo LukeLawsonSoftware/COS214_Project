@@ -1,0 +1,116 @@
+\hypertarget{class_civilian}{}\section{Civilian Class Reference}
+\label{class_civilian}\index{Civilian@{Civilian}}
+
+
+{\ttfamily \#include $<$Civilian.\+h$>$}
+
+Inheritance diagram for Civilian\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_civilian}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_civilian_a777f57f7c1a7b1213a665594e902abed}{Civilian}} ()
+\begin{DoxyCompactList}\small\item\em A default constructor that sets the designation to a citizen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_civilian_a783dc80702e3cd2c1254fa44be08fdee}{Civilian}} (std\+::string Designation)
+\begin{DoxyCompactList}\small\item\em a parameterized constructor to craete a new \mbox{\hyperlink{class_civilian}{Civilian}} with a specific designation \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} $\ast$ \mbox{\hyperlink{class_civilian_a5c7b7c3b4832ba0d6509e8b87fac87e1}{clone}} ()
+\begin{DoxyCompactList}\small\item\em clone the current \mbox{\hyperlink{class_civilian}{Civilian}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_civilian_a8a1a50e95c21a3badd8dfa3ea9945246}{set\+Designation}} (std\+::string Designation)
+\begin{DoxyCompactList}\small\item\em set the attribute designation, which can be a refugee or a citizen \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_civilian_a416c38216315bd058dffbfb5b33d2795}{get\+Designation}} ()
+\begin{DoxyCompactList}\small\item\em get the attribute designation, which can be a refugee or a citizen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_civilian_a777f57f7c1a7b1213a665594e902abed}\label{class_civilian_a777f57f7c1a7b1213a665594e902abed}} 
+\index{Civilian@{Civilian}!Civilian@{Civilian}}
+\index{Civilian@{Civilian}!Civilian@{Civilian}}
+\subsubsection{\texorpdfstring{Civilian()}{Civilian()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Civilian\+::\+Civilian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A default constructor that sets the designation to a citizen. 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_civilian_a783dc80702e3cd2c1254fa44be08fdee}\label{class_civilian_a783dc80702e3cd2c1254fa44be08fdee}} 
+\index{Civilian@{Civilian}!Civilian@{Civilian}}
+\index{Civilian@{Civilian}!Civilian@{Civilian}}
+\subsubsection{\texorpdfstring{Civilian()}{Civilian()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Civilian\+::\+Civilian (\begin{DoxyParamCaption}\item[{std\+::string}]{Designation }\end{DoxyParamCaption})}
+
+
+
+a parameterized constructor to craete a new \mbox{\hyperlink{class_civilian}{Civilian}} with a specific designation 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Designation} & string to indicate if a civilian is a refugee or a citizen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_civilian_a5c7b7c3b4832ba0d6509e8b87fac87e1}\label{class_civilian_a5c7b7c3b4832ba0d6509e8b87fac87e1}} 
+\index{Civilian@{Civilian}!clone@{clone}}
+\index{clone@{clone}!Civilian@{Civilian}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} $\ast$ Civilian\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+clone the current \mbox{\hyperlink{class_civilian}{Civilian}} 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a pointer to the cloned/new \mbox{\hyperlink{class_non_combat_entity}{Non\+Combat\+Entity}} \+: \mbox{\hyperlink{class_civilian}{Civilian}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_non_combat_entity_a4d6e9ad6c7682a10e2e491cac30fd0c0}{Non\+Combat\+Entity}}.
+
+\mbox{\Hypertarget{class_civilian_a416c38216315bd058dffbfb5b33d2795}\label{class_civilian_a416c38216315bd058dffbfb5b33d2795}} 
+\index{Civilian@{Civilian}!getDesignation@{getDesignation}}
+\index{getDesignation@{getDesignation}!Civilian@{Civilian}}
+\subsubsection{\texorpdfstring{getDesignation()}{getDesignation()}}
+{\footnotesize\ttfamily std\+::string Civilian\+::get\+Designation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the attribute designation, which can be a refugee or a citizen 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a string to indicate if a civilian is a refugee or a citizen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_civilian_a8a1a50e95c21a3badd8dfa3ea9945246}\label{class_civilian_a8a1a50e95c21a3badd8dfa3ea9945246}} 
+\index{Civilian@{Civilian}!setDesignation@{setDesignation}}
+\index{setDesignation@{setDesignation}!Civilian@{Civilian}}
+\subsubsection{\texorpdfstring{setDesignation()}{setDesignation()}}
+{\footnotesize\ttfamily void Civilian\+::set\+Designation (\begin{DoxyParamCaption}\item[{std\+::string}]{Designation }\end{DoxyParamCaption})}
+
+
+
+set the attribute designation, which can be a refugee or a citizen 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Designation} & string to indicate if a civilian is a refugee or a citizen \\
+\hline
+\end{DoxyParams}

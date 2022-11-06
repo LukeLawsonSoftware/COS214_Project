@@ -1,0 +1,274 @@
+\hypertarget{class_army}{}\section{Army Class Reference}
+\label{class_army}\index{Army@{Army}}
+
+
+{\ttfamily \#include $<$Army.\+h$>$}
+
+Inheritance diagram for Army\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_army}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_army_a24aef716a43cb562ed74dcad7ee0163b}{Army}} (std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$battalions, std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$individuals, std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$supplies, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Constructor to initialise an army object with Army\+Components, Supplies and a type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a58b4b12481451ff006f5ca4e0e941c4f}{apply\+Strategy\+Bonus}} ()
+\begin{DoxyCompactList}\small\item\em Function to apply bonus to the army\textquotesingle{}s \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_aa8a3e8d9a987b5db2bc53dffd75a4596}{recuperate}} ()
+\begin{DoxyCompactList}\small\item\em Function to use medical supplies to replenish army\textquotesingle{}s morale/hp. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a084c35aa0a977d9a9d2ee407c3927b52}{add\+New\+Ammo\+Supplies}} (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$ammo)
+\begin{DoxyCompactList}\small\item\em Function to add to \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s available ammo supplies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a0ca6fae9204652b57afae3cb4c44b349}{add\+New\+Medical\+Supplies}} (\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Function to add to \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s available medical supplies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a81abf74b10e24a8f2fd2666d1ce54239}{change\+Strategy}} (std\+::string new\+Strat)
+\begin{DoxyCompactList}\small\item\em Function to change an \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s current strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a2150e3e29e2fac86401b0263ec0e18d9}{set\+Battle\+Field}} (\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$theatre)
+\begin{DoxyCompactList}\small\item\em Function move this \mbox{\hyperlink{class_army}{Army}} into a \mbox{\hyperlink{class_war}{War}} Theatre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a6038ff12345f993b2aab1740a9f0a6a6}{attack\+Transport}} (\mbox{\hyperlink{class_country}{Country}} $\ast$country)
+\begin{DoxyCompactList}\small\item\em Function for an \mbox{\hyperlink{class_army}{Army}} to attack a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_army_a970b4df6878127a902c04df760c8ea5d}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Function to change an \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s current strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} $\ast$ \mbox{\hyperlink{class_army_afc9db890d8daf5eedd176a532b4a801e}{get\+Battle\+Statistics}} ()
+\begin{DoxyCompactList}\small\item\em a function to get the \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} of a army to alter the statistics \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_army_a54af3a0b0beab32446d47bb409a39685}{set\+Name}} (std\+::string Name)
+\begin{DoxyCompactList}\small\item\em a function to set the name of the army \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em a function to get the name of the army \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_army}{Army}} class is a big component in the \mbox{\hyperlink{class_war}{War}} since we use this class to keep track of the army\textquotesingle{}s supplies (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} \& \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}}).
+\begin{DoxyItemize}
+\item We also use this class to fight against other Countries.
+\item We are also able to attack the enemy\textquotesingle{}s Transport which will disable the enemy\textquotesingle{}s transport lines. Thus they won\textquotesingle{}t be able to send supplies to their armies, giving our \mbox{\hyperlink{class_army}{Army}} a slight advantage. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_army_a24aef716a43cb562ed74dcad7ee0163b}\label{class_army_a24aef716a43cb562ed74dcad7ee0163b}} 
+\index{Army@{Army}!Army@{Army}}
+\index{Army@{Army}!Army@{Army}}
+\subsubsection{\texorpdfstring{Army()}{Army()}}
+{\footnotesize\ttfamily Army\+::\+Army (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$}]{battalions,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ $>$ $\ast$}]{individuals,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_supply}{Supply}} $\ast$ $>$ $\ast$}]{supplies,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialise an army object with Army\+Components, Supplies and a type. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em battalions} & pointer to vector of \mbox{\hyperlink{class_army_component}{Army\+Component}} pointers representing battalions \\
+\hline
+{\em individuals} & pointer to vector of \mbox{\hyperlink{class_army_component}{Army\+Component}} pointers representing individuals (vehicles or units) \\
+\hline
+{\em supplies} & pointer to vector of \mbox{\hyperlink{class_supply}{Supply}} pointers for Ammo and Meds \\
+\hline
+{\em type} & string type of the army. Land, Air or Sea \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+To instantiate the \mbox{\hyperlink{class_army}{Army}} object, the battalions, individuals and suppplies need to be already defined. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+The type is used to specify which army we will instantiate i.\+e. in which theatre the army will be fighting (Land, Air or Sea). 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_a084c35aa0a977d9a9d2ee407c3927b52}\label{class_army_a084c35aa0a977d9a9d2ee407c3927b52}} 
+\index{Army@{Army}!addNewAmmoSupplies@{addNewAmmoSupplies}}
+\index{addNewAmmoSupplies@{addNewAmmoSupplies}!Army@{Army}}
+\subsubsection{\texorpdfstring{addNewAmmoSupplies()}{addNewAmmoSupplies()}}
+{\footnotesize\ttfamily void Army\+::add\+New\+Ammo\+Supplies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$}]{ammo }\end{DoxyParamCaption})}
+
+
+
+Function to add to \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s available ammo supplies. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ammo} & pointer to \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_army_a0ca6fae9204652b57afae3cb4c44b349}\label{class_army_a0ca6fae9204652b57afae3cb4c44b349}} 
+\index{Army@{Army}!addNewMedicalSupplies@{addNewMedicalSupplies}}
+\index{addNewMedicalSupplies@{addNewMedicalSupplies}!Army@{Army}}
+\subsubsection{\texorpdfstring{addNewMedicalSupplies()}{addNewMedicalSupplies()}}
+{\footnotesize\ttfamily void Army\+::add\+New\+Medical\+Supplies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$}]{meds }\end{DoxyParamCaption})}
+
+
+
+Function to add to \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s available medical supplies. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ammo} & pointer to \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_army_a58b4b12481451ff006f5ca4e0e941c4f}\label{class_army_a58b4b12481451ff006f5ca4e0e941c4f}} 
+\index{Army@{Army}!applyStrategyBonus@{applyStrategyBonus}}
+\index{applyStrategyBonus@{applyStrategyBonus}!Army@{Army}}
+\subsubsection{\texorpdfstring{applyStrategyBonus()}{applyStrategyBonus()}}
+{\footnotesize\ttfamily void Army\+::apply\+Strategy\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to apply bonus to the army\textquotesingle{}s \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_army_a6038ff12345f993b2aab1740a9f0a6a6}\label{class_army_a6038ff12345f993b2aab1740a9f0a6a6}} 
+\index{Army@{Army}!attackTransport@{attackTransport}}
+\index{attackTransport@{attackTransport}!Army@{Army}}
+\subsubsection{\texorpdfstring{attackTransport()}{attackTransport()}}
+{\footnotesize\ttfamily void Army\+::attack\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{country }\end{DoxyParamCaption})}
+
+
+
+Function for an \mbox{\hyperlink{class_army}{Army}} to attack a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em country} & pointer to \mbox{\hyperlink{class_country}{Country}} whose Transport lines are to be attacked \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_army_a81abf74b10e24a8f2fd2666d1ce54239}\label{class_army_a81abf74b10e24a8f2fd2666d1ce54239}} 
+\index{Army@{Army}!changeStrategy@{changeStrategy}}
+\index{changeStrategy@{changeStrategy}!Army@{Army}}
+\subsubsection{\texorpdfstring{changeStrategy()}{changeStrategy()}}
+{\footnotesize\ttfamily void Army\+::change\+Strategy (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Strat }\end{DoxyParamCaption})}
+
+
+
+Function to change an \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s current strategy. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Start} & string represening the new strategy to adopt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_army_afc9db890d8daf5eedd176a532b4a801e}\label{class_army_afc9db890d8daf5eedd176a532b4a801e}} 
+\index{Army@{Army}!getBattleStatistics@{getBattleStatistics}}
+\index{getBattleStatistics@{getBattleStatistics}!Army@{Army}}
+\subsubsection{\texorpdfstring{getBattleStatistics()}{getBattleStatistics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} $\ast$ Army\+::get\+Battle\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a function to get the \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} of a army to alter the statistics 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to a \mbox{\hyperlink{class_battle_statistics}{Battle\+Statistics}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}\label{class_army_a23b0ec0aa78d6b30a9d18b73ebd38d28}} 
+\index{Army@{Army}!getName@{getName}}
+\index{getName@{getName}!Army@{Army}}
+\subsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Army\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a function to get the name of the army 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a string giving the army\textquotesingle{}s name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_a970b4df6878127a902c04df760c8ea5d}\label{class_army_a970b4df6878127a902c04df760c8ea5d}} 
+\index{Army@{Army}!getType@{getType}}
+\index{getType@{getType}!Army@{Army}}
+\subsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Army\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to change an \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s current strategy. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+string representing the army\textquotesingle{}s type (Air, Land or Sea) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_army_aa8a3e8d9a987b5db2bc53dffd75a4596}\label{class_army_aa8a3e8d9a987b5db2bc53dffd75a4596}} 
+\index{Army@{Army}!recuperate@{recuperate}}
+\index{recuperate@{recuperate}!Army@{Army}}
+\subsubsection{\texorpdfstring{recuperate()}{recuperate()}}
+{\footnotesize\ttfamily void Army\+::recuperate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to use medical supplies to replenish army\textquotesingle{}s morale/hp. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function is used to heal our army by using the medical supplies. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_army_a2150e3e29e2fac86401b0263ec0e18d9}\label{class_army_a2150e3e29e2fac86401b0263ec0e18d9}} 
+\index{Army@{Army}!setBattleField@{setBattleField}}
+\index{setBattleField@{setBattleField}!Army@{Army}}
+\subsubsection{\texorpdfstring{setBattleField()}{setBattleField()}}
+{\footnotesize\ttfamily void Army\+::set\+Battle\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$}]{theatre }\end{DoxyParamCaption})}
+
+
+
+Function move this \mbox{\hyperlink{class_army}{Army}} into a \mbox{\hyperlink{class_war}{War}} Theatre. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em theatre} & pointer to \mbox{\hyperlink{class_war}{War}} Theatre to be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The specified \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} needs to be of the same type as the \mbox{\hyperlink{class_army}{Army}} object. We cannot let Land armies fight in an Air theatre. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_army_a54af3a0b0beab32446d47bb409a39685}\label{class_army_a54af3a0b0beab32446d47bb409a39685}} 
+\index{Army@{Army}!setName@{setName}}
+\index{setName@{setName}!Army@{Army}}
+\subsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Army\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+a function to set the name of the army 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & string to set the name of the \mbox{\hyperlink{class_army}{Army}} \\
+\hline
+\end{DoxyParams}

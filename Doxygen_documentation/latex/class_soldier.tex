@@ -1,0 +1,235 @@
+\hypertarget{class_soldier}{}\section{Soldier Class Reference}
+\label{class_soldier}\index{Soldier@{Soldier}}
+
+
+{\ttfamily \#include $<$Soldier.\+h$>$}
+
+Inheritance diagram for Soldier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_soldier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_soldier_a9663ed35af797ad340b1270e8f77d2a6}{Soldier}} (int power\+Rating)
+\begin{DoxyCompactList}\small\item\em Construct Solider using power\+Level to determine training\+Level. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_ad5290f69e84772e9a3bfc060b5d348a0}{calculate\+Air\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Air\+Offense statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_a3dc2d7a06621380c4561d330d5359dc2}{calculate\+Air\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Air\+Defence statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_acdaf5453ea0f87b3219185b0a52dd869}{calculate\+Sea\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Offense statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_a6508d8539b427a9af01aabc07ba6ca8e}{calculate\+Sea\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Defence statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_ac0add7efb3192adb809bc1746c880fc0}{calculate\+Land\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Land\+Offence statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_soldier_ab37165b4ce8fbe4a24a759c81ece58c4}{calculate\+Land\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculates the Land\+Defence statistic of the unit. Implemented in child classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_soldier_af158cf7ebb1fbf27d4b46c272de60803}{add\+Member}} (\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$new\+Member)
+\begin{DoxyCompactList}\small\item\em Composite method to create composite Army\+Components. Stubbed here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_soldier_ac140271761bd8022e68a70f5ca3984b8}{training\+Level}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_soldier_a9663ed35af797ad340b1270e8f77d2a6}\label{class_soldier_a9663ed35af797ad340b1270e8f77d2a6}} 
+\index{Soldier@{Soldier}!Soldier@{Soldier}}
+\index{Soldier@{Soldier}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{Soldier()}{Soldier()}}
+{\footnotesize\ttfamily Soldier\+::\+Soldier (\begin{DoxyParamCaption}\item[{int}]{power\+Rating }\end{DoxyParamCaption})}
+
+
+
+Construct Solider using power\+Level to determine training\+Level. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Rating} & power\+Rating of the \mbox{\hyperlink{class_soldier}{Soldier}} (power\+Rating = training\+Level) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_soldier_af158cf7ebb1fbf27d4b46c272de60803}\label{class_soldier_af158cf7ebb1fbf27d4b46c272de60803}} 
+\index{Soldier@{Soldier}!addMember@{addMember}}
+\index{addMember@{addMember}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{addMember()}{addMember()}}
+{\footnotesize\ttfamily void Soldier\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$}]{new\+Member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Composite method to create composite Army\+Components. Stubbed here. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Member} & pointer to \mbox{\hyperlink{class_army_component}{Army\+Component}} to add to composite object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_army_component_aae30fdd85af73102e011cb053ddb96b3}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_soldier_a3dc2d7a06621380c4561d330d5359dc2}\label{class_soldier_a3dc2d7a06621380c4561d330d5359dc2}} 
+\index{Soldier@{Soldier}!calculateAirDefense@{calculateAirDefense}}
+\index{calculateAirDefense@{calculateAirDefense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateAirDefense()}{calculateAirDefense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Air\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Air\+Defence statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Air\+Defence statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a9f6671dd8cd4037722f592f0fa86e3a2}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_land_unit_acf9d648efacea20a028b2d9dcaca0d64}{Land\+Unit}}, \mbox{\hyperlink{class_sea_unit_ab05ac5cd7be62a139c16f36146c17b00}{Sea\+Unit}}, and \mbox{\hyperlink{class_air_unit_a78796cdf870a76c072e89445a4c8ba15}{Air\+Unit}}.
+
+\mbox{\Hypertarget{class_soldier_ad5290f69e84772e9a3bfc060b5d348a0}\label{class_soldier_ad5290f69e84772e9a3bfc060b5d348a0}} 
+\index{Soldier@{Soldier}!calculateAirOffense@{calculateAirOffense}}
+\index{calculateAirOffense@{calculateAirOffense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateAirOffense()}{calculateAirOffense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Air\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Air\+Offense statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Air\+Offense statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_aeea4bed9a4850e9b74f9306a8443085c}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_land_unit_af6b72446b89f0cceda3e71f0ccefd41e}{Land\+Unit}}, \mbox{\hyperlink{class_air_unit_a522f54b197f6b2daf784f4a9eacb9edc}{Air\+Unit}}, and \mbox{\hyperlink{class_sea_unit_aa2d92acd5e3798fdddfa860d5a9d346b}{Sea\+Unit}}.
+
+\mbox{\Hypertarget{class_soldier_ab37165b4ce8fbe4a24a759c81ece58c4}\label{class_soldier_ab37165b4ce8fbe4a24a759c81ece58c4}} 
+\index{Soldier@{Soldier}!calculateLandDefense@{calculateLandDefense}}
+\index{calculateLandDefense@{calculateLandDefense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateLandDefense()}{calculateLandDefense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Land\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Land\+Defence statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Defence statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a88558b28106a5d461fcc9ca2eb8e7a40}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_air_unit_a5d408669d099d55d1bb19f71d6dc8712}{Air\+Unit}}, \mbox{\hyperlink{class_land_unit_acffd7525b2d214be433fe77ecf5610df}{Land\+Unit}}, and \mbox{\hyperlink{class_sea_unit_a5fa9cb7bedbe58346fcd22fdd7ca855b}{Sea\+Unit}}.
+
+\mbox{\Hypertarget{class_soldier_ac0add7efb3192adb809bc1746c880fc0}\label{class_soldier_ac0add7efb3192adb809bc1746c880fc0}} 
+\index{Soldier@{Soldier}!calculateLandOffense@{calculateLandOffense}}
+\index{calculateLandOffense@{calculateLandOffense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateLandOffense()}{calculateLandOffense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Land\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Land\+Offence statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Offence statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a0556ff6dbfa956f9ab52aadaa6a331e1}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_land_unit_a8f95f94a08fbdd268b85160dbd578947}{Land\+Unit}}, \mbox{\hyperlink{class_air_unit_ab5f13baf31eafe62bf482ec4501f4975}{Air\+Unit}}, and \mbox{\hyperlink{class_sea_unit_a5b21e648106a6ec40c79a1916e9fe674}{Sea\+Unit}}.
+
+\mbox{\Hypertarget{class_soldier_a6508d8539b427a9af01aabc07ba6ca8e}\label{class_soldier_a6508d8539b427a9af01aabc07ba6ca8e}} 
+\index{Soldier@{Soldier}!calculateSeaDefense@{calculateSeaDefense}}
+\index{calculateSeaDefense@{calculateSeaDefense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateSeaDefense()}{calculateSeaDefense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Sea\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Sea\+Defence statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Sea\+Defence statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_af5656dd9c12738ec90ea7886fd7ee34a}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_land_unit_a5a0d88fe84b7700e9e85f6c3c1f1af9d}{Land\+Unit}}, \mbox{\hyperlink{class_air_unit_ab7cd17470efa06d53df2ad5be3964e7a}{Air\+Unit}}, and \mbox{\hyperlink{class_sea_unit_a04480810f175b4c0c7d5b54e9397605f}{Sea\+Unit}}.
+
+\mbox{\Hypertarget{class_soldier_acdaf5453ea0f87b3219185b0a52dd869}\label{class_soldier_acdaf5453ea0f87b3219185b0a52dd869}} 
+\index{Soldier@{Soldier}!calculateSeaOffense@{calculateSeaOffense}}
+\index{calculateSeaOffense@{calculateSeaOffense}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{calculateSeaOffense()}{calculateSeaOffense()}}
+{\footnotesize\ttfamily virtual int Soldier\+::calculate\+Sea\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the Sea\+Offense statistic of the unit. Implemented in child classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Sea\+Offense statistic of unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a6e29f65ac92c18a82bf4a6a06d6d4457}{Army\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_land_unit_a40d93a3df8b92babc7a4f35a28dd3b73}{Land\+Unit}}, \mbox{\hyperlink{class_air_unit_a1e0b1b7905336477733191c6a66cf022}{Air\+Unit}}, and \mbox{\hyperlink{class_sea_unit_a3c275db4b9bf8cef62975d6c26ce79f8}{Sea\+Unit}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_soldier_ac140271761bd8022e68a70f5ca3984b8}\label{class_soldier_ac140271761bd8022e68a70f5ca3984b8}} 
+\index{Soldier@{Soldier}!trainingLevel@{trainingLevel}}
+\index{trainingLevel@{trainingLevel}!Soldier@{Soldier}}
+\subsubsection{\texorpdfstring{trainingLevel}{trainingLevel}}
+{\footnotesize\ttfamily int Soldier\+::training\+Level\hspace{0.3cm}{\ttfamily [protected]}}
+

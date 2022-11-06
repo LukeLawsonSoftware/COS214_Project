@@ -1,0 +1,209 @@
+\hypertarget{class_war_theatre}{}\section{War\+Theatre Class Reference}
+\label{class_war_theatre}\index{WarTheatre@{WarTheatre}}
+
+
+{\ttfamily \#include $<$War\+Theatre.\+h$>$}
+
+Inheritance diagram for War\+Theatre\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_war_theatre}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_war_theatre_ac1dc683301091ecc993f5f8c43a076ec}{War\+Theatre}} (std\+::string Type, std\+::string Name)
+\begin{DoxyCompactList}\small\item\em a paramaterized constructor to set the type, name and the medics and civilian vectors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_war_theatre_a28324e2234a88933e1697c0f7f9ff222}{$\sim$\+War\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em a destructor to delete the medics and civilian vectors \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_theatre_a506466397ba9769d7128ea41a649af9e}{apply\+Terrain\+Bonus}} ()
+\begin{DoxyCompactList}\small\item\em the template method used to call the appropriate terrain\textquotesingle{}s adjust\+Defence and adjust\+Attack methods \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_theatre_a387bd59d6d1cd476764d2e6bfe8dd8df}{conflict}} ()
+\item 
+void \mbox{\hyperlink{class_war_theatre_ab51f972cc9b47859149f9132bcbcbaf5}{add\+Army}} (\mbox{\hyperlink{class_army}{Army}} $\ast$new\+Army)
+\begin{DoxyCompactList}\small\item\em a function to add an army to the war theatre \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_theatre_a776ea7d7c2cc732d7eb0f0298e4cde8b}{replenish\+Non\+Combat\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em a function to add a fixed number of civilains and medics each time \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_war_theatre_a5833b9da41252b8339f0b2cf1873648f}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em a get method to return the type of the war theatre \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_war_theatre_a4ecfdcdbc85833b4be2f69df2c0ed195}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em a get method to return the name of the war theatre \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_war_theatre_abddee7212b4e178eaf1923664411b0cb}{get\+Armies}} ()
+\begin{DoxyCompactList}\small\item\em a get method to return the armies currently present in the war theatre \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_war_theatre_ab40e687f758e22fdf56e962df1ce58ee}{get\+Contention\+State}} ()
+\begin{DoxyCompactList}\small\item\em a get method to return the contention state to specify what is happening in the current war theatre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is used to create different locations where the \mbox{\hyperlink{class_war}{War}} will take place.
+\begin{DoxyItemize}
+\item A \mbox{\hyperlink{class_country}{Country}} can enter its armies to different war theatres. The different war theatres include\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_air_terrain}{Air\+Terrain}}\+: \mbox{\hyperlink{class_this}{This}} is where air units will be fighting against each other.
+\item \mbox{\hyperlink{class_land_terrain}{Land\+Terrain}}\+: \mbox{\hyperlink{class_this}{This}} is where land units will be fighting against each other.
+\item \mbox{\hyperlink{class_sea_terrain}{Sea\+Terrain}}\+: \mbox{\hyperlink{class_this}{This}} is where sea units will be fighting against each other.
+\end{DoxyItemize}
+\item A theatre will also have civilians and medics. \mbox{\hyperlink{class_this}{This}} is to make is more realistic to an actual war.
+\item It will also consist of armies from two alliances. The two alliances will be fighting against each other.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The \mbox{\hyperlink{class_war}{War}} will only consists of the three terrains (one of each type of terrain). 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_war_theatre_ac1dc683301091ecc993f5f8c43a076ec}\label{class_war_theatre_ac1dc683301091ecc993f5f8c43a076ec}} 
+\index{WarTheatre@{WarTheatre}!WarTheatre@{WarTheatre}}
+\index{WarTheatre@{WarTheatre}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{WarTheatre()}{WarTheatre()}}
+{\footnotesize\ttfamily War\+Theatre\+::\+War\+Theatre (\begin{DoxyParamCaption}\item[{std\+::string}]{Type,  }\item[{std\+::string}]{Name }\end{DoxyParamCaption})}
+
+
+
+a paramaterized constructor to set the type, name and the medics and civilian vectors 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & string used to indicate if the war theatre is a land, sea or air terrain \\
+\hline
+{\em Name} & string used to give the war theatre a name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The type can only be Sea, Air or Land. Not any other type. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_war_theatre_a28324e2234a88933e1697c0f7f9ff222}\label{class_war_theatre_a28324e2234a88933e1697c0f7f9ff222}} 
+\index{WarTheatre@{WarTheatre}!````~WarTheatre@{$\sim$WarTheatre}}
+\index{````~WarTheatre@{$\sim$WarTheatre}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{$\sim$WarTheatre()}{~WarTheatre()}}
+{\footnotesize\ttfamily War\+Theatre\+::$\sim$\+War\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a destructor to delete the medics and civilian vectors 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_war_theatre_ab51f972cc9b47859149f9132bcbcbaf5}\label{class_war_theatre_ab51f972cc9b47859149f9132bcbcbaf5}} 
+\index{WarTheatre@{WarTheatre}!addArmy@{addArmy}}
+\index{addArmy@{addArmy}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{addArmy()}{addArmy()}}
+{\footnotesize\ttfamily void War\+Theatre\+::add\+Army (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army}{Army}} $\ast$}]{new\+Army }\end{DoxyParamCaption})}
+
+
+
+a function to add an army to the war theatre 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Army} & pointer to an army object that wants to enter the war theatre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_war_theatre_a506466397ba9769d7128ea41a649af9e}\label{class_war_theatre_a506466397ba9769d7128ea41a649af9e}} 
+\index{WarTheatre@{WarTheatre}!applyTerrainBonus@{applyTerrainBonus}}
+\index{applyTerrainBonus@{applyTerrainBonus}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{applyTerrainBonus()}{applyTerrainBonus()}}
+{\footnotesize\ttfamily void War\+Theatre\+::apply\+Terrain\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the template method used to call the appropriate terrain\textquotesingle{}s adjust\+Defence and adjust\+Attack methods 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_theatre_a387bd59d6d1cd476764d2e6bfe8dd8df}\label{class_war_theatre_a387bd59d6d1cd476764d2e6bfe8dd8df}} 
+\index{WarTheatre@{WarTheatre}!conflict@{conflict}}
+\index{conflict@{conflict}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{conflict()}{conflict()}}
+{\footnotesize\ttfamily void War\+Theatre\+::conflict (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_war_theatre_abddee7212b4e178eaf1923664411b0cb}\label{class_war_theatre_abddee7212b4e178eaf1923664411b0cb}} 
+\index{WarTheatre@{WarTheatre}!getArmies@{getArmies}}
+\index{getArmies@{getArmies}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{getArmies()}{getArmies()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}} $\ast$ War\+Theatre\+::get\+Armies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a get method to return the armies currently present in the war theatre 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to the army array containing the armies currently present in the war theatre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_war_theatre_ab40e687f758e22fdf56e962df1ce58ee}\label{class_war_theatre_ab40e687f758e22fdf56e962df1ce58ee}} 
+\index{WarTheatre@{WarTheatre}!getContentionState@{getContentionState}}
+\index{getContentionState@{getContentionState}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{getContentionState()}{getContentionState()}}
+{\footnotesize\ttfamily int War\+Theatre\+::get\+Contention\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a get method to return the contention state to specify what is happening in the current war theatre. 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+integer value (a value between 0 and 3, both included) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_war_theatre_a4ecfdcdbc85833b4be2f69df2c0ed195}\label{class_war_theatre_a4ecfdcdbc85833b4be2f69df2c0ed195}} 
+\index{WarTheatre@{WarTheatre}!getName@{getName}}
+\index{getName@{getName}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string War\+Theatre\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a get method to return the name of the war theatre 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+string used to indicate the name of the war theatre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_war_theatre_a5833b9da41252b8339f0b2cf1873648f}\label{class_war_theatre_a5833b9da41252b8339f0b2cf1873648f}} 
+\index{WarTheatre@{WarTheatre}!getType@{getType}}
+\index{getType@{getType}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string War\+Theatre\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a get method to return the type of the war theatre 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+string used to indicate the type(air/land/sea) of the war theatre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_war_theatre_a776ea7d7c2cc732d7eb0f0298e4cde8b}\label{class_war_theatre_a776ea7d7c2cc732d7eb0f0298e4cde8b}} 
+\index{WarTheatre@{WarTheatre}!replenishNonCombatEntities@{replenishNonCombatEntities}}
+\index{replenishNonCombatEntities@{replenishNonCombatEntities}!WarTheatre@{WarTheatre}}
+\subsubsection{\texorpdfstring{replenishNonCombatEntities()}{replenishNonCombatEntities()}}
+{\footnotesize\ttfamily void War\+Theatre\+::replenish\+Non\+Combat\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a function to add a fixed number of civilains and medics each time 
+
+\begin{DoxyAuthor}{Author}
+Jonelle Coertze (u21446271) 
+\end{DoxyAuthor}

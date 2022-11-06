@@ -1,0 +1,215 @@
+\hypertarget{class_land_unit}{}\section{Land\+Unit Class Reference}
+\label{class_land_unit}\index{LandUnit@{LandUnit}}
+
+
+{\ttfamily \#include $<$Land\+Unit.\+h$>$}
+
+Inheritance diagram for Land\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_land_unit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_land_unit_ac7c62d6ea8573a8689afaddc04837279}{Land\+Unit}} (int power\+Rating)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{class_land_unit}{Land\+Unit}} object, calling constructor of parent \mbox{\hyperlink{class_soldier}{Soldier}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_af6b72446b89f0cceda3e71f0ccefd41e}{calculate\+Air\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Air\+Offense statistic of the unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_acf9d648efacea20a028b2d9dcaca0d64}{calculate\+Air\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Air\+Defence statistic of the unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_a40d93a3df8b92babc7a4f35a28dd3b73}{calculate\+Sea\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Offense statistic of the unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_a5a0d88fe84b7700e9e85f6c3c1f1af9d}{calculate\+Sea\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Defence statistic of the unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_a8f95f94a08fbdd268b85160dbd578947}{calculate\+Land\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Use Normal Distribution (with mean and stddev scaled by training\+Level) to randomly generate the unit\textquotesingle{}s Land\+Offence statistic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_unit_acffd7525b2d214be433fe77ecf5610df}{calculate\+Land\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Use Normal Distribution (with mean and stddev scaled by training\+Level) to randomly generate the unit\textquotesingle{}s Land\+Defence statistic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{_soldier_8h_source}{(See the definition of the Soldier class)}}
+
+The \mbox{\hyperlink{class_land_unit}{Land\+Unit}} class is a derived class derived from the \mbox{\hyperlink{class_soldier}{Soldier}} class. The \mbox{\hyperlink{class_land_unit}{Land\+Unit}} will be used to create Land unit such as a \mbox{\hyperlink{class_soldier}{Soldier}} to fight on the battlefield i.\+e. an Land \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is used to do the calculations for a \mbox{\hyperlink{class_soldier}{Soldier}} and to instantiate a \mbox{\hyperlink{class_soldier}{Soldier}} object. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_land_unit_ac7c62d6ea8573a8689afaddc04837279}\label{class_land_unit_ac7c62d6ea8573a8689afaddc04837279}} 
+\index{LandUnit@{LandUnit}!LandUnit@{LandUnit}}
+\index{LandUnit@{LandUnit}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{LandUnit()}{LandUnit()}}
+{\footnotesize\ttfamily Land\+Unit\+::\+Land\+Unit (\begin{DoxyParamCaption}\item[{int}]{power\+Rating }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{class_land_unit}{Land\+Unit}} object, calling constructor of parent \mbox{\hyperlink{class_soldier}{Soldier}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Rating} & The power\+Rating of the particular unit as per factory\textquotesingle{}s cost (higher cost -\/$>$ higher power) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The power\+Rating must be greater than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_land_unit_acf9d648efacea20a028b2d9dcaca0d64}\label{class_land_unit_acf9d648efacea20a028b2d9dcaca0d64}} 
+\index{LandUnit@{LandUnit}!calculateAirDefense@{calculateAirDefense}}
+\index{calculateAirDefense@{calculateAirDefense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateAirDefense()}{calculateAirDefense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Air\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Air\+Defence statistic of the unit. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_unit}{Land\+Unit}} and not an \mbox{\hyperlink{class_air_unit}{Air\+Unit}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_soldier_a3dc2d7a06621380c4561d330d5359dc2}{Soldier}}.
+
+\mbox{\Hypertarget{class_land_unit_af6b72446b89f0cceda3e71f0ccefd41e}\label{class_land_unit_af6b72446b89f0cceda3e71f0ccefd41e}} 
+\index{LandUnit@{LandUnit}!calculateAirOffense@{calculateAirOffense}}
+\index{calculateAirOffense@{calculateAirOffense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateAirOffense()}{calculateAirOffense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Air\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Air\+Offense statistic of the unit. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_unit}{Land\+Unit}} and not an \mbox{\hyperlink{class_air_unit}{Air\+Unit}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_soldier_ad5290f69e84772e9a3bfc060b5d348a0}{Soldier}}.
+
+\mbox{\Hypertarget{class_land_unit_acffd7525b2d214be433fe77ecf5610df}\label{class_land_unit_acffd7525b2d214be433fe77ecf5610df}} 
+\index{LandUnit@{LandUnit}!calculateLandDefense@{calculateLandDefense}}
+\index{calculateLandDefense@{calculateLandDefense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateLandDefense()}{calculateLandDefense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Land\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Use Normal Distribution (with mean and stddev scaled by training\+Level) to randomly generate the unit\textquotesingle{}s Land\+Defence statistic. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Defence statistic of unit 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_soldier_ab37165b4ce8fbe4a24a759c81ece58c4}{Soldier}}.
+
+\mbox{\Hypertarget{class_land_unit_a8f95f94a08fbdd268b85160dbd578947}\label{class_land_unit_a8f95f94a08fbdd268b85160dbd578947}} 
+\index{LandUnit@{LandUnit}!calculateLandOffense@{calculateLandOffense}}
+\index{calculateLandOffense@{calculateLandOffense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateLandOffense()}{calculateLandOffense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Land\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Use Normal Distribution (with mean and stddev scaled by training\+Level) to randomly generate the unit\textquotesingle{}s Land\+Offence statistic. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Offence statistic of unit 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_soldier_ac0add7efb3192adb809bc1746c880fc0}{Soldier}}.
+
+\mbox{\Hypertarget{class_land_unit_a5a0d88fe84b7700e9e85f6c3c1f1af9d}\label{class_land_unit_a5a0d88fe84b7700e9e85f6c3c1f1af9d}} 
+\index{LandUnit@{LandUnit}!calculateSeaDefense@{calculateSeaDefense}}
+\index{calculateSeaDefense@{calculateSeaDefense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateSeaDefense()}{calculateSeaDefense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Sea\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Sea\+Defence statistic of the unit. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_unit}{Land\+Unit}} and not a \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_soldier_a6508d8539b427a9af01aabc07ba6ca8e}{Soldier}}.
+
+\mbox{\Hypertarget{class_land_unit_a40d93a3df8b92babc7a4f35a28dd3b73}\label{class_land_unit_a40d93a3df8b92babc7a4f35a28dd3b73}} 
+\index{LandUnit@{LandUnit}!calculateSeaOffense@{calculateSeaOffense}}
+\index{calculateSeaOffense@{calculateSeaOffense}!LandUnit@{LandUnit}}
+\subsubsection{\texorpdfstring{calculateSeaOffense()}{calculateSeaOffense()}}
+{\footnotesize\ttfamily int Land\+Unit\+::calculate\+Sea\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Sea\+Offense statistic of the unit. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_unit}{Land\+Unit}} and not a \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_soldier_acdaf5453ea0f87b3219185b0a52dd869}{Soldier}}.
+

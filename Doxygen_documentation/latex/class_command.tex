@@ -1,0 +1,93 @@
+\hypertarget{class_command}{}\section{Command Class Reference}
+\label{class_command}\index{Command@{Command}}
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+Inheritance diagram for Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_command_a18df2d81039392daeb0b78c346a70537}{Command}} ()
+\item 
+void \mbox{\hyperlink{class_command_a4bc158ff4a08befd36846605a3c6d8bb}{set\+Army}} (\mbox{\hyperlink{class_army}{Army}} $\ast$)
+\begin{DoxyCompactList}\small\item\em sets the army to be executed on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_command_a3e19da141499cf156f3a8ecbf2a168ce}{get\+Army}} ()
+\begin{DoxyCompactList}\small\item\em returns the currently stored army. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{execute}} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_command_ae761c43165b07d7e120545f2d40cd79d}{army}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_command_a18df2d81039392daeb0b78c346a70537}\label{class_command_a18df2d81039392daeb0b78c346a70537}} 
+\index{Command@{Command}!Command@{Command}}
+\index{Command@{Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{Command()}{Command()}}
+{\footnotesize\ttfamily Command\+::\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\label{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}} 
+\index{Command@{Command}!execute@{execute}}
+\index{execute@{execute}!Command@{Command}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_change_strategy_a3d93f81a8f2a98a978120eaaff18aecd}{Change\+Strategy}}, \mbox{\hyperlink{class_attack_transport_a9fc5c19e5103ecb3e71dbfb21ad1fef9}{Attack\+Transport}}, and \mbox{\hyperlink{class_move_into_theatre_a4e708f54f8edabcb6be4164c1d38adcf}{Move\+Into\+Theatre}}.
+
+\mbox{\Hypertarget{class_command_a3e19da141499cf156f3a8ecbf2a168ce}\label{class_command_a3e19da141499cf156f3a8ecbf2a168ce}} 
+\index{Command@{Command}!getArmy@{getArmy}}
+\index{getArmy@{getArmy}!Command@{Command}}
+\subsubsection{\texorpdfstring{getArmy()}{getArmy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}} $\ast$ Command\+::get\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the currently stored army. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Army$\ast$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_command_a4bc158ff4a08befd36846605a3c6d8bb}\label{class_command_a4bc158ff4a08befd36846605a3c6d8bb}} 
+\index{Command@{Command}!setArmy@{setArmy}}
+\index{setArmy@{setArmy}!Command@{Command}}
+\subsubsection{\texorpdfstring{setArmy()}{setArmy()}}
+{\footnotesize\ttfamily void Command\+::set\+Army (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army}{Army}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+sets the army to be executed on. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf(u21446131) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_army}{Army}}} & containing army to be updated to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_command_ae761c43165b07d7e120545f2d40cd79d}\label{class_command_ae761c43165b07d7e120545f2d40cd79d}} 
+\index{Command@{Command}!army@{army}}
+\index{army@{army}!Command@{Command}}
+\subsubsection{\texorpdfstring{army}{army}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}}$\ast$ Command\+::army\hspace{0.3cm}{\ttfamily [protected]}}
+

@@ -1,0 +1,215 @@
+\hypertarget{class_land_vehicle}{}\section{Land\+Vehicle Class Reference}
+\label{class_land_vehicle}\index{LandVehicle@{LandVehicle}}
+
+
+{\ttfamily \#include $<$Land\+Vehicle.\+h$>$}
+
+Inheritance diagram for Land\+Vehicle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_land_vehicle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_land_vehicle_ad87bb4a1d05b0ef2cd076c50194bd612}{Land\+Vehicle}} (int power\+Rating)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} object, using power\+Rating to randomly generate attributes from Normal Dist. (higher power -\/$>$ better attributes) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_a2453f77778b1c36b2b2fbeb19d06776e}{calculate\+Air\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Air\+Offense statistic of the vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_af5083b44d73c3597be9ab081d06bc7a6}{calculate\+Air\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Use Normal Distribution (with mean and stddev scaled by armour\+Rating) to randomly generate the unit\textquotesingle{}s Air\+Defence statistic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_a679b1e2f608cdfad427449240a504999}{calculate\+Sea\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Offense statistic of the vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_a5a07a90d8307b0ac44e2caacb84eb64e}{calculate\+Sea\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the Sea\+Defence statistic of the vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_ae8604789808fddcd4e58122c11ee18cd}{calculate\+Land\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Use Normal Distribution (with mean and stddev scaled by weapon\+Class) to randomly generate the unit\textquotesingle{}s Land\+Offence statistic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_land_vehicle_aa294605ab1e7a30d2b62b51aa3957713}{calculate\+Land\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Use Normal Distribution (with mean and stddev scaled by armour\+Rating) to randomly generate the unit\textquotesingle{}s Land\+Defence statistic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{_vehicle_8h_source}{(See the definition of the Vehicle class)}}
+
+The \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} class is a derived class derived from the \mbox{\hyperlink{class_vehicle}{Vehicle}} class. The \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} will be used to create an individual unit (vehicle) which will fight alongside soldier units in the war. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class is used to do the calculations for a \mbox{\hyperlink{class_vehicle}{Vehicle}} and to instantiate a \mbox{\hyperlink{class_vehicle}{Vehicle}} object. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_land_vehicle_ad87bb4a1d05b0ef2cd076c50194bd612}\label{class_land_vehicle_ad87bb4a1d05b0ef2cd076c50194bd612}} 
+\index{LandVehicle@{LandVehicle}!LandVehicle@{LandVehicle}}
+\index{LandVehicle@{LandVehicle}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{LandVehicle()}{LandVehicle()}}
+{\footnotesize\ttfamily Land\+Vehicle\+::\+Land\+Vehicle (\begin{DoxyParamCaption}\item[{int}]{power\+Rating }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} object, using power\+Rating to randomly generate attributes from Normal Dist. (higher power -\/$>$ better attributes) 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Rating} & The power\+Rating of the particular vehicle as per factory\textquotesingle{}s cost (higher cost -\/$>$ higher power) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The power\+Rating cannot be a negative number. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_land_vehicle_af5083b44d73c3597be9ab081d06bc7a6}\label{class_land_vehicle_af5083b44d73c3597be9ab081d06bc7a6}} 
+\index{LandVehicle@{LandVehicle}!calculateAirDefense@{calculateAirDefense}}
+\index{calculateAirDefense@{calculateAirDefense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateAirDefense()}{calculateAirDefense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Air\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Use Normal Distribution (with mean and stddev scaled by armour\+Rating) to randomly generate the unit\textquotesingle{}s Air\+Defence statistic. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Air\+Defence statistic of vehicle 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} and not an \mbox{\hyperlink{class_air_vehicle}{Air\+Vehicle}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_vehicle_ae87cbec24f436b431fbed096024c41c9}{Vehicle}}.
+
+\mbox{\Hypertarget{class_land_vehicle_a2453f77778b1c36b2b2fbeb19d06776e}\label{class_land_vehicle_a2453f77778b1c36b2b2fbeb19d06776e}} 
+\index{LandVehicle@{LandVehicle}!calculateAirOffense@{calculateAirOffense}}
+\index{calculateAirOffense@{calculateAirOffense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateAirOffense()}{calculateAirOffense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Air\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Air\+Offense statistic of the vehicle. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} and not an \mbox{\hyperlink{class_air_vehicle}{Air\+Vehicle}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_vehicle_a0a6c6ed9d25c66415f83191894b11499}{Vehicle}}.
+
+\mbox{\Hypertarget{class_land_vehicle_aa294605ab1e7a30d2b62b51aa3957713}\label{class_land_vehicle_aa294605ab1e7a30d2b62b51aa3957713}} 
+\index{LandVehicle@{LandVehicle}!calculateLandDefense@{calculateLandDefense}}
+\index{calculateLandDefense@{calculateLandDefense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateLandDefense()}{calculateLandDefense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Land\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Use Normal Distribution (with mean and stddev scaled by armour\+Rating) to randomly generate the unit\textquotesingle{}s Land\+Defence statistic. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Defence statistic of vehicle 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_vehicle_a155724a3ab7689c7bafb970ad47ac0df}{Vehicle}}.
+
+\mbox{\Hypertarget{class_land_vehicle_ae8604789808fddcd4e58122c11ee18cd}\label{class_land_vehicle_ae8604789808fddcd4e58122c11ee18cd}} 
+\index{LandVehicle@{LandVehicle}!calculateLandOffense@{calculateLandOffense}}
+\index{calculateLandOffense@{calculateLandOffense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateLandOffense()}{calculateLandOffense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Land\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Use Normal Distribution (with mean and stddev scaled by weapon\+Class) to randomly generate the unit\textquotesingle{}s Land\+Offence statistic. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value representing Land\+Offence statistic of vehicle 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_vehicle_a6b272c05209a8907ebe6229e66317f4a}{Vehicle}}.
+
+\mbox{\Hypertarget{class_land_vehicle_a5a07a90d8307b0ac44e2caacb84eb64e}\label{class_land_vehicle_a5a07a90d8307b0ac44e2caacb84eb64e}} 
+\index{LandVehicle@{LandVehicle}!calculateSeaDefense@{calculateSeaDefense}}
+\index{calculateSeaDefense@{calculateSeaDefense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateSeaDefense()}{calculateSeaDefense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Sea\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Sea\+Defence statistic of the vehicle. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} and not a \mbox{\hyperlink{class_sea_vehicle}{Sea\+Vehicle}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_vehicle_a20e871b1ff13d47f4c875c987ed68add}{Vehicle}}.
+
+\mbox{\Hypertarget{class_land_vehicle_a679b1e2f608cdfad427449240a504999}\label{class_land_vehicle_a679b1e2f608cdfad427449240a504999}} 
+\index{LandVehicle@{LandVehicle}!calculateSeaOffense@{calculateSeaOffense}}
+\index{calculateSeaOffense@{calculateSeaOffense}!LandVehicle@{LandVehicle}}
+\subsubsection{\texorpdfstring{calculateSeaOffense()}{calculateSeaOffense()}}
+{\footnotesize\ttfamily int Land\+Vehicle\+::calculate\+Sea\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the Sea\+Offense statistic of the vehicle. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+0 (no capability) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned value is a random integer value. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+It returns 0 since this is a \mbox{\hyperlink{class_land_vehicle}{Land\+Vehicle}} and not a \mbox{\hyperlink{class_sea_vehicle}{Sea\+Vehicle}}. 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_vehicle_ab70b8c0eef30b37648a1ab9903043f47}{Vehicle}}.
+

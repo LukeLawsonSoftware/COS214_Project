@@ -1,0 +1,185 @@
+\hypertarget{class_battalion}{}\section{Battalion Class Reference}
+\label{class_battalion}\index{Battalion@{Battalion}}
+
+
+{\ttfamily \#include $<$Battalion.\+h$>$}
+
+Inheritance diagram for Battalion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_battalion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_battalion_a0df462bc8953b18b85f418715f6afa90}{Battalion}} ()
+\item 
+int \mbox{\hyperlink{class_battalion_ae3489e11413500aa1c1878f0651bebdc}{calculate\+Air\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Air\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the Battalio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battalion_aa7e5340aa0d4547fcc7a4ecfd4fb31cb}{calculate\+Air\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Air\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battalion_a589de99d9bcb79da2bd43303f272d079}{calculate\+Sea\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Sea\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battalion_a85b6a7096cce8ade372f1320bdc5949a}{calculate\+Sea\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Sea\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battalion_a4b7a80080e4333259679e8b2cb522ae9}{calculate\+Land\+Offense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Land\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battalion_a1285a61a5fa793a18bc8122a036d3ac3}{calculate\+Land\+Defense}} ()
+\begin{DoxyCompactList}\small\item\em Traverses members to get the sum of the Land\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battalion_a5ddf1bec9075e00dc11e1020af3d5b67}{add\+Member}} (\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$new\+Member)
+\begin{DoxyCompactList}\small\item\em Adds \mbox{\hyperlink{class_army_component}{Army\+Component}} to this Composite object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_battalion_a0df462bc8953b18b85f418715f6afa90}\label{class_battalion_a0df462bc8953b18b85f418715f6afa90}} 
+\index{Battalion@{Battalion}!Battalion@{Battalion}}
+\index{Battalion@{Battalion}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{Battalion()}{Battalion()}}
+{\footnotesize\ttfamily Battalion\+::\+Battalion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_battalion_a5ddf1bec9075e00dc11e1020af3d5b67}\label{class_battalion_a5ddf1bec9075e00dc11e1020af3d5b67}} 
+\index{Battalion@{Battalion}!addMember@{addMember}}
+\index{addMember@{addMember}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{addMember()}{addMember()}}
+{\footnotesize\ttfamily void Battalion\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$}]{new\+Member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds \mbox{\hyperlink{class_army_component}{Army\+Component}} to this Composite object. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Member} & new \mbox{\hyperlink{class_army_component}{Army\+Component}} pointer to add to members vector \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_army_component_aae30fdd85af73102e011cb053ddb96b3}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_aa7e5340aa0d4547fcc7a4ecfd4fb31cb}\label{class_battalion_aa7e5340aa0d4547fcc7a4ecfd4fb31cb}} 
+\index{Battalion@{Battalion}!calculateAirDefense@{calculateAirDefense}}
+\index{calculateAirDefense@{calculateAirDefense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateAirDefense()}{calculateAirDefense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Air\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Air\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Air\+Defence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a9f6671dd8cd4037722f592f0fa86e3a2}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_ae3489e11413500aa1c1878f0651bebdc}\label{class_battalion_ae3489e11413500aa1c1878f0651bebdc}} 
+\index{Battalion@{Battalion}!calculateAirOffense@{calculateAirOffense}}
+\index{calculateAirOffense@{calculateAirOffense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateAirOffense()}{calculateAirOffense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Air\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Air\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the Battalio. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Air\+Offence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_aeea4bed9a4850e9b74f9306a8443085c}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_a1285a61a5fa793a18bc8122a036d3ac3}\label{class_battalion_a1285a61a5fa793a18bc8122a036d3ac3}} 
+\index{Battalion@{Battalion}!calculateLandDefense@{calculateLandDefense}}
+\index{calculateLandDefense@{calculateLandDefense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateLandDefense()}{calculateLandDefense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Land\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Land\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Land\+Defence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a88558b28106a5d461fcc9ca2eb8e7a40}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_a4b7a80080e4333259679e8b2cb522ae9}\label{class_battalion_a4b7a80080e4333259679e8b2cb522ae9}} 
+\index{Battalion@{Battalion}!calculateLandOffense@{calculateLandOffense}}
+\index{calculateLandOffense@{calculateLandOffense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateLandOffense()}{calculateLandOffense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Land\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Land\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Land\+Offence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a0556ff6dbfa956f9ab52aadaa6a331e1}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_a85b6a7096cce8ade372f1320bdc5949a}\label{class_battalion_a85b6a7096cce8ade372f1320bdc5949a}} 
+\index{Battalion@{Battalion}!calculateSeaDefense@{calculateSeaDefense}}
+\index{calculateSeaDefense@{calculateSeaDefense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateSeaDefense()}{calculateSeaDefense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Sea\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Sea\+Defence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Sea\+Defence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_af5656dd9c12738ec90ea7886fd7ee34a}{Army\+Component}}.
+
+\mbox{\Hypertarget{class_battalion_a589de99d9bcb79da2bd43303f272d079}\label{class_battalion_a589de99d9bcb79da2bd43303f272d079}} 
+\index{Battalion@{Battalion}!calculateSeaOffense@{calculateSeaOffense}}
+\index{calculateSeaOffense@{calculateSeaOffense}!Battalion@{Battalion}}
+\subsubsection{\texorpdfstring{calculateSeaOffense()}{calculateSeaOffense()}}
+{\footnotesize\ttfamily int Battalion\+::calculate\+Sea\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Traverses members to get the sum of the Sea\+Offence statistics. \mbox{\hyperlink{class_this}{This}} is the statistic value for the \mbox{\hyperlink{class_battalion}{Battalion}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int value for Sea\+Offence statistic of \mbox{\hyperlink{class_battalion}{Battalion}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_army_component_a6e29f65ac92c18a82bf4a6a06d6d4457}{Army\+Component}}.
+

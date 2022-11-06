@@ -1,0 +1,262 @@
+\hypertarget{class_unit_factory}{}\section{Unit\+Factory Class Reference}
+\label{class_unit_factory}\index{UnitFactory@{UnitFactory}}
+
+
+{\ttfamily \#include $<$Unit\+Factory.\+h$>$}
+
+Inheritance diagram for Unit\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unit_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unit_factory_a7ea35d172bba07f7242b9ee1a5dd2c85}{Unit\+Factory}} (double budget, int \mbox{\hyperlink{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}{level}}, std\+::string type)
+\begin{DoxyCompactList}\small\item\em Constructor of the \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} class used to instantiate a \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_unit_factory_a465dd9ec1883939eb27274164e967822}{create\+Vehicle}} ()=0
+\begin{DoxyCompactList}\small\item\em Calls constructor of appropriate \mbox{\hyperlink{class_vehicle}{Vehicle}} (Air, Land or Sea), using level to determine power\+Rating. Implemented in child class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$ \mbox{\hyperlink{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}{create\+Soldier}} ()=0
+\begin{DoxyCompactList}\small\item\em Calls constructor of appropriate \mbox{\hyperlink{class_soldier}{Soldier}} (Air, Land or Sea), using level to determine power\+Rating. Implemented in child class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_unit_factory_aa850ff53daee1055f5d677d93604ce92}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the type of unit factory being used to create products. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_unit_factory_a1b125d48cad0a2da1a98089d7eed1d50}{get\+Total\+Spent}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the total amount spent so far to determine if we can afford another product. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_unit_factory_a1e58c093e5e132344cbcba117e6b03b3}{get\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the Factory\textquotesingle{}s budget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unit_factory_a7d8d6b90c54a3cbc230ef5f4c80283d5}{set\+New\+Budget}} (double new\+Budget)
+\begin{DoxyCompactList}\small\item\em Function to set the new budget of the factory after we upgraded the factory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unit_factory_aae3d51fcddd57d4fd03582490d3a05ef}{upgrade}} ()
+\begin{DoxyCompactList}\small\item\em Upgrades the factory, which will increase the budget capacity and level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_unit_factory_a92120c06793ae808668a811e85efe2cb}{determine\+Actual\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Function to transform Factory\textquotesingle{}s level to a valid value between 1-\/10. Purpose is to prevent potential bugs from other functions affecting accurate \mbox{\hyperlink{class_army_component}{Army\+Component}} creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_unit_factory_a6fedd057efbea8ae0f0c04f28a79faac}{cost}}
+\item 
+int \mbox{\hyperlink{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}{level}}
+\item 
+double \mbox{\hyperlink{class_unit_factory_ad26bc01db5794994a888a6973c421df1}{total\+Spent}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is a necessity if a \mbox{\hyperlink{class_country}{Country}} wants to create different units for its army. There are three types of factories based on which type of \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} the country is fighting in\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_air_factory}{Air\+Factory}}\+: \mbox{\hyperlink{class_this}{This}} factory will create an \mbox{\hyperlink{class_air_unit}{Air\+Unit}} which includes\+:
+\begin{DoxyItemize}
+\item Soldiers and Vehicles
+\end{DoxyItemize}
+\item \mbox{\hyperlink{class_land_factory}{Land\+Factory}}\+: \mbox{\hyperlink{class_this}{This}} factory will create an \mbox{\hyperlink{class_land_unit}{Land\+Unit}} which includes\+:
+\begin{DoxyItemize}
+\item Soldiers and Vehicles
+\end{DoxyItemize}
+\item \mbox{\hyperlink{class_sea_factory}{Sea\+Factory}}\+: \mbox{\hyperlink{class_this}{This}} factory will create an \mbox{\hyperlink{class_sea_unit}{Sea\+Unit}} which includes\+:
+\begin{DoxyItemize}
+\item Soldiers and Vehicles
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+The country will only create units for the specific type of war theatre it is in. In other words air units will only be created for an air-\/type war theatre etc. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_unit_factory_a7ea35d172bba07f7242b9ee1a5dd2c85}\label{class_unit_factory_a7ea35d172bba07f7242b9ee1a5dd2c85}} 
+\index{UnitFactory@{UnitFactory}!UnitFactory@{UnitFactory}}
+\index{UnitFactory@{UnitFactory}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{UnitFactory()}{UnitFactory()}}
+{\footnotesize\ttfamily Unit\+Factory\+::\+Unit\+Factory (\begin{DoxyParamCaption}\item[{double}]{budget,  }\item[{int}]{level,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} class used to instantiate a \mbox{\hyperlink{class_unit_factory}{Unit\+Factory}} object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & The starting budget of the factory \\
+\hline
+{\em level} & The starting level of the factory (all factories start at level one) \\
+\hline
+{\em type} & The type of factory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The budget must be a interger value greater than zero. 
+
+The level must also be an integer value greate than zero. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}\label{class_unit_factory_a6f6dda71c85c3f44e09353b63d7c8fb5}} 
+\index{UnitFactory@{UnitFactory}!createSoldier@{createSoldier}}
+\index{createSoldier@{createSoldier}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{createSoldier()}{createSoldier()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_army_component}{Army\+Component}}$\ast$ Unit\+Factory\+::create\+Soldier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calls constructor of appropriate \mbox{\hyperlink{class_soldier}{Soldier}} (Air, Land or Sea), using level to determine power\+Rating. Implemented in child class. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a Land/\+Sea/\+Air\+Unit) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_factory_a4a5150ab9c2a8b50922c9dbf39bd7214}{Land\+Factory}}, \mbox{\hyperlink{class_sea_factory_a29dad98d0d7b89028bd34814219b7b49}{Sea\+Factory}}, and \mbox{\hyperlink{class_air_factory_a1a83eb38a4fd955b2f65064d508b9dda}{Air\+Factory}}.
+
+\mbox{\Hypertarget{class_unit_factory_a465dd9ec1883939eb27274164e967822}\label{class_unit_factory_a465dd9ec1883939eb27274164e967822}} 
+\index{UnitFactory@{UnitFactory}!createVehicle@{createVehicle}}
+\index{createVehicle@{createVehicle}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{createVehicle()}{createVehicle()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_army_component}{Army\+Component}}$\ast$ Unit\+Factory\+::create\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calls constructor of appropriate \mbox{\hyperlink{class_vehicle}{Vehicle}} (Air, Land or Sea), using level to determine power\+Rating. Implemented in child class. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to newly created \mbox{\hyperlink{class_army_component}{Army\+Component}} (which will be a Land/\+Sea/\+Air\+Vehicle) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_factory_a6f1a99f8b975ca829a188f862060fdcf}{Land\+Factory}}, \mbox{\hyperlink{class_sea_factory_a0914bdb14680e6b0c8292ba6f6d13b54}{Sea\+Factory}}, and \mbox{\hyperlink{class_air_factory_aede47fe0f3be3714ccef1faed3354d00}{Air\+Factory}}.
+
+\mbox{\Hypertarget{class_unit_factory_a92120c06793ae808668a811e85efe2cb}\label{class_unit_factory_a92120c06793ae808668a811e85efe2cb}} 
+\index{UnitFactory@{UnitFactory}!determineActualLevel@{determineActualLevel}}
+\index{determineActualLevel@{determineActualLevel}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{determineActualLevel()}{determineActualLevel()}}
+{\footnotesize\ttfamily int Unit\+Factory\+::determine\+Actual\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to transform Factory\textquotesingle{}s level to a valid value between 1-\/10. Purpose is to prevent potential bugs from other functions affecting accurate \mbox{\hyperlink{class_army_component}{Army\+Component}} creation. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int within range 1-\/10 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_unit_factory_a1e58c093e5e132344cbcba117e6b03b3}\label{class_unit_factory_a1e58c093e5e132344cbcba117e6b03b3}} 
+\index{UnitFactory@{UnitFactory}!getBudget@{getBudget}}
+\index{getBudget@{getBudget}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{getBudget()}{getBudget()}}
+{\footnotesize\ttfamily double Unit\+Factory\+::get\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the Factory\textquotesingle{}s budget. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The maximum amount we can spent on creating products 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_unit_factory_a1b125d48cad0a2da1a98089d7eed1d50}\label{class_unit_factory_a1b125d48cad0a2da1a98089d7eed1d50}} 
+\index{UnitFactory@{UnitFactory}!getTotalSpent@{getTotalSpent}}
+\index{getTotalSpent@{getTotalSpent}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{getTotalSpent()}{getTotalSpent()}}
+{\footnotesize\ttfamily double Unit\+Factory\+::get\+Total\+Spent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the total amount spent so far to determine if we can afford another product. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The amount spent so far on creating products 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_unit_factory_aa850ff53daee1055f5d677d93604ce92}\label{class_unit_factory_aa850ff53daee1055f5d677d93604ce92}} 
+\index{UnitFactory@{UnitFactory}!getType@{getType}}
+\index{getType@{getType}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Unit\+Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the type of unit factory being used to create products. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The type of factory (Air, Sea or Land) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_unit_factory_a7d8d6b90c54a3cbc230ef5f4c80283d5}\label{class_unit_factory_a7d8d6b90c54a3cbc230ef5f4c80283d5}} 
+\index{UnitFactory@{UnitFactory}!setNewBudget@{setNewBudget}}
+\index{setNewBudget@{setNewBudget}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{setNewBudget()}{setNewBudget()}}
+{\footnotesize\ttfamily void Unit\+Factory\+::set\+New\+Budget (\begin{DoxyParamCaption}\item[{double}]{new\+Budget }\end{DoxyParamCaption})}
+
+
+
+Function to set the new budget of the factory after we upgraded the factory. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Budget} & The new budget of the factory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The passed in value must be a value greater than zero. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} function only increases the current budget by the passed in value. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_unit_factory_aae3d51fcddd57d4fd03582490d3a05ef}\label{class_unit_factory_aae3d51fcddd57d4fd03582490d3a05ef}} 
+\index{UnitFactory@{UnitFactory}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{upgrade()}{upgrade()}}
+{\footnotesize\ttfamily void Unit\+Factory\+::upgrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Upgrades the factory, which will increase the budget capacity and level. 
+
+\begin{DoxyAuthor}{Author}
+Arno Jooste (u21457451) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_unit_factory_a6fedd057efbea8ae0f0c04f28a79faac}\label{class_unit_factory_a6fedd057efbea8ae0f0c04f28a79faac}} 
+\index{UnitFactory@{UnitFactory}!cost@{cost}}
+\index{cost@{cost}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Unit\+Factory\+::cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}\label{class_unit_factory_ac8b73a1ed9adc43991450eb9aed0d40a}} 
+\index{UnitFactory@{UnitFactory}!level@{level}}
+\index{level@{level}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Unit\+Factory\+::level\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_unit_factory_ad26bc01db5794994a888a6973c421df1}\label{class_unit_factory_ad26bc01db5794994a888a6973c421df1}} 
+\index{UnitFactory@{UnitFactory}!totalSpent@{totalSpent}}
+\index{totalSpent@{totalSpent}!UnitFactory@{UnitFactory}}
+\subsubsection{\texorpdfstring{totalSpent}{totalSpent}}
+{\footnotesize\ttfamily double Unit\+Factory\+::total\+Spent\hspace{0.3cm}{\ttfamily [protected]}}
+

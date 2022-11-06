@@ -1,0 +1,196 @@
+\hypertarget{class_war}{}\section{War Class Reference}
+\label{class_war}\index{War@{War}}
+
+
+{\ttfamily \#include $<$War.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_war_a8e837395251af1ea071b3624e85c5a67}{War}} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialise a \mbox{\hyperlink{class_war}{War}} object and set initialise its \mbox{\hyperlink{class_war_phase}{War\+Phase}} and \mbox{\hyperlink{class_war}{War}} theatres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_adc066403ed93bf9d63585297d75f100f}{set\+War\+Phase}} (\mbox{\hyperlink{class_war_phase}{War\+Phase}} $\ast$)
+\item 
+void \mbox{\hyperlink{class_war_a116e1664062340f607ea9d19e4c79670}{set\+Up\+Countries}} ()
+\begin{DoxyCompactList}\small\item\em When called will prompt the user to enter the countries for Alliance 1, Alliance 2 and \mbox{\hyperlink{class_neutral}{Neutral}} Countries. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_war_aea332c2abc668d6d70744cdb52546bae}{get\+Land\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the Land Theatre of the \mbox{\hyperlink{class_war}{War}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_war_a676ab0df108bc16b7de2616b2d7b90f8}{get\+Air\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the Air Theatre of the \mbox{\hyperlink{class_war}{War}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{class_war_a603fd07ee9a93d2908e12c1d5d06bfa4}{get\+Sea\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the Sea Theatre of the \mbox{\hyperlink{class_war}{War}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_a3ecc0e5be41604717bb26d86a2c24571}{change\+Phase}} ()
+\begin{DoxyCompactList}\small\item\em Method Changes the next corresponding phase of the \mbox{\hyperlink{class_war}{War}} Phases. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_ae7095b60438fa57d9238ddd6b895956c}{start\+War\+Sim}} ()
+\begin{DoxyCompactList}\small\item\em Method to be run if the user desires a uninterruptable war simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_adaab1d68249f18f6a6c16e42a43eb403}{start\+War\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Method to be run if the user desires a interruptable war simulation, whereby an alliance1\textquotesingle{}s countries decisions are decided by the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_war_a9bf0fb4d3a5d04c6911799fb5044637c}{stop\+War}} ()
+\begin{DoxyCompactList}\small\item\em Ends the war. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class represent the actual war gameplay.
+
+
+\begin{DoxyItemize}
+\item The war will consist of three different war theatres namely\+: Air\+Theatre, Land\+Theatre and Sea\+Theatre.
+\item Throughout the gameplay it is possible to change from one \mbox{\hyperlink{class_war_phase}{War\+Phase}} to another. The different war phases include\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_early_phase}{Early\+Phase}}\+: \mbox{\hyperlink{class_this}{This}} phases is sort of the introduction phase of a war where the tention between two countries is only starting to develop. There are three early phases of the war\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_early_crisis}{Early\+Crisis}}
+\item \mbox{\hyperlink{class_early_open_conflict}{Early\+Open\+Conflict}}
+\item \mbox{\hyperlink{class_early_peace}{Early\+Peace}}
+\item \mbox{\hyperlink{class_early_unstable_peace}{Early\+Unstable\+Peace}}
+\end{DoxyItemize}
+\item \mbox{\hyperlink{class_mid_phase}{Mid\+Phase}}\+: In this phase the actual war between two countries starts. We enter this phase once two countries have declared \mbox{\hyperlink{class_war}{War}} against one another.
+\item \mbox{\hyperlink{class_late_phase}{Late\+Phase}}\+: Once we enter the late phase the war starts coming to an end. In order end the war one country either needs to surrender against the enemy country or the country needs to be defeated by the enemy country. There are four late phases of the war\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_late_crisis}{Late\+Crisis}}
+\item \mbox{\hyperlink{class_late_open_conflict}{Late\+Open\+Conflict}}
+\item \mbox{\hyperlink{class_late_peace}{Late\+Peace}}
+\item \mbox{\hyperlink{class_late_unstable_peace}{Late\+Unstable\+Peace}} \begin{DoxyNote}{Note}
+The flow of the war phases will be from early phase -\/$>$ mid phase -\/$>$ late phase 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_war_a8e837395251af1ea071b3624e85c5a67}\label{class_war_a8e837395251af1ea071b3624e85c5a67}} 
+\index{War@{War}!War@{War}}
+\index{War@{War}!War@{War}}
+\subsubsection{\texorpdfstring{War()}{War()}}
+{\footnotesize\ttfamily War\+::\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialise a \mbox{\hyperlink{class_war}{War}} object and set initialise its \mbox{\hyperlink{class_war_phase}{War\+Phase}} and \mbox{\hyperlink{class_war}{War}} theatres. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_war_a3ecc0e5be41604717bb26d86a2c24571}\label{class_war_a3ecc0e5be41604717bb26d86a2c24571}} 
+\index{War@{War}!changePhase@{changePhase}}
+\index{changePhase@{changePhase}!War@{War}}
+\subsubsection{\texorpdfstring{changePhase()}{changePhase()}}
+{\footnotesize\ttfamily void War\+::change\+Phase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method Changes the next corresponding phase of the \mbox{\hyperlink{class_war}{War}} Phases. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_a676ab0df108bc16b7de2616b2d7b90f8}\label{class_war_a676ab0df108bc16b7de2616b2d7b90f8}} 
+\index{War@{War}!getAirTheatre@{getAirTheatre}}
+\index{getAirTheatre@{getAirTheatre}!War@{War}}
+\subsubsection{\texorpdfstring{getAirTheatre()}{getAirTheatre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ War\+::get\+Air\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the Air Theatre of the \mbox{\hyperlink{class_war}{War}}. 
+
+\begin{DoxyReturn}{Returns}
+Air War\+Theatre$\ast$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_aea332c2abc668d6d70744cdb52546bae}\label{class_war_aea332c2abc668d6d70744cdb52546bae}} 
+\index{War@{War}!getLandTheatre@{getLandTheatre}}
+\index{getLandTheatre@{getLandTheatre}!War@{War}}
+\subsubsection{\texorpdfstring{getLandTheatre()}{getLandTheatre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ War\+::get\+Land\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the Land Theatre of the \mbox{\hyperlink{class_war}{War}}. 
+
+\begin{DoxyReturn}{Returns}
+Land War\+Theatre$\ast$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_a603fd07ee9a93d2908e12c1d5d06bfa4}\label{class_war_a603fd07ee9a93d2908e12c1d5d06bfa4}} 
+\index{War@{War}!getSeaTheatre@{getSeaTheatre}}
+\index{getSeaTheatre@{getSeaTheatre}!War@{War}}
+\subsubsection{\texorpdfstring{getSeaTheatre()}{getSeaTheatre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_war_theatre}{War\+Theatre}} $\ast$ War\+::get\+Sea\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the Sea Theatre of the \mbox{\hyperlink{class_war}{War}}. 
+
+\begin{DoxyReturn}{Returns}
+Sea War\+Theatre$\ast$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_a116e1664062340f607ea9d19e4c79670}\label{class_war_a116e1664062340f607ea9d19e4c79670}} 
+\index{War@{War}!setUpCountries@{setUpCountries}}
+\index{setUpCountries@{setUpCountries}!War@{War}}
+\subsubsection{\texorpdfstring{setUpCountries()}{setUpCountries()}}
+{\footnotesize\ttfamily void War\+::set\+Up\+Countries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+When called will prompt the user to enter the countries for Alliance 1, Alliance 2 and \mbox{\hyperlink{class_neutral}{Neutral}} Countries. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_adc066403ed93bf9d63585297d75f100f}\label{class_war_adc066403ed93bf9d63585297d75f100f}} 
+\index{War@{War}!setWarPhase@{setWarPhase}}
+\index{setWarPhase@{setWarPhase}!War@{War}}
+\subsubsection{\texorpdfstring{setWarPhase()}{setWarPhase()}}
+{\footnotesize\ttfamily void War\+::set\+War\+Phase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war_phase}{War\+Phase}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_war_adaab1d68249f18f6a6c16e42a43eb403}\label{class_war_adaab1d68249f18f6a6c16e42a43eb403}} 
+\index{War@{War}!startWarGame@{startWarGame}}
+\index{startWarGame@{startWarGame}!War@{War}}
+\subsubsection{\texorpdfstring{startWarGame()}{startWarGame()}}
+{\footnotesize\ttfamily void War\+::start\+War\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to be run if the user desires a interruptable war simulation, whereby an alliance1\textquotesingle{}s countries decisions are decided by the user. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_ae7095b60438fa57d9238ddd6b895956c}\label{class_war_ae7095b60438fa57d9238ddd6b895956c}} 
+\index{War@{War}!startWarSim@{startWarSim}}
+\index{startWarSim@{startWarSim}!War@{War}}
+\subsubsection{\texorpdfstring{startWarSim()}{startWarSim()}}
+{\footnotesize\ttfamily void War\+::start\+War\+Sim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to be run if the user desires a uninterruptable war simulation. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_war_a9bf0fb4d3a5d04c6911799fb5044637c}\label{class_war_a9bf0fb4d3a5d04c6911799fb5044637c}} 
+\index{War@{War}!stopWar@{stopWar}}
+\index{stopWar@{stopWar}!War@{War}}
+\subsubsection{\texorpdfstring{stopWar()}{stopWar()}}
+{\footnotesize\ttfamily void War\+::stop\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the war. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Blendulf (u21446131) 
+\end{DoxyAuthor}

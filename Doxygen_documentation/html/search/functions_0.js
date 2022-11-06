@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['addarmy',['addArmy',['../class_war_theatre.html#ab51f972cc9b47859149f9132bcbcbaf5',1,'WarTheatre']]],
+  ['addmember',['addMember',['../class_army_component.html#aae30fdd85af73102e011cb053ddb96b3',1,'ArmyComponent::addMember()'],['../class_battalion.html#a5ddf1bec9075e00dc11e1020af3d5b67',1,'Battalion::addMember()'],['../class_soldier.html#af158cf7ebb1fbf27d4b46c272de60803',1,'Soldier::addMember()'],['../class_vehicle.html#ae704e3c6f06b96ab5deff0ab0ef510f5',1,'Vehicle::addMember()']]],
+  ['addnewammosupplies',['addNewAmmoSupplies',['../class_army.html#a084c35aa0a977d9a9d2ee407c3927b52',1,'Army']]],
+  ['addnewmedicalsupplies',['addNewMedicalSupplies',['../class_army.html#a0ca6fae9204652b57afae3cb4c44b349',1,'Army']]],
+  ['airfactory',['AirFactory',['../class_air_factory.html#a732ac84bdb7a41c7118ac5e55a737165',1,'AirFactory']]],
+  ['airterrain',['AirTerrain',['../class_air_terrain.html#a360ac3a742f9d2155aad310cc6fa093f',1,'AirTerrain']]],
+  ['airunit',['AirUnit',['../class_air_unit.html#aae4869e6b964d1ae03ab0c18cfc2631f',1,'AirUnit']]],
+  ['airvehicle',['AirVehicle',['../class_air_vehicle.html#a69b975622277ab88d8f034a213a55d64',1,'AirVehicle']]],
+  ['ammofactory',['AmmoFactory',['../class_ammo_factory.html#aab95615266049285e200316183a7f15e',1,'AmmoFactory']]],
+  ['ammosupply',['AmmoSupply',['../class_ammo_supply.html#a7a39f58fb5ef1b4ea058f38bba9b2d3d',1,'AmmoSupply']]],
+  ['ammotransporter',['AmmoTransporter',['../class_ammo_transporter.html#a52f3a89dca9316f6b6fcc2ebb4be421b',1,'AmmoTransporter']]],
+  ['applystrategybonus',['applyStrategyBonus',['../class_army.html#a58b4b12481451ff006f5ca4e0e941c4f',1,'Army::applyStrategyBonus()'],['../class_army_strategy.html#ade28f2b5107c9fcdc58e73e1053e6cff',1,'ArmyStrategy::applyStrategyBonus()'],['../class_defensive.html#a6585a77b2d245fc8671fbf959483e1e0',1,'Defensive::applyStrategyBonus()'],['../class_neutral.html#aa6ce5f87e34cf849324d42031e2901d1',1,'Neutral::applyStrategyBonus()'],['../class_offensive.html#aaaaf9b44b3fa438b5067c01463b3353a',1,'Offensive::applyStrategyBonus()']]],
+  ['applyterrainbonus',['applyTerrainBonus',['../class_war_theatre.html#a506466397ba9769d7128ea41a649af9e',1,'WarTheatre']]],
+  ['army',['Army',['../class_army.html#a24aef716a43cb562ed74dcad7ee0163b',1,'Army']]],
+  ['armybuilder',['ArmyBuilder',['../class_army_builder.html#aa9f5c5cd78a653da928f234e0b93f677',1,'ArmyBuilder']]],
+  ['armydirector',['ArmyDirector',['../class_army_director.html#a5d24ebede0923adfbb6dd8b06af3809f',1,'ArmyDirector']]],
+  ['attacktransport',['attackTransport',['../class_army.html#a6038ff12345f993b2aab1740a9f0a6a6',1,'Army::attackTransport()'],['../class_country.html#a1097aaf13d5a15eb30ea0ccc4b7fa211',1,'Country::attackTransport()'],['../class_military_commander.html#a7f2df2a43dc6fe5bfdd03c6471278fc3',1,'MilitaryCommander::attackTransport()']]]
+];

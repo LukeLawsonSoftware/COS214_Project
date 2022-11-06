@@ -1,0 +1,70 @@
+\hypertarget{class_corresponder}{}\section{Corresponder Class Reference}
+\label{class_corresponder}\index{Corresponder@{Corresponder}}
+
+
+{\ttfamily \#include $<$Corresponder.\+h$>$}
+
+Inheritance diagram for Corresponder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_corresponder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_corresponder_a77d76ef09fc2484cd5c84b1cc96bfe9c}{reg\+To\+Transport}} (\mbox{\hyperlink{class_transporter}{Transporter}} $\ast$\mbox{\hyperlink{class_corresponder_ade2405746074c8e6eed17cf4c1c79c70}{ammo\+Transport\+Line}}, \mbox{\hyperlink{class_transporter}{Transporter}} $\ast$med\+Transport\+Line)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_this}{This}} function is used to register the \mbox{\hyperlink{class_country}{Country}} to the ammo and medical transport lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transporter}{Transporter}} $\ast$ \mbox{\hyperlink{class_corresponder_a1149aea3efe857bd51c3abf2dea0f8c1}{medical\+Transport\+Line}}
+\item 
+\mbox{\hyperlink{class_transporter}{Transporter}} $\ast$ \mbox{\hyperlink{class_corresponder_ade2405746074c8e6eed17cf4c1c79c70}{ammo\+Transport\+Line}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is used to register a \mbox{\hyperlink{class_country}{Country}} to its transport lines when the country object is instantiated.
+
+\begin{DoxyWarning}{Warning}
+The transport lines are the only way a \mbox{\hyperlink{class_country}{Country}} can transport supplies (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} \& \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}}) to its armies. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_corresponder_a77d76ef09fc2484cd5c84b1cc96bfe9c}\label{class_corresponder_a77d76ef09fc2484cd5c84b1cc96bfe9c}} 
+\index{Corresponder@{Corresponder}!regToTransport@{regToTransport}}
+\index{regToTransport@{regToTransport}!Corresponder@{Corresponder}}
+\subsubsection{\texorpdfstring{regToTransport()}{regToTransport()}}
+{\footnotesize\ttfamily void Corresponder\+::reg\+To\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transporter}{Transporter}} $\ast$}]{ammo\+Transport\+Line,  }\item[{\mbox{\hyperlink{class_transporter}{Transporter}} $\ast$}]{med\+Transport\+Line }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_this}{This}} function is used to register the \mbox{\hyperlink{class_country}{Country}} to the ammo and medical transport lines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ammo\+Transport\+Line} & The \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} for the country. We use this transport line to send ammo supplies to the country\textquotesingle{}s army. \\
+\hline
+{\em med\+Transport\+Line} & The Medical\+Transporter for the country. We use this transport line to send medical supplies to the country\textquotesingle{}s army. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It is possible to pass in N\+U\+LL values for both argumenys but if done so then the \mbox{\hyperlink{class_country}{Country}} would be in a great D\+I\+S\+A\+D\+V\+A\+N\+T\+A\+GE to the other enemy countries. 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_corresponder_ade2405746074c8e6eed17cf4c1c79c70}\label{class_corresponder_ade2405746074c8e6eed17cf4c1c79c70}} 
+\index{Corresponder@{Corresponder}!ammoTransportLine@{ammoTransportLine}}
+\index{ammoTransportLine@{ammoTransportLine}!Corresponder@{Corresponder}}
+\subsubsection{\texorpdfstring{ammoTransportLine}{ammoTransportLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transporter}{Transporter}}$\ast$ Corresponder\+::ammo\+Transport\+Line\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_corresponder_a1149aea3efe857bd51c3abf2dea0f8c1}\label{class_corresponder_a1149aea3efe857bd51c3abf2dea0f8c1}} 
+\index{Corresponder@{Corresponder}!medicalTransportLine@{medicalTransportLine}}
+\index{medicalTransportLine@{medicalTransportLine}!Corresponder@{Corresponder}}
+\subsubsection{\texorpdfstring{medicalTransportLine}{medicalTransportLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transporter}{Transporter}}$\ast$ Corresponder\+::medical\+Transport\+Line\hspace{0.3cm}{\ttfamily [protected]}}
+

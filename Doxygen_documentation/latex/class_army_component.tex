@@ -1,0 +1,184 @@
+\hypertarget{class_army_component}{}\section{Army\+Component Class Reference}
+\label{class_army_component}\index{ArmyComponent@{ArmyComponent}}
+
+
+{\ttfamily \#include $<$Army\+Component.\+h$>$}
+
+Inheritance diagram for Army\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.477876cm]{class_army_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_army_component_aeea4bed9a4850e9b74f9306a8443085c}{calculate\+Air\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Air\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_army_component_a9f6671dd8cd4037722f592f0fa86e3a2}{calculate\+Air\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Air\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_army_component_a6e29f65ac92c18a82bf4a6a06d6d4457}{calculate\+Sea\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Sea\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_army_component_af5656dd9c12738ec90ea7886fd7ee34a}{calculate\+Sea\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Sea\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_army_component_a0556ff6dbfa956f9ab52aadaa6a331e1}{calculate\+Land\+Offense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Land\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_army_component_a88558b28106a5d461fcc9ca2eb8e7a40}{calculate\+Land\+Defense}} ()=0
+\begin{DoxyCompactList}\small\item\em Determines Land\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_army_component_aae30fdd85af73102e011cb053ddb96b3}{add\+Member}} (\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$new\+Member)=0
+\begin{DoxyCompactList}\small\item\em Interface function for adding objects to composite objects (\mbox{\hyperlink{class_battalion}{Battalion}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is just an abstract class for the following classes\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{class_soldier}{Soldier}}
+\item \mbox{\hyperlink{class_vehicle}{Vehicle}}
+\item \mbox{\hyperlink{class_battalion}{Battalion}}
+\end{DoxyItemize}
+
+We use this class to instantiate different components of an army such that those components can be used to help fight the on going war. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_army_component_aae30fdd85af73102e011cb053ddb96b3}\label{class_army_component_aae30fdd85af73102e011cb053ddb96b3}} 
+\index{ArmyComponent@{ArmyComponent}!addMember@{addMember}}
+\index{addMember@{addMember}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{addMember()}{addMember()}}
+{\footnotesize\ttfamily virtual void Army\+Component\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_army_component}{Army\+Component}} $\ast$}]{new\+Member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Interface function for adding objects to composite objects (\mbox{\hyperlink{class_battalion}{Battalion}}) 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Member} & pointer to the \mbox{\hyperlink{class_army_component}{Army\+Component}} to be added to the \mbox{\hyperlink{class_battalion}{Battalion}} (Composite) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_vehicle_ae704e3c6f06b96ab5deff0ab0ef510f5}{Vehicle}}, \mbox{\hyperlink{class_soldier_af158cf7ebb1fbf27d4b46c272de60803}{Soldier}}, and \mbox{\hyperlink{class_battalion_a5ddf1bec9075e00dc11e1020af3d5b67}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_a9f6671dd8cd4037722f592f0fa86e3a2}\label{class_army_component_a9f6671dd8cd4037722f592f0fa86e3a2}} 
+\index{ArmyComponent@{ArmyComponent}!calculateAirDefense@{calculateAirDefense}}
+\index{calculateAirDefense@{calculateAirDefense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateAirDefense()}{calculateAirDefense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Air\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Air\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Air\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_af5083b44d73c3597be9ab081d06bc7a6}{Land\+Vehicle}}, \mbox{\hyperlink{class_sea_vehicle_a694afec180b77cee3adf29674e0c3160}{Sea\+Vehicle}}, \mbox{\hyperlink{class_land_unit_acf9d648efacea20a028b2d9dcaca0d64}{Land\+Unit}}, \mbox{\hyperlink{class_sea_unit_ab05ac5cd7be62a139c16f36146c17b00}{Sea\+Unit}}, \mbox{\hyperlink{class_air_unit_a78796cdf870a76c072e89445a4c8ba15}{Air\+Unit}}, \mbox{\hyperlink{class_air_vehicle_ade9dabaec365370683599f3df95189c2}{Air\+Vehicle}}, \mbox{\hyperlink{class_vehicle_ae87cbec24f436b431fbed096024c41c9}{Vehicle}}, \mbox{\hyperlink{class_soldier_a3dc2d7a06621380c4561d330d5359dc2}{Soldier}}, and \mbox{\hyperlink{class_battalion_aa7e5340aa0d4547fcc7a4ecfd4fb31cb}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_aeea4bed9a4850e9b74f9306a8443085c}\label{class_army_component_aeea4bed9a4850e9b74f9306a8443085c}} 
+\index{ArmyComponent@{ArmyComponent}!calculateAirOffense@{calculateAirOffense}}
+\index{calculateAirOffense@{calculateAirOffense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateAirOffense()}{calculateAirOffense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Air\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Air\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Air\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_a2453f77778b1c36b2b2fbeb19d06776e}{Land\+Vehicle}}, \mbox{\hyperlink{class_sea_vehicle_a24b41898db73af6d04ae91ddcf97f4a4}{Sea\+Vehicle}}, \mbox{\hyperlink{class_air_vehicle_a1365cb66c2a8755e689f938c734df6c0}{Air\+Vehicle}}, \mbox{\hyperlink{class_land_unit_af6b72446b89f0cceda3e71f0ccefd41e}{Land\+Unit}}, \mbox{\hyperlink{class_air_unit_a522f54b197f6b2daf784f4a9eacb9edc}{Air\+Unit}}, \mbox{\hyperlink{class_sea_unit_aa2d92acd5e3798fdddfa860d5a9d346b}{Sea\+Unit}}, \mbox{\hyperlink{class_vehicle_a0a6c6ed9d25c66415f83191894b11499}{Vehicle}}, \mbox{\hyperlink{class_soldier_ad5290f69e84772e9a3bfc060b5d348a0}{Soldier}}, and \mbox{\hyperlink{class_battalion_ae3489e11413500aa1c1878f0651bebdc}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_a88558b28106a5d461fcc9ca2eb8e7a40}\label{class_army_component_a88558b28106a5d461fcc9ca2eb8e7a40}} 
+\index{ArmyComponent@{ArmyComponent}!calculateLandDefense@{calculateLandDefense}}
+\index{calculateLandDefense@{calculateLandDefense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateLandDefense()}{calculateLandDefense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Land\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Land\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Land\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_aa294605ab1e7a30d2b62b51aa3957713}{Land\+Vehicle}}, \mbox{\hyperlink{class_sea_vehicle_a0c86a5fe86057562bb7e7547e0183c8d}{Sea\+Vehicle}}, \mbox{\hyperlink{class_air_unit_a5d408669d099d55d1bb19f71d6dc8712}{Air\+Unit}}, \mbox{\hyperlink{class_land_unit_acffd7525b2d214be433fe77ecf5610df}{Land\+Unit}}, \mbox{\hyperlink{class_air_vehicle_acb7d32241e484f1ece2123451f061168}{Air\+Vehicle}}, \mbox{\hyperlink{class_sea_unit_a5fa9cb7bedbe58346fcd22fdd7ca855b}{Sea\+Unit}}, \mbox{\hyperlink{class_vehicle_a155724a3ab7689c7bafb970ad47ac0df}{Vehicle}}, \mbox{\hyperlink{class_soldier_ab37165b4ce8fbe4a24a759c81ece58c4}{Soldier}}, and \mbox{\hyperlink{class_battalion_a1285a61a5fa793a18bc8122a036d3ac3}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_a0556ff6dbfa956f9ab52aadaa6a331e1}\label{class_army_component_a0556ff6dbfa956f9ab52aadaa6a331e1}} 
+\index{ArmyComponent@{ArmyComponent}!calculateLandOffense@{calculateLandOffense}}
+\index{calculateLandOffense@{calculateLandOffense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateLandOffense()}{calculateLandOffense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Land\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Land\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Land\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_ae8604789808fddcd4e58122c11ee18cd}{Land\+Vehicle}}, \mbox{\hyperlink{class_land_unit_a8f95f94a08fbdd268b85160dbd578947}{Land\+Unit}}, \mbox{\hyperlink{class_sea_vehicle_a6a07126cd3e346097f967e3a8038622f}{Sea\+Vehicle}}, \mbox{\hyperlink{class_air_unit_ab5f13baf31eafe62bf482ec4501f4975}{Air\+Unit}}, \mbox{\hyperlink{class_air_vehicle_afbbfd8dd22d786ca679669f2ae5f9f41}{Air\+Vehicle}}, \mbox{\hyperlink{class_sea_unit_a5b21e648106a6ec40c79a1916e9fe674}{Sea\+Unit}}, \mbox{\hyperlink{class_vehicle_a6b272c05209a8907ebe6229e66317f4a}{Vehicle}}, \mbox{\hyperlink{class_soldier_ac0add7efb3192adb809bc1746c880fc0}{Soldier}}, and \mbox{\hyperlink{class_battalion_a4b7a80080e4333259679e8b2cb522ae9}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_af5656dd9c12738ec90ea7886fd7ee34a}\label{class_army_component_af5656dd9c12738ec90ea7886fd7ee34a}} 
+\index{ArmyComponent@{ArmyComponent}!calculateSeaDefense@{calculateSeaDefense}}
+\index{calculateSeaDefense@{calculateSeaDefense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateSeaDefense()}{calculateSeaDefense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Sea\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Sea\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Sea\+Defence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_a5a07a90d8307b0ac44e2caacb84eb64e}{Land\+Vehicle}}, \mbox{\hyperlink{class_land_unit_a5a0d88fe84b7700e9e85f6c3c1f1af9d}{Land\+Unit}}, \mbox{\hyperlink{class_sea_vehicle_aeca10ceffca2683364af15e67e666281}{Sea\+Vehicle}}, \mbox{\hyperlink{class_air_unit_ab7cd17470efa06d53df2ad5be3964e7a}{Air\+Unit}}, \mbox{\hyperlink{class_air_vehicle_a6a0912049937756912347a75cbd74c1b}{Air\+Vehicle}}, \mbox{\hyperlink{class_sea_unit_a04480810f175b4c0c7d5b54e9397605f}{Sea\+Unit}}, \mbox{\hyperlink{class_vehicle_a20e871b1ff13d47f4c875c987ed68add}{Vehicle}}, \mbox{\hyperlink{class_soldier_a6508d8539b427a9af01aabc07ba6ca8e}{Soldier}}, and \mbox{\hyperlink{class_battalion_a85b6a7096cce8ade372f1320bdc5949a}{Battalion}}.
+
+\mbox{\Hypertarget{class_army_component_a6e29f65ac92c18a82bf4a6a06d6d4457}\label{class_army_component_a6e29f65ac92c18a82bf4a6a06d6d4457}} 
+\index{ArmyComponent@{ArmyComponent}!calculateSeaOffense@{calculateSeaOffense}}
+\index{calculateSeaOffense@{calculateSeaOffense}!ArmyComponent@{ArmyComponent}}
+\subsubsection{\texorpdfstring{calculateSeaOffense()}{calculateSeaOffense()}}
+{\footnotesize\ttfamily virtual int Army\+Component\+::calculate\+Sea\+Offense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determines Sea\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}}. Implemented in derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int representing value of the Sea\+Offence statistic of the \mbox{\hyperlink{class_army_component}{Army\+Component}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_land_vehicle_a679b1e2f608cdfad427449240a504999}{Land\+Vehicle}}, \mbox{\hyperlink{class_land_unit_a40d93a3df8b92babc7a4f35a28dd3b73}{Land\+Unit}}, \mbox{\hyperlink{class_sea_vehicle_a0b7105037f612389b5af8471801ecee0}{Sea\+Vehicle}}, \mbox{\hyperlink{class_air_unit_a1e0b1b7905336477733191c6a66cf022}{Air\+Unit}}, \mbox{\hyperlink{class_air_vehicle_ad79fc5014baa403de34c435d3c2c14d0}{Air\+Vehicle}}, \mbox{\hyperlink{class_sea_unit_a3c275db4b9bf8cef62975d6c26ce79f8}{Sea\+Unit}}, \mbox{\hyperlink{class_vehicle_ab70b8c0eef30b37648a1ab9903043f47}{Vehicle}}, \mbox{\hyperlink{class_soldier_acdaf5453ea0f87b3219185b0a52dd869}{Soldier}}, and \mbox{\hyperlink{class_battalion_a589de99d9bcb79da2bd43303f272d079}{Battalion}}.
+

@@ -1,0 +1,89 @@
+\hypertarget{class_ammo_transporter}{}\section{Ammo\+Transporter Class Reference}
+\label{class_ammo_transporter}\index{AmmoTransporter@{AmmoTransporter}}
+
+
+{\ttfamily \#include $<$Ammo\+Transporter.\+h$>$}
+
+Inheritance diagram for Ammo\+Transporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ammo_transporter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ammo_transporter_a52f3a89dca9316f6b6fcc2ebb4be421b}{Ammo\+Transporter}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} class used to instantiate the object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ammo_transporter_a2b4f1d8d346219cf172f839d19995bb3}{$\sim$\+Ammo\+Transporter}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} class used to deallocate the dynamic memory used by the member variable corresponder\+List. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ammo_transporter_a2f29d78a7be5b6116b7299494fef2b7e}{notify}} (\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$corresponder)
+\begin{DoxyCompactList}\small\item\em Notify all \mbox{\hyperlink{class_corresponder}{Corresponder}} objects in the corresponder\+List variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_this}{This}} class is derived from the Trnasporter class.
+\begin{DoxyItemize}
+\item We use this class to showcase the transport of ammo supplies which a \mbox{\hyperlink{class_country}{Country}} sends to its \mbox{\hyperlink{class_army}{Army}}.
+\item \mbox{\hyperlink{class_this}{This}} class notifies all armies of a country that the country has sent ammo supplies to it. \begin{DoxyWarning}{Warning}
+If this transport line is destroyed by an enemy country, the country will not be able to send any ammo supplies. Thus being in a great disadvantage. 
+\end{DoxyWarning}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ammo_transporter_a52f3a89dca9316f6b6fcc2ebb4be421b}\label{class_ammo_transporter_a52f3a89dca9316f6b6fcc2ebb4be421b}} 
+\index{AmmoTransporter@{AmmoTransporter}!AmmoTransporter@{AmmoTransporter}}
+\index{AmmoTransporter@{AmmoTransporter}!AmmoTransporter@{AmmoTransporter}}
+\subsubsection{\texorpdfstring{AmmoTransporter()}{AmmoTransporter()}}
+{\footnotesize\ttfamily Ammo\+Transporter\+::\+Ammo\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} class used to instantiate the object. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_ammo_transporter_a2b4f1d8d346219cf172f839d19995bb3}\label{class_ammo_transporter_a2b4f1d8d346219cf172f839d19995bb3}} 
+\index{AmmoTransporter@{AmmoTransporter}!````~AmmoTransporter@{$\sim$AmmoTransporter}}
+\index{````~AmmoTransporter@{$\sim$AmmoTransporter}!AmmoTransporter@{AmmoTransporter}}
+\subsubsection{\texorpdfstring{$\sim$AmmoTransporter()}{~AmmoTransporter()}}
+{\footnotesize\ttfamily Ammo\+Transporter\+::$\sim$\+Ammo\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for the \mbox{\hyperlink{class_ammo_transporter}{Ammo\+Transporter}} class used to deallocate the dynamic memory used by the member variable corresponder\+List. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ammo_transporter_a2f29d78a7be5b6116b7299494fef2b7e}\label{class_ammo_transporter_a2f29d78a7be5b6116b7299494fef2b7e}} 
+\index{AmmoTransporter@{AmmoTransporter}!notify@{notify}}
+\index{notify@{notify}!AmmoTransporter@{AmmoTransporter}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Ammo\+Transporter\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_corresponder}{Corresponder}} $\ast$}]{corresponder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Notify all \mbox{\hyperlink{class_corresponder}{Corresponder}} objects in the corresponder\+List variable. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em corresponder} & pointer to the \mbox{\hyperlink{class_corresponder}{Corresponder}} in which a changed has happened. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the parameter is N\+U\+LL the function would simply throw an exception and terminate. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_transporter_aadf5e8b8dabe203e8b184ae00847c249}{Transporter}}.
+

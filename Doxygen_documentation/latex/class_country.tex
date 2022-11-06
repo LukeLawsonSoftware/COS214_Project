@@ -1,0 +1,470 @@
+\hypertarget{class_country}{}\section{Country Class Reference}
+\label{class_country}\index{Country@{Country}}
+
+
+{\ttfamily \#include $<$Country.\+h$>$}
+
+Inheritance diagram for Country\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_country}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_country_a04fa29f8caa2b8dcf72b89d43687aa34}{Country}} (std\+::string eco\+State, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor to initialise a \mbox{\hyperlink{class_country}{Country}} based on its starting \mbox{\hyperlink{class_economic_state}{Economic\+State}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_country_a5013557e0d93fabc976bfa0d7f0564a3}{$\sim$\+Country}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to deallocate any dynamic memory involved. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_country_aa584ff75674728736d4952b32693501a}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \mbox{\hyperlink{class_country}{Country}} name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_country_a5bef51b05acceb350babfd766f2f9752}{is\+Surrendered}} ()
+\begin{DoxyCompactList}\small\item\em Gets whether \mbox{\hyperlink{class_country}{Country}} has surrender from the war. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_af7a71e97969c6d107831785e868e2649}{earn\+G\+DP}} (double gdp\+Earned)
+\begin{DoxyCompactList}\small\item\em Function to increase \mbox{\hyperlink{class_country}{Country}} G\+DP and manage change of economic state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ad39ce8ab2c88a4ff7e09d3fcab56f558}{spend\+G\+DP}} (double gdp\+Spent)
+\begin{DoxyCompactList}\small\item\em Function to decrease \mbox{\hyperlink{class_country}{Country}} G\+DP and manage change of economic state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a4d6965d1a45f1d45f5af747f8225bd40}{take\+Turn}} (\mbox{\hyperlink{class_war}{War}} $\ast$curr\+War)
+\begin{DoxyCompactList}\small\item\em Function to decide and enact the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s play for a turn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a1ff39065671bb89e426c97efed4c80e9}{form\+Alliance}} ()
+\begin{DoxyCompactList}\small\item\em Function to add random \mbox{\hyperlink{class_country}{Country}} from neutral to this \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s alliance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a41ad154bf05464bf47c7e12d6e25a30e}{raise\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Function to call appropriate creational structures to create an army and add it to \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s armies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ae1250eaf85c6269b64ceb857bff5cea6}{upgrade\+Unit\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Function to upgrade a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Unit Factory such to produce better military units. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ac2dbba23738d7aa781066d12d8b60db1}{upgrade\+Supply\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Function to upgrade a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s \mbox{\hyperlink{class_supply}{Supply}} Factory such to produce better/greater quantity of medical supplies and ammo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ad034f149b2f19a246dc367b05ae1dedf}{enter\+Army\+Into\+Theatre}} (\mbox{\hyperlink{class_war}{War}} $\ast$war)
+\begin{DoxyCompactList}\small\item\em Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to send an \mbox{\hyperlink{class_army}{Army}} into a \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_adfb891f4f46c41276395d09cc9bc2a6a}{change\+Army\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to change the \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a1097aaf13d5a15eb30ea0ccc4b7fa211}{attack\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to instruct an army to attack another \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ac3fe57380b664018f560b43b2f549193}{surrender}} ()
+\begin{DoxyCompactList}\small\item\em Function to cause \mbox{\hyperlink{class_country}{Country}} to surrender and withdraw from the \mbox{\hyperlink{class_war}{War}} and alliance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_af8b0fd589846db503b902d6f6ed19003}{destroy\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Function to set this \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Transport to N\+U\+LL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_ae14d96ddafd2eb7b9c173fb26908fab7}{send\+Supplies}} (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$ammo, \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$meds)
+\begin{DoxyCompactList}\small\item\em Function to send/distribute supplies to a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s armies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$ \mbox{\hyperlink{class_country_a959665cddc5e2cbadaae9736f376cf23}{get\+New\+Ammo\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Function to get the newly created supply such that we know which supply to send to the transport line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$ \mbox{\hyperlink{class_country_a1b51d2e6356a8368dd6ee7cbc21db0e4}{get\+New\+Medical\+Supply}} ()
+\begin{DoxyCompactList}\small\item\em Function to get the newly created supply such that we know which supply to send to the transport line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a39b4294819a0b5e2513d4093401ec6a7}{set\+New\+Ammo\+Supplies}} (\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$new\+Ammo\+Supply)
+\begin{DoxyCompactList}\small\item\em Function to set the member variable to store the newly created ammo supply. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a0db028ef78f6b28b925e504e8f017266}{set\+New\+Medical\+Supplies}} (\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$new\+Medical\+Supply)
+\begin{DoxyCompactList}\small\item\em Function to set the member variable to store the newly created medical supply. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_army}{Army}} $\ast$ \mbox{\hyperlink{class_country_a3959c7dc7ade25ff431098fffea6156a}{get\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Function to return the army variable of this \mbox{\hyperlink{class_country}{Country}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ \mbox{\hyperlink{class_country_aa31ffa895ce3842620c7a9b28078fa12}{alliance1}}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ \mbox{\hyperlink{class_country_a068359e92bc21f41aa6404d3d25d1d7a}{alliance2}}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ \mbox{\hyperlink{class_country_aa47868ab5f109c05a5f2d4be6df3f325}{neutral}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_country}{Country}} class is a big component in the \mbox{\hyperlink{class_war}{War}} since we use this class to fight the on going war. Countries will be able to form an alliance with other countries and fight together againts other countries.
+\begin{DoxyItemize}
+\item For this \mbox{\hyperlink{class_war}{War}} there will only be three alliance groups\+: group1, group2 and group3. Group 1 will fight against Countries in Group 2 and the Countries in Group 3 will \char`\"{}watch\char`\"{} the on going war and may decide (at a later stage) which alliance group they want to join.
+\item Each \mbox{\hyperlink{class_country}{Country}} will also have different factories for Supplies and to create Soldiers/\+Vehicles. But creating the units and supplies will cost them money therefore each \mbox{\hyperlink{class_country}{Country}} will need to keep track of their budget (gdp) in order to determine if they can afford to create more supplies/units.
+\item If a \mbox{\hyperlink{class_country}{Country}} starts to realise that it is losing the war then it has the option of surrendering to the enemy \mbox{\hyperlink{class_country}{Country}}.
+\item The \mbox{\hyperlink{class_country}{Country}} also has the option to upgrade its different factories but this would only be possible if the \mbox{\hyperlink{class_country}{Country}} is in a \mbox{\hyperlink{class_rich}{Rich}} \mbox{\hyperlink{class_economic_state}{Economic\+State}}.
+\item Countries will have military commanders which will issue different commands for the \mbox{\hyperlink{class_country}{Country}} for example raising an army to prepare for the war.
+\item Finally the \mbox{\hyperlink{class_country}{Country}} will be able to create suppplies and signal the military commander to send the supplies to the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s transport lines such that it can be transported to the armies of the \mbox{\hyperlink{class_country}{Country}}. \begin{DoxyNote}{Note}
+\mbox{\hyperlink{class_this}{This}} class has vectors for the ammo and medical supplies to separate the two supplies such that we can keep track of the size for both supplies. 
+\end{DoxyNote}
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_country_a04fa29f8caa2b8dcf72b89d43687aa34}\label{class_country_a04fa29f8caa2b8dcf72b89d43687aa34}} 
+\index{Country@{Country}!Country@{Country}}
+\index{Country@{Country}!Country@{Country}}
+\subsubsection{\texorpdfstring{Country()}{Country()}}
+{\footnotesize\ttfamily Country\+::\+Country (\begin{DoxyParamCaption}\item[{std\+::string}]{eco\+State,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialise a \mbox{\hyperlink{class_country}{Country}} based on its starting \mbox{\hyperlink{class_economic_state}{Economic\+State}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em eco\+State} & String of value \mbox{\hyperlink{class_rich}{Rich}}, \mbox{\hyperlink{class_average}{Average}} or \mbox{\hyperlink{class_poor}{Poor}} \\
+\hline
+{\em name} & the name of the \mbox{\hyperlink{class_country}{Country}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The eco\+State can only be one of the specified three (\mbox{\hyperlink{class_rich}{Rich}}, \mbox{\hyperlink{class_average}{Average}}, \mbox{\hyperlink{class_poor}{Poor}}) 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_country_a5013557e0d93fabc976bfa0d7f0564a3}\label{class_country_a5013557e0d93fabc976bfa0d7f0564a3}} 
+\index{Country@{Country}!````~Country@{$\sim$Country}}
+\index{````~Country@{$\sim$Country}!Country@{Country}}
+\subsubsection{\texorpdfstring{$\sim$Country()}{~Country()}}
+{\footnotesize\ttfamily Country\+::$\sim$\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor to deallocate any dynamic memory involved. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_country_a1097aaf13d5a15eb30ea0ccc4b7fa211}\label{class_country_a1097aaf13d5a15eb30ea0ccc4b7fa211}} 
+\index{Country@{Country}!attackTransport@{attackTransport}}
+\index{attackTransport@{attackTransport}!Country@{Country}}
+\subsubsection{\texorpdfstring{attackTransport()}{attackTransport()}}
+{\footnotesize\ttfamily void Country\+::attack\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to instruct an army to attack another \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s transport. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_adfb891f4f46c41276395d09cc9bc2a6a}\label{class_country_adfb891f4f46c41276395d09cc9bc2a6a}} 
+\index{Country@{Country}!changeArmyStrategy@{changeArmyStrategy}}
+\index{changeArmyStrategy@{changeArmyStrategy}!Country@{Country}}
+\subsubsection{\texorpdfstring{changeArmyStrategy()}{changeArmyStrategy()}}
+{\footnotesize\ttfamily void Country\+::change\+Army\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to change the \mbox{\hyperlink{class_army}{Army}}\textquotesingle{}s strategy. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_af8b0fd589846db503b902d6f6ed19003}\label{class_country_af8b0fd589846db503b902d6f6ed19003}} 
+\index{Country@{Country}!destroyTransport@{destroyTransport}}
+\index{destroyTransport@{destroyTransport}!Country@{Country}}
+\subsubsection{\texorpdfstring{destroyTransport()}{destroyTransport()}}
+{\footnotesize\ttfamily void Country\+::destroy\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to set this \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Transport to N\+U\+LL. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_af7a71e97969c6d107831785e868e2649}\label{class_country_af7a71e97969c6d107831785e868e2649}} 
+\index{Country@{Country}!earnGDP@{earnGDP}}
+\index{earnGDP@{earnGDP}!Country@{Country}}
+\subsubsection{\texorpdfstring{earnGDP()}{earnGDP()}}
+{\footnotesize\ttfamily void Country\+::earn\+G\+DP (\begin{DoxyParamCaption}\item[{double}]{gdp\+Earned }\end{DoxyParamCaption})}
+
+
+
+Function to increase \mbox{\hyperlink{class_country}{Country}} G\+DP and manage change of economic state. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em gdp\+Earned} & double which indicates the amount to increase G\+DP by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The parameter must be a positive double value. If we want to decrease the G\+DP we must use the function \char`\"{}spend\+G\+D\+P()\char`\"{}. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_country_ad034f149b2f19a246dc367b05ae1dedf}\label{class_country_ad034f149b2f19a246dc367b05ae1dedf}} 
+\index{Country@{Country}!enterArmyIntoTheatre@{enterArmyIntoTheatre}}
+\index{enterArmyIntoTheatre@{enterArmyIntoTheatre}!Country@{Country}}
+\subsubsection{\texorpdfstring{enterArmyIntoTheatre()}{enterArmyIntoTheatre()}}
+{\footnotesize\ttfamily void Country\+::enter\+Army\+Into\+Theatre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war}{War}} $\ast$}]{war }\end{DoxyParamCaption})}
+
+
+
+Function to use \mbox{\hyperlink{class_military_commander}{Military\+Commander}} to send an \mbox{\hyperlink{class_army}{Army}} into a \mbox{\hyperlink{class_war_theatre}{War\+Theatre}}. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em war} & pointyer to the \mbox{\hyperlink{class_war}{War}} the country is currently engaged in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_a1ff39065671bb89e426c97efed4c80e9}\label{class_country_a1ff39065671bb89e426c97efed4c80e9}} 
+\index{Country@{Country}!formAlliance@{formAlliance}}
+\index{formAlliance@{formAlliance}!Country@{Country}}
+\subsubsection{\texorpdfstring{formAlliance()}{formAlliance()}}
+{\footnotesize\ttfamily void Country\+::form\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to add random \mbox{\hyperlink{class_country}{Country}} from neutral to this \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s alliance. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_a3959c7dc7ade25ff431098fffea6156a}\label{class_country_a3959c7dc7ade25ff431098fffea6156a}} 
+\index{Country@{Country}!getArmy@{getArmy}}
+\index{getArmy@{getArmy}!Country@{Country}}
+\subsubsection{\texorpdfstring{getArmy()}{getArmy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_army}{Army}} $\ast$ Country\+::get\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to return the army variable of this \mbox{\hyperlink{class_country}{Country}} class. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Returns the army of the \mbox{\hyperlink{class_country}{Country}} as a pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_country_aa584ff75674728736d4952b32693501a}\label{class_country_aa584ff75674728736d4952b32693501a}} 
+\index{Country@{Country}!getName@{getName}}
+\index{getName@{getName}!Country@{Country}}
+\subsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Country\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the \mbox{\hyperlink{class_country}{Country}} name. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+string name of the \mbox{\hyperlink{class_country}{Country}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_country_a959665cddc5e2cbadaae9736f376cf23}\label{class_country_a959665cddc5e2cbadaae9736f376cf23}} 
+\index{Country@{Country}!getNewAmmoSupply@{getNewAmmoSupply}}
+\index{getNewAmmoSupply@{getNewAmmoSupply}!Country@{Country}}
+\subsubsection{\texorpdfstring{getNewAmmoSupply()}{getNewAmmoSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$ Country\+::get\+New\+Ammo\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to get the newly created supply such that we know which supply to send to the transport line. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The newly created ammo supply 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_country_a1b51d2e6356a8368dd6ee7cbc21db0e4}\label{class_country_a1b51d2e6356a8368dd6ee7cbc21db0e4}} 
+\index{Country@{Country}!getNewMedicalSupply@{getNewMedicalSupply}}
+\index{getNewMedicalSupply@{getNewMedicalSupply}!Country@{Country}}
+\subsubsection{\texorpdfstring{getNewMedicalSupply()}{getNewMedicalSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$ Country\+::get\+New\+Medical\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to get the newly created supply such that we know which supply to send to the transport line. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The newly created medical supply 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_country_a5bef51b05acceb350babfd766f2f9752}\label{class_country_a5bef51b05acceb350babfd766f2f9752}} 
+\index{Country@{Country}!isSurrendered@{isSurrendered}}
+\index{isSurrendered@{isSurrendered}!Country@{Country}}
+\subsubsection{\texorpdfstring{isSurrendered()}{isSurrendered()}}
+{\footnotesize\ttfamily bool Country\+::is\+Surrendered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets whether \mbox{\hyperlink{class_country}{Country}} has surrender from the war. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+boolean value of has\+Surrendered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_country_a41ad154bf05464bf47c7e12d6e25a30e}\label{class_country_a41ad154bf05464bf47c7e12d6e25a30e}} 
+\index{Country@{Country}!raiseArmy@{raiseArmy}}
+\index{raiseArmy@{raiseArmy}!Country@{Country}}
+\subsubsection{\texorpdfstring{raiseArmy()}{raiseArmy()}}
+{\footnotesize\ttfamily void Country\+::raise\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to call appropriate creational structures to create an army and add it to \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s armies. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_ae14d96ddafd2eb7b9c173fb26908fab7}\label{class_country_ae14d96ddafd2eb7b9c173fb26908fab7}} 
+\index{Country@{Country}!sendSupplies@{sendSupplies}}
+\index{sendSupplies@{sendSupplies}!Country@{Country}}
+\subsubsection{\texorpdfstring{sendSupplies()}{sendSupplies()}}
+{\footnotesize\ttfamily void Country\+::send\+Supplies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$}]{ammo,  }\item[{\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$}]{meds }\end{DoxyParamCaption})}
+
+
+
+Function to send/distribute supplies to a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s armies. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ammo} & Ammo\+Supplies to be transported \\
+\hline
+{\em meds} & Medical\+Supplies to be transported \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_a39b4294819a0b5e2513d4093401ec6a7}\label{class_country_a39b4294819a0b5e2513d4093401ec6a7}} 
+\index{Country@{Country}!setNewAmmoSupplies@{setNewAmmoSupplies}}
+\index{setNewAmmoSupplies@{setNewAmmoSupplies}!Country@{Country}}
+\subsubsection{\texorpdfstring{setNewAmmoSupplies()}{setNewAmmoSupplies()}}
+{\footnotesize\ttfamily void Country\+::set\+New\+Ammo\+Supplies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ammo_supply}{Ammo\+Supply}} $\ast$}]{new\+Ammo\+Supply }\end{DoxyParamCaption})}
+
+
+
+Function to set the member variable to store the newly created ammo supply. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ammo\+Supply} & The new ammo supply \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_a0db028ef78f6b28b925e504e8f017266}\label{class_country_a0db028ef78f6b28b925e504e8f017266}} 
+\index{Country@{Country}!setNewMedicalSupplies@{setNewMedicalSupplies}}
+\index{setNewMedicalSupplies@{setNewMedicalSupplies}!Country@{Country}}
+\subsubsection{\texorpdfstring{setNewMedicalSupplies()}{setNewMedicalSupplies()}}
+{\footnotesize\ttfamily void Country\+::set\+New\+Medical\+Supplies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_medical_supply}{Medical\+Supply}} $\ast$}]{new\+Medical\+Supply }\end{DoxyParamCaption})}
+
+
+
+Function to set the member variable to store the newly created medical supply. 
+
+\begin{DoxyAuthor}{Author}
+Reuben Jooste (u21457060) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ammo\+Supply} & The new medical supply \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_ad39ce8ab2c88a4ff7e09d3fcab56f558}\label{class_country_ad39ce8ab2c88a4ff7e09d3fcab56f558}} 
+\index{Country@{Country}!spendGDP@{spendGDP}}
+\index{spendGDP@{spendGDP}!Country@{Country}}
+\subsubsection{\texorpdfstring{spendGDP()}{spendGDP()}}
+{\footnotesize\ttfamily void Country\+::spend\+G\+DP (\begin{DoxyParamCaption}\item[{double}]{gdp\+Spent }\end{DoxyParamCaption})}
+
+
+
+Function to decrease \mbox{\hyperlink{class_country}{Country}} G\+DP and manage change of economic state. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em gdp\+Spent} & double which indicates the amount to decrease G\+DP by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The parameter must be a negative double value. If we want to increase the G\+DP we must use the function \char`\"{}earn\+G\+D\+P()\char`\"{}. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_country_ac3fe57380b664018f560b43b2f549193}\label{class_country_ac3fe57380b664018f560b43b2f549193}} 
+\index{Country@{Country}!surrender@{surrender}}
+\index{surrender@{surrender}!Country@{Country}}
+\subsubsection{\texorpdfstring{surrender()}{surrender()}}
+{\footnotesize\ttfamily void Country\+::surrender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to cause \mbox{\hyperlink{class_country}{Country}} to surrender and withdraw from the \mbox{\hyperlink{class_war}{War}} and alliance. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_country_a4d6965d1a45f1d45f5af747f8225bd40}\label{class_country_a4d6965d1a45f1d45f5af747f8225bd40}} 
+\index{Country@{Country}!takeTurn@{takeTurn}}
+\index{takeTurn@{takeTurn}!Country@{Country}}
+\subsubsection{\texorpdfstring{takeTurn()}{takeTurn()}}
+{\footnotesize\ttfamily void Country\+::take\+Turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_war}{War}} $\ast$}]{curr\+War }\end{DoxyParamCaption})}
+
+
+
+Function to decide and enact the \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s play for a turn. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+War} & pointer to the \mbox{\hyperlink{class_war}{War}} the \mbox{\hyperlink{class_country}{Country}} is currently engaged in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_ac2dbba23738d7aa781066d12d8b60db1}\label{class_country_ac2dbba23738d7aa781066d12d8b60db1}} 
+\index{Country@{Country}!upgradeSupplyFactory@{upgradeSupplyFactory}}
+\index{upgradeSupplyFactory@{upgradeSupplyFactory}!Country@{Country}}
+\subsubsection{\texorpdfstring{upgradeSupplyFactory()}{upgradeSupplyFactory()}}
+{\footnotesize\ttfamily void Country\+::upgrade\+Supply\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to upgrade a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s \mbox{\hyperlink{class_supply}{Supply}} Factory such to produce better/greater quantity of medical supplies and ammo. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+\mbox{\hyperlink{class_this}{This}} function can only be used when the \mbox{\hyperlink{class_country}{Country}} is in a \mbox{\hyperlink{class_rich}{Rich}} \mbox{\hyperlink{class_economic_state}{Economic\+State}} 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_country_ae1250eaf85c6269b64ceb857bff5cea6}\label{class_country_ae1250eaf85c6269b64ceb857bff5cea6}} 
+\index{Country@{Country}!upgradeUnitFactory@{upgradeUnitFactory}}
+\index{upgradeUnitFactory@{upgradeUnitFactory}!Country@{Country}}
+\subsubsection{\texorpdfstring{upgradeUnitFactory()}{upgradeUnitFactory()}}
+{\footnotesize\ttfamily void Country\+::upgrade\+Unit\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to upgrade a \mbox{\hyperlink{class_country}{Country}}\textquotesingle{}s Unit Factory such to produce better military units. 
+
+\begin{DoxyAuthor}{Author}
+Luke Lawson (u21433811) 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+\mbox{\hyperlink{class_this}{This}} function can only be used when the \mbox{\hyperlink{class_country}{Country}} is in a \mbox{\hyperlink{class_rich}{Rich}} \mbox{\hyperlink{class_economic_state}{Economic\+State}} 
+\end{DoxyWarning}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_country_aa31ffa895ce3842620c7a9b28078fa12}\label{class_country_aa31ffa895ce3842620c7a9b28078fa12}} 
+\index{Country@{Country}!alliance1@{alliance1}}
+\index{alliance1@{alliance1}!Country@{Country}}
+\subsubsection{\texorpdfstring{alliance1}{alliance1}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ Country\+::alliance1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_country_a068359e92bc21f41aa6404d3d25d1d7a}\label{class_country_a068359e92bc21f41aa6404d3d25d1d7a}} 
+\index{Country@{Country}!alliance2@{alliance2}}
+\index{alliance2@{alliance2}!Country@{Country}}
+\subsubsection{\texorpdfstring{alliance2}{alliance2}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ Country\+::alliance2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_country_aa47868ab5f109c05a5f2d4be6df3f325}\label{class_country_aa47868ab5f109c05a5f2d4be6df3f325}} 
+\index{Country@{Country}!neutral@{neutral}}
+\index{neutral@{neutral}!Country@{Country}}
+\subsubsection{\texorpdfstring{neutral}{neutral}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ Country\+::neutral\hspace{0.3cm}{\ttfamily [static]}}
+
