@@ -15,6 +15,7 @@ All links provided below are links to a Google Drive where the file is stored. T
 [Introductory video](https://drive.google.com/file/d/1rBWXlENZV4Ys20G3FguCON67qFs0aLNI/view?usp=share_link)
 
 ## How to compile and run
+The folder "Code" fulfils the role of the folder "System" that is mentioned in the specification
 1) Navigate to the folder named "Code" and open the terminal
 2) Simply type "make" and enter to compile the code
 3) Type "make run" and enter once compilation has completed to run the code (this can be performed any number of times after compilation)
