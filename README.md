@@ -115,10 +115,10 @@ War Phase - State Diagram v1
 ***
 
 ## Final Report (Final Research Brief, Listing of Assumptions and Report on Patterns)
-[Complete Report](https://docs.google.com/document/d/17LYU0BKzvOeFWF8SqTmUtS7nt5N8vYokSYuyeVtK-Us/edit?usp=share_link)
+[Complete Report (Final)](https://docs.google.com/document/d/17LYU0BKzvOeFWF8SqTmUtS7nt5N8vYokSYuyeVtK-Us/edit?usp=share_link)
 
 ### Research Brief (for progress tracking purposes only) 
-[Research Brief](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
+[Research Brief (Rough)](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
 
 ### Project Report (for progress tracking purposes only) 
-[Report on Design Patterns](https://docs.google.com/document/d/1usSzrIGBnv6CRmBcQjSZJM7rQqoF0H61nNNkRuSn2eI/edit?usp=share_link)
+[Report on Design Patterns (Rough)](https://docs.google.com/document/d/1usSzrIGBnv6CRmBcQjSZJM7rQqoF0H61nNNkRuSn2eI/edit?usp=share_link)
