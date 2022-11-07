@@ -113,11 +113,12 @@ War Phase - State Diagram v1
 * [View PDF](https://drive.google.com/file/d/1Uf97D890KJebWaE-gndhM2UmzPNAZ_vJ/view?usp=share_link)<br/>
 <!-- end of bulleted list -->
 ***
-## Research Brief
+
+## Combined Report (Final Research Brief and Report on Patterns)
+[Complete Report](https://docs.google.com/document/d/17LYU0BKzvOeFWF8SqTmUtS7nt5N8vYokSYuyeVtK-Us/edit?usp=share_link)
+
+### Research Brief (pre-final version) 
 [Research Brief](https://docs.google.com/document/d/1_26_ehbEiTZ2Xi9fk-cEbWw19J02zTBd/edit?usp=sharing&ouid=112010270683348415189&rtpof=true&sd=true)
 
-## Project Report
+### Project Report (pre-final version) 
 [Report on Design Patterns](https://docs.google.com/document/d/1usSzrIGBnv6CRmBcQjSZJM7rQqoF0H61nNNkRuSn2eI/edit?usp=share_link)
-
-## Combined Report (Research Brief and Report on Patterns)
-[Complete Report](https://docs.google.com/document/d/17LYU0BKzvOeFWF8SqTmUtS7nt5N8vYokSYuyeVtK-Us/edit?usp=share_link)
