@@ -114,7 +114,7 @@ War Phase - State Diagram v1
 <!-- end of bulleted list -->
 ***
 
-## Final (Combined) Report (Final Research Brief and Report on Patterns)
+## Final Report (Final Research Brief, Listing of Assumptions and Report on Patterns)
 [Complete Report](https://docs.google.com/document/d/17LYU0BKzvOeFWF8SqTmUtS7nt5N8vYokSYuyeVtK-Us/edit?usp=share_link)
 
 ### Research Brief (for progress tracking purposes only) 
