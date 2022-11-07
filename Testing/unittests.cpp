@@ -1,7 +1,7 @@
 #include "ArmyComponent_unittests.cpp" // include all the files that do testing
 #include "Transport_unittests.cpp"
 #include "ArmyBuilder_unittests.cpp"
-#include "WarPhase_unittests.cpp"
+#include "ArmyStrategy_unittests.cpp"
 #include "SupplyProduct_unittests.cpp"
 #include "EconomicState_unittests.cpp"
 #include "WarTheatre_unittests.cpp"
